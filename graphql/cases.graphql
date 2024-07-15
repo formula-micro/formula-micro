@@ -1,0 +1,52 @@
+fragment Case on cases {
+    id
+    status
+    title
+    slug
+    summary
+    blocks {
+        item {
+            ... on banner_hero_blocks {
+                ...BannerHeroBlock
+            }
+            ... on partners_blocks {
+                ...PartnersBlock
+            }
+            #... on services_list_blocks {
+            #    ...ServicesListBlock
+            #}
+            ... on text_hero_blocks {
+                ...TextHeroBlock
+            }
+            ... on text_and_image_blocks {
+                ...TextAndImageBlock
+            }
+            ... on richtext_blocks {
+                ...RichTextBlock
+            }
+            ... on disclosure_blocks {
+                ...DisclosureBlock
+            }
+            ... on contact_form_blocks {
+                ...ContactFormBlock
+            }
+            ... on gallery_blocks {
+                ...GalleryBlock
+            }
+        }
+    }
+}
+
+query CasesCount {
+    cases_aggregated {
+        count {
+            count: id
+        }
+    }
+}
+
+query Cases($filter: cases_filter, $limit: Int, $offset: Int, $page: Int, $search: String, $sort: [String]) {
+    cases(filter: $filter, limit: $limit, offset: $offset, page: $page, search: $search, sort: $sort) {
+        ...Case
+    }
+}

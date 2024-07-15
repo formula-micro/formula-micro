@@ -1,0 +1,39 @@
+fragment Frontpage on frontpage {
+    id
+    hero_banners(sort: ["sort"]) {
+        ...Banner
+    }
+    seo_title
+    seo_description
+    blocks {
+        item {
+            ... on partners_blocks {
+                ...PartnersBlock
+            }
+            ... on services_list_blocks {
+                ...ServicesListBlock
+            }
+            ... on text_and_image_blocks {
+                ...TextAndImageBlock
+            }
+            ... on richtext_blocks {
+                ...RichTextBlock
+            }
+            ... on spacer_blocks {
+                ...SpacerBlock
+            }
+            ... on disclosure_blocks {
+                ...DisclosureBlock
+            }
+            ... on contact_form_blocks {
+                ...ContactFormBlock
+            }
+        }
+    }
+}
+
+query frontpage {
+    frontpage {
+        ...Frontpage
+    }
+}

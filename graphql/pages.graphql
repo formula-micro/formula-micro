@@ -1,0 +1,65 @@
+fragment Page on pages {
+    id
+    status
+    title
+    slug
+    seo_title
+    seo_description
+    blocks {
+        item {
+            ... on banner_hero_blocks {
+                ...BannerHeroBlock
+            }
+            ... on partners_blocks {
+                ...PartnersBlock
+            }
+            ... on services_list_blocks {
+               ...ServicesListBlock
+            }
+            ... on text_hero_blocks {
+                ...TextHeroBlock
+            }
+            ... on text_and_image_blocks {
+                ...TextAndImageBlock
+            }
+            ... on richtext_blocks {
+                ...RichTextBlock
+            }
+            ... on disclosure_blocks {
+                ...DisclosureBlock
+            }
+            ... on spacer_blocks {
+                ...SpacerBlock
+            }
+            ... on google_maps_blocks {
+                ...GoogleMapsBlock
+            }
+            ... on cookie_selection_blocks {
+                ...CookieSelectionBlock
+            }
+            ... on contact_form_blocks {
+                ...ContactFormBlock
+            }
+            ... on gallery_blocks {
+                ...GalleryBlock
+            }
+            ... on columns_blocks {
+                ...ColumnsBlock
+            }
+        }
+    }
+}
+
+query PageCount {
+    pages_aggregated {
+        count {
+            count: id
+        }
+    }
+}
+
+query Pages($filter: pages_filter, $limit: Int, $offset: Int, $page: Int, $search: String, $sort: [String]) {
+    pages(filter: $filter, limit: $limit, offset: $offset, page: $page, search: $search, sort: $sort) {
+        ...Page
+    }
+}

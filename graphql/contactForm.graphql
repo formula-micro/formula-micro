@@ -1,0 +1,13 @@
+fragment ContactForm on contact_forms {
+    name
+    company
+    email
+    phone
+    message
+}
+
+mutation create_contact_form($data: create_contact_forms_input!) {
+    create_contact_forms_item(data: $data) {
+        ...ContactForm
+    }
+}

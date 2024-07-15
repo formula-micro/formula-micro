@@ -1,0 +1,60 @@
+fragment NavigationMenu on navigation_menu {
+    links {
+        ...NavigationMenuItem
+    }
+}
+
+fragment NavigationMenuItemPage on pages {
+    id
+    title
+    slug
+}
+
+fragment NavigationMenuItem on navigation_menu_items {
+    id
+    text
+    type
+    link
+    page {
+        ...NavigationMenuItemPage
+    }
+    subitems {
+        ...NavigationMenuSubItem
+    }
+    calls_to_action {
+        ...NavigationMenuCallToAction
+    }
+}
+
+fragment NavigationMenuSubItem on navigation_menu_subitems {
+    id
+    icon {
+        filename_download
+    }
+    title
+    description
+    type
+    link
+    page {
+        ...NavigationMenuItemPage
+    }
+}
+
+fragment NavigationMenuCallToAction on navigation_menu_calls_to_action {
+    id
+    icon {
+        filename_download
+    }
+    text
+    type
+    link
+    page {
+        ...NavigationMenuItemPage
+    }
+}
+
+query NavigationMenu {
+    navigation_menu {
+        ...NavigationMenu
+    }
+}

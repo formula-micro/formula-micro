@@ -1,0 +1,20 @@
+fragment Banner on frontpage_banners {
+    id
+    status
+    image {
+        id
+        title
+        description
+        width
+        height
+    }
+    overlay_color
+    title
+    description
+    button_type
+    button_text
+    button_link
+    button_page {
+        slug
+    }
+}

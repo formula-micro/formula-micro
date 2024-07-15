@@ -1,0 +1,25 @@
+fragment Tag on tags {
+    id
+    name
+}
+
+fragment TagCounter on tags_counters {
+    id
+    collection
+    tag {
+        ...Tag
+    }
+    count
+}
+
+query tags($filter: tags_filter, $limit: Int, $offset: Int, $page: Int, $search: String, $sort: [String]) {
+    tags(filter: $filter, limit: $limit, offset: $offset, page: $page, search: $search, sort: $sort) {
+        ...Tag
+    }
+}
+
+query tagCounters($filter: tags_counters_filter, $limit: Int, $offset: Int, $page: Int, $search: String, $sort: [String]) {
+    tags_counters(filter: $filter, limit: $limit, offset: $offset, page: $page, search: $search, sort: $sort) {
+        ...TagCounter
+    }
+}

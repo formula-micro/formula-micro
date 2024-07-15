@@ -1,0 +1,290 @@
+fragment Partner on partners {
+    status
+    name
+    logo {
+        id
+        title
+        description
+        width
+        height
+    }
+}
+
+fragment PartnersBlock on partners_blocks {
+    title
+    show_title
+    partners(filter: { partners_id: { status: { _eq: "published" } }  }, sort: [ "sort" ]) {
+        partners_id {
+            ...Partner
+        }
+    }
+}
+
+fragment Color on colors {
+    class
+}
+
+fragment Width on widths {
+    class
+}
+
+fragment Height on heights {
+    class
+}
+
+fragment ServicesListBlock on services_list_blocks {
+    background_color {
+        ...Color
+    }
+    width {
+        ...Width
+    }
+    has_padding
+    title
+    content
+    links_placement
+    links {
+        item {
+            ... on news_posts {
+                id
+                title
+                slug
+            }
+            ... on blog_posts {
+                id
+                title
+                slug
+            }
+            ... on cases {
+                id
+                title
+                slug
+            }
+            ... on pages {
+                id
+                title
+                slug
+            }
+        }
+    }
+}
+
+fragment BannerHeroBlock on banner_hero_blocks {
+    width {
+        ...Width
+    }
+    has_padding
+    title
+    banners {
+        title
+        description
+        overlay_color {
+            ...Color
+        }
+        image {
+            id
+            title
+            description
+            width
+            height
+            attribution
+            video_thumbnail {
+                id
+                width
+                height
+                description
+                attribution
+            }
+        }
+    }
+}
+
+fragment TextHeroBlock on text_hero_blocks {
+    background_color {
+        ...Color
+    }
+    width {
+        ...Width
+    }
+    has_padding
+    illustration_type
+    icon {
+        filename_download
+    }
+    image {
+        id
+        title
+        description
+        width
+        height
+    }
+    title
+    content
+}
+
+fragment TextAndImageBlock on text_and_image_blocks {
+    width {
+        ...Width
+    }
+    has_padding
+    title
+    editor_js_content: content
+    image_placement
+    image_position
+    image_fit
+    image_size
+    image {
+        id
+        title
+        description
+        width
+        height
+    }
+}
+
+fragment ImageBlock on image_blocks {
+    image_position
+    image_fit
+    image_size
+    image {
+        id
+        title
+        description
+        width
+        height
+        attribution
+    }
+}
+
+fragment RichTextBlock on richtext_blocks {
+    width {
+        ...Width
+    }
+    has_padding
+    title
+    show_title
+    title_placement
+    editor_js_content: content
+}
+
+fragment DisclosureBlock on disclosure_blocks {
+    width {
+        ...Width
+    }
+    has_padding
+    title
+    is_expanded_by_default
+    editor_js_content: content
+}
+
+fragment SpacerBlock on spacer_blocks {
+    height {
+        ...Height
+    }
+}
+
+fragment GoogleMapsBlock on google_maps_blocks {
+    width {
+        ...Width
+    }
+    has_padding
+}
+
+fragment CookieSelectionBlock on cookie_selection_blocks {
+    width {
+        ...Width
+    }
+    has_padding
+}
+
+fragment ContactFormBlock on contact_form_blocks {
+    background_color {
+        ...Color
+    }
+    width {
+        ...Width
+    }
+    has_padding
+    title
+    description
+}
+
+fragment CardBlock on card_blocks {
+    background_color {
+        ...Color
+    }
+    background_color_active {
+        ...Color
+    }
+    image {
+        id
+        title
+        description
+        width
+        height
+    }
+    show_large_image
+    title
+    description
+    text_alignment
+    type
+    link
+    page {
+        slug
+    }
+}
+
+fragment GalleryBlock on gallery_blocks {
+    width {
+        ...Width
+    }
+    has_padding
+    title
+    show_title
+    images {
+        directus_files_id {
+            id
+            title
+            description
+            width
+            height
+            attribution
+            video_thumbnail {
+                id
+                title
+                description
+                width
+                height
+                attribution
+            }
+        }
+    }
+}
+
+fragment ColumnsBlock on columns_blocks {
+    width {
+        ...Width
+    }
+    extended_control
+    custom_css
+    vertical_alignment
+    blocks {
+        item {
+            ... on richtext_blocks {
+                ...RichTextBlock
+            }
+            ... on disclosure_blocks {
+                ...DisclosureBlock
+            }
+            ... on gallery_blocks {
+                ...GalleryBlock
+            }
+            ... on card_blocks {
+                ...CardBlock
+            }
+            ... on image_blocks {
+                ...ImageBlock
+            }
+        }
+    }
+}

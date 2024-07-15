@@ -1,0 +1,36 @@
+fragment BlogPost on blog_posts {
+    id
+    status
+    # date_published
+    title
+    cover_image {
+        id
+        title
+        description
+        width
+        height
+        attribution
+    }
+    slug
+    summary
+    content
+    tags {
+        tags_id {
+            ...Tag
+        }
+    }
+}
+
+query BlogPostsCount {
+    blog_posts_aggregated {
+        count {
+            count: id
+        }
+    }
+}
+
+query BlogPosts($filter: blog_posts_filter, $limit: Int, $offset: Int, $page: Int, $search: String, $sort: [String]) {
+    blog_posts(filter: $filter, limit: $limit, offset: $offset, page: $page, search: $search, sort: $sort) {
+        ...BlogPost
+    }
+}
