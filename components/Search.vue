@@ -1,6 +1,7 @@
 <script setup lang="ts">
     import { AisInstantSearch, AisHits, AisSearchBox, AisIndex } from "vue-instantsearch/vue3/es";
     import Dialog from "primevue/dialog";
+    import Chip from "primevue/chip";
 
     // Properties.
     interface Props
@@ -28,7 +29,7 @@
                     <div class="flex justify-between items-center w-full">
                         <h1 class="font-bold text-4xl">Hvad søger du efter?</h1>
 
-                        <button @click="closeCallback">Luk søgning</button>
+                        <button class="text-gray-900 font-bold" @click="closeCallback">Luk søgning</button>
                     </div>
 
                     <ais-instant-search :search-client="client" index-name="pages" class="mt-12">
@@ -40,11 +41,11 @@
                         </ais-search-box>
 
                         <div class="mt-8 mb-16 flex items-center w-full space-x-3">
-                            <button class="bg-gray-100 w-14 rounded-full p-1">Alle</button> <!-- Insert count -->
-                            <button class="bg-gray-100 w-16 rounded-full p-1">Sider</button> <!-- Insert count -->
-                            <button class="bg-gray-100 w-22 rounded-full p-1">Nyheder</button> <!-- Insert count -->
-                            <button class="bg-gray-100 w-16 rounded-full p-1">Blog</button> <!-- Insert count -->
-                            <button class="bg-gray-100 w-16 rounded-full p-1">Cases</button> <!-- Insert count -->
+                            <Chip label="Alle" />
+                            <Chip label="Sider" />
+                            <Chip label="Nyheder" />
+                            <Chip label="Blog" />
+                            <Chip label="Cases" />
                         </div>
 
                         <ais-index index-name="pages">

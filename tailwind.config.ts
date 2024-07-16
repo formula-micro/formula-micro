@@ -3,7 +3,6 @@ import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
     content: [
-        
     ],
     theme: {
         extend: {
@@ -11,6 +10,15 @@ export default {
                 "3xl": "1920px",
                 "4xl": "2560px",
                 "5xl": "3840px"
+            },
+            padding: {
+                "0.5": "0.125rem",
+                "1.5": "0.375rem"
+            },
+            maxWidth: {
+                "8xl": "88rem",
+                "9xl": "96rem",
+                "10xl": "104rem",
             },
             fontFamily: {
                 plusjakartasans: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
@@ -34,7 +42,13 @@ export default {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        require("@tailwindcss/typography"),
+        require("@tailwindcss/forms"),
+        require("@tailwindcss/aspect-ratio"),
+        require("@tailwindcss/container-queries"),
+        require("tailwindcss-primeui")
+    ],
     safelist: [
         "bg-black",
         "bg-blue-900",
