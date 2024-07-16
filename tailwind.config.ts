@@ -1,7 +1,40 @@
-import { defineConfig } from "windicss/helpers";
-import defaultTheme from "windicss/defaultTheme";
+import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
-export default defineConfig({
+export default {
+    content: [
+        
+    ],
+    theme: {
+        extend: {
+            screens: {
+                "3xl": "1920px",
+                "4xl": "2560px",
+                "5xl": "3840px"
+            },
+            fontFamily: {
+                plusjakartasans: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                "banner": {
+                    "100": "#F6F7F8",
+                },
+                "zuccini-green": {
+                    "50": "#ecfdf4",
+                    "100": "#d1fae4",
+                    "200": "#a6f4cd",
+                    "300": "#6de8b3",
+                    "400": "#33d493",
+                    "500": "#0fba7b",
+                    "600": "#049764",
+                    "700": "#037953",
+                    "800": "#056043",
+                    "900": "#054834",
+                },
+            },
+        },
+    },
+    plugins: [],
     safelist: [
         "bg-black",
         "bg-blue-900",
@@ -189,46 +222,4 @@ export default defineConfig({
         "lg:grid-cols-[4fr,0.5fr,3fr]",
         "lg:grid-cols-[3fr,0.5fr,4fr]",
     ],
-    preflight: {
-        safelist: "h1 h2 h3 h4 h5 h6 p a input button",
-    },
-    theme: {
-        extend: {
-            screens: {
-                "3xl": "1920px",
-                "4xl": "2560px",
-                "5xl": "3840px"
-            },
-            fontFamily: {
-                lexend: ["Lexend", ...defaultTheme.fontFamily.sans],
-                poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
-                plusjakartasans: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
-            },
-            colors: {
-                "banner": {
-                    "100": "#F6F7F8",
-                },
-                "zuccini-green": {
-                    "50": "#ecfdf4",
-                    "100": "#d1fae4",
-                    "200": "#a6f4cd",
-                    "300": "#6de8b3",
-                    "400": "#33d493",
-                    "500": "#0fba7b",
-                    "600": "#049764",
-                    "700": "#037953",
-                    "800": "#056043",
-                    "900": "#054834",
-                },
-            },
-        },
-    },
-    plugins: [
-        require("windicss/plugin/forms"),
-        require("windicss/plugin/aspect-ratio"),
-        require("windicss/plugin/line-clamp"),
-        require("windicss/plugin/scroll-snap"),
-        require("windicss/plugin/filters"),
-        require("windicss/plugin/typography"),
-    ],
-});
+} satisfies Config;

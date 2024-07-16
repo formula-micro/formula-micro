@@ -1,46 +1,79 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import Aura from "@primevue/themes/aura";
+
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+    devtools: { enabled: true },
 
-  nitro: {
-      compressPublicAssets: {
-          brotli: true
-      },
-  },
+    nitro: {
+        compressPublicAssets: {
+            brotli: true
+        },
+    },
 
-  runtimeConfig: {
-      url: process.env.URL,
-      cmsUrl: process.env.CMS_URL,
-  },
+    runtimeConfig: {
+        url: process.env.URL,
+        cmsUrl: process.env.CMS_URL,
+    },
 
-  modules: ["@nuxtjs/seo", ["@nuxtjs/google-fonts",
-  {
-      display: "swap",
-      families: {
-          Lexend: [ 100, 200, 300, 400, 500, 600, 700, 800, 900 ],
-          Poppins: [ 100, 200, 300, 400, 500, 600, 700, 800, 900 ],
-          "Plus Jakarta Sans": [ 100, 200, 300, 400, 500, 600, 700, 800, 900 ],
-      },
-  }], "nuxt-meilisearch", "nuxt-headlessui", "nuxt-windicss", "@nuxt/image", "@pinia/nuxt", "@vueuse/nuxt", "@vueuse/motion/nuxt", "@vee-validate/nuxt", "@nuxt/icon"],
+    modules: [
+        "@nuxtjs/seo",
+        "nuxt-meilisearch",
+        "nuxt-headlessui",
+        "@primevue/nuxt-module",
+        "@nuxt/image",
+        "@pinia/nuxt",
+        "@vueuse/nuxt",
+        "@vueuse/motion/nuxt",
+        "@vee-validate/nuxt",
+        "@nuxt/icon",
+        "@nuxt/fonts",
+        "@nuxtjs/tailwindcss"
+    ],
 
-  image: {
-      domains: [
-          "cms.formula.nu",
-          "formula-micro.dk"
-      ]
-  },
+    fonts: {
+        families: [
+            { name: "Plus Jakarta Sans", provider: "google" }
+        ],
+        defaults: {
+            weights: [ 100, 200, 300, 400, 500, 600, 700, 800, 900 ],
+            styles: [ "normal", "italic" ],
+            subsets: [
+                "cyrillic-ext",
+                "cyrillic",
+                "greek-ext",
+                "greek",
+                "vietnamese",
+                "latin-ext",
+                "latin",
+            ]
+        }
+    },
 
-  pinia: {
-      autoImports: [
-          "defineStore",
-      ]
-  },
+    image: {
+        domains: [
+            "cms.formula.nu",
+            "formula-micro.dk"
+        ]
+    },
 
-  meilisearch: {
-      hostUrl: "https://meilisearch.formula.nu/",
-      searchApiKey: "lEgZN0c4YnW2xiL_qz9HcPg1PJCcjuMa4431QELxN1Q",
-      instantSearch: true,
-  },
+    primevue: {
+        options: {
+            theme: {
+                preset: Aura
+            }
+        }
+    },
 
-  compatibilityDate: "2024-07-07",
+    pinia: {
+        autoImports: [
+            "defineStore",
+        ]
+    },
+
+    meilisearch: {
+        hostUrl: "https://meilisearch.formula.nu/",
+        searchApiKey: "lEgZN0c4YnW2xiL_qz9HcPg1PJCcjuMa4431QELxN1Q",
+        instantSearch: true,
+    },
+
+    compatibilityDate: "2024-07-07",
 });

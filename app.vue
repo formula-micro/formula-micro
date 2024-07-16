@@ -18,7 +18,7 @@
 </script>
 
 <template>
-    <main class="relative min-w-full min-h-full h-full font-plusjakartasans">
+    <main class="relative min-w-full min-h-full h-full bg-white font-plusjakartasans">
         <Navigation />
         
         <NuxtLayout>
