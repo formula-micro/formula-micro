@@ -96,7 +96,13 @@ fragment BannerHeroBlock on banner_hero_blocks {
                 attribution
             }
         }
+        text
+        page {
+            slug
+        }
     }
+    autoplay
+    interval
 }
 
 fragment TextHeroBlock on text_hero_blocks {

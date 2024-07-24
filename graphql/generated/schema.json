@@ -14,6 +14,7 @@
         "kind": "SCALAR",
         "name": "Boolean",
         "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -24,6 +25,7 @@
         "kind": "SCALAR",
         "name": "Date",
         "description": "ISO8601 Date values",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -34,6 +36,7 @@
         "kind": "ENUM",
         "name": "EventEnum",
         "description": null,
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -63,6 +66,7 @@
         "kind": "SCALAR",
         "name": "Float",
         "description": "The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](https://en.wikipedia.org/wiki/IEEE_floating_point).",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -73,6 +77,7 @@
         "kind": "SCALAR",
         "name": "GraphQLBigInt",
         "description": "BigInt value",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -83,6 +88,7 @@
         "kind": "SCALAR",
         "name": "GraphQLStringOrFloat",
         "description": "A Float or a String",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -93,6 +99,7 @@
         "kind": "SCALAR",
         "name": "Hash",
         "description": "Hashed string values",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -103,6 +110,7 @@
         "kind": "SCALAR",
         "name": "ID",
         "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -113,6 +121,7 @@
         "kind": "SCALAR",
         "name": "Int",
         "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -123,6 +132,7 @@
         "kind": "SCALAR",
         "name": "JSON",
         "description": "The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -133,6 +143,7 @@
         "kind": "OBJECT",
         "name": "Mutation",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "create_banner_hero_blocks_banners_item",
@@ -4926,156 +4937,6 @@
                   "ofType": {
                     "kind": "OBJECT",
                     "name": "page_categories",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "create_page_categories_translations_item",
-            "description": null,
-            "args": [
-              {
-                "name": "data",
-                "description": null,
-                "type": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "INPUT_OBJECT",
-                    "name": "create_page_categories_translations_input",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "create_page_categories_translations_items",
-            "description": null,
-            "args": [
-              {
-                "name": "data",
-                "description": null,
-                "type": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "name": null,
-                    "ofType": {
-                      "kind": "INPUT_OBJECT",
-                      "name": "create_page_categories_translations_input",
-                      "ofType": null
-                    }
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "filter",
-                "description": null,
-                "type": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "page_categories_translations_filter",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "limit",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "offset",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "page",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "search",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "sort",
-                "description": null,
-                "type": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "page_categories_translations",
                     "ofType": null
                   }
                 }
@@ -10187,68 +10048,6 @@
           },
           {
             "name": "delete_page_categories_items",
-            "description": null,
-            "args": [
-              {
-                "name": "ids",
-                "description": null,
-                "type": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "LIST",
-                    "name": null,
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "ID",
-                      "ofType": null
-                    }
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_many",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "delete_page_categories_translations_item",
-            "description": null,
-            "args": [
-              {
-                "name": "id",
-                "description": null,
-                "type": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "ID",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_one",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "delete_page_categories_translations_items",
             "description": null,
             "args": [
               {
@@ -21337,309 +21136,6 @@
             "deprecationReason": null
           },
           {
-            "name": "update_page_categories_translations_batch",
-            "description": null,
-            "args": [
-              {
-                "name": "data",
-                "description": null,
-                "type": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "name": null,
-                    "ofType": {
-                      "kind": "INPUT_OBJECT",
-                      "name": "update_page_categories_translations_input",
-                      "ofType": null
-                    }
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "filter",
-                "description": null,
-                "type": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "page_categories_translations_filter",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "limit",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "offset",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "page",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "search",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "sort",
-                "description": null,
-                "type": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "page_categories_translations",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "update_page_categories_translations_item",
-            "description": null,
-            "args": [
-              {
-                "name": "data",
-                "description": null,
-                "type": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "INPUT_OBJECT",
-                    "name": "update_page_categories_translations_input",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "id",
-                "description": null,
-                "type": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "ID",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "update_page_categories_translations_items",
-            "description": null,
-            "args": [
-              {
-                "name": "data",
-                "description": null,
-                "type": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "INPUT_OBJECT",
-                    "name": "update_page_categories_translations_input",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "filter",
-                "description": null,
-                "type": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "page_categories_translations_filter",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "ids",
-                "description": null,
-                "type": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "LIST",
-                    "name": null,
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "ID",
-                      "ofType": null
-                    }
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "limit",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "offset",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "page",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "search",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "sort",
-                "description": null,
-                "type": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "page_categories_translations",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "update_pages_batch",
             "description": null,
             "args": [
@@ -28012,6 +27508,7 @@
         "kind": "OBJECT",
         "name": "Query",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "banner_hero_blocks",
@@ -37850,310 +37347,6 @@
             "deprecationReason": null
           },
           {
-            "name": "page_categories_translations",
-            "description": null,
-            "args": [
-              {
-                "name": "filter",
-                "description": null,
-                "type": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "page_categories_translations_filter",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "limit",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "offset",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "page",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "search",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "sort",
-                "description": null,
-                "type": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "page_categories_translations",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "page_categories_translations_aggregated",
-            "description": null,
-            "args": [
-              {
-                "name": "filter",
-                "description": null,
-                "type": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "page_categories_translations_filter",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "groupBy",
-                "description": null,
-                "type": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "limit",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "offset",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "page",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "search",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "sort",
-                "description": null,
-                "type": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "LIST",
-                "name": null,
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "page_categories_translations_aggregated",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "page_categories_translations_by_id",
-            "description": null,
-            "args": [
-              {
-                "name": "id",
-                "description": null,
-                "type": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "ID",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "version",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "page_categories_translations_by_version",
-            "description": null,
-            "args": [
-              {
-                "name": "id",
-                "description": null,
-                "type": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "ID",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "version",
-                "description": null,
-                "type": {
-                  "kind": "NON_NULL",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "OBJECT",
-              "name": "version_page_categories_translations",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "pages",
             "description": null,
             "args": [
@@ -44547,6 +43740,7 @@
         "kind": "SCALAR",
         "name": "String",
         "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -44557,6 +43751,7 @@
         "kind": "OBJECT",
         "name": "Subscription",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "banner_hero_blocks_banners_mutated",
@@ -45859,31 +45054,6 @@
             "deprecationReason": null
           },
           {
-            "name": "page_categories_translations_mutated",
-            "description": null,
-            "args": [
-              {
-                "name": "event",
-                "description": null,
-                "type": {
-                  "kind": "ENUM",
-                  "name": "EventEnum",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_mutated",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "pages_blocks_mutated",
             "description": null,
             "args": [
@@ -46418,6 +45588,7 @@
         "kind": "OBJECT",
         "name": "__Directive",
         "description": "A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.\n\nIn some cases, you need to provide options to alter GraphQL's execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.",
+        "isOneOf": null,
         "fields": [
           {
             "name": "name",
@@ -46534,6 +45705,7 @@
         "kind": "ENUM",
         "name": "__DirectiveLocation",
         "description": "A Directive can be adjacent to many parts of the GraphQL language, a __DirectiveLocation describes one such possible adjacencies.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -46659,6 +45831,7 @@
         "kind": "OBJECT",
         "name": "__EnumValue",
         "description": "One possible value for a given Enum. Enum values are unique values, not a placeholder for a string or numeric value. However an Enum value is returned in a JSON response as a string.",
+        "isOneOf": null,
         "fields": [
           {
             "name": "name",
@@ -46726,6 +45899,7 @@
         "kind": "OBJECT",
         "name": "__Field",
         "description": "Object and Interface types are described by a list of Fields, each of which has a name, potentially a list of arguments, and a return type.",
+        "isOneOf": null,
         "fields": [
           {
             "name": "name",
@@ -46846,6 +46020,7 @@
         "kind": "OBJECT",
         "name": "__InputValue",
         "description": "Arguments provided to Fields or Directives and the input fields of an InputObject are represented as Input Values which describe their type and optionally a default value.",
+        "isOneOf": null,
         "fields": [
           {
             "name": "name",
@@ -46941,6 +46116,7 @@
         "kind": "OBJECT",
         "name": "__Schema",
         "description": "A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.",
+        "isOneOf": null,
         "fields": [
           {
             "name": "description",
@@ -47052,6 +46228,7 @@
         "kind": "OBJECT",
         "name": "__Type",
         "description": "The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the `__TypeKind` enum.\n\nDepending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name, description and optional `specifiedByURL`, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.",
+        "isOneOf": null,
         "fields": [
           {
             "name": "kind",
@@ -47255,6 +46432,18 @@
             },
             "isDeprecated": false,
             "deprecationReason": null
+          },
+          {
+            "name": "isOneOf",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
           }
         ],
         "inputFields": null,
@@ -47266,6 +46455,7 @@
         "kind": "ENUM",
         "name": "__TypeKind",
         "description": "An enum describing what kind of type a given `__Type` is.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -47325,7 +46515,20 @@
         "kind": "OBJECT",
         "name": "banner_hero_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
+          {
+            "name": "autoplay",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
           {
             "name": "banners",
             "description": null,
@@ -47503,6 +46706,18 @@
                 "name": "ID",
                 "ofType": null
               }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "interval",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -47808,6 +47023,7 @@
         "kind": "OBJECT",
         "name": "banner_hero_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -47939,7 +47155,20 @@
         "kind": "OBJECT",
         "name": "banner_hero_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
+          {
+            "name": "autoplay",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
           {
             "name": "banners",
             "description": null,
@@ -47990,6 +47219,18 @@
           },
           {
             "name": "id",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "interval",
             "description": null,
             "args": [],
             "type": {
@@ -48070,7 +47311,20 @@
         "kind": "OBJECT",
         "name": "banner_hero_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
+          {
+            "name": "interval",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Float",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
           {
             "name": "sort",
             "description": null,
@@ -48093,6 +47347,7 @@
         "kind": "OBJECT",
         "name": "banner_hero_blocks_banners",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "banner_hero_blocks_id",
@@ -48438,6 +47693,95 @@
             "deprecationReason": null
           },
           {
+            "name": "page",
+            "description": null,
+            "args": [
+              {
+                "name": "filter",
+                "description": null,
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "pages_filter",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "limit",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "offset",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "page",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "search",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "sort",
+                "description": null,
+                "type": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "pages",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "sort",
             "description": null,
             "args": [],
@@ -48451,6 +47795,18 @@
           },
           {
             "name": "status",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "text",
             "description": null,
             "args": [],
             "type": {
@@ -48661,6 +48017,7 @@
         "kind": "OBJECT",
         "name": "banner_hero_blocks_banners_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -48792,6 +48149,7 @@
         "kind": "OBJECT",
         "name": "banner_hero_blocks_banners_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "banner_hero_blocks_id",
@@ -48878,6 +48236,18 @@
             "deprecationReason": null
           },
           {
+            "name": "page",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "sort",
             "description": null,
             "args": [],
@@ -48891,6 +48261,18 @@
           },
           {
             "name": "status",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "text",
             "description": null,
             "args": [],
             "type": {
@@ -48947,6 +48329,7 @@
         "kind": "OBJECT",
         "name": "banner_hero_blocks_banners_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -48970,6 +48353,7 @@
         "kind": "INPUT_OBJECT",
         "name": "banner_hero_blocks_banners_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -49113,6 +48497,18 @@
             "deprecationReason": null
           },
           {
+            "name": "page",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "pages_filter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "sort",
             "description": null,
             "type": {
@@ -49126,6 +48522,18 @@
           },
           {
             "name": "status",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "string_filter_operators",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "text",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -49181,6 +48589,7 @@
         "kind": "OBJECT",
         "name": "banner_hero_blocks_banners_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -49232,6 +48641,7 @@
         "kind": "INPUT_OBJECT",
         "name": "banner_hero_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -49261,6 +48671,18 @@
                 "name": "banner_hero_blocks_filter",
                 "ofType": null
               }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "autoplay",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "boolean_filter_operators",
+              "ofType": null
             },
             "defaultValue": null,
             "isDeprecated": false,
@@ -49363,6 +48785,18 @@
             "deprecationReason": null
           },
           {
+            "name": "interval",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "number_filter_operators",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "sort",
             "description": null,
             "type": {
@@ -49431,6 +48865,7 @@
         "kind": "OBJECT",
         "name": "banner_hero_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -49482,6 +48917,7 @@
         "kind": "INPUT_OBJECT",
         "name": "big_int_filter_operators",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -49653,6 +49089,7 @@
         "kind": "OBJECT",
         "name": "blog_posts",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -50184,6 +49621,7 @@
         "kind": "OBJECT",
         "name": "blog_posts_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -50315,6 +49753,7 @@
         "kind": "OBJECT",
         "name": "blog_posts_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -50482,6 +49921,7 @@
         "kind": "OBJECT",
         "name": "blog_posts_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -50505,6 +49945,7 @@
         "kind": "INPUT_OBJECT",
         "name": "blog_posts_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -50752,6 +50193,7 @@
         "kind": "OBJECT",
         "name": "blog_posts_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -50803,6 +50245,7 @@
         "kind": "OBJECT",
         "name": "blog_posts_tags",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "blog_posts_id",
@@ -51008,6 +50451,7 @@
         "kind": "OBJECT",
         "name": "blog_posts_tags_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -51139,6 +50583,7 @@
         "kind": "OBJECT",
         "name": "blog_posts_tags_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "blog_posts_id",
@@ -51186,6 +50631,7 @@
         "kind": "OBJECT",
         "name": "blog_posts_tags_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -51209,6 +50655,7 @@
         "kind": "INPUT_OBJECT",
         "name": "blog_posts_tags_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -51288,6 +50735,7 @@
         "kind": "OBJECT",
         "name": "blog_posts_tags_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -51339,6 +50787,7 @@
         "kind": "INPUT_OBJECT",
         "name": "boolean_filter_operators",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -51398,6 +50847,7 @@
         "kind": "OBJECT",
         "name": "card_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "background_color",
@@ -52091,6 +51541,7 @@
         "kind": "OBJECT",
         "name": "card_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -52222,6 +51673,7 @@
         "kind": "OBJECT",
         "name": "card_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "background_color",
@@ -52425,6 +51877,7 @@
         "kind": "OBJECT",
         "name": "card_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -52448,6 +51901,7 @@
         "kind": "INPUT_OBJECT",
         "name": "card_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -52707,6 +52161,7 @@
         "kind": "OBJECT",
         "name": "card_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -52758,6 +52213,7 @@
         "kind": "OBJECT",
         "name": "cases",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "blocks",
@@ -53176,6 +52632,7 @@
         "kind": "OBJECT",
         "name": "cases_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -53307,6 +52764,7 @@
         "kind": "OBJECT",
         "name": "cases_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "blocks",
@@ -53450,6 +52908,7 @@
         "kind": "OBJECT",
         "name": "cases_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -53473,6 +52932,7 @@
         "kind": "OBJECT",
         "name": "cases_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "cases_id",
@@ -53625,6 +53085,7 @@
         "kind": "OBJECT",
         "name": "cases_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -53756,6 +53217,7 @@
         "kind": "OBJECT",
         "name": "cases_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "cases_id",
@@ -53827,6 +53289,7 @@
         "kind": "OBJECT",
         "name": "cases_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -53862,6 +53325,7 @@
         "kind": "INPUT_OBJECT",
         "name": "cases_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -54061,6 +53525,7 @@
         "kind": "UNION",
         "name": "cases_blocks_item_union",
         "description": null,
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -54117,6 +53582,7 @@
         "kind": "OBJECT",
         "name": "cases_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -54168,6 +53634,7 @@
         "kind": "INPUT_OBJECT",
         "name": "cases_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -54379,6 +53846,7 @@
         "kind": "OBJECT",
         "name": "cases_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -54430,6 +53898,7 @@
         "kind": "OBJECT",
         "name": "colors",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "class",
@@ -54824,6 +54293,7 @@
         "kind": "OBJECT",
         "name": "colors_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -54955,6 +54425,7 @@
         "kind": "OBJECT",
         "name": "colors_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "class",
@@ -55074,6 +54545,7 @@
         "kind": "OBJECT",
         "name": "colors_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -55097,6 +54569,7 @@
         "kind": "INPUT_OBJECT",
         "name": "colors_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -55284,6 +54757,7 @@
         "kind": "OBJECT",
         "name": "colors_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -55335,6 +54809,7 @@
         "kind": "OBJECT",
         "name": "colors_translations",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "colors_id",
@@ -55552,6 +55027,7 @@
         "kind": "OBJECT",
         "name": "colors_translations_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -55683,6 +55159,7 @@
         "kind": "OBJECT",
         "name": "colors_translations_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "colors_id",
@@ -55742,6 +55219,7 @@
         "kind": "OBJECT",
         "name": "colors_translations_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -55765,6 +55243,7 @@
         "kind": "INPUT_OBJECT",
         "name": "colors_translations_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -55856,6 +55335,7 @@
         "kind": "OBJECT",
         "name": "colors_translations_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -55907,6 +55387,7 @@
         "kind": "OBJECT",
         "name": "columns_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "blocks",
@@ -56414,6 +55895,7 @@
         "kind": "OBJECT",
         "name": "columns_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -56545,6 +56027,7 @@
         "kind": "OBJECT",
         "name": "columns_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "blocks",
@@ -56700,6 +56183,7 @@
         "kind": "OBJECT",
         "name": "columns_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -56723,6 +56207,7 @@
         "kind": "OBJECT",
         "name": "columns_blocks_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -56875,6 +56360,7 @@
         "kind": "OBJECT",
         "name": "columns_blocks_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -57006,6 +56492,7 @@
         "kind": "OBJECT",
         "name": "columns_blocks_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -57077,6 +56564,7 @@
         "kind": "OBJECT",
         "name": "columns_blocks_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -57112,6 +56600,7 @@
         "kind": "INPUT_OBJECT",
         "name": "columns_blocks_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -57275,6 +56764,7 @@
         "kind": "UNION",
         "name": "columns_blocks_blocks_item_union",
         "description": null,
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -57316,6 +56806,7 @@
         "kind": "OBJECT",
         "name": "columns_blocks_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -57367,6 +56858,7 @@
         "kind": "INPUT_OBJECT",
         "name": "columns_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -57590,6 +57082,7 @@
         "kind": "OBJECT",
         "name": "columns_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -57641,6 +57134,7 @@
         "kind": "OBJECT",
         "name": "contact_form_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "background_color",
@@ -58120,6 +57614,7 @@
         "kind": "OBJECT",
         "name": "contact_form_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -58251,6 +57746,7 @@
         "kind": "OBJECT",
         "name": "contact_form_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "background_color",
@@ -58394,6 +57890,7 @@
         "kind": "OBJECT",
         "name": "contact_form_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -58417,6 +57914,7 @@
         "kind": "INPUT_OBJECT",
         "name": "contact_form_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -58616,6 +58114,7 @@
         "kind": "OBJECT",
         "name": "contact_form_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -58667,6 +58166,7 @@
         "kind": "OBJECT",
         "name": "contact_forms",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "company",
@@ -58992,6 +58492,7 @@
         "kind": "OBJECT",
         "name": "contact_forms_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -59123,6 +58624,7 @@
         "kind": "OBJECT",
         "name": "contact_forms_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "company",
@@ -59266,6 +58768,7 @@
         "kind": "OBJECT",
         "name": "contact_forms_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -59289,6 +58792,7 @@
         "kind": "INPUT_OBJECT",
         "name": "contact_forms_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -59488,6 +58992,7 @@
         "kind": "OBJECT",
         "name": "contact_forms_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -59539,6 +59044,7 @@
         "kind": "OBJECT",
         "name": "cookie_selection_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -59905,6 +59411,7 @@
         "kind": "OBJECT",
         "name": "cookie_selection_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -60036,6 +59543,7 @@
         "kind": "OBJECT",
         "name": "cookie_selection_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -60143,6 +59651,7 @@
         "kind": "OBJECT",
         "name": "cookie_selection_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -60166,6 +59675,7 @@
         "kind": "INPUT_OBJECT",
         "name": "cookie_selection_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -60329,6 +59839,7 @@
         "kind": "OBJECT",
         "name": "cookie_selection_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -60380,6 +59891,7 @@
         "kind": "INPUT_OBJECT",
         "name": "count_function_filter_operators",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -60403,6 +59915,7 @@
         "kind": "OBJECT",
         "name": "count_functions",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "count",
@@ -60426,6 +59939,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_banner_hero_blocks_banners_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -60513,6 +60027,18 @@
             "deprecationReason": null
           },
           {
+            "name": "page",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "create_pages_input",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "sort",
             "description": null,
             "type": {
@@ -60526,6 +60052,18 @@
           },
           {
             "name": "status",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "text",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -60581,8 +60119,21 @@
         "kind": "INPUT_OBJECT",
         "name": "create_banner_hero_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
+          {
+            "name": "autoplay",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
           {
             "name": "banners",
             "description": null,
@@ -60641,6 +60192,18 @@
             "type": {
               "kind": "SCALAR",
               "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "interval",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
               "ofType": null
             },
             "defaultValue": null,
@@ -60716,6 +60279,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_blog_posts_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -60887,6 +60451,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_blog_posts_tags_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -60934,6 +60499,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_card_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -61137,6 +60703,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_cases_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -61208,6 +60775,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_cases_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -61355,6 +60923,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_colors_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -61478,6 +61047,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_colors_translations_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -61537,6 +61107,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_columns_blocks_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -61608,6 +61179,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_columns_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -61767,6 +61339,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_contact_form_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -61910,6 +61483,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_contact_forms_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -62053,6 +61627,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_cookie_selection_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -62160,6 +61735,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_customers_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -62279,6 +61855,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_directus_files_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -62598,6 +62175,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_directus_folders_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -62649,6 +62227,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_directus_roles_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -62788,6 +62367,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_directus_users_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -63111,6 +62691,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_disclosure_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -63254,6 +62835,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_frontpage_banners_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -63457,6 +63039,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_frontpage_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -63528,6 +63111,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_frontpage_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -63667,6 +63251,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_gallery_blocks_files_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -63726,6 +63311,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_gallery_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -63873,6 +63459,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_google_maps_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -63992,6 +63579,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_heights_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -64103,6 +63691,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_heights_translations_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -64162,6 +63751,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_image_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -64293,6 +63883,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_items_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -64448,6 +64039,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_languages_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -64499,6 +64091,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_navigation_menu_calls_to_action_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -64666,6 +64259,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_navigation_menu_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -64753,6 +64347,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_navigation_menu_items_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -64940,6 +64535,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_navigation_menu_subitems_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -65119,6 +64715,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_news_posts_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -65302,6 +64899,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_news_posts_tags_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -65349,6 +64947,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_page_categories_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -65403,13 +65002,9 @@
             "name": "slug",
             "description": null,
             "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
             },
             "defaultValue": null,
             "isDeprecated": false,
@@ -65458,67 +65053,9 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "create_page_categories_translations_input",
-        "description": null,
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "id",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "ID",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "languages_code",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "create_languages_input",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "name",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "page_categories_id",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "create_page_categories_input",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
         "name": "create_pages_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -65590,6 +65127,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_pages_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -65761,6 +65299,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_partners_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -65884,6 +65423,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_partners_blocks_partners_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -65943,6 +65483,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_partners_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -66074,6 +65615,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_printers_and_copiers_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -66217,6 +65759,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_printers_and_copiers_locations_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -66372,6 +65915,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_printers_and_copiers_models_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -66551,6 +66095,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_purchase_orders_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -66646,6 +66191,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_richtext_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -66801,6 +66347,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_sales_invoices_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -66896,6 +66443,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_sales_orders_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -66991,6 +66539,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_services_list_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -67162,6 +66711,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_services_list_blocks_links_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -67233,6 +66783,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_spacer_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -67328,6 +66879,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_tags_counters_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -67447,6 +66999,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_tags_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -67542,6 +67095,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_text_and_image_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -67733,6 +67287,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_text_hero_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -67912,6 +67467,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_widths_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -68023,6 +67579,7 @@
         "kind": "INPUT_OBJECT",
         "name": "create_widths_translations_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -68082,6 +67639,7 @@
         "kind": "OBJECT",
         "name": "customers",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -68383,6 +67941,7 @@
         "kind": "OBJECT",
         "name": "customers_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -68514,6 +68073,7 @@
         "kind": "OBJECT",
         "name": "customers_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -68633,6 +68193,7 @@
         "kind": "OBJECT",
         "name": "customers_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "number",
@@ -68668,6 +68229,7 @@
         "kind": "INPUT_OBJECT",
         "name": "customers_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -68843,6 +68405,7 @@
         "kind": "OBJECT",
         "name": "customers_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -68894,6 +68457,7 @@
         "kind": "INPUT_OBJECT",
         "name": "date_filter_operators",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -69065,6 +68629,7 @@
         "kind": "INPUT_OBJECT",
         "name": "datetime_function_filter_operators",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -69172,6 +68737,7 @@
         "kind": "OBJECT",
         "name": "datetime_functions",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "day",
@@ -69279,6 +68845,7 @@
         "kind": "OBJECT",
         "name": "delete_many",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "ids",
@@ -69310,6 +68877,7 @@
         "kind": "OBJECT",
         "name": "delete_one",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -69337,6 +68905,7 @@
         "kind": "OBJECT",
         "name": "directus_activity",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "action",
@@ -69678,6 +69247,7 @@
         "kind": "INPUT_OBJECT",
         "name": "directus_activity_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -69877,6 +69447,7 @@
         "kind": "OBJECT",
         "name": "directus_activity_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -69928,6 +69499,7 @@
         "kind": "OBJECT",
         "name": "directus_dashboards",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "color",
@@ -70225,6 +69797,7 @@
         "kind": "INPUT_OBJECT",
         "name": "directus_dashboards_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -70388,6 +69961,7 @@
         "kind": "OBJECT",
         "name": "directus_dashboards_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -70439,6 +70013,7 @@
         "kind": "OBJECT",
         "name": "directus_files",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "attribution",
@@ -71118,6 +70693,7 @@
         "kind": "INPUT_OBJECT",
         "name": "directus_files_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -71509,6 +71085,7 @@
         "kind": "OBJECT",
         "name": "directus_files_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -71560,6 +71137,7 @@
         "kind": "OBJECT",
         "name": "directus_flows",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "accountability",
@@ -72006,6 +71584,7 @@
         "kind": "INPUT_OBJECT",
         "name": "directus_flows_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -72241,6 +71820,7 @@
         "kind": "OBJECT",
         "name": "directus_flows_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -72292,6 +71872,7 @@
         "kind": "OBJECT",
         "name": "directus_folders",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -72424,6 +72005,7 @@
         "kind": "INPUT_OBJECT",
         "name": "directus_folders_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -72503,6 +72085,7 @@
         "kind": "OBJECT",
         "name": "directus_folders_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -72554,6 +72137,7 @@
         "kind": "OBJECT",
         "name": "directus_notifications",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -72847,6 +72431,7 @@
         "kind": "OBJECT",
         "name": "directus_notifications_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -72898,6 +72483,7 @@
         "kind": "OBJECT",
         "name": "directus_operations",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -73405,6 +72991,7 @@
         "kind": "INPUT_OBJECT",
         "name": "directus_operations_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -73616,6 +73203,7 @@
         "kind": "OBJECT",
         "name": "directus_operations_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -73667,6 +73255,7 @@
         "kind": "OBJECT",
         "name": "directus_panels",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "color",
@@ -74064,6 +73653,7 @@
         "kind": "INPUT_OBJECT",
         "name": "directus_panels_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -74311,6 +73901,7 @@
         "kind": "OBJECT",
         "name": "directus_panels_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -74362,6 +73953,7 @@
         "kind": "OBJECT",
         "name": "directus_permissions",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "action",
@@ -74594,6 +74186,7 @@
         "kind": "OBJECT",
         "name": "directus_permissions_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -74645,6 +74238,7 @@
         "kind": "OBJECT",
         "name": "directus_presets",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "bookmark",
@@ -75006,6 +74600,7 @@
         "kind": "OBJECT",
         "name": "directus_presets_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -75057,6 +74652,7 @@
         "kind": "OBJECT",
         "name": "directus_revisions",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "activity",
@@ -75431,6 +75027,7 @@
         "kind": "INPUT_OBJECT",
         "name": "directus_revisions_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -75594,6 +75191,7 @@
         "kind": "OBJECT",
         "name": "directus_revisions_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -75645,6 +75243,7 @@
         "kind": "OBJECT",
         "name": "directus_roles",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "admin_access",
@@ -75877,6 +75476,7 @@
         "kind": "INPUT_OBJECT",
         "name": "directus_roles_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -76040,6 +75640,7 @@
         "kind": "OBJECT",
         "name": "directus_roles_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -76091,6 +75692,7 @@
         "kind": "OBJECT",
         "name": "directus_settings",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "auth_login_attempts",
@@ -77052,6 +76654,7 @@
         "kind": "OBJECT",
         "name": "directus_settings_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -77103,6 +76706,7 @@
         "kind": "OBJECT",
         "name": "directus_shares",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -77460,6 +77064,7 @@
         "kind": "OBJECT",
         "name": "directus_shares_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -77511,6 +77116,7 @@
         "kind": "OBJECT",
         "name": "directus_translations",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -77586,6 +77192,7 @@
         "kind": "OBJECT",
         "name": "directus_translations_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -77637,6 +77244,7 @@
         "kind": "OBJECT",
         "name": "directus_users",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "appearance",
@@ -78178,6 +77786,7 @@
         "kind": "INPUT_OBJECT",
         "name": "directus_users_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -78593,6 +78202,7 @@
         "kind": "OBJECT",
         "name": "directus_users_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -78644,6 +78254,7 @@
         "kind": "OBJECT",
         "name": "directus_versions",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -78969,6 +78580,7 @@
         "kind": "INPUT_OBJECT",
         "name": "directus_versions_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -79156,6 +78768,7 @@
         "kind": "OBJECT",
         "name": "directus_versions_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -79207,6 +78820,7 @@
         "kind": "OBJECT",
         "name": "directus_webhooks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "actions",
@@ -79471,6 +79085,7 @@
         "kind": "OBJECT",
         "name": "directus_webhooks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -79522,6 +79137,7 @@
         "kind": "OBJECT",
         "name": "disclosure_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -79936,6 +79552,7 @@
         "kind": "OBJECT",
         "name": "disclosure_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -80067,6 +79684,7 @@
         "kind": "OBJECT",
         "name": "disclosure_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -80210,6 +79828,7 @@
         "kind": "OBJECT",
         "name": "disclosure_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -80233,6 +79852,7 @@
         "kind": "INPUT_OBJECT",
         "name": "disclosure_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -80444,6 +80064,7 @@
         "kind": "OBJECT",
         "name": "disclosure_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -80495,6 +80116,7 @@
         "kind": "OBJECT",
         "name": "frontpage",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "blocks",
@@ -80994,6 +80616,7 @@
         "kind": "OBJECT",
         "name": "frontpage_banners",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "button_link",
@@ -81610,6 +81233,7 @@
         "kind": "OBJECT",
         "name": "frontpage_banners_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -81741,6 +81365,7 @@
         "kind": "OBJECT",
         "name": "frontpage_banners_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "button_link",
@@ -81944,6 +81569,7 @@
         "kind": "OBJECT",
         "name": "frontpage_banners_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "frontpage_id",
@@ -81979,6 +81605,7 @@
         "kind": "INPUT_OBJECT",
         "name": "frontpage_banners_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -82238,6 +81865,7 @@
         "kind": "OBJECT",
         "name": "frontpage_banners_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -82289,6 +81917,7 @@
         "kind": "OBJECT",
         "name": "frontpage_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -82441,6 +82070,7 @@
         "kind": "OBJECT",
         "name": "frontpage_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -82572,6 +82202,7 @@
         "kind": "OBJECT",
         "name": "frontpage_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -82643,6 +82274,7 @@
         "kind": "OBJECT",
         "name": "frontpage_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "frontpage_id",
@@ -82690,6 +82322,7 @@
         "kind": "INPUT_OBJECT",
         "name": "frontpage_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -82877,6 +82510,7 @@
         "kind": "UNION",
         "name": "frontpage_blocks_item_union",
         "description": null,
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -82928,6 +82562,7 @@
         "kind": "OBJECT",
         "name": "frontpage_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -82979,6 +82614,7 @@
         "kind": "INPUT_OBJECT",
         "name": "frontpage_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -83190,6 +82826,7 @@
         "kind": "OBJECT",
         "name": "frontpage_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -83241,6 +82878,7 @@
         "kind": "OBJECT",
         "name": "gallery_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -83736,6 +83374,7 @@
         "kind": "OBJECT",
         "name": "gallery_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -83867,6 +83506,7 @@
         "kind": "OBJECT",
         "name": "gallery_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -84010,6 +83650,7 @@
         "kind": "OBJECT",
         "name": "gallery_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -84033,6 +83674,7 @@
         "kind": "OBJECT",
         "name": "gallery_blocks_files",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "directus_files_id",
@@ -84250,6 +83892,7 @@
         "kind": "OBJECT",
         "name": "gallery_blocks_files_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -84381,6 +84024,7 @@
         "kind": "OBJECT",
         "name": "gallery_blocks_files_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "directus_files_id",
@@ -84440,6 +84084,7 @@
         "kind": "OBJECT",
         "name": "gallery_blocks_files_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -84475,6 +84120,7 @@
         "kind": "INPUT_OBJECT",
         "name": "gallery_blocks_files_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -84566,6 +84212,7 @@
         "kind": "OBJECT",
         "name": "gallery_blocks_files_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -84617,6 +84264,7 @@
         "kind": "INPUT_OBJECT",
         "name": "gallery_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -84828,6 +84476,7 @@
         "kind": "OBJECT",
         "name": "gallery_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -84879,6 +84528,7 @@
         "kind": "OBJECT",
         "name": "google_maps_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -85257,6 +84907,7 @@
         "kind": "OBJECT",
         "name": "google_maps_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -85388,6 +85039,7 @@
         "kind": "OBJECT",
         "name": "google_maps_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -85507,6 +85159,7 @@
         "kind": "OBJECT",
         "name": "google_maps_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -85530,6 +85183,7 @@
         "kind": "INPUT_OBJECT",
         "name": "google_maps_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -85705,6 +85359,7 @@
         "kind": "OBJECT",
         "name": "google_maps_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -85756,6 +85411,7 @@
         "kind": "INPUT_OBJECT",
         "name": "hash_filter_operators",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -85815,6 +85471,7 @@
         "kind": "OBJECT",
         "name": "heights",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "class",
@@ -86197,6 +85854,7 @@
         "kind": "OBJECT",
         "name": "heights_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -86328,6 +85986,7 @@
         "kind": "OBJECT",
         "name": "heights_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "class",
@@ -86435,6 +86094,7 @@
         "kind": "OBJECT",
         "name": "heights_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -86458,6 +86118,7 @@
         "kind": "INPUT_OBJECT",
         "name": "heights_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -86633,6 +86294,7 @@
         "kind": "OBJECT",
         "name": "heights_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -86684,6 +86346,7 @@
         "kind": "OBJECT",
         "name": "heights_translations",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "heights_id",
@@ -86901,6 +86564,7 @@
         "kind": "OBJECT",
         "name": "heights_translations_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -87032,6 +86696,7 @@
         "kind": "OBJECT",
         "name": "heights_translations_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "heights_id",
@@ -87091,6 +86756,7 @@
         "kind": "OBJECT",
         "name": "heights_translations_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -87114,6 +86780,7 @@
         "kind": "INPUT_OBJECT",
         "name": "heights_translations_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -87205,6 +86872,7 @@
         "kind": "OBJECT",
         "name": "heights_translations_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -87256,6 +86924,7 @@
         "kind": "OBJECT",
         "name": "image_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -87646,6 +87315,7 @@
         "kind": "OBJECT",
         "name": "image_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -87777,6 +87447,7 @@
         "kind": "OBJECT",
         "name": "image_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -87908,6 +87579,7 @@
         "kind": "OBJECT",
         "name": "image_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -87931,6 +87603,7 @@
         "kind": "INPUT_OBJECT",
         "name": "image_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -88118,6 +87791,7 @@
         "kind": "OBJECT",
         "name": "image_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -88169,6 +87843,7 @@
         "kind": "OBJECT",
         "name": "items",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -88506,6 +88181,7 @@
         "kind": "OBJECT",
         "name": "items_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -88637,6 +88313,7 @@
         "kind": "OBJECT",
         "name": "items_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -88792,6 +88469,7 @@
         "kind": "OBJECT",
         "name": "items_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sales_price",
@@ -88827,6 +88505,7 @@
         "kind": "INPUT_OBJECT",
         "name": "items_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -89038,6 +88717,7 @@
         "kind": "OBJECT",
         "name": "items_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -89089,6 +88769,7 @@
         "kind": "OBJECT",
         "name": "languages",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "code",
@@ -89140,6 +88821,7 @@
         "kind": "OBJECT",
         "name": "languages_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "count",
@@ -89199,6 +88881,7 @@
         "kind": "OBJECT",
         "name": "languages_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "code",
@@ -89246,6 +88929,7 @@
         "kind": "INPUT_OBJECT",
         "name": "languages_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -89325,6 +89009,7 @@
         "kind": "OBJECT",
         "name": "languages_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -89376,6 +89061,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -89734,6 +89420,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_calls_to_action",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -90314,6 +90001,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_calls_to_action_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -90445,6 +90133,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_calls_to_action_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -90612,6 +90301,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_calls_to_action_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -90635,6 +90325,7 @@
         "kind": "INPUT_OBJECT",
         "name": "navigation_menu_calls_to_action_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -90858,6 +90549,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_calls_to_action_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -90909,6 +90601,7 @@
         "kind": "INPUT_OBJECT",
         "name": "navigation_menu_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -91060,6 +90753,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_items",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "calls_to_action",
@@ -91761,6 +91455,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_items_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -91892,6 +91587,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_items_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "calls_to_action",
@@ -92071,6 +91767,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_items_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -92094,6 +91791,7 @@
         "kind": "INPUT_OBJECT",
         "name": "navigation_menu_items_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -92353,6 +92051,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_items_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -92404,6 +92103,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -92455,6 +92155,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_subitems",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -93047,6 +92748,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_subitems_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -93178,6 +92880,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_subitems_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -93357,6 +93060,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_subitems_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -93380,6 +93084,7 @@
         "kind": "INPUT_OBJECT",
         "name": "navigation_menu_subitems_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -93615,6 +93320,7 @@
         "kind": "OBJECT",
         "name": "navigation_menu_subitems_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -93666,6 +93372,7 @@
         "kind": "OBJECT",
         "name": "news_posts",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -94221,6 +93928,7 @@
         "kind": "OBJECT",
         "name": "news_posts_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -94352,6 +94060,7 @@
         "kind": "OBJECT",
         "name": "news_posts_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -94531,6 +94240,7 @@
         "kind": "OBJECT",
         "name": "news_posts_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -94554,6 +94264,7 @@
         "kind": "INPUT_OBJECT",
         "name": "news_posts_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -94825,6 +94536,7 @@
         "kind": "OBJECT",
         "name": "news_posts_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -94876,6 +94588,7 @@
         "kind": "OBJECT",
         "name": "news_posts_tags",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -95081,6 +94794,7 @@
         "kind": "OBJECT",
         "name": "news_posts_tags_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -95212,6 +94926,7 @@
         "kind": "OBJECT",
         "name": "news_posts_tags_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -95259,6 +94974,7 @@
         "kind": "OBJECT",
         "name": "news_posts_tags_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -95282,6 +94998,7 @@
         "kind": "INPUT_OBJECT",
         "name": "news_posts_tags_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -95361,6 +95078,7 @@
         "kind": "OBJECT",
         "name": "news_posts_tags_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -95412,6 +95130,7 @@
         "kind": "INPUT_OBJECT",
         "name": "number_filter_operators",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -95583,6 +95302,7 @@
         "kind": "OBJECT",
         "name": "page_categories",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -95665,13 +95385,9 @@
             "description": null,
             "args": [],
             "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -95876,6 +95592,7 @@
         "kind": "OBJECT",
         "name": "page_categories_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -96007,6 +95724,7 @@
         "kind": "OBJECT",
         "name": "page_categories_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -96114,6 +95832,7 @@
         "kind": "OBJECT",
         "name": "page_categories_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -96137,6 +95856,7 @@
         "kind": "INPUT_OBJECT",
         "name": "page_categories_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -96300,6 +96020,7 @@
         "kind": "OBJECT",
         "name": "page_categories_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -96308,578 +96029,6 @@
             "type": {
               "kind": "OBJECT",
               "name": "page_categories",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "event",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "ENUM",
-              "name": "EventEnum",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "key",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "OBJECT",
-        "name": "page_categories_translations",
-        "description": null,
-        "fields": [
-          {
-            "name": "id",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "languages_code",
-            "description": null,
-            "args": [
-              {
-                "name": "filter",
-                "description": null,
-                "type": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "languages_filter",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "limit",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "offset",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "page",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "search",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "sort",
-                "description": null,
-                "type": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "OBJECT",
-              "name": "languages",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "name",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "page_categories_id",
-            "description": null,
-            "args": [
-              {
-                "name": "filter",
-                "description": null,
-                "type": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "page_categories_filter",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "limit",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "offset",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "page",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "search",
-                "description": null,
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              },
-              {
-                "name": "sort",
-                "description": null,
-                "type": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "String",
-                    "ofType": null
-                  }
-                },
-                "defaultValue": null,
-                "isDeprecated": false,
-                "deprecationReason": null
-              }
-            ],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "OBJECT",
-        "name": "page_categories_translations_aggregated",
-        "description": null,
-        "fields": [
-          {
-            "name": "avg",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_fields",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "avgDistinct",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_fields",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "count",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_count",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "countAll",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "Int",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "countDistinct",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_count",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "group",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "JSON",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "max",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_fields",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "min",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_fields",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "sum",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_fields",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "sumDistinct",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_fields",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "OBJECT",
-        "name": "page_categories_translations_aggregated_count",
-        "description": null,
-        "fields": [
-          {
-            "name": "id",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "Int",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "languages_code",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "Int",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "name",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "Int",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "page_categories_id",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "Int",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "OBJECT",
-        "name": "page_categories_translations_aggregated_fields",
-        "description": null,
-        "fields": [
-          {
-            "name": "id",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "Float",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "page_categories_translations_filter",
-        "description": null,
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "_and",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "INPUT_OBJECT",
-                "name": "page_categories_translations_filter",
-                "ofType": null
-              }
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "_or",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "INPUT_OBJECT",
-                "name": "page_categories_translations_filter",
-                "ofType": null
-              }
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "id",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "number_filter_operators",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "languages_code",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "languages_filter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "name",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "string_filter_operators",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "page_categories_id",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "page_categories_filter",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "OBJECT",
-        "name": "page_categories_translations_mutated",
-        "description": null,
-        "fields": [
-          {
-            "name": "data",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations",
               "ofType": null
             },
             "isDeprecated": false,
@@ -96923,6 +96072,7 @@
         "kind": "OBJECT",
         "name": "pages",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "blocks",
@@ -97442,6 +96592,7 @@
         "kind": "OBJECT",
         "name": "pages_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -97573,6 +96724,7 @@
         "kind": "OBJECT",
         "name": "pages_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "blocks",
@@ -97740,6 +96892,7 @@
         "kind": "OBJECT",
         "name": "pages_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -97763,6 +96916,7 @@
         "kind": "OBJECT",
         "name": "pages_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -97915,6 +97069,7 @@
         "kind": "OBJECT",
         "name": "pages_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -98046,6 +97201,7 @@
         "kind": "OBJECT",
         "name": "pages_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -98117,6 +97273,7 @@
         "kind": "OBJECT",
         "name": "pages_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -98152,6 +97309,7 @@
         "kind": "INPUT_OBJECT",
         "name": "pages_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -98399,6 +97557,7 @@
         "kind": "UNION",
         "name": "pages_blocks_item_union",
         "description": null,
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -98475,6 +97634,7 @@
         "kind": "OBJECT",
         "name": "pages_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -98526,6 +97686,7 @@
         "kind": "INPUT_OBJECT",
         "name": "pages_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -98761,6 +97922,7 @@
         "kind": "OBJECT",
         "name": "pages_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -98812,6 +97974,7 @@
         "kind": "OBJECT",
         "name": "partners",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -99202,6 +98365,7 @@
         "kind": "OBJECT",
         "name": "partners_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -99333,6 +98497,7 @@
         "kind": "OBJECT",
         "name": "partners_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -99464,6 +98629,7 @@
         "kind": "OBJECT",
         "name": "partners_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -99487,6 +98653,7 @@
         "kind": "OBJECT",
         "name": "partners_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -99881,6 +99048,7 @@
         "kind": "OBJECT",
         "name": "partners_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -100012,6 +99180,7 @@
         "kind": "OBJECT",
         "name": "partners_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -100131,6 +99300,7 @@
         "kind": "OBJECT",
         "name": "partners_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -100154,6 +99324,7 @@
         "kind": "INPUT_OBJECT",
         "name": "partners_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -100341,6 +99512,7 @@
         "kind": "OBJECT",
         "name": "partners_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -100392,6 +99564,7 @@
         "kind": "OBJECT",
         "name": "partners_blocks_partners",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -100609,6 +99782,7 @@
         "kind": "OBJECT",
         "name": "partners_blocks_partners_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -100740,6 +99914,7 @@
         "kind": "OBJECT",
         "name": "partners_blocks_partners_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -100799,6 +99974,7 @@
         "kind": "OBJECT",
         "name": "partners_blocks_partners_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -100834,6 +100010,7 @@
         "kind": "INPUT_OBJECT",
         "name": "partners_blocks_partners_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -100925,6 +100102,7 @@
         "kind": "OBJECT",
         "name": "partners_blocks_partners_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -100976,6 +100154,7 @@
         "kind": "INPUT_OBJECT",
         "name": "partners_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -101163,6 +100342,7 @@
         "kind": "OBJECT",
         "name": "partners_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -101214,6 +100394,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "customer",
@@ -101770,6 +100951,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -101901,6 +101083,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "customer",
@@ -102044,6 +101227,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -102067,6 +101251,7 @@
         "kind": "INPUT_OBJECT",
         "name": "printers_and_copiers_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -102266,6 +101451,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_locations",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "address",
@@ -102680,6 +101866,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_locations_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -102811,6 +101998,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_locations_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "address",
@@ -102966,6 +102154,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_locations_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "post_code",
@@ -103001,6 +102190,7 @@
         "kind": "INPUT_OBJECT",
         "name": "printers_and_copiers_locations_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -103212,6 +102402,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_locations_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -103263,6 +102454,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_models",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "comments",
@@ -104086,6 +103278,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_models_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -104217,6 +103410,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_models_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "comments",
@@ -104396,6 +103590,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_models_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -104419,6 +103614,7 @@
         "kind": "INPUT_OBJECT",
         "name": "printers_and_copiers_models_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -104654,6 +103850,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_models_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -104705,6 +103902,7 @@
         "kind": "OBJECT",
         "name": "printers_and_copiers_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -104756,6 +103954,7 @@
         "kind": "OBJECT",
         "name": "purchase_orders",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -105033,6 +104232,7 @@
         "kind": "OBJECT",
         "name": "purchase_orders_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -105164,6 +104364,7 @@
         "kind": "OBJECT",
         "name": "purchase_orders_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -105259,6 +104460,7 @@
         "kind": "OBJECT",
         "name": "purchase_orders_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -105282,6 +104484,7 @@
         "kind": "INPUT_OBJECT",
         "name": "purchase_orders_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -105433,6 +104636,7 @@
         "kind": "OBJECT",
         "name": "purchase_orders_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -105484,6 +104688,7 @@
         "kind": "OBJECT",
         "name": "richtext_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -105910,6 +105115,7 @@
         "kind": "OBJECT",
         "name": "richtext_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -106041,6 +105247,7 @@
         "kind": "OBJECT",
         "name": "richtext_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -106196,6 +105403,7 @@
         "kind": "OBJECT",
         "name": "richtext_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -106219,6 +105427,7 @@
         "kind": "INPUT_OBJECT",
         "name": "richtext_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -106442,6 +105651,7 @@
         "kind": "OBJECT",
         "name": "richtext_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -106493,6 +105703,7 @@
         "kind": "OBJECT",
         "name": "sales_invoices",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -106770,6 +105981,7 @@
         "kind": "OBJECT",
         "name": "sales_invoices_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -106901,6 +106113,7 @@
         "kind": "OBJECT",
         "name": "sales_invoices_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -106996,6 +106209,7 @@
         "kind": "OBJECT",
         "name": "sales_invoices_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -107019,6 +106233,7 @@
         "kind": "INPUT_OBJECT",
         "name": "sales_invoices_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -107170,6 +106385,7 @@
         "kind": "OBJECT",
         "name": "sales_invoices_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -107221,6 +106437,7 @@
         "kind": "OBJECT",
         "name": "sales_orders",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -107498,6 +106715,7 @@
         "kind": "OBJECT",
         "name": "sales_orders_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -107629,6 +106847,7 @@
         "kind": "OBJECT",
         "name": "sales_orders_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -107724,6 +106943,7 @@
         "kind": "OBJECT",
         "name": "sales_orders_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -107747,6 +106967,7 @@
         "kind": "INPUT_OBJECT",
         "name": "sales_orders_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -107898,6 +107119,7 @@
         "kind": "OBJECT",
         "name": "sales_orders_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -107949,6 +107171,7 @@
         "kind": "OBJECT",
         "name": "services_list_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "background_color",
@@ -108545,6 +107768,7 @@
         "kind": "OBJECT",
         "name": "services_list_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -108676,6 +107900,7 @@
         "kind": "OBJECT",
         "name": "services_list_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "background_color",
@@ -108843,6 +108068,7 @@
         "kind": "OBJECT",
         "name": "services_list_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -108866,6 +108092,7 @@
         "kind": "INPUT_OBJECT",
         "name": "services_list_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -109101,6 +108328,7 @@
         "kind": "OBJECT",
         "name": "services_list_blocks_links",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -109253,6 +108481,7 @@
         "kind": "OBJECT",
         "name": "services_list_blocks_links_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -109384,6 +108613,7 @@
         "kind": "OBJECT",
         "name": "services_list_blocks_links_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -109455,6 +108685,7 @@
         "kind": "OBJECT",
         "name": "services_list_blocks_links_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -109490,6 +108721,7 @@
         "kind": "INPUT_OBJECT",
         "name": "services_list_blocks_links_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -109629,6 +108861,7 @@
         "kind": "UNION",
         "name": "services_list_blocks_links_item_union",
         "description": null,
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -109660,6 +108893,7 @@
         "kind": "OBJECT",
         "name": "services_list_blocks_links_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -109711,6 +108945,7 @@
         "kind": "OBJECT",
         "name": "services_list_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -109762,6 +108997,7 @@
         "kind": "OBJECT",
         "name": "spacer_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -110116,6 +109352,7 @@
         "kind": "OBJECT",
         "name": "spacer_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -110247,6 +109484,7 @@
         "kind": "OBJECT",
         "name": "spacer_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -110342,6 +109580,7 @@
         "kind": "OBJECT",
         "name": "spacer_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -110365,6 +109604,7 @@
         "kind": "INPUT_OBJECT",
         "name": "spacer_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -110516,6 +109756,7 @@
         "kind": "OBJECT",
         "name": "spacer_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -110567,6 +109808,7 @@
         "kind": "INPUT_OBJECT",
         "name": "string_filter_operators",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -110814,6 +110056,7 @@
         "kind": "OBJECT",
         "name": "tags",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -111091,6 +110334,7 @@
         "kind": "OBJECT",
         "name": "tags_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -111222,6 +110466,7 @@
         "kind": "OBJECT",
         "name": "tags_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -111317,6 +110562,7 @@
         "kind": "OBJECT",
         "name": "tags_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -111340,6 +110586,7 @@
         "kind": "OBJECT",
         "name": "tags_counters",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -111718,6 +110965,7 @@
         "kind": "OBJECT",
         "name": "tags_counters_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -111849,6 +111097,7 @@
         "kind": "OBJECT",
         "name": "tags_counters_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -111968,6 +111217,7 @@
         "kind": "OBJECT",
         "name": "tags_counters_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "count",
@@ -112003,6 +111253,7 @@
         "kind": "INPUT_OBJECT",
         "name": "tags_counters_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -112178,6 +111429,7 @@
         "kind": "OBJECT",
         "name": "tags_counters_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -112229,6 +111481,7 @@
         "kind": "INPUT_OBJECT",
         "name": "tags_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -112380,6 +111633,7 @@
         "kind": "OBJECT",
         "name": "tags_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -112431,6 +111685,7 @@
         "kind": "OBJECT",
         "name": "text_and_image_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -112970,6 +112225,7 @@
         "kind": "OBJECT",
         "name": "text_and_image_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -113101,6 +112357,7 @@
         "kind": "OBJECT",
         "name": "text_and_image_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -113292,6 +112549,7 @@
         "kind": "OBJECT",
         "name": "text_and_image_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -113315,6 +112573,7 @@
         "kind": "INPUT_OBJECT",
         "name": "text_and_image_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -113574,6 +112833,7 @@
         "kind": "OBJECT",
         "name": "text_and_image_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -113625,6 +112885,7 @@
         "kind": "OBJECT",
         "name": "text_hero_blocks",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "background_color",
@@ -114294,6 +113555,7 @@
         "kind": "OBJECT",
         "name": "text_hero_blocks_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -114425,6 +113687,7 @@
         "kind": "OBJECT",
         "name": "text_hero_blocks_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "background_color",
@@ -114604,6 +113867,7 @@
         "kind": "OBJECT",
         "name": "text_hero_blocks_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -114627,6 +113891,7 @@
         "kind": "INPUT_OBJECT",
         "name": "text_hero_blocks_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -114862,6 +114127,7 @@
         "kind": "OBJECT",
         "name": "text_hero_blocks_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -114913,6 +114179,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_banner_hero_blocks_banners_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -115000,6 +114267,18 @@
             "deprecationReason": null
           },
           {
+            "name": "page",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "update_pages_input",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "sort",
             "description": null,
             "type": {
@@ -115013,6 +114292,18 @@
           },
           {
             "name": "status",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "text",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -115068,8 +114359,21 @@
         "kind": "INPUT_OBJECT",
         "name": "update_banner_hero_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
+          {
+            "name": "autoplay",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
           {
             "name": "banners",
             "description": null,
@@ -115128,6 +114432,18 @@
             "type": {
               "kind": "SCALAR",
               "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "interval",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
               "ofType": null
             },
             "defaultValue": null,
@@ -115203,6 +114519,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_blog_posts_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -115374,6 +114691,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_blog_posts_tags_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -115421,6 +114739,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_card_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -115624,6 +114943,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_cases_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -115695,6 +115015,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_cases_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -115842,6 +115163,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_colors_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -115965,6 +115287,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_colors_translations_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -116024,6 +115347,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_columns_blocks_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -116095,6 +115419,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_columns_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -116254,6 +115579,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_contact_form_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -116397,6 +115723,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_contact_forms_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -116540,6 +115867,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_cookie_selection_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -116647,6 +115975,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_customers_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -116766,6 +116095,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_directus_files_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -117077,6 +116407,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_directus_folders_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -117124,6 +116455,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_directus_roles_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -117251,6 +116583,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_directus_users_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -117574,6 +116907,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_disclosure_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -117717,6 +117051,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_frontpage_banners_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -117920,6 +117255,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_frontpage_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -117991,6 +117327,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_frontpage_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -118130,6 +117467,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_gallery_blocks_files_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -118189,6 +117527,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_gallery_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -118336,6 +117675,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_google_maps_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -118455,6 +117795,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_heights_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -118566,6 +117907,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_heights_translations_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -118625,6 +117967,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_image_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -118756,6 +118099,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_items_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -118911,6 +118255,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_languages_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -118958,6 +118303,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_navigation_menu_calls_to_action_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -119125,6 +118471,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_navigation_menu_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -119212,6 +118559,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_navigation_menu_items_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -119399,6 +118747,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_navigation_menu_subitems_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -119578,6 +118927,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_news_posts_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -119761,6 +119111,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_news_posts_tags_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -119808,6 +119159,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_page_categories_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -119913,67 +119265,9 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "update_page_categories_translations_input",
-        "description": null,
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "id",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "ID",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "languages_code",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "update_languages_input",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "name",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "page_categories_id",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "update_page_categories_input",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
         "name": "update_pages_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -120045,6 +119339,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_pages_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -120216,6 +119511,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_partners_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -120339,6 +119635,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_partners_blocks_partners_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -120398,6 +119695,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_partners_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -120529,6 +119827,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_printers_and_copiers_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -120672,6 +119971,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_printers_and_copiers_locations_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -120827,6 +120127,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_printers_and_copiers_models_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -121006,6 +120307,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_purchase_orders_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -121101,6 +120403,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_richtext_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -121256,6 +120559,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_sales_invoices_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -121351,6 +120655,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_sales_orders_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -121446,6 +120751,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_services_list_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -121617,6 +120923,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_services_list_blocks_links_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -121688,6 +120995,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_spacer_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -121783,6 +121091,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_tags_counters_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -121902,6 +121211,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_tags_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -121997,6 +121307,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_text_and_image_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -122188,6 +121499,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_text_hero_blocks_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -122367,6 +121679,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_widths_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -122478,6 +121791,7 @@
         "kind": "INPUT_OBJECT",
         "name": "update_widths_translations_input",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -122537,7 +121851,20 @@
         "kind": "OBJECT",
         "name": "version_banner_hero_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
+          {
+            "name": "autoplay",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
           {
             "name": "banners",
             "description": null,
@@ -122593,6 +121920,18 @@
             "type": {
               "kind": "SCALAR",
               "name": "ID",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "interval",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
               "ofType": null
             },
             "isDeprecated": false,
@@ -122668,6 +122007,7 @@
         "kind": "OBJECT",
         "name": "version_banner_hero_blocks_banners",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "banner_hero_blocks_id",
@@ -122754,6 +122094,18 @@
             "deprecationReason": null
           },
           {
+            "name": "page",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "JSON",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "sort",
             "description": null,
             "args": [],
@@ -122767,6 +122119,18 @@
           },
           {
             "name": "status",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "text",
             "description": null,
             "args": [],
             "type": {
@@ -122823,6 +122187,7 @@
         "kind": "OBJECT",
         "name": "version_blog_posts",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -122990,6 +122355,7 @@
         "kind": "OBJECT",
         "name": "version_blog_posts_tags",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "blog_posts_id",
@@ -123037,6 +122403,7 @@
         "kind": "OBJECT",
         "name": "version_card_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "background_color",
@@ -123240,6 +122607,7 @@
         "kind": "OBJECT",
         "name": "version_cases",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "blocks",
@@ -123383,6 +122751,7 @@
         "kind": "OBJECT",
         "name": "version_cases_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "cases_id",
@@ -123454,6 +122823,7 @@
         "kind": "OBJECT",
         "name": "version_colors",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "class",
@@ -123573,6 +122943,7 @@
         "kind": "OBJECT",
         "name": "version_colors_translations",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "colors_id",
@@ -123632,6 +123003,7 @@
         "kind": "OBJECT",
         "name": "version_columns_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "blocks",
@@ -123787,6 +123159,7 @@
         "kind": "OBJECT",
         "name": "version_columns_blocks_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -123858,6 +123231,7 @@
         "kind": "OBJECT",
         "name": "version_contact_form_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "background_color",
@@ -124001,6 +123375,7 @@
         "kind": "OBJECT",
         "name": "version_contact_forms",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "company",
@@ -124144,6 +123519,7 @@
         "kind": "OBJECT",
         "name": "version_cookie_selection_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -124251,6 +123627,7 @@
         "kind": "OBJECT",
         "name": "version_customers",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -124370,6 +123747,7 @@
         "kind": "OBJECT",
         "name": "version_disclosure_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -124513,6 +123891,7 @@
         "kind": "OBJECT",
         "name": "version_frontpage",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "blocks",
@@ -124644,6 +124023,7 @@
         "kind": "OBJECT",
         "name": "version_frontpage_banners",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "button_link",
@@ -124847,6 +124227,7 @@
         "kind": "OBJECT",
         "name": "version_frontpage_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -124918,6 +124299,7 @@
         "kind": "OBJECT",
         "name": "version_gallery_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -125061,6 +124443,7 @@
         "kind": "OBJECT",
         "name": "version_gallery_blocks_files",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "directus_files_id",
@@ -125120,6 +124503,7 @@
         "kind": "OBJECT",
         "name": "version_google_maps_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -125239,6 +124623,7 @@
         "kind": "OBJECT",
         "name": "version_heights",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "class",
@@ -125346,6 +124731,7 @@
         "kind": "OBJECT",
         "name": "version_heights_translations",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "heights_id",
@@ -125405,6 +124791,7 @@
         "kind": "OBJECT",
         "name": "version_image_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -125536,6 +124923,7 @@
         "kind": "OBJECT",
         "name": "version_items",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -125691,6 +125079,7 @@
         "kind": "OBJECT",
         "name": "version_languages",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "code",
@@ -125738,6 +125127,7 @@
         "kind": "OBJECT",
         "name": "version_navigation_menu",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -125821,6 +125211,7 @@
         "kind": "OBJECT",
         "name": "version_navigation_menu_calls_to_action",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -125988,6 +125379,7 @@
         "kind": "OBJECT",
         "name": "version_navigation_menu_items",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "calls_to_action",
@@ -126167,6 +125559,7 @@
         "kind": "OBJECT",
         "name": "version_navigation_menu_subitems",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -126346,6 +125739,7 @@
         "kind": "OBJECT",
         "name": "version_news_posts",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -126525,6 +125919,7 @@
         "kind": "OBJECT",
         "name": "version_news_posts_tags",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -126572,6 +125967,7 @@
         "kind": "OBJECT",
         "name": "version_page_categories",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -126677,67 +126073,9 @@
       },
       {
         "kind": "OBJECT",
-        "name": "version_page_categories_translations",
-        "description": "",
-        "fields": [
-          {
-            "name": "id",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "ID",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "languages_code",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "JSON",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "name",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "page_categories_id",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "JSON",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "OBJECT",
         "name": "version_pages",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "blocks",
@@ -126905,6 +126243,7 @@
         "kind": "OBJECT",
         "name": "version_pages_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -126976,6 +126315,7 @@
         "kind": "OBJECT",
         "name": "version_partners",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -127107,6 +126447,7 @@
         "kind": "OBJECT",
         "name": "version_partners_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -127226,6 +126567,7 @@
         "kind": "OBJECT",
         "name": "version_partners_blocks_partners",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -127285,6 +126627,7 @@
         "kind": "OBJECT",
         "name": "version_printers_and_copiers",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "customer",
@@ -127428,6 +126771,7 @@
         "kind": "OBJECT",
         "name": "version_printers_and_copiers_locations",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "address",
@@ -127583,6 +126927,7 @@
         "kind": "OBJECT",
         "name": "version_printers_and_copiers_models",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "comments",
@@ -127762,6 +127107,7 @@
         "kind": "OBJECT",
         "name": "version_purchase_orders",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -127857,6 +127203,7 @@
         "kind": "OBJECT",
         "name": "version_richtext_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -128012,6 +127359,7 @@
         "kind": "OBJECT",
         "name": "version_sales_invoices",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -128107,6 +127455,7 @@
         "kind": "OBJECT",
         "name": "version_sales_orders",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -128202,6 +127551,7 @@
         "kind": "OBJECT",
         "name": "version_services_list_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "background_color",
@@ -128369,6 +127719,7 @@
         "kind": "OBJECT",
         "name": "version_services_list_blocks_links",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -128440,6 +127791,7 @@
         "kind": "OBJECT",
         "name": "version_spacer_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -128535,6 +127887,7 @@
         "kind": "OBJECT",
         "name": "version_tags",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "date_created",
@@ -128630,6 +127983,7 @@
         "kind": "OBJECT",
         "name": "version_tags_counters",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "collection",
@@ -128749,6 +128103,7 @@
         "kind": "OBJECT",
         "name": "version_text_and_image_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "content",
@@ -128940,6 +128295,7 @@
         "kind": "OBJECT",
         "name": "version_text_hero_blocks",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "background_color",
@@ -129119,6 +128475,7 @@
         "kind": "OBJECT",
         "name": "version_widths",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "class",
@@ -129226,6 +128583,7 @@
         "kind": "OBJECT",
         "name": "version_widths_translations",
         "description": "",
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -129285,6 +128643,7 @@
         "kind": "OBJECT",
         "name": "widths",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "class",
@@ -129667,6 +129026,7 @@
         "kind": "OBJECT",
         "name": "widths_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -129798,6 +129158,7 @@
         "kind": "OBJECT",
         "name": "widths_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "class",
@@ -129905,6 +129266,7 @@
         "kind": "OBJECT",
         "name": "widths_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "sort",
@@ -129928,6 +129290,7 @@
         "kind": "INPUT_OBJECT",
         "name": "widths_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -130103,6 +129466,7 @@
         "kind": "OBJECT",
         "name": "widths_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",
@@ -130154,6 +129518,7 @@
         "kind": "OBJECT",
         "name": "widths_translations",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -130371,6 +129736,7 @@
         "kind": "OBJECT",
         "name": "widths_translations_aggregated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "avg",
@@ -130502,6 +129868,7 @@
         "kind": "OBJECT",
         "name": "widths_translations_aggregated_count",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -130561,6 +129928,7 @@
         "kind": "OBJECT",
         "name": "widths_translations_aggregated_fields",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -130584,6 +129952,7 @@
         "kind": "INPUT_OBJECT",
         "name": "widths_translations_filter",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -130675,6 +130044,7 @@
         "kind": "OBJECT",
         "name": "widths_translations_mutated",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "data",

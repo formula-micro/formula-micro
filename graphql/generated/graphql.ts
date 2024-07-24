@@ -3130,103 +3130,6 @@ export default {
             ]
           },
           {
-            "name": "create_page_categories_translations_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_page_categories_translations_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "page_categories_translations",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
             "name": "create_pages_blocks_item",
             "type": {
               "kind": "OBJECT",
@@ -6618,49 +6521,6 @@ export default {
           },
           {
             "name": "delete_page_categories_items",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_many",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_page_categories_translations_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_one",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_page_categories_translations_items",
             "type": {
               "kind": "OBJECT",
               "name": "delete_many",
@@ -13757,200 +13617,6 @@ export default {
                   "ofType": {
                     "kind": "OBJECT",
                     "name": "page_categories",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_page_categories_translations_batch",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "page_categories_translations",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_page_categories_translations_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_page_categories_translations_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "page_categories_translations",
                     "ofType": null
                   }
                 }
@@ -24423,201 +24089,6 @@ export default {
             ]
           },
           {
-            "name": "page_categories_translations",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "page_categories_translations",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "page_categories_translations_aggregated",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "page_categories_translations_aggregated",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "groupBy",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "page_categories_translations_by_id",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "page_categories_translations_by_version",
-            "type": {
-              "kind": "OBJECT",
-              "name": "version_page_categories_translations",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
             "name": "pages",
             "type": {
               "kind": "NON_NULL",
@@ -29604,23 +29075,6 @@ export default {
             ]
           },
           {
-            "name": "page_categories_translations_mutated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_mutated",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "event",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
             "name": "pages_blocks_mutated",
             "type": {
               "kind": "OBJECT",
@@ -29985,6 +29439,14 @@ export default {
         "name": "banner_hero_blocks",
         "fields": [
           {
+            "name": "autoplay",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "banners",
             "type": {
               "kind": "LIST",
@@ -30101,6 +29563,14 @@ export default {
                 "kind": "SCALAR",
                 "name": "Any"
               }
+            },
+            "args": []
+          },
+          {
+            "name": "interval",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
             },
             "args": []
           },
@@ -30388,6 +29858,14 @@ export default {
         "name": "banner_hero_blocks_aggregated_count",
         "fields": [
           {
+            "name": "autoplay",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "banners",
             "type": {
               "kind": "SCALAR",
@@ -30421,6 +29899,14 @@ export default {
           },
           {
             "name": "id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "interval",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -30474,6 +29960,14 @@ export default {
         "kind": "OBJECT",
         "name": "banner_hero_blocks_aggregated_fields",
         "fields": [
+          {
+            "name": "interval",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
           {
             "name": "sort",
             "type": {
@@ -30708,6 +30202,61 @@ export default {
             ]
           },
           {
+            "name": "page",
+            "type": {
+              "kind": "OBJECT",
+              "name": "pages",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
             "name": "sort",
             "type": {
               "kind": "SCALAR",
@@ -30717,6 +30266,14 @@ export default {
           },
           {
             "name": "status",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "text",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -31000,6 +30557,14 @@ export default {
             "args": []
           },
           {
+            "name": "page",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "sort",
             "type": {
               "kind": "SCALAR",
@@ -31009,6 +30574,14 @@ export default {
           },
           {
             "name": "status",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "text",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -50676,11 +50249,8 @@ export default {
           {
             "name": "slug",
             "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
+              "kind": "SCALAR",
+              "name": "Any"
             },
             "args": []
           },
@@ -50995,326 +50565,6 @@ export default {
             "type": {
               "kind": "OBJECT",
               "name": "page_categories",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "event",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "key",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "page_categories_translations",
-        "fields": [
-          {
-            "name": "id",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          },
-          {
-            "name": "languages_code",
-            "type": {
-              "kind": "OBJECT",
-              "name": "languages",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "name",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "page_categories_id",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "page_categories_translations_aggregated",
-        "fields": [
-          {
-            "name": "avg",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "avgDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "count",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "countAll",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "countDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "group",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "max",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "min",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sum",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sumDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "page_categories_translations_aggregated_count",
-        "fields": [
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "languages_code",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "name",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "page_categories_id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "page_categories_translations_aggregated_fields",
-        "fields": [
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "page_categories_translations_mutated",
-        "fields": [
-          {
-            "name": "data",
-            "type": {
-              "kind": "OBJECT",
-              "name": "page_categories_translations",
               "ofType": null
             },
             "args": []
@@ -60698,6 +59948,14 @@ export default {
         "name": "version_banner_hero_blocks",
         "fields": [
           {
+            "name": "autoplay",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "banners",
             "type": {
               "kind": "SCALAR",
@@ -60731,6 +59989,14 @@ export default {
           },
           {
             "name": "id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "interval",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -60841,6 +60107,14 @@ export default {
             "args": []
           },
           {
+            "name": "page",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "sort",
             "type": {
               "kind": "SCALAR",
@@ -60850,6 +60124,14 @@ export default {
           },
           {
             "name": "status",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "text",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -63445,45 +62727,6 @@ export default {
       },
       {
         "kind": "OBJECT",
-        "name": "version_page_categories_translations",
-        "fields": [
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "languages_code",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "name",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "page_categories_id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
         "name": "version_pages",
         "fields": [
           {
@@ -66048,8 +65291,6 @@ export type Mutation = {
   create_news_posts_tags_items: Array<News_Posts_Tags>;
   create_page_categories_item?: Maybe<Page_Categories>;
   create_page_categories_items: Array<Page_Categories>;
-  create_page_categories_translations_item?: Maybe<Page_Categories_Translations>;
-  create_page_categories_translations_items: Array<Page_Categories_Translations>;
   create_pages_blocks_item?: Maybe<Pages_Blocks>;
   create_pages_blocks_items: Array<Pages_Blocks>;
   create_pages_item?: Maybe<Pages>;
@@ -66156,8 +65397,6 @@ export type Mutation = {
   delete_news_posts_tags_items?: Maybe<Delete_Many>;
   delete_page_categories_item?: Maybe<Delete_One>;
   delete_page_categories_items?: Maybe<Delete_Many>;
-  delete_page_categories_translations_item?: Maybe<Delete_One>;
-  delete_page_categories_translations_items?: Maybe<Delete_Many>;
   delete_pages_blocks_item?: Maybe<Delete_One>;
   delete_pages_blocks_items?: Maybe<Delete_Many>;
   delete_pages_item?: Maybe<Delete_One>;
@@ -66298,9 +65537,6 @@ export type Mutation = {
   update_page_categories_batch: Array<Page_Categories>;
   update_page_categories_item?: Maybe<Page_Categories>;
   update_page_categories_items: Array<Page_Categories>;
-  update_page_categories_translations_batch: Array<Page_Categories_Translations>;
-  update_page_categories_translations_item?: Maybe<Page_Categories_Translations>;
-  update_page_categories_translations_items: Array<Page_Categories_Translations>;
   update_pages_batch: Array<Pages>;
   update_pages_blocks_batch: Array<Pages_Blocks>;
   update_pages_blocks_item?: Maybe<Pages_Blocks>;
@@ -66871,22 +66107,6 @@ export type MutationCreate_Page_Categories_ItemArgs = {
 export type MutationCreate_Page_Categories_ItemsArgs = {
   data?: InputMaybe<Array<Create_Page_Categories_Input>>;
   filter?: InputMaybe<Page_Categories_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationCreate_Page_Categories_Translations_ItemArgs = {
-  data: Create_Page_Categories_Translations_Input;
-};
-
-
-export type MutationCreate_Page_Categories_Translations_ItemsArgs = {
-  data?: InputMaybe<Array<Create_Page_Categories_Translations_Input>>;
-  filter?: InputMaybe<Page_Categories_Translations_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
@@ -67547,16 +66767,6 @@ export type MutationDelete_Page_Categories_ItemArgs = {
 
 
 export type MutationDelete_Page_Categories_ItemsArgs = {
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-};
-
-
-export type MutationDelete_Page_Categories_Translations_ItemArgs = {
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationDelete_Page_Categories_Translations_ItemsArgs = {
   ids: Array<InputMaybe<Scalars['ID']['input']>>;
 };
 
@@ -68709,35 +67919,6 @@ export type MutationUpdate_Page_Categories_ItemsArgs = {
 };
 
 
-export type MutationUpdate_Page_Categories_Translations_BatchArgs = {
-  data?: InputMaybe<Array<Update_Page_Categories_Translations_Input>>;
-  filter?: InputMaybe<Page_Categories_Translations_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Page_Categories_Translations_ItemArgs = {
-  data: Update_Page_Categories_Translations_Input;
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationUpdate_Page_Categories_Translations_ItemsArgs = {
-  data: Update_Page_Categories_Translations_Input;
-  filter?: InputMaybe<Page_Categories_Translations_Filter>;
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
 export type MutationUpdate_Pages_BatchArgs = {
   data?: InputMaybe<Array<Update_Pages_Input>>;
   filter?: InputMaybe<Pages_Filter>;
@@ -69480,10 +68661,6 @@ export type Query = {
   page_categories_aggregated: Array<Page_Categories_Aggregated>;
   page_categories_by_id?: Maybe<Page_Categories>;
   page_categories_by_version?: Maybe<Version_Page_Categories>;
-  page_categories_translations: Array<Page_Categories_Translations>;
-  page_categories_translations_aggregated: Array<Page_Categories_Translations_Aggregated>;
-  page_categories_translations_by_id?: Maybe<Page_Categories_Translations>;
-  page_categories_translations_by_version?: Maybe<Version_Page_Categories_Translations>;
   pages: Array<Pages>;
   pages_aggregated: Array<Pages_Aggregated>;
   pages_blocks: Array<Pages_Blocks>;
@@ -70647,39 +69824,6 @@ export type QueryPage_Categories_By_VersionArgs = {
 };
 
 
-export type QueryPage_Categories_TranslationsArgs = {
-  filter?: InputMaybe<Page_Categories_Translations_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryPage_Categories_Translations_AggregatedArgs = {
-  filter?: InputMaybe<Page_Categories_Translations_Filter>;
-  groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryPage_Categories_Translations_By_IdArgs = {
-  id: Scalars['ID']['input'];
-  version?: InputMaybe<Scalars['String']['input']>;
-};
-
-
-export type QueryPage_Categories_Translations_By_VersionArgs = {
-  id: Scalars['ID']['input'];
-  version: Scalars['String']['input'];
-};
-
-
 export type QueryPagesArgs = {
   filter?: InputMaybe<Pages_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
@@ -71426,7 +70570,6 @@ export type Subscription = {
   news_posts_mutated?: Maybe<News_Posts_Mutated>;
   news_posts_tags_mutated?: Maybe<News_Posts_Tags_Mutated>;
   page_categories_mutated?: Maybe<Page_Categories_Mutated>;
-  page_categories_translations_mutated?: Maybe<Page_Categories_Translations_Mutated>;
   pages_blocks_mutated?: Maybe<Pages_Blocks_Mutated>;
   pages_mutated?: Maybe<Pages_Mutated>;
   partners_blocks_mutated?: Maybe<Partners_Blocks_Mutated>;
@@ -71711,11 +70854,6 @@ export type SubscriptionPage_Categories_MutatedArgs = {
 };
 
 
-export type SubscriptionPage_Categories_Translations_MutatedArgs = {
-  event?: InputMaybe<EventEnum>;
-};
-
-
 export type SubscriptionPages_Blocks_MutatedArgs = {
   event?: InputMaybe<EventEnum>;
 };
@@ -71822,6 +70960,7 @@ export type SubscriptionWidths_Translations_MutatedArgs = {
 
 export type Banner_Hero_Blocks = {
   __typename?: 'banner_hero_blocks';
+  autoplay?: Maybe<Scalars['Boolean']['output']>;
   banners?: Maybe<Array<Maybe<Banner_Hero_Blocks_Banners>>>;
   banners_func?: Maybe<Count_Functions>;
   date_created?: Maybe<Scalars['Date']['output']>;
@@ -71830,6 +70969,7 @@ export type Banner_Hero_Blocks = {
   date_updated_func?: Maybe<Datetime_Functions>;
   has_padding?: Maybe<Scalars['Boolean']['output']>;
   id: Scalars['ID']['output'];
+  interval?: Maybe<Scalars['Int']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Directus_Users>;
@@ -71893,11 +71033,13 @@ export type Banner_Hero_Blocks_Aggregated = {
 
 export type Banner_Hero_Blocks_Aggregated_Count = {
   __typename?: 'banner_hero_blocks_aggregated_count';
+  autoplay?: Maybe<Scalars['Int']['output']>;
   banners?: Maybe<Scalars['Int']['output']>;
   date_created?: Maybe<Scalars['Int']['output']>;
   date_updated?: Maybe<Scalars['Int']['output']>;
   has_padding?: Maybe<Scalars['Int']['output']>;
   id?: Maybe<Scalars['Int']['output']>;
+  interval?: Maybe<Scalars['Int']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   title?: Maybe<Scalars['Int']['output']>;
   user_created?: Maybe<Scalars['Int']['output']>;
@@ -71907,6 +71049,7 @@ export type Banner_Hero_Blocks_Aggregated_Count = {
 
 export type Banner_Hero_Blocks_Aggregated_Fields = {
   __typename?: 'banner_hero_blocks_aggregated_fields';
+  interval?: Maybe<Scalars['Float']['output']>;
   sort?: Maybe<Scalars['Float']['output']>;
 };
 
@@ -71921,8 +71064,10 @@ export type Banner_Hero_Blocks_Banners = {
   id: Scalars['ID']['output'];
   image?: Maybe<Directus_Files>;
   overlay_color?: Maybe<Colors>;
+  page?: Maybe<Pages>;
   sort?: Maybe<Scalars['Int']['output']>;
   status?: Maybe<Scalars['String']['output']>;
+  text?: Maybe<Scalars['String']['output']>;
   title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Directus_Users>;
   user_updated?: Maybe<Directus_Users>;
@@ -71951,6 +71096,16 @@ export type Banner_Hero_Blocks_BannersImageArgs = {
 
 export type Banner_Hero_Blocks_BannersOverlay_ColorArgs = {
   filter?: InputMaybe<Colors_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type Banner_Hero_Blocks_BannersPageArgs = {
+  filter?: InputMaybe<Pages_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
@@ -72001,8 +71156,10 @@ export type Banner_Hero_Blocks_Banners_Aggregated_Count = {
   id?: Maybe<Scalars['Int']['output']>;
   image?: Maybe<Scalars['Int']['output']>;
   overlay_color?: Maybe<Scalars['Int']['output']>;
+  page?: Maybe<Scalars['Int']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   status?: Maybe<Scalars['Int']['output']>;
+  text?: Maybe<Scalars['Int']['output']>;
   title?: Maybe<Scalars['Int']['output']>;
   user_created?: Maybe<Scalars['Int']['output']>;
   user_updated?: Maybe<Scalars['Int']['output']>;
@@ -72025,8 +71182,10 @@ export type Banner_Hero_Blocks_Banners_Filter = {
   id?: InputMaybe<String_Filter_Operators>;
   image?: InputMaybe<Directus_Files_Filter>;
   overlay_color?: InputMaybe<Colors_Filter>;
+  page?: InputMaybe<Pages_Filter>;
   sort?: InputMaybe<Number_Filter_Operators>;
   status?: InputMaybe<String_Filter_Operators>;
+  text?: InputMaybe<String_Filter_Operators>;
   title?: InputMaybe<String_Filter_Operators>;
   user_created?: InputMaybe<Directus_Users_Filter>;
   user_updated?: InputMaybe<Directus_Users_Filter>;
@@ -72042,6 +71201,7 @@ export type Banner_Hero_Blocks_Banners_Mutated = {
 export type Banner_Hero_Blocks_Filter = {
   _and?: InputMaybe<Array<InputMaybe<Banner_Hero_Blocks_Filter>>>;
   _or?: InputMaybe<Array<InputMaybe<Banner_Hero_Blocks_Filter>>>;
+  autoplay?: InputMaybe<Boolean_Filter_Operators>;
   banners?: InputMaybe<Banner_Hero_Blocks_Banners_Filter>;
   banners_func?: InputMaybe<Count_Function_Filter_Operators>;
   date_created?: InputMaybe<Date_Filter_Operators>;
@@ -72050,6 +71210,7 @@ export type Banner_Hero_Blocks_Filter = {
   date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   has_padding?: InputMaybe<Boolean_Filter_Operators>;
   id?: InputMaybe<String_Filter_Operators>;
+  interval?: InputMaybe<Number_Filter_Operators>;
   sort?: InputMaybe<Number_Filter_Operators>;
   title?: InputMaybe<String_Filter_Operators>;
   user_created?: InputMaybe<Directus_Users_Filter>;
@@ -73306,19 +72467,23 @@ export type Create_Banner_Hero_Blocks_Banners_Input = {
   id?: InputMaybe<Scalars['ID']['input']>;
   image?: InputMaybe<Create_Directus_Files_Input>;
   overlay_color?: InputMaybe<Create_Colors_Input>;
+  page?: InputMaybe<Create_Pages_Input>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   status?: InputMaybe<Scalars['String']['input']>;
+  text?: InputMaybe<Scalars['String']['input']>;
   title?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Create_Directus_Users_Input>;
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
 };
 
 export type Create_Banner_Hero_Blocks_Input = {
+  autoplay?: InputMaybe<Scalars['Boolean']['input']>;
   banners?: InputMaybe<Array<InputMaybe<Create_Banner_Hero_Blocks_Banners_Input>>>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
   has_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
+  interval?: InputMaybe<Scalars['Int']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   title?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Create_Directus_Users_Input>;
@@ -73783,17 +72948,10 @@ export type Create_Page_Categories_Input = {
   date_updated?: InputMaybe<Scalars['Date']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
   name?: InputMaybe<Scalars['String']['input']>;
-  slug: Scalars['String']['input'];
+  slug?: InputMaybe<Scalars['String']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   user_created?: InputMaybe<Create_Directus_Users_Input>;
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
-};
-
-export type Create_Page_Categories_Translations_Input = {
-  id?: InputMaybe<Scalars['ID']['input']>;
-  languages_code?: InputMaybe<Create_Languages_Input>;
-  name?: InputMaybe<Scalars['String']['input']>;
-  page_categories_id?: InputMaybe<Create_Page_Categories_Input>;
 };
 
 export type Create_Pages_Blocks_Input = {
@@ -77110,7 +76268,7 @@ export type Page_Categories = {
   date_updated_func?: Maybe<Datetime_Functions>;
   id: Scalars['ID']['output'];
   name?: Maybe<Scalars['String']['output']>;
-  slug: Scalars['String']['output'];
+  slug?: Maybe<Scalars['String']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   user_created?: Maybe<Directus_Users>;
   user_updated?: Maybe<Directus_Users>;
@@ -77185,77 +76343,6 @@ export type Page_Categories_Filter = {
 export type Page_Categories_Mutated = {
   __typename?: 'page_categories_mutated';
   data?: Maybe<Page_Categories>;
-  event?: Maybe<EventEnum>;
-  key: Scalars['ID']['output'];
-};
-
-export type Page_Categories_Translations = {
-  __typename?: 'page_categories_translations';
-  id: Scalars['ID']['output'];
-  languages_code?: Maybe<Languages>;
-  name?: Maybe<Scalars['String']['output']>;
-  page_categories_id?: Maybe<Page_Categories>;
-};
-
-
-export type Page_Categories_TranslationsLanguages_CodeArgs = {
-  filter?: InputMaybe<Languages_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Page_Categories_TranslationsPage_Categories_IdArgs = {
-  filter?: InputMaybe<Page_Categories_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-export type Page_Categories_Translations_Aggregated = {
-  __typename?: 'page_categories_translations_aggregated';
-  avg?: Maybe<Page_Categories_Translations_Aggregated_Fields>;
-  avgDistinct?: Maybe<Page_Categories_Translations_Aggregated_Fields>;
-  count?: Maybe<Page_Categories_Translations_Aggregated_Count>;
-  countAll?: Maybe<Scalars['Int']['output']>;
-  countDistinct?: Maybe<Page_Categories_Translations_Aggregated_Count>;
-  group?: Maybe<Scalars['JSON']['output']>;
-  max?: Maybe<Page_Categories_Translations_Aggregated_Fields>;
-  min?: Maybe<Page_Categories_Translations_Aggregated_Fields>;
-  sum?: Maybe<Page_Categories_Translations_Aggregated_Fields>;
-  sumDistinct?: Maybe<Page_Categories_Translations_Aggregated_Fields>;
-};
-
-export type Page_Categories_Translations_Aggregated_Count = {
-  __typename?: 'page_categories_translations_aggregated_count';
-  id?: Maybe<Scalars['Int']['output']>;
-  languages_code?: Maybe<Scalars['Int']['output']>;
-  name?: Maybe<Scalars['Int']['output']>;
-  page_categories_id?: Maybe<Scalars['Int']['output']>;
-};
-
-export type Page_Categories_Translations_Aggregated_Fields = {
-  __typename?: 'page_categories_translations_aggregated_fields';
-  id?: Maybe<Scalars['Float']['output']>;
-};
-
-export type Page_Categories_Translations_Filter = {
-  _and?: InputMaybe<Array<InputMaybe<Page_Categories_Translations_Filter>>>;
-  _or?: InputMaybe<Array<InputMaybe<Page_Categories_Translations_Filter>>>;
-  id?: InputMaybe<Number_Filter_Operators>;
-  languages_code?: InputMaybe<Languages_Filter>;
-  name?: InputMaybe<String_Filter_Operators>;
-  page_categories_id?: InputMaybe<Page_Categories_Filter>;
-};
-
-export type Page_Categories_Translations_Mutated = {
-  __typename?: 'page_categories_translations_mutated';
-  data?: Maybe<Page_Categories_Translations>;
   event?: Maybe<EventEnum>;
   key: Scalars['ID']['output'];
 };
@@ -79296,19 +78383,23 @@ export type Update_Banner_Hero_Blocks_Banners_Input = {
   id?: InputMaybe<Scalars['ID']['input']>;
   image?: InputMaybe<Update_Directus_Files_Input>;
   overlay_color?: InputMaybe<Update_Colors_Input>;
+  page?: InputMaybe<Update_Pages_Input>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   status?: InputMaybe<Scalars['String']['input']>;
+  text?: InputMaybe<Scalars['String']['input']>;
   title?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Update_Directus_Users_Input>;
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
 };
 
 export type Update_Banner_Hero_Blocks_Input = {
+  autoplay?: InputMaybe<Scalars['Boolean']['input']>;
   banners?: InputMaybe<Array<InputMaybe<Update_Banner_Hero_Blocks_Banners_Input>>>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
   has_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
+  interval?: InputMaybe<Scalars['Int']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   title?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Update_Directus_Users_Input>;
@@ -79779,13 +78870,6 @@ export type Update_Page_Categories_Input = {
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
 };
 
-export type Update_Page_Categories_Translations_Input = {
-  id?: InputMaybe<Scalars['ID']['input']>;
-  languages_code?: InputMaybe<Update_Languages_Input>;
-  name?: InputMaybe<Scalars['String']['input']>;
-  page_categories_id?: InputMaybe<Update_Page_Categories_Input>;
-};
-
 export type Update_Pages_Blocks_Input = {
   collection?: InputMaybe<Scalars['String']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
@@ -80046,11 +79130,13 @@ export type Update_Widths_Translations_Input = {
 
 export type Version_Banner_Hero_Blocks = {
   __typename?: 'version_banner_hero_blocks';
+  autoplay?: Maybe<Scalars['Boolean']['output']>;
   banners?: Maybe<Scalars['JSON']['output']>;
   date_created?: Maybe<Scalars['Date']['output']>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   has_padding?: Maybe<Scalars['Boolean']['output']>;
   id?: Maybe<Scalars['ID']['output']>;
+  interval?: Maybe<Scalars['Int']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Scalars['JSON']['output']>;
@@ -80067,8 +79153,10 @@ export type Version_Banner_Hero_Blocks_Banners = {
   id?: Maybe<Scalars['ID']['output']>;
   image?: Maybe<Scalars['JSON']['output']>;
   overlay_color?: Maybe<Scalars['JSON']['output']>;
+  page?: Maybe<Scalars['JSON']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   status?: Maybe<Scalars['String']['output']>;
+  text?: Maybe<Scalars['String']['output']>;
   title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Scalars['JSON']['output']>;
   user_updated?: Maybe<Scalars['JSON']['output']>;
@@ -80492,14 +79580,6 @@ export type Version_Page_Categories = {
   sort?: Maybe<Scalars['Int']['output']>;
   user_created?: Maybe<Scalars['JSON']['output']>;
   user_updated?: Maybe<Scalars['JSON']['output']>;
-};
-
-export type Version_Page_Categories_Translations = {
-  __typename?: 'version_page_categories_translations';
-  id?: Maybe<Scalars['ID']['output']>;
-  languages_code?: Maybe<Scalars['JSON']['output']>;
-  name?: Maybe<Scalars['String']['output']>;
-  page_categories_id?: Maybe<Scalars['JSON']['output']>;
 };
 
 export type Version_Pages = {
@@ -80965,7 +80045,7 @@ export type HeightFragment = { __typename?: 'heights', class?: string | null };
 
 export type ServicesListBlockFragment = { __typename?: 'services_list_blocks', has_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null };
 
-export type BannerHeroBlockFragment = { __typename?: 'banner_hero_blocks', has_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', class?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null } | null> | null };
+export type BannerHeroBlockFragment = { __typename?: 'banner_hero_blocks', has_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', class?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null };
 
 export type TextHeroBlockFragment = { __typename?: 'text_hero_blocks', has_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null };
 
@@ -81010,7 +80090,7 @@ export type BlogPostsQueryVariables = Exact<{
 
 export type BlogPostsQuery = { __typename?: 'Query', blog_posts: Array<{ __typename?: 'blog_posts', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, content?: any | null, cover_image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null, tags?: Array<{ __typename?: 'blog_posts_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null }> };
 
-export type CaseFragment = { __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', has_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', class?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'contact_form_blocks', has_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'disclosure_blocks', has_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'gallery_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'text_and_image_blocks', has_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', has_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
+export type CaseFragment = { __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', has_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', class?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'contact_form_blocks', has_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'disclosure_blocks', has_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'gallery_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'text_and_image_blocks', has_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', has_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
 
 export type CasesCountQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -81027,7 +80107,7 @@ export type CasesQueryVariables = Exact<{
 }>;
 
 
-export type CasesQuery = { __typename?: 'Query', cases: Array<{ __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', has_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', class?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'contact_form_blocks', has_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'disclosure_blocks', has_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'gallery_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'text_and_image_blocks', has_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', has_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
+export type CasesQuery = { __typename?: 'Query', cases: Array<{ __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', has_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', class?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'contact_form_blocks', has_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'disclosure_blocks', has_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'gallery_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'text_and_image_blocks', has_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', has_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
 
 export type ContactFormFragment = { __typename?: 'contact_forms', name?: string | null, company?: string | null, email?: string | null, phone?: string | null, message?: string | null };
 
@@ -81079,7 +80159,7 @@ export type NewsPostsQueryVariables = Exact<{
 
 export type NewsPostsQuery = { __typename?: 'Query', news_posts: Array<{ __typename?: 'news_posts', id: string, status?: string | null, date_published?: any | null, title?: string | null, slug?: string | null, summary?: string | null, content?: any | null, cover_image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null, tags?: Array<{ __typename?: 'news_posts_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null }> };
 
-export type PageFragment = { __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', has_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', class?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'columns_blocks', extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', class?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, background_color_active?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', has_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'gallery_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', has_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'cookie_selection_blocks', has_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'disclosure_blocks', has_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'gallery_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', has_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'services_list_blocks', has_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', height?: { __typename?: 'heights', class?: string | null } | null } | { __typename?: 'text_and_image_blocks', has_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', has_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
+export type PageFragment = { __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', has_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', class?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', class?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, background_color_active?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', has_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'gallery_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', has_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'cookie_selection_blocks', has_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'disclosure_blocks', has_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'gallery_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', has_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'services_list_blocks', has_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', height?: { __typename?: 'heights', class?: string | null } | null } | { __typename?: 'text_and_image_blocks', has_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', has_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
 
 export type PageCountQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -81096,7 +80176,7 @@ export type PagesQueryVariables = Exact<{
 }>;
 
 
-export type PagesQuery = { __typename?: 'Query', pages: Array<{ __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', has_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', class?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'columns_blocks', extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', class?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, background_color_active?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', has_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'gallery_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', has_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'cookie_selection_blocks', has_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'disclosure_blocks', has_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'gallery_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', has_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'services_list_blocks', has_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', height?: { __typename?: 'heights', class?: string | null } | null } | { __typename?: 'text_and_image_blocks', has_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', has_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
+export type PagesQuery = { __typename?: 'Query', pages: Array<{ __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', has_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', class?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', class?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, background_color_active?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', has_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'gallery_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', has_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'cookie_selection_blocks', has_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'disclosure_blocks', has_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'gallery_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', has_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null } | { __typename?: 'services_list_blocks', has_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', height?: { __typename?: 'heights', class?: string | null } | null } | { __typename?: 'text_and_image_blocks', has_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', has_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
 
 export type TagFragment = { __typename?: 'tags', id: string, name?: string | null };
 
@@ -81193,7 +80273,13 @@ export const BannerHeroBlockFragmentDoc = gql`
         attribution
       }
     }
+    text
+    page {
+      slug
+    }
   }
+  autoplay
+  interval
 }
     ${WidthFragmentDoc}
 ${ColorFragmentDoc}`;

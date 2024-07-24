@@ -51,7 +51,8 @@ export default defineNuxtConfig({
     image: {
         domains: [
             "cms.formula.nu",
-            "formula-micro.dk"
+            "formula-micro.dk",
+            "localhost:3000"
         ]
     },
 

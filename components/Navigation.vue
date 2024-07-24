@@ -18,6 +18,7 @@
     const getIconName = (filename_download : string|undefined) => filename_download?.replace("_", ":").replace(".svg", "") ?? ""; 
 </script>
 
+
 <template>
     <!-- Skip to content button -->
     <a href="#main-content" class="bg-white border border-black text-black px-4 py-2 focus:underline sr-only focus:not-sr-only" :aria-hidden="isSearchModalVisible">Spring til hovedindhold</a>
@@ -88,6 +89,7 @@
         </div>
     </div>
 
+    <!-- Mobile Navigation -->
     <div class="flex 2xl:hidden justify-center items-center w-full z-50">
         <div class="flex justify-between items-center w-full pt-5 px-3">
             <NuxtLink to="/" class="-mb-0.5 z-50 w-min focus-visible:outline-none">
@@ -101,6 +103,7 @@
         </div>
     </div>
 
+    <!-- Mobile Menu -->
     <HeadlessTransitionRoot :show="isMobileMenuVisible" as="template" appear>
         <HeadlessDialog as="div" class="relative z-60" :open="true" @close="onMobileMenuClose">
             <HeadlessTransitionChild as="template" enter="ease-out duration-300" enter-from="opacity-0" enter-to="opacity-100" leave="ease-in duration-200" leave-from="opacity-100" leave-to="opacity-0">
@@ -130,24 +133,28 @@
 
                             <template v-if="!activeLink" v-for="link in links" :key="link.id">
                                 <template v-if="link?.type === 'link' || link?.type === 'page'">
-                                    <NuxtLink :to="link?.type === 'link' ? link?.link : link?.page?.slug" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" v-motion-slide-left>{{ link.text }}</NuxtLink>
+                                    <NuxtLink :to="link?.type === 'link' ? link?.link : link?.page?.slug" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.text }}</NuxtLink>
                                 </template>
 
                                 <template v-if="link?.type === 'menu'">
-                                    <button type="button" @click="activeLink = link" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" v-motion-slide-left>{{ link.text }}</button>
+                                    <button type="button" @click="activeLink = link" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.text }}</button>
                                 </template>
                             </template>
 
                             <template v-if="activeLink" v-for="link in activeLink?.subitems" :key="link.id">
                                 <template v-if="link?.type === 'link' || link?.type === 'page'">
-                                    <NuxtLink :to="link?.type === 'link' ? link?.link : link?.page?.slug" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" v-motion-slide-right>{{ link.text }}</NuxtLink>
+                                    <NuxtLink :to="link?.type === 'link' ? link?.link : link?.page?.slug" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.title }}</NuxtLink>
                                 </template>
 
                                 <template v-if="link?.type === 'menu'">
-                                    <button type="button" @click="activeLink = link" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" v-motion-slide-right>{{ link.text }}</button>
+                                    <button type="button" @click="activeLink = link" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.text }}</button>
                                 </template>
                             </template>
                         </div>
+
+
+                        
+
                     </HeadlessDialogPanel>
                 </HeadlessTransitionChild>
             </div>
