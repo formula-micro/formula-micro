@@ -11,8 +11,6 @@
         data: Banner_Hero_Blocks;
     }
     const props = defineProps<Properties>();
-    console.log(props.data);
-    
 
     // Fields.
     const { __typename, width, title, banners, autoplay, interval } = toRefs(props.data);
@@ -25,21 +23,19 @@
                 <Splide :options="{ rewind: true, drag: banners?.length > 1, autoplay: autoplay, interval: interval, video: { playerOptions: { htmlVideo: { preload: 'auto' } } } }" :extensions="{ Video }" :has-track="false">
                     
                     <!-- Play-Pause Toggle Button -->
-                    <button class="splide__toggle absolute bottom-1 left-1/2 -ml-16 lg:-ml-12 transform -translate-x-1/2 p-0.5 bg-white rounded-full z-10 flex justify-center items-center" type="button">
-                        <span class="splide__toggle__play w-5 h-5"><Icon name="tabler:player-play-filled" /></span>
-                        
-                        <span class="splide__toggle__pause w-5 h-5"><Icon name="tabler:player-pause-filled" /></span>
+                    <button class="splide__toggle absolute bottom-1 left-1/2 -ml-20 lg:-ml-16 p-1 bg-white rounded-full z-10" type="button">
+                        <span class="splide__toggle__play w-5 h-5"><Icon name="tabler:player-play-filled" class="block w-5 h-5" /></span>
+                        <span class="splide__toggle__pause w-5 h-5"><Icon name="tabler:player-pause-filled" class="block w-5 h-5" /></span>
                     </button>
                     <SplideTrack>
-                        
                         <SplideSlide v-for="banner in banners" :key="banner?.id" :data-splide-html-video="banner?.image?.video_thumbnail ? 'https://cms.formula.nu/assets/' + banner?.image?.id : null">
                             <template v-if="banner?.image?.video_thumbnail">
                                 <!-- Video Thumbnail -->
-                                <NuxtImg :src="`https://cms.formula.nu/assets/${banner?.image?.video_thumbnail?.id}`" :width="banner?.image?.width > 1920 ? banner?.image?.width : 1920" :height="banner?.image?.height" sizes="sm:100vw md:50vw lg:2560px" class="object-cover object-center min-h-md max-h-md sm:min-h-xl sm:max-h-xl xl:min-h-2xl xl:max-h-2xl rounded-xl" />
+                                <NuxtImg :src="`https://cms.formula.nu/assets/${banner?.image?.video_thumbnail?.id}`" :width="banner?.image?.width > 1920 ? banner?.image?.width : 1920" :height="banner?.image?.height" alt="" format="webp" sizes="sm:100vw md:50vw lg:2560px" class="object-cover object-center min-h-md max-h-md sm:min-h-xl sm:max-h-xl xl:min-h-2xl xl:max-h-2xl rounded-xl" />
                             </template>
                             <template v-else>
                                 <!-- Image -->
-                                <NuxtImg :src="`https://cms.formula.nu/assets/${banner?.image?.id}`" :width="banner?.image?.width > 1920 ? banner?.image?.width : 1920" :height="banner?.image?.height" sizes="sm:100vw md:50vw lg:2560px" class="object-cover object-center min-h-md max-h-md sm:min-h-xl sm:max-h-xl xl:min-h-2xl xl:max-h-2xl rounded-xl" />
+                                <NuxtImg :src="`https://cms.formula.nu/assets/${banner?.image?.id}`" :width="banner?.image?.width > 1920 ? banner?.image?.width : 1920" :height="banner?.image?.height" alt="" format="webp" sizes="sm:100vw md:50vw lg:2560px" class="object-cover object-center min-h-md max-h-md sm:min-h-xl sm:max-h-xl xl:min-h-2xl xl:max-h-2xl rounded-xl" />
                             </template>
                             
                             <div :class="[ banner?.overlay_color?.class, 'absolute inset-0 bg-opacity-35 rounded-xl' ]">
@@ -56,11 +52,8 @@
                                     </div>
                                 </div>
                             </div>
-                            
                         </SplideSlide>
-                        
                     </SplideTrack>
-                    
 
                     <div v-if="banners?.length > 1" class="xl:hidden absolute inset-x-0 bottom-0 mb-8 flex justify-center items-center">
                         <p class="text-white font-medium">Swipe for at skifte slide</p>
@@ -75,9 +68,7 @@
                             <Icon name="tabler:arrow-right" class="h-5 w-5 text-gray-900" />
                         </button>
                     </div>
-                    
                 </Splide>
-                
             </div>
         </div>
     </div>

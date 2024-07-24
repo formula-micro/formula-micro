@@ -2,8 +2,6 @@ import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
-    content: [
-    ],
     theme: {
         extend: {
             screens: {
@@ -25,16 +23,16 @@ export default {
                 "7xl": "80rem",
             },
             minHeight: {
-                'md': '28rem',  
-                'xl': '36rem',  
-                '2xl': '42rem',
-                '5xl': '64rem', 
+                "md": "28rem",  
+                "xl": "36rem",  
+                "2xl": "42rem",
+                "5xl": "64rem", 
             },
             maxHeight: {
-                'md': '28rem',  
-                'xl': '36rem',
-                '2xl': '42rem',  
-                '5xl': '64rem', 
+                "md": "28rem",  
+                "xl": "36rem",
+                "2xl": "42rem",  
+                "5xl": "64rem", 
             },
             fontFamily: {
                 plusjakartasans: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
