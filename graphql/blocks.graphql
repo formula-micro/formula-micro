@@ -26,6 +26,7 @@ fragment Color on colors {
 
 fragment Width on widths {
     class
+    name
 }
 
 fragment Height on heights {

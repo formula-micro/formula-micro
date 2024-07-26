@@ -23,7 +23,7 @@
                 <Splide :options="{ rewind: true, drag: banners?.length > 1, autoplay: autoplay, interval: interval, video: { playerOptions: { htmlVideo: { preload: 'auto' } } } }" :extensions="{ Video }" :has-track="false">
                     
                     <!-- Play-Pause Toggle Button -->
-                    <button class="splide__toggle absolute bottom-1 left-1/2 -ml-20 lg:-ml-16 p-1 bg-white rounded-full z-10" type="button">
+                    <button v-if="autoplay"  class="splide__toggle absolute bottom-1 left-1/2 -ml-20 lg:-ml-16 p-1 bg-white rounded-full z-10" type="button">
                         <span class="splide__toggle__play w-5 h-5"><Icon name="tabler:player-play-filled" class="block w-5 h-5" /></span>
                         <span class="splide__toggle__pause w-5 h-5"><Icon name="tabler:player-pause-filled" class="block w-5 h-5" /></span>
                     </button>
@@ -31,16 +31,16 @@
                         <SplideSlide v-for="banner in banners" :key="banner?.id" :data-splide-html-video="banner?.image?.video_thumbnail ? 'https://cms.formula.nu/assets/' + banner?.image?.id : null">
                             <template v-if="banner?.image?.video_thumbnail">
                                 <!-- Video Thumbnail -->
-                                <NuxtImg :src="`https://cms.formula.nu/assets/${banner?.image?.video_thumbnail?.id}`" :width="banner?.image?.width > 1920 ? banner?.image?.width : 1920" :height="banner?.image?.height" alt="" format="webp" sizes="sm:100vw md:50vw lg:2560px" class="object-cover object-center min-h-md max-h-md sm:min-h-xl sm:max-h-xl xl:min-h-2xl xl:max-h-2xl rounded-xl" />
+                                <NuxtImg :src="`https://cms.formula.nu/assets/${banner?.image?.video_thumbnail?.id}`" :width="banner?.image?.width > 1920 ? banner?.image?.width : 1920" :height="banner?.image?.height" alt="" format="webp" sizes="sm:100vw md:50vw lg:2560px" :class="[ width.name === 'full' ? '3xl:min-h-5xl 3xl:max-h-5xl' : '', 'object-cover object-center min-h-md max-h-md sm:min-h-xl sm:max-h-xl xl:min-h-2xl xl:max-h-2xl rounded-xl' ]" />
                             </template>
                             <template v-else>
                                 <!-- Image -->
-                                <NuxtImg :src="`https://cms.formula.nu/assets/${banner?.image?.id}`" :width="banner?.image?.width > 1920 ? banner?.image?.width : 1920" :height="banner?.image?.height" alt="" format="webp" sizes="sm:100vw md:50vw lg:2560px" class="object-cover object-center min-h-md max-h-md sm:min-h-xl sm:max-h-xl xl:min-h-2xl xl:max-h-2xl rounded-xl" />
+                                <NuxtImg :src="`https://cms.formula.nu/assets/${banner?.image?.id}`" :width="banner?.image?.width > 1920 ? banner?.image?.width : 1920" :height="banner?.image?.height" alt="" format="webp" sizes="sm:100vw md:50vw lg:2560px" :class="[ width.name === 'full' ? '3xl:min-h-5xl 3xl:max-h-5xl' : '', 'object-cover object-center min-h-md max-h-md sm:min-h-xl sm:max-h-xl xl:min-h-2xl xl:max-h-2xl rounded-xl' ]" />
                             </template>
                             
                             <div :class="[ banner?.overlay_color?.class, 'absolute inset-0 bg-opacity-35 rounded-xl' ]">
                                 <div v-if="banner?.title && banner?.description" class="flex flex-col justify-center items-center w-full h-full">
-                                    <div class="flex flex-col text-center xl:text-left w-full max-w-md xl:max-w-7xl">
+                                    <div :class="['flex flex-col text-center xl:text-left w-full max-w-72 sm:max-w-lg', width.name === 'full' ? 'xl:max-w-7xl' : 'xl:max-w-5xl']">
                                         <h1 class="text-white font-bold text-2xl sm:text-4xl xl:text-6xl tracking-wide uppercase">{{ banner?.title }}</h1>
                                         <p class="mt-4 text-white font-medium sm:text-lg xl:text-2xl uppercase">{{ banner?.description }}</p>
                                         <div class="mt-8">

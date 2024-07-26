@@ -93,7 +93,7 @@
                                     <span class="sr-only">E-mail</span>
                                 </dt>
                                 <dd>
-                                    <a href="mailto:kontakt@formula-micro.dk" class="text-gray-700 !font-normal !no-underline hover:underline">kontakt@formula-micro.dk</a>
+                                    <a href="mailto:kontakt@formula-micro.dk" class="text-gray-700 !font-normal !no-underline hover:underline">info@formula-micro.dk</a>
                                 </dd>
                             </div>
                         </dl>
@@ -151,8 +151,8 @@
                         </div>
 
                         <div class="col-span-2 prose leading-relaxed text-white">
-                            <p>Ved at indsende dine oplysninger via denne kontaktformular, giver du samtykke til, at vi kan gemme og bruge dine oplysninger til at svare på din forespørgsel.</p>
-                            <p>Du har ret til at få adgang til, rette eller slette dine oplysninger til enhver tid. For at gøre dette, skal du kontakte os på info@formula-micro.dk.</p>
+                            <p>Dine oplysninger, som du indtaster i vores kontaktformular, bruges til at besvare din henvendelse.</p>
+                            <p>I vores <a href="#" class="text-white !font-normal !no-underline hover:underline"> persondatapolitik</a> kan du læse mere om, hvordan vi behandler dine persondata samt hvilke rettigheder du har.</p>
                         </div>
 
                         <div v-if="error" class="col-span-2 flex justify-between items-center text-red-600 bg-white px-3 py-2 rounded-xl">

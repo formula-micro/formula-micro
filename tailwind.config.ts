@@ -11,7 +11,7 @@ export default {
             },
             padding: {
                 "0.5": "0.125rem",
-                "1.5": "0.375rem"
+                "1.5": "0.375rem",
             },
             maxWidth: {
                 "50": "12rem",
