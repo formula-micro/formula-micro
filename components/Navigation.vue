@@ -81,7 +81,7 @@
             </div>
 
             <div class="flex justify-end">
-                <button type="button" class="text-gray-900 z-50 py-8 px-7 mr-5 focus-visible:outline-none" @click="isSearchModalVisible = true">
+                <button type="button" class="inline-flex justify-end text-gray-900 z-50 py-8 px-7 mr-5 focus-visible:outline-none" @click="isSearchModalVisible = true">
                     <span class="sr-only">Søg</span>
                     <Icon name="tabler:search" class="h-5 w-5 flex-none" aria-hidden="true" role="presentation" />
                 </button>

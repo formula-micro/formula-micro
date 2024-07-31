@@ -12,27 +12,31 @@ export default {
             padding: {
                 "0.5": "0.125rem",
                 "1.5": "0.375rem",
-            },
-            maxWidth: {
-                "50": "12rem",
-                "8xl": "88rem",
-                "9xl": "96rem",
-                "10xl": "104rem",
+                "42": "10.5rem",
             },
             minWidth: {
                 "7xl": "80rem",
             },
+            maxWidth: {
+                "46": "11.5rem",
+                "50": "12.5rem",
+                "8xl": "88rem",
+                "9xl": "96rem",
+                "10xl": "104rem",
+            },
             minHeight: {
-                "md": "28rem",  
-                "xl": "36rem",  
+                "md": "28rem",
+                "lg": "32rem",
+                "xl": "36rem",
                 "2xl": "42rem",
-                "5xl": "64rem", 
+                "5xl": "64rem",
             },
             maxHeight: {
-                "md": "28rem",  
+                "md": "28rem",
+                "lg": "32rem",
                 "xl": "36rem",
-                "2xl": "42rem",  
-                "5xl": "64rem", 
+                "2xl": "42rem",
+                "5xl": "64rem",
             },
             fontFamily: {
                 plusjakartasans: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],

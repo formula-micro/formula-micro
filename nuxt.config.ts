@@ -25,28 +25,15 @@ export default defineNuxtConfig({
         "@vueuse/motion/nuxt",
         "@vee-validate/nuxt",
         "@nuxt/icon",
-        "@nuxt/fonts",
-        "@nuxtjs/tailwindcss"
+        "@nuxtjs/tailwindcss",
+        ["@nuxtjs/google-fonts",
+            {
+                display: "swap",
+                families: {
+                    "Plus Jakarta Sans": [ 100, 200, 300, 400, 500, 600, 700, 800, 900 ],
+                },
+            }],
     ],
-
-    fonts: {
-        families: [
-            { name: "Plus Jakarta Sans", provider: "google" }
-        ],
-        defaults: {
-            weights: [ 100, 200, 300, 400, 500, 600, 700, 800, 900 ],
-            styles: [ "normal", "italic" ],
-            subsets: [
-                "cyrillic-ext",
-                "cyrillic",
-                "greek-ext",
-                "greek",
-                "vietnamese",
-                "latin-ext",
-                "latin",
-            ]
-        }
-    },
 
     image: {
         domains: [

@@ -16,7 +16,7 @@
     <div v-if="__typename === 'richtext_blocks'" class="w-full">
         <div :class="[ has_padding ? 'py-4' : '', 'flex justify-center items-center w-full xl:px-12' ]">
             <div :class="[ width?.class, show_title && (title_placement === 'left' || title_placement === 'right') ? 'grid grid-cols-1 xl:grid-cols-[3fr,0.5fr,5fr] gap-x-8' : '', title_placement === 'right' ? 'order-3' : '', has_padding ? 'py-8 xl:py-16' : '', 'w-full prose px-6' ]">
-                <h2 v-if="show_title" :class="[ title_placement === 'left' || title_placement === 'right' ? 'xl:!mb-0' : '', '!font-semibold' ]">{{ title }}</h2>
+                <h2 v-if="show_title" :class="[ title_placement === 'left' || title_placement === 'right' ? 'xl:!mb-0' : '', 'leading-relaxed' ]">{{ title }}</h2>
 
                 <div v-if="show_title && (title_placement === 'left' || title_placement === 'right')" />
 

@@ -25,7 +25,7 @@
                 {{ title }}
                 <span class="absolute inset-0" />
             </p>
-            <div class="mt-1 text-gray-600" v-html="description" />
+            <div class="mt-1 text-gray-600" v-html="description" v-if="description && description.length > 0" />
         </div>
     </NuxtLink>
 </template>

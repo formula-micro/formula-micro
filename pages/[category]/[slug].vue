@@ -74,7 +74,7 @@
 
                 <BlocksGallery :data="block" />
 
-                <BlocksPartners :data="block" class="max-w-7xl px-6 xl:px-12" />
+                <BlocksPartners :data="block" />
 
                 <BlocksServicesList :data="block" />
 
