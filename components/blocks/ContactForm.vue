@@ -77,8 +77,8 @@
                         <div class="mt-5" v-html="description" />
 
                         <dl class="mt-12 flex flex-col gap-5">
-                            <div class="inline-flex space-x-5">
-                                <dt>
+                            <div class="inline-flex space-x-5 items-center">
+                                <dt >
                                     <Icon name="tabler:phone" class="h-5 w-5 text-gray-900" aria-hidden="true" role="presentation" />
                                     <span class="sr-only">Telefon</span>
                                 </dt>
@@ -87,13 +87,13 @@
                                 </dd>
                             </div>
                             
-                            <div class="inline-flex space-x-5">
-                                <dt>
+                            <div class="inline-flex space-x-5 items-center">
+                                <dt >
                                     <Icon name="tabler:mail" class="h-5 w-5 text-gray-900" aria-hidden="true" role="presentation" />
                                     <span class="sr-only">E-mail</span>
                                 </dt>
                                 <dd>
-                                    <a href="mailto:kontakt@formula-micro.dk" class="text-gray-700 !font-normal !no-underline hover:underline">info@formula-micro.dk</a>
+                                    <a href="mailto:info@formula-micro.dk" class="text-gray-700 !font-normal !no-underline hover:underline">info@formula-micro.dk</a>
                                 </dd>
                             </div>
                         </dl>
@@ -152,7 +152,7 @@
 
                         <div class="col-span-2 prose leading-relaxed text-white">
                             <p>Dine oplysninger, som du indtaster i vores kontaktformular, bruges til at besvare din henvendelse.</p>
-                            <p>I vores <a href="#" class="text-white !font-normal !no-underline hover:underline"> persondatapolitik</a> kan du læse mere om, hvordan vi behandler dine persondata samt hvilke rettigheder du har.</p>
+                            <p>I vores <a href="#" class="text-white !font-normal hover:underline"> persondatapolitik</a> kan du læse mere om, hvordan vi behandler dine persondata samt hvilke rettigheder du har.</p>
                         </div>
 
                         <div v-if="error" class="col-span-2 flex justify-between items-center text-red-600 bg-white px-3 py-2 rounded-xl">
