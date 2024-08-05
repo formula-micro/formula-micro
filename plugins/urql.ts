@@ -7,8 +7,8 @@ export default defineNuxtPlugin(nuxt =>
 
     const ssr = ssrExchange(
     {
-        isClient: process.client,
-        initialState: process.client ? nuxt.payload[SSR_KEY] : undefined,
+        isClient: import.meta.client,
+        initialState: import.meta.client ? nuxt.payload[SSR_KEY] : undefined,
     });
 
     // When app has been rendered on the server, send SSR state to client.
