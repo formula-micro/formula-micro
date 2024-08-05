@@ -4,7 +4,6 @@
     // Fields.
     const { $preview } = useNuxtApp(); 
     const { slug } = useRoute().params;
-    console.log(slug);
 
     // Get page.
     if ($preview) {
@@ -66,7 +65,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col items-center w-full mt-5 xl:mt-12">
+    <div class="flex flex-col items-center w-full mt-8 xl:mt-2">
         <div class="flex flex-col justify-center items-center w-full">
             <template v-for="block in blocks">
                 <BlocksBannerHero :data="block" />
