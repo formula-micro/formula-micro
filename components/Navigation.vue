@@ -5,7 +5,7 @@
     const isSearchModalVisible = ref(false);
     const isMobileMenuVisible = ref(false);
     const activeLink = ref<any>(undefined);
-    const { data: navigationMenuData } = await useNavigationMenuQuery();
+    const { data: navigationMenuData } = await useNavigationMenuQuery({ variables: {} });
     const links = computed(() => navigationMenuData.value?.navigation_menu?.links ?? []);
 
     // Methods.
@@ -17,7 +17,6 @@
 
     const getIconName = (filename_download : string|undefined) => filename_download?.replace("_", ":").replace(".svg", "") ?? ""; 
 </script>
-
 
 <template>
     <!-- Skip to content button -->

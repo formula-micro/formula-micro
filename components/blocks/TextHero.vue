@@ -10,7 +10,7 @@
     const props = defineProps<Properties>();
 
     // Fields.
-    const { __typename, background_color, width, has_padding, illustration_type, image, icon, title, content } = toRefs(props.data);
+    const { __typename, background_color, width, has_vertical_padding, illustration_type, image, icon, title, content } = toRefs(props.data);
     const iconName = computed(() => icon?.value?.filename_download.replace("_", ":").replace(".svg", "") ?? "");
     const breakpoints = useBreakpoints(breakpointsTailwind);
     const mdAndSmaller = breakpoints.smallerOrEqual("md");
@@ -20,7 +20,7 @@
 </script>
 
 <template>
-    <div v-if="__typename === 'text_hero_blocks'" :class="[ background_color?.class, width?.class, has_padding ? 'mb-8 xl:mb-16' : '', 'xl:rounded-xl w-full flex flex-col justify-center items-center text-center py-32 xl:py-42 px-3 lg:px-0' ]">
+    <div v-if="__typename === 'text_hero_blocks'" :class="[ background_color?.class, width?.class, has_vertical_padding ? 'mb-8 xl:mb-16' : '', 'xl:rounded-xl w-full flex flex-col justify-center items-center text-center py-32 xl:py-42 px-3 lg:px-0' ]">
         <Icon v-if="illustration_type === 'icon' && icon" :name="iconName" class="w-20 h-20 text-white" />
 
         <div v-if="illustration_type === 'image' && image" class="bg-white rounded-xl shadow-md p-3">

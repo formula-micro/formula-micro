@@ -8,10 +8,7 @@
 
 <template>
     <template v-if="block.type === 'header'" class="prose">
-        <component :is="`h${block.data.level}`"
-                :class="{
-                    'leading-relaxed' : true }"
-        >
+        <component :is="`h${block.data.level}`">
             <span v-html="block.data.text"></span>
         </component>
     </template>

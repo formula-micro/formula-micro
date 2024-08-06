@@ -9,7 +9,7 @@
     const props = defineProps<Properties>();
 
     // Fields.
-    const { __typename, width, has_padding } = toRefs(props.data);
+    const { __typename, width, has_vertical_padding, has_horizontal_padding } = toRefs(props.data);
     const isNessecaryCookiesExpanded = ref(false);
     const enabled = ref(true);
 
@@ -51,9 +51,9 @@
 
 <template>
     <div v-if="__typename === 'cookie_selection_blocks'" class="w-full px-6 xl:px-12">
-        <div :class="[ has_padding ? 'py-4' : '', 'flex justify-center items-center w-full' ]">
-            <div :class="[ width?.class, has_padding ? 'py-8 xl:py-16' : '', 'w-full prose ' ]">
-                <h2 class="!font-semibold">Samtykke status</h2>
+        <div :class="[ has_vertical_padding ? 'py-4' : '', 'flex justify-center items-center w-full' ]">
+            <div :class="[ width?.class, has_vertical_padding ? 'py-8 xl:py-16' : '', has_horizontal_padding ? 'px-6' : '', 'w-full prose ' ]">
+                <h2>Samtykke status</h2>
                 <p>Du har her mulighed for at se dit aktuelle samtykke og mulighed for at ændre det.</p>
 
                 <div>

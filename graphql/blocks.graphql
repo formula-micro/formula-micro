@@ -40,7 +40,9 @@ fragment ServicesListBlock on services_list_blocks {
     width {
         ...Width
     }
-    has_padding
+    has_vertical_padding
+    has_horizontal_padding
+    text_size
     title
     content
     links_placement
@@ -74,7 +76,6 @@ fragment BannerHeroBlock on banner_hero_blocks {
     width {
         ...Width
     }
-    has_padding
     title
     banners {
         title
@@ -113,7 +114,7 @@ fragment TextHeroBlock on text_hero_blocks {
     width {
         ...Width
     }
-    has_padding
+    has_vertical_padding
     illustration_type
     icon {
         filename_download
@@ -133,7 +134,8 @@ fragment TextAndImageBlock on text_and_image_blocks {
     width {
         ...Width
     }
-    has_padding
+    has_vertical_padding
+    has_horizontal_padding
     title
     editor_js_content: content
     image_placement
@@ -167,7 +169,8 @@ fragment RichTextBlock on richtext_blocks {
     width {
         ...Width
     }
-    has_padding
+    has_vertical_padding
+    has_horizontal_padding
     title
     show_title
     title_placement
@@ -201,7 +204,8 @@ fragment CookieSelectionBlock on cookie_selection_blocks {
     width {
         ...Width
     }
-    has_padding
+    has_vertical_padding
+    has_horizontal_padding
 }
 
 fragment ContactFormBlock on contact_form_blocks {
@@ -211,7 +215,8 @@ fragment ContactFormBlock on contact_form_blocks {
     width {
         ...Width
     }
-    has_padding
+    has_vertical_padding
+    has_horizontal_padding
     title
     description
 }
@@ -245,7 +250,8 @@ fragment GalleryBlock on gallery_blocks {
     width {
         ...Width
     }
-    has_padding
+    has_vertical_padding
+    has_horizontal_padding
     title
     show_title
     images {

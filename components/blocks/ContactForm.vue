@@ -38,7 +38,7 @@
     const props = defineProps<Properties>();
 
     // Fields.
-    const { __typename, width, has_padding, background_color, title, description } = toRefs(props.data);
+    const { __typename, width, has_vertical_padding, has_horizontal_padding, background_color, title, description } = toRefs(props.data);
     const { handleSubmit, isSubmitting, resetForm } = useForm({ validationSchema: toTypedSchema(zod.object({
         name: zod.string().min(1).max(50),
         company: zod.string().min(1).max(50),
@@ -69,11 +69,16 @@
 
 <template>
     <template v-if="__typename === 'contact_form_blocks'">
-        <section id="contact-form-section" :class="[ has_padding ? 'py-12 mt-8' : '', 'flex justify-center items-center w-full xl:px-12' ]">
-            <div :class="[ has_padding ? 'py-10' : '', 'flex justify-center items-center w-full' ]">
-                <div :class="[ width?.class, width?.class === 'max-w-7xl xl:max-w-8xl 4xl:max-w-10xl' ? 'grid-cols-1 lg:grid-cols-[1.2fr,0.2fr,1.5fr] 4xl:grid-cols-[1.2fr,0.5fr,1.2fr]' : 'grid-cols-1 lg:grid-cols-[1.2fr,0.5fr,1.4fr] 4xl:grid-cols-[1.2fr,0.5fr,1.5fr]', 'grid w-full lg:px-6' ]">
+        <section id="contact-form-section" :class="[ has_vertical_padding ? 'py-12 mt-8' : '', 'flex justify-center items-center w-full xl:px-12' ]">
+            <div :class="[ has_vertical_padding ? 'py-10' : '', has_horizontal_padding ? '' : '', 'flex justify-center items-center w-full' ]">
+                <div :class="[ width?.class,
+                               width?.class === 'max-w-7xl xl:max-w-8xl 4xl:max-w-10xl' ? 'grid-cols-1 lg:grid-cols-[1.2fr,0.2fr,1.5fr] 4xl:grid-cols-[1.2fr,0.5fr,1.2fr]' : 'grid-cols-1 lg:grid-cols-[1.2fr,0.5fr,1.4fr] 4xl:grid-cols-[1.2fr,0.5fr,1.5fr]',
+                               has_horizontal_padding ? 'lg:px-6' : '',
+                               'grid w-full' ]">
+
+                    <!-- Description -->
                     <div class="prose px-6 lg:px-0">
-                        <h2 class="!font-semibold">{{ title }}</h2>
+                        <h2>{{ title }}</h2>
                         <div class="mt-5" v-html="description" />
 
                         <dl class="mt-12 flex flex-col gap-5">
@@ -101,10 +106,13 @@
 
                     <div class="h-12 2xl:h-0" />
 
+                    <!-- Form -->
                     <form id="contact-form" method="POST" @submit.prevent="onSubmit" :class="[ background_color?.class, 'relative grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 text-white lg:rounded-xl px-6 xl:px-12 py-24' ]">
                         <div>
                             <Icon name="tabler:send" class="absolute top-0 left-0 mt-9 ml-9 h-10 w-10" />
                         </div>
+
+                        <!-- Name -->
                         <div class="col-span-2">
                             <div class="relative z-0">
                                 <input id="name" type="text" v-model="name" class="block pt-4 pb-3 px-0 w-full text-white bg-transparent border-0 border-b-2 border-white appearance-none focus:outline-none focus:ring-0 focus:border-white peer" placeholder="">
@@ -114,6 +122,7 @@
                             <p v-if="!nameErorMessage" class="mt-1 text-sm select-none">&nbsp;</p>
                         </div>
 
+                        <!-- Company -->
                         <div class="col-span-2">
                             <div class="relative z-0">
                                 <input id="company" type="text" v-model="company" class="block pt-4 pb-3 px-0 w-full text-white bg-transparent border-0 border-b-2 border-white appearance-none focus:outline-none focus:ring-0 focus:border-white peer" placeholder="">
@@ -123,6 +132,7 @@
                             <p v-if="!companyErrorMessage" class="mt-1 text-sm select-none">&nbsp;</p>
                         </div>
 
+                        <!-- E-mail address -->
                         <div class="col-span-1">
                             <div class="relative z-0">
                                 <input id="email" type="email" v-model="email" class="block pt-4 pb-3 px-0 w-full text-white bg-transparent border-0 border-b-2 border-white appearance-none focus:outline-none focus:ring-0 focus:border-white peer" placeholder="">
@@ -132,6 +142,7 @@
                             <p v-if="!emailErrorMessage" class="mt-1 text-sm select-none">&nbsp;</p>
                         </div>
 
+                        <!-- Phone -->
                         <div class="col-span-1">
                             <div class="relative z-0">
                                 <input id="phone" type="text" v-model="phone" class="block pt-4 pb-3 px-0 w-full text-white bg-transparent border-0 border-b-2 border-white appearance-none focus:outline-none focus:ring-0 focus:border-white peer" placeholder="">
@@ -141,6 +152,7 @@
                             <p v-if="!phoneErrorMessage" class="mt-1 text-sm select-none">&nbsp;</p>
                         </div>
 
+                        <!-- Message -->
                         <div class="col-span-2">
                             <div class="relative z-0">
                                 <textarea id="message" rows="5" v-model="message" class="block pt-4 pb-3 px-0 w-full text-white bg-transparent border-0 border-b-2 border-white appearance-none focus:outline-none focus:ring-0 focus:border-white peer" placeholder="" />
@@ -150,11 +162,13 @@
                             <p v-if="!messageErrorMessage" class="mt-1 text-sm select-none">&nbsp;</p>
                         </div>
 
+                        <!-- Art. 13 GDPR: Information to be provided where personal data are collected from the data subject -->
                         <div class="col-span-2 prose leading-relaxed text-white">
                             <p>Dine oplysninger, som du indtaster i vores kontaktformular, bruges til at besvare din henvendelse.</p>
-                            <p>I vores <a href="#" class="text-white !font-normal hover:underline"> persondatapolitik</a> kan du læse mere om, hvordan vi behandler dine persondata samt hvilke rettigheder du har.</p>
+                            <p>I vores <a href="#" class="text-white !font-normal hover:underline">persondatapolitik</a> kan du læse mere om, hvordan vi behandler dine persondata, samt hvilke rettigheder du har.</p>
                         </div>
 
+                        <!-- When we're unable to submit the contact form, show the error -->
                         <div v-if="error" class="col-span-2 flex justify-between items-center text-red-600 bg-white px-3 py-2 rounded-xl">
                             <div>
                                 <p class="font-bold tracking-wide">Fejl</p>
@@ -164,8 +178,10 @@
                             <button type="button" @click="error = undefined" class="font-semibold text-gray-900 px-3 py-2 hover:bg-gray-200/95 rounded-xl transition transform duration-150">Skjul</button>
                         </div>
 
+                        <!-- Submit button -->
                         <button type="submit" :disabled="isSubmitting" :class="[ 'hover:' + background_color?.class?.replace('bg', 'text'), 'border-2 border-white hover:bg-white/90 transition transform duration-150 rounded-full px-5 py-3' ]">Send</button>
 
+                        <!-- Lottie checkmark animation -->
                         <HeadlessTransitionRoot
                             appear
                             :show="showCheckmark"

@@ -18,7 +18,7 @@
 
     // Fields.
     const plugins = [ lgThumbnail, lgZoom, lgVideo ];
-    const { __typename, width, has_padding, title, show_title, images } = toRefs(props.data);
+    const { __typename, width, has_vertical_padding, has_horizontal_padding, title, show_title, images } = toRefs(props.data);
     const pictures = computed(() => images?.value?.map(image => image?.directus_files_id) ?? []);
     const paragraphClass = "class=\"!text-base\"";
 
@@ -28,8 +28,8 @@
 
 <template>
     <div v-if="__typename === 'gallery_blocks'" class="w-full">
-        <div :class="[ has_padding ? 'py-8' : '', 'flex justify-center items-center w-full xl:px-12' ]">
-            <div :class="[ width?.class, 'w-full px-6' ]">
+        <div :class="[ has_vertical_padding ? 'py-8' : '', 'flex justify-center items-center w-full xl:px-12' ]">
+            <div :class="[ width?.class, has_horizontal_padding ? 'px-6' : '', 'w-full' ]">
                 <h2 v-if="show_title" class="text-2xl font-semibold mb-5">{{ title }}</h2>
 
                 <Lightgallery :settings="{ mode: 'lg-slide', download: false, plugins }" :class="[ 'w-full grid grid-cols-5 items-center gap-6' ]">

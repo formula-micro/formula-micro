@@ -57,7 +57,45 @@ export default {
                     "800": "#056043",
                     "900": "#054834",
                 },
+                "pinkoi-navy": {
+                    "50": "#f1f7fe",
+                    "100": "#e2eefc",
+                    "200": "#beddf9",
+                    "300": "#84c1f5",
+                    "400": "#43a2ed",
+                    "500": "#1a85dd",
+                    "600": "#0d68bc",
+                    "700": "#0c5398",
+                    "800": "#0e487e",
+                    "900": "#123d68",
+                    "950": "#0e2e53",
+                },
             },
+            typography: {
+                DEFAULT: {
+                    css: {
+                        h1: {
+                            fontWeight: "800",
+                            lineHeight: 1.625,
+                        },
+                        h2: {
+                            fontWeight: "600",
+                            lineHeight: 1.625,
+                        },
+                        h3: {
+                            fontWeight: "600",
+                            lineHeight: 1.625,
+                        },
+                        h4: {
+                            fontWeight: "600",
+                            lineHeight: 1.625,
+                        },
+                        ul: {
+                            "padding-inline-start": 0,
+                        }
+                    }
+                }
+            }
         },
     },
     plugins: [
@@ -72,6 +110,9 @@ export default {
         "bg-blue-900",
         "bg-blue-800",
         "bg-blue-700",
+        "bg-pinkoi-navy-900",
+        "bg-pinkoi-navy-800",
+        "bg-pinkoi-navy-700",
         "bg-cyan-900",
         "bg-cyan-800",
         "bg-cyan-700",
@@ -253,5 +294,5 @@ export default {
         "lg:grid-cols-[4fr,0.5fr,4fr]",
         "lg:grid-cols-[4fr,0.5fr,3fr]",
         "lg:grid-cols-[3fr,0.5fr,4fr]",
-    ],
+    ]
 } satisfies Config;
