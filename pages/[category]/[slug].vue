@@ -6,11 +6,19 @@
     const { category, slug } = useRoute().params;
 
     // Get page.
+    const previewData = {} as any;
     if ($preview) {
-        const { data: pageData } = await usePagesQuery({ variables: { filter: { slug: { _eq: `${category}/${slug}` }, status: { _eq: "published" } }, limit: 1 } });
+        // const { data: pageData } = await usePagesQuery({ variables: { filter: { slug: { _eq: `${category}/${slug}` }, status: { _eq: "published" } }, limit: 1 } });
+        window.addEventListener("message", (event) =>
+        {
+            const { type, path, values } = event.data;
+            if (type !== "directus-preview") return;
+            previewData.values = values;
+            console.log(event.data);
+        }, false);
     }
     const { data: pageData } = await usePagesQuery({ variables: { filter: { slug: { _eq: `${category}/${slug}` }, status: { _eq: "published" } }, limit: 1 } });
-    const page = computed(() => pageData.value?.pages[0] ?? undefined);
+    const page = computed(() => $preview ? previewData.values : pageData.value?.pages[0] ?? undefined);
 
     // When unable to find the page, throw a 404 error.
     if (!page.value) throw createError({ statusCode: 404, statusMessage: "Siden blev ikke fundet" });

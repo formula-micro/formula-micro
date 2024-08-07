@@ -1,4 +1,4 @@
-FROM node:19-alpine as build
+FROM node:20-alpine as build
 
 # update and install the latest dependencies
 # Add non root user to the docker image and set the user
