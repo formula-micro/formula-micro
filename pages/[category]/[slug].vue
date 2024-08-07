@@ -7,7 +7,7 @@
 
     // Get page.
     const previewData = {} as any;
-    if ($preview) {
+    if ($preview && import.meta.client) {
         // const { data: pageData } = await usePagesQuery({ variables: { filter: { slug: { _eq: `${category}/${slug}` }, status: { _eq: "published" } }, limit: 1 } });
         window.addEventListener("message", (event) =>
         {
@@ -18,7 +18,7 @@
         }, false);
     }
     const { data: pageData } = await usePagesQuery({ variables: { filter: { slug: { _eq: `${category}/${slug}` }, status: { _eq: "published" } }, limit: 1 } });
-    const page = computed(() => $preview ? previewData.values : pageData.value?.pages[0] ?? undefined);
+    const page = computed(() => $preview && import.meta.client ? previewData.values : pageData.value?.pages[0] ?? undefined);
 
     // When unable to find the page, throw a 404 error.
     if (!page.value) throw createError({ statusCode: 404, statusMessage: "Siden blev ikke fundet" });
