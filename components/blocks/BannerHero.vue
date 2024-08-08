@@ -17,7 +17,7 @@
 </script>
 
 <template>
-    <div v-if="__typename === 'banner_hero_blocks'" class="w-full px-6 xl:px-12">
+    <div class="w-full px-6 xl:px-12">
         <div class="flex justify-center items-center w-full">
             <div :class="[ width?.class ]">
                 <Splide :options="{ rewind: true, drag: banners ? banners.length > 1 : false, autoplay: autoplay, interval: interval, gap: '2rem', video: { playerOptions: { htmlVideo: { preload: 'auto' } } } }" :extensions="{ Video }" :has-track="false">

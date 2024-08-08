@@ -4,12 +4,13 @@
     // Properties.
     interface Properties
     {
+        isChild: boolean;
         data: Disclosure_Blocks;
     }
     const props = defineProps<Properties>();
 
     // Fields.
-    const { __typename, width, has_padding, title, is_expanded_by_default, editor_js_content } = toRefs(props.data);
+    const { __typename, width, has_vertical_padding, has_horizontal_padding, title, is_expanded_by_default, editor_js_content } = toRefs(props.data);
     const emit = defineEmits(["on-expanded", "on-collapsed"]);
     const internalIsExpanded = ref(is_expanded_by_default?.value ?? false);
     const overflowControl = ref("");
@@ -63,35 +64,34 @@
 </script>
  
 <template>
-    <div v-if="__typename === 'disclosure_blocks'" class="w-full px-6 xl:px-12">
-        <div class="flex justify-center items-center w-full">
-            <div :class="[ overflowControl, width?.class, 'w-full prose py-2' ]">               
-                <button type="button" @click="onClick" :class="[ internalIsExpanded ? 'mb-6' : 'mb-2', 'w-full flex items-center justify-between group' ]">
-                    <div class="flex flex-col">
-                        <div class="w-full flex items-center mb-1">
-                            <span class="flex items-center">
-                                <Icon name="tabler:chevron-down" :class="[ internalIsExpanded ? '-rotate-180' : 'rotate-0', 'w-6 h-6 transition transform duration-300 ease-in-out text-gray-400 group-focus:text-gray-900' ]" />
-                            </span>
-                            <h2 class="ml-3 text-base font-bold text-gray-800 !mt-0 !mb-0">{{ title }}</h2>
-                        </div>
-                    </div>
-                </button>
+    <div :class="[ !isChild ? 'px-6 xl:px-12' : '', 'flex justify-center items-center w-full' ]">
+        <div :class="[ overflowControl, width?.class, !isChild ? 'py-2' : '', 'w-full prose' ]">               
+            <button type="button" @click="onClick" :class="[ internalIsExpanded ? 'mb-6' : 'mb-2', 'w-full flex items-center justify-between group' ]">
+                <div class="flex flex-col w-full">
+                    <div class="w-full flex justify-between items-center mb-1">
+                        <h3 class="!mt-0 !mb-0">{{ title }}</h3>
 
-                <transition enter-active-class="ease-in duration-300"
-                            enter-class="opacity-0"
-                            enter-to-class="opacity-100"
-                            leave-active-class="ease-out duration-300"
-                            leave-class="opacity-100"
-                            leave-to-class="opacity-0"
-                            @enter="enter"
-                            @after-enter="afterEnter"
-                            @leave="leave">
-
-                    <div v-show="internalIsExpanded">
-                        <EditorjsEditorJS :blocks="editor_js_content?.blocks" />
+                        <span class="flex items-center">
+                            <Icon name="tabler:chevron-down" :class="[ internalIsExpanded ? '-rotate-180' : 'rotate-0', 'w-6 h-6 transition transform duration-300 ease-in-out text-gray-400 group-focus:text-gray-900' ]" />
+                        </span>
                     </div>
-                </transition>
-            </div>
+                </div>
+            </button>
+
+            <transition enter-active-class="ease-in duration-300"
+                        enter-class="opacity-0"
+                        enter-to-class="opacity-100"
+                        leave-active-class="ease-out duration-300"
+                        leave-class="opacity-100"
+                        leave-to-class="opacity-0"
+                        @enter="enter"
+                        @after-enter="afterEnter"
+                        @leave="leave">
+
+                <div v-show="internalIsExpanded">
+                    <EditorjsEditorJS :blocks="editor_js_content?.blocks" />
+                </div>
+            </transition>
         </div>
     </div>
 </template>

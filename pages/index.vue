@@ -68,31 +68,33 @@
     <div class="flex flex-col items-center w-full mt-8 xl:mt-2">
         <div class="flex flex-col justify-center items-center w-full">
             <template v-for="block in blocks">
-                <BlocksBannerHero :data="block" />
+                <BlocksBannerHero v-if="block.__typename === 'banner_hero_blocks'" :data="block" />
 
-                <BlocksTextHero :data="block" />
+                <BlocksTextHero v-if="block.__typename === 'text_hero_blocks'" :data="block" />
 
-                <BlocksGallery :data="block" />
+                <BlocksGallery v-if="block.__typename === 'gallery_blocks'" :data="block" />
 
-                <BlocksPartners :data="block" class="max-w-7xl px-6 xl:px-12" />
+                <BlocksPartners v-if="block.__typename === 'partners_blocks'" :data="block" class="max-w-7xl px-6 xl:px-12" />
 
-                <BlocksServicesList :data="block" />
+                <BlocksServicesList v-if="block.__typename === 'services_list_blocks'" :data="block" />
 
-                <BlocksTextAndImage :data="block" />
+                <BlocksTextAndImage v-if="block.__typename === 'text_and_image_blocks'" :data="block" />
 
-                <BlocksRichText :data="block" />
+                <BlocksRichText v-if="block.__typename === 'richtext_blocks'" :data="block" />
 
-                <BlocksSpacer :data="block" />
+                <BlocksSpacer v-if="block.__typename === 'spacer_blocks'" :data="block" />
 
-                <BlocksDisclosure :data="block" />
+                <BlocksDisclosureGroup v-if="block.__typename === 'disclosure_group_blocks'" :data="block" />
 
-                <BlocksGoogleMaps :data="block" />
+                <BlocksDisclosure v-if="block.__typename === 'disclosure_blocks'" :is-child="false" :data="block" />
 
-                <BlocksCookieSelection :data="block" />
+                <BlocksGoogleMaps v-if="block.__typename === 'google_maps_blocks'" :data="block" />
 
-                <BlocksContactForm :data="block" />
+                <BlocksCookieSelection v-if="block.__typename === 'cookie_selection_blocks'" :data="block" />
 
-                <BlocksColumns :data="block" />
+                <BlocksContactForm v-if="block.__typename === 'contact_form_blocks'" :data="block" />
+
+                <BlocksColumns v-if="block.__typename === 'columns_blocks'" :data="block" />
             </template>
         </div>
     </div>

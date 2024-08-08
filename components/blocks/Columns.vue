@@ -14,21 +14,21 @@
 </script>
 
 <template>
-    <div v-if="__typename === 'columns_blocks'" class="w-full px-6 xl:px-12">
+    <div class="w-full px-6 xl:px-12">
         <div class="flex justify-center items-center w-full">
             <div :class="[ width?.class, vertical_alignment, extended_control ? 'grid-cols-1 ' + custom_css : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3', 'grid gap-4 lg:gap-6 xl:gap-8 w-full' ]">
                 <template v-for="block in blocks">
-                    <BlocksGallery :data="block" />
+                    <BlocksGallery v-if="block.__typename === 'gallery_blocks'" :data="block" />
 
-                    <BlocksServicesList :data="block" />
+                    <BlocksServicesList v-if="block.__typename === 'services_list_blocks'" :data="block" />
 
-                    <BlocksRichText :data="block" />
+                    <BlocksRichText v-if="block.__typename === 'richtext_blocks'" :data="block" />
 
-                    <BlocksDisclosure :data="block" />
+                    <BlocksDisclosure v-if="block.__typename === 'disclosure_blocks'" :is-child="false" :data="block" />
 
-                    <BlocksCard :data="block" />
+                    <BlocksCard v-if="block.__typename === 'card_blocks'" :data="block" />
 
-                    <BlocksImage :data="block" />
+                    <BlocksImage v-if="block.__typename === 'image_blocks'" :data="block" />
                 </template>
             </div>
         </div>

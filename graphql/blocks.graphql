@@ -177,11 +177,36 @@ fragment RichTextBlock on richtext_blocks {
     editor_js_content: content
 }
 
+fragment DisclosureGroupBlock on disclosure_group_blocks {
+    width {
+        ...Width
+    }
+    has_vertical_padding
+    has_horizontal_padding
+    title
+    title_placement
+    disclosure_group_categories(sort: [ "sort" ]) {
+        ...DisclosureGroupCategory
+    }
+}
+
+fragment DisclosureGroupCategory on disclosure_group_categories {
+    id
+    sort
+    name
+    disclosures(sort: [ "sort" ]) {
+        disclosure_blocks_id {
+            ...DisclosureBlock
+        }
+    }
+}
+
 fragment DisclosureBlock on disclosure_blocks {
     width {
         ...Width
     }
-    has_padding
+    has_vertical_padding
+    has_horizontal_padding
     title
     is_expanded_by_default
     editor_js_content: content

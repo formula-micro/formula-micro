@@ -27,9 +27,9 @@
 </script>
 
 <template>
-    <div v-if="__typename === 'gallery_blocks'" class="w-full">
+    <div class="w-full">
         <div :class="[ has_vertical_padding ? 'py-8' : '', 'flex justify-center items-center w-full xl:px-12' ]">
-            <div :class="[ width?.class, has_horizontal_padding ? 'px-6' : '', 'w-full' ]">
+            <div :class="[ width?.class, has_horizontal_padding ? 'px-6' : 'px-6 xl:px-0', 'w-full' ]">
                 <h2 v-if="show_title" class="text-2xl font-semibold mb-5">{{ title }}</h2>
 
                 <Lightgallery :settings="{ mode: 'lg-slide', download: false, plugins }" :class="[ 'w-full grid grid-cols-5 items-center gap-6' ]">

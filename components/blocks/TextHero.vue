@@ -20,7 +20,7 @@
 </script>
 
 <template>
-    <div v-if="__typename === 'text_hero_blocks'" :class="[ background_color?.class, width?.class, has_vertical_padding ? 'mb-8 xl:mb-16' : '', 'xl:rounded-xl w-full flex flex-col justify-center items-center text-center py-32 xl:py-42 px-3 lg:px-0' ]">
+    <div :class="[ background_color?.class, width?.class, has_vertical_padding ? 'mb-8 xl:mb-16' : '', 'xl:rounded-xl w-full flex flex-col justify-center items-center text-center py-32 xl:py-42 px-3 2xl:px-0' ]">
         <Icon v-if="illustration_type === 'icon' && icon" :name="iconName" class="w-20 h-20 text-white" />
 
         <div v-if="illustration_type === 'image' && image" class="bg-white rounded-xl shadow-md p-3">

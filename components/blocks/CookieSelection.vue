@@ -50,9 +50,9 @@
 </script>
 
 <template>
-    <div v-if="__typename === 'cookie_selection_blocks'" class="w-full px-6 xl:px-12">
+    <div class="w-full px-6 xl:px-12">
         <div :class="[ has_vertical_padding ? 'py-4' : '', 'flex justify-center items-center w-full' ]">
-            <div :class="[ width?.class, has_vertical_padding ? 'py-8 xl:py-16' : '', has_horizontal_padding ? 'px-6' : '', 'w-full prose ' ]">
+            <div :class="[ width?.class, has_vertical_padding ? 'py-8 xl:py-16' : '', has_horizontal_padding ? 'px-6' : 'px-6 xl:px-0', 'w-full prose ' ]">
                 <h2>Samtykke status</h2>
                 <p>Du har her mulighed for at se dit aktuelle samtykke og mulighed for at ændre det.</p>
 

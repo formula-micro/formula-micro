@@ -13,5 +13,5 @@
 </script>
 
 <template>
-    <div v-if="__typename === 'spacer_blocks'" :class="[ height?.class, 'w-full' ]" />
+    <div :class="[ height?.class, 'w-full' ]" />
 </template>
