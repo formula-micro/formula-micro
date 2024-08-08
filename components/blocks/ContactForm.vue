@@ -68,7 +68,7 @@
 </script>
 
 <template>
-    <template v-if="__typename === 'contact_form_blocks'">
+    <template>
         <section id="contact-form-section" :class="[ has_vertical_padding ? 'py-12 mt-8' : '', 'flex justify-center items-center w-full xl:px-12' ]">
             <div :class="[ has_vertical_padding ? 'py-10' : '', has_horizontal_padding ? '' : '', 'flex justify-center items-center w-full' ]">
                 <div :class="[ width?.class,

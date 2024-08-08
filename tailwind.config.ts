@@ -280,6 +280,7 @@ export default {
         "!text-base",
         "-rotate-180",
         "rotate-0",
+        "xl:px-0",
         "xl:mb-0",
         "!font-semibold",
         "lg:grid-cols-[1fr,0fr,1fr]",

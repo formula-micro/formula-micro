@@ -25,6 +25,9 @@ fragment Page on pages {
             ... on richtext_blocks {
                 ...RichTextBlock
             }
+            ... on disclosure_group_blocks {
+                ...DisclosureGroupBlock
+            }
             ... on disclosure_blocks {
                 ...DisclosureBlock
             }

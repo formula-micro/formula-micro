@@ -13,7 +13,7 @@
 </script>
 
 <template>
-    <div v-if="__typename === 'google_maps_blocks'" class="w-full px-6 xl:px-12">
+    <div class="w-full px-6 xl:px-12">
         <div :class="[ has_padding ? 'py-4' : '', 'flex justify-center items-center w-full' ]">
             <div :class="[ width?.class, has_padding ? 'py-8 xl:py-16' : '', 'w-full' ]">
                 <!-- TODO: Brug Maps Javascript API v3, da den ikke bruger cookies og da vi kan fjerne konkurrenter fra vores map. -->
