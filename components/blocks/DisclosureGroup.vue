@@ -32,7 +32,7 @@
                     </button>
                 </div>
 
-                <template v-for="disclosure in disclosure_blocks" :key="disclosure!.id">
+                <template v-for="disclosure in disclosure_blocks" :key="disclosure?.disclosure_blocks_id?.id">
                     <BlocksDisclosure :is-child="true" :data="disclosure!.disclosure_blocks_id!" />
                     <Divider />
                 </template>

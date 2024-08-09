@@ -202,6 +202,7 @@ fragment DisclosureGroupCategory on disclosure_group_categories {
 }
 
 fragment DisclosureBlock on disclosure_blocks {
+    id
     width {
         ...Width
     }
