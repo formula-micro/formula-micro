@@ -20,6 +20,15 @@ fragment PartnersBlock on partners_blocks {
     }
 }
 
+fragment NewsBlock on news_blocks {
+    title
+    tags {
+        tags_id {
+            ...Tag
+        }
+    }
+}
+
 fragment Color on colors {
     class
 }

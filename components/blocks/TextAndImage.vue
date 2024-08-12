@@ -28,3 +28,5 @@
         </div>
     </div>
 </template>
+
+//TODO: fejlhåndtering ved null id på img data
