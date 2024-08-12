@@ -95,6 +95,8 @@
                 <BlocksContactForm v-if="block.__typename === 'contact_form_blocks'" :data="block" />
 
                 <BlocksColumns v-if="block.__typename === 'columns_blocks'" :data="block" />
+
+                <BlocksNews :data="block" />
             </template>
         </div>
     </div>
