@@ -81,21 +81,21 @@
 
                     <dl class="mt-12 flex flex-col gap-5">
                         <div class="inline-flex space-x-5 items-center">
-                            <dt >
+                            <dt class="inline-flex justify-center !mt-0">
                                 <Icon name="tabler:phone" class="h-5 w-5 text-gray-900" aria-hidden="true" role="presentation" />
                                 <span class="sr-only">Telefon</span>
                             </dt>
-                            <dd>
+                            <dd class="!mt-0">
                                 <a href="tel:+4520136133" class="text-gray-700 !font-normal !no-underline hover:underline">+45 20 13 61 33</a>
                             </dd>
                         </div>
                         
                         <div class="inline-flex space-x-5 items-center">
-                            <dt >
+                            <dt class="inline-flex justify-center !mt-0">
                                 <Icon name="tabler:mail" class="h-5 w-5 text-gray-900" aria-hidden="true" role="presentation" />
                                 <span class="sr-only">E-mail</span>
                             </dt>
-                            <dd>
+                            <dd class="!mt-0">
                                 <a href="mailto:info@formula-micro.dk" class="text-gray-700 !font-normal !no-underline hover:underline">info@formula-micro.dk</a>
                             </dd>
                         </div>
