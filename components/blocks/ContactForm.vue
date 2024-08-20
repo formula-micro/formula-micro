@@ -86,7 +86,7 @@
                                 <span class="sr-only">Telefon</span>
                             </dt>
                             <dd>
-                                <a href="tel:+4520136133" class="text-gray-700 !font-normal !no-underline hover:underline">+45 20 13 61 33</a>
+                                <a href="tel:+4556959221" class="text-gray-700 !font-normal !no-underline hover:underline"> +45 56 95 92 21</a>
                             </dd>
                         </div>
                         

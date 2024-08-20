@@ -13,27 +13,28 @@ const props = defineProps<Properties>();
 const { __typename, tags } = toRefs(props.data);
 const tagIds = computed(() => props.data.tags?.map(tag => tag.tags_id.id) ?? []);
 
-
+// Error state.
+const errorMessage = ref<string | null>(null);
 
 // GraphQL query
-const { data, error } = useNewsPostsByTagsQuery({ variables: { tags: tagIds.value, sort: [ "-date_published" ], limit: 3} });
+const { data, error } = useNewsPostsByTagsQuery({ variables: { tags: tagIds.value, sort: ["-date_published"], limit: 3 }} );
+
 
 if (error.value) {
+    errorMessage.value = 'Der opstod en fejl under indlæsningen af nyhederne.';
     console.error(error.value);
 }
-
 
 //const newsPosts = computed(() => data.value?.news_posts);
 
 // const newsPosts = computed(() => {
-//     return data.value?.news_posts.slice().sort((a, b) => {
-//         return new Date(b.date_published).getTime() - new Date(a.date_published).getTime();
-//     });
+//     return data.value?.news_posts;
 // });
 
 const newsPosts = computed(() => {
-    return data.value?.news_posts;
+  return data.value?.news_posts?.filter(post => post.status === "published");
 });
+
 
 console.log(newsPosts.value);
 </script>
@@ -41,6 +42,16 @@ console.log(newsPosts.value);
 <template>
     <div v-if="__typename === 'news_blocks'" class="max-w-9xl mx-auto px-6 xl:px-12">
         <h2 class="text-3xl xl:text-5xl xl:font-normal pb-6">Nyheder</h2>
+        <NuxtLink to="/nyheder">
+            <p class="text-xl mb-6">Se alle nyheder</p>
+        </NuxtLink>
+
+        <!-- Error message -->
+        <div v-if="errorMessage" class="text-center text-gray-500 py-8">
+            <p>{{ errorMessage }}</p>
+        </div>
+
+        <!-- News posts -->
         <div class="flex flex-wrap justify-center w-full">
             <div v-for="post in newsPosts" :key="post.id" class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
                 <NuxtLink :to="`/nyheder/${post.slug}`" class="block">
@@ -51,7 +62,13 @@ console.log(newsPosts.value);
                     <p class="text-sm text-gray-500 mb-2">{{ new Date(post.date_published).toLocaleDateString() }}</p>
                     <p v-html="post.summary"></p>
                 </NuxtLink>
+                <div class="flex flex-wrap gap-2 mt-6">
+                    <NuxtLink v-for="tag in post.tags" :key="tag?.tags_id?.id" :to="`/nyheder?tags=${tag?.tags_id?.name}`" class="inline-block rounded-full border border-gray-400 hover:border-transparent hover:text-white hover:bg-black focus:bg-black font-semibold px-3 py-1">
+                        {{ tag?.tags_id?.name }}
+                    </NuxtLink>
+                </div>
             </div>
         </div>
     </div>
+    
 </template>

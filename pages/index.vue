@@ -96,7 +96,7 @@
 
                 <BlocksColumns v-if="block.__typename === 'columns_blocks'" :data="block" />
 
-                <BlocksNews :data="block" />
+                <BlocksNews v-if="block?.__typename === 'news_blocks'" :data="block" />
             </template>
         </div>
     </div>

@@ -10,6 +10,9 @@
 
     // Fields.
     const { __typename, width, has_vertical_padding, has_horizontal_padding, title, editor_js_content, image_placement, image_position, image_fit, image_size, image } = toRefs(props.data);
+
+    // Error handling for missing image ID.
+    const isImageAvailable = computed(() => image.value?.id !== null && image.value?.id !== undefined);
 </script>
 
 <template>
@@ -23,7 +26,8 @@
             <div/>
 
             <div :class="[ image_placement === 'right' ? '' : 'xl:-order-3' ]">
-                <NuxtImg :src="`https://cms.formula.nu/assets/${image.id}`" :width="image?.width" :height="image?.height" aria-hidden="true" role="presentation" sizes="sm:512px md:1024px" :class="[ image_position, image_fit, image_size, 'rounded-xl w-full' ]" />
+                <NuxtImg v-if="isImageAvailable" :src="`https://cms.formula.nu/assets/${image.id}`" :width="image?.width" :height="image?.height" aria-hidden="true" role="presentation" sizes="sm:512px md:1024px" :class="[ image_position, image_fit, image_size, 'rounded-xl w-full' ]" />
+                <p v-else class="text-gray-500">Billedet er ikke tilgængeligt.</p>
             </div>
         </div>
     </div>
