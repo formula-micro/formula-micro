@@ -68,7 +68,7 @@
 </script>
 
 <template>
-    <section id="contact-form-section" :class="[ has_vertical_padding ? 'py-12 mt-8' : '', 'flex justify-center items-center w-full xl:px-12' ]">
+    <section id="contact-form-section" :class="[ has_vertical_padding ? 'py-12 mt-8' : '', has_horizontal_padding ? 'xl:px-12' : '', 'flex justify-center items-center w-full' ]">
         <div :class="[ has_vertical_padding ? 'py-10' : '', has_horizontal_padding ? 'lg:px-6' : 'lg:px-6', 'flex justify-center items-center w-full' ]">
             <div :class="[ width?.class,
                             width?.class === 'max-w-7xl xl:max-w-8xl 4xl:max-w-10xl' ? 'grid-cols-1 lg:grid-cols-[1.2fr,0.2fr,1.5fr] 4xl:grid-cols-[1.2fr,0.5fr,1.2fr]' : 'grid-cols-1 lg:grid-cols-[1.2fr,0.5fr,1.4fr] 4xl:grid-cols-[1.2fr,0.5fr,1.5fr]',

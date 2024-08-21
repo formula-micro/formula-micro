@@ -31,6 +31,9 @@ fragment Page on pages {
             ... on disclosure_blocks {
                 ...DisclosureBlock
             }
+            ... on tabs_blocks {
+                ...TabsBlock
+            }
             ... on spacer_blocks {
                 ...SpacerBlock
             }

@@ -64,7 +64,7 @@
 </script>
  
 <template>
-    <div :class="[ !isChild ? 'px-6 xl:px-12' : '', 'flex justify-center items-center w-full' ]">
+    <div :class="[ has_horizontal_padding ? 'px-6 xl:px-12' : '', 'flex justify-center items-center w-full' ]">
         <div :class="[ overflowControl, width?.class, !isChild ? 'py-2' : '', 'w-full prose' ]">               
             <button type="button" @click="onClick" :class="[ internalIsExpanded ? 'mb-6' : 'mb-2', 'w-full flex items-center justify-between group' ]">
                 <div class="flex flex-col w-full">

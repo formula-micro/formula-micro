@@ -88,6 +88,8 @@
 
                 <BlocksDisclosure v-if="block.__typename === 'disclosure_blocks'" :is-child="false" :data="block" />
 
+                <BlocksTabs v-if="block.__typename === 'tabs_blocks'" :data="block" />
+
                 <BlocksGoogleMaps v-if="block.__typename === 'google_maps_blocks'" :data="block" />
 
                 <BlocksCookieSelection v-if="block.__typename === 'cookie_selection_blocks'" :data="block" />

@@ -14,9 +14,9 @@
 </script>
 
 <template>
-    <div :class="[ background_color?.class !== 'bg-transparent' ? 'xl:px-12' : 'px-6 xl:px-12', 'w-full' ]">
+    <div :class="[ has_horizontal_padding ? 'px-6 xl:px-12' : '', 'w-full' ]">
         <div :class="[ background_color?.class, background_color?.class !== 'bg-transparent' ? 'text-white xl:rounded-xl px-6 xl:px-12 py-10' : 'py-8', 'flex justify-center items-center w-full' ]">
-            <div :class="[ width?.class, has_vertical_padding ? 'py-8 xl:py-32' : '', has_horizontal_padding ? 'px-6' : 'px-6 xl:px-0', 'grid w-full grid-cols-1 xl:grid-cols-[2fr,1fr,2fr] gap-x-8 gap-y-6 items-center' ]">
+            <div :class="[ width?.class, has_vertical_padding ? 'py-8 xl:py-32' : '', has_horizontal_padding ? 'px-6 xl:px-0' : '', 'grid w-full grid-cols-1 xl:grid-cols-[2fr,1fr,2fr] gap-x-8 gap-y-6 items-center' ]">
                 <div :class="[ links_placement === 'right' ? '' : 'xl:order-3', 'prose' ]">
                     <h2 :class="[ background_color?.class !== 'bg-transparent' ? 'text-white' : '', text_size === 'large' ? 'text-3xl xl:text-5xl xl:font-normal' : '' ]">{{ title }}</h2>
                     <div class="mt-5">

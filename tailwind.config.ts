@@ -232,6 +232,7 @@ export default {
         "hover:text-yellow-700",
         "text-yellow-600",
         "hover:text-yellow-600",
+        "items-stretch",
         "order-1",
         "-order-1",
         "order-2",
