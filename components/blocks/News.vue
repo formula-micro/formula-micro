@@ -1,74 +1,89 @@
 <script setup lang="ts">
-import { ref, computed, toRefs } from 'vue';
-import type { News_Blocks, News_Posts } from "@/graphql/generated/graphql";
-import { useNewsPostsByTagsQuery } from "@/graphql/generated/graphql";
+    import { ref, computed, toRefs } from 'vue';
+    import type { News_Blocks, News_Posts } from "@/graphql/generated/graphql";
+    import { useNewsPostsQuery } from "@/graphql/generated/graphql";
 
-// Properties.
-interface Properties {
-    data: News_Blocks;
-}
-const props = defineProps<Properties>();
+    // Properties.
+    interface Properties {
+        data: News_Blocks;
+    }
+    const props = defineProps<Properties>();
 
-// Reactive fields.
-const { __typename, tags } = toRefs(props.data);
-const tagIds = computed(() => props.data.tags?.map(tag => tag.tags_id.id) ?? []);
+    // Fields.
+    const { __typename, tags } = toRefs(props.data);
+    const tagIds = computed(() =>
+    {
+        if (!tags || !tags.value) return [] as string[];
+        return tags.value.filter(tag => tag !== undefined && tag !== null && tag.tags_id !== undefined && tag.tags_id !== null).map(tag => tag!.tags_id!.id);
+    });
+    
+    const { data, error } = useNewsPostsQuery({ variables: { filter: { status: { _eq: "published" }, tags: { tags_id: { id: { _in: tagIds.value  } } } }, sort: ["-date_published"], limit: 3 }} );
+    const newsPosts = computed(() => data.value?.news_posts ?? [] as News_Posts[]);
 
-// Error state.
-const errorMessage = ref<string | null>(null);
+    const errorMessage = ref<string|null>(null);
+    watch(error, (value) => errorMessage.value = 'Der opstod en fejl under indlæsningen af nyhederne.');
 
-// GraphQL query
-const { data, error } = useNewsPostsByTagsQuery({ variables: { tags: tagIds.value, sort: ["-date_published"], limit: 3 }} );
+    // Methods.
+    const publishedDate = (published: any) =>
+    {
+        const dateFormat = { year: "numeric", month: "long", day: "numeric" };
+        const date = new Date(published);
+        
+        // TODO: Requires lodash.
+        //`${useStartCase(useToLower((date.toLocaleDateString(undefined, dateFormat))))}`;
+        return date.toLocaleDateString(undefined, dateFormat);
+    };
 
-
-if (error.value) {
-    errorMessage.value = 'Der opstod en fejl under indlæsningen af nyhederne.';
-    console.error(error.value);
-}
-
-//const newsPosts = computed(() => data.value?.news_posts);
-
-// const newsPosts = computed(() => {
-//     return data.value?.news_posts;
-// });
-
-const newsPosts = computed(() => {
-  return data.value?.news_posts?.filter(post => post.status === "published");
-});
-
-
-console.log(newsPosts.value);
+    const publishedTime = (published: any) =>
+    {
+        const timeFormat = { hour: "numeric", minute: "numeric" };
+        const date = new Date(published);
+        
+        return `${date.toLocaleTimeString(undefined, timeFormat).replace(".", ":")}`;
+    };
 </script>
 
 <template>
-    <div v-if="__typename === 'news_blocks'" class="max-w-9xl mx-auto px-6 xl:px-12">
-        <h2 class="text-3xl xl:text-5xl xl:font-normal pb-6">Nyheder</h2>
-        <NuxtLink to="/nyheder">
-            <p class="text-xl mb-6">Se alle nyheder</p>
-        </NuxtLink>
+    <div class="flex justify-center items-center w-full py-4 px-6 xl:px-12"> <!-- TODO: Mangler has_vertical_padding & has_horizontal_padding i CMS og efterfølgende styring her (se f. eks RichText.vue) --> 
+        <div class="flex flex-col w-full max-w-7xl xl:max-w-8xl 4xl:max-w-10xl py-8 xl:py-16"> <!-- TODO: Mangler width & has_vertical_padding i CMS og efterfølgende styring her (se f. eks RichText.vue ) -->
+            <h2 class="text-3xl xl:text-5xl xl:font-normal mb-5">Nyheder</h2> <!-- TODO: Mangler styring af header størrelse (se f. eks ServicesList.vue) -->
 
-        <!-- Error message -->
-        <div v-if="errorMessage" class="text-center text-gray-500 py-8">
-            <p>{{ errorMessage }}</p>
-        </div>
+            <NuxtLink to="/nyheder" class="ml-2 text-xl focus:underline hover:underline focus:outline-none">
+                Se alle nyheder
+            </NuxtLink>
+            
+            <div class="mt-12">
+                <!-- Error message -->
+                <div v-if="errorMessage" class="w-full h-full bg-gray-50 rounded-xl text-center text-gray-600 py-8">
+                    <p>{{ errorMessage }}</p>
+                </div>
 
-        <!-- News posts -->
-        <div class="flex flex-wrap justify-center w-full">
-            <div v-for="post in newsPosts" :key="post.id" class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
-                <NuxtLink :to="`/nyheder/${post.slug}`" class="block">
-                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
-                        <NuxtImg :src="`https://cms.formula.nu/assets/${post.cover_image.id}`" class="w-full h-full object-cover rounded" />
+                <!-- News posts -->
+                <div v-if="!errorMessage" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-12 xl:gap-y-0 md:gap-x-8 pb-16">
+                    <div v-for="post in newsPosts" :key="post.id" class="w-full">
+                        <!-- TODO: Indsæt hover og focus styling -->
+                        <NuxtLink :to="`/nyheder/${post.slug}`" class="">
+                            <!-- Image -->
+                            <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                                <!-- TODO: Indsæt statisk placeholder billede, når cover billede mangler -->
+                                <NuxtImg :src="`https://cms.formula.nu/assets/${post.cover_image.id}`" class="w-full h-full object-cover rounded-xl" />
+                            </div>
+
+                            <!-- Information -->
+                            <p class="mt-4 text-xl font-semibold">{{ post.title }}</p>
+                            <p class="mt-2 font-medium text-gray-600">{{ publishedDate(post.date_published) }} • {{ publishedTime(post.date_published) }}</p>
+                            <p class="mt-2 line-clamp-3 prose" v-html="post.summary"></p>
+                        </NuxtLink>
+
+                        <!-- Tags -->
+                        <div class="flex flex-wrap gap-2 mt-6">
+                            <NuxtLink v-for="tag in post.tags" :key="tag?.tags_id?.id" :to="`/nyheder?tags=${tag?.tags_id?.name}`" class="inline-block rounded-full border border-gray-400 hover:border-transparent hover:text-white hover:bg-black focus:text-white focus:bg-black font-semibold transition duration-150 px-3 py-1">
+                                {{ tag?.tags_id?.name }}
+                            </NuxtLink>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold mt-4 mb-2">{{ post.title }}</h3>
-                    <p class="text-sm text-gray-500 mb-2">{{ new Date(post.date_published).toLocaleDateString() }}</p>
-                    <p v-html="post.summary"></p>
-                </NuxtLink>
-                <div class="flex flex-wrap gap-2 mt-6">
-                    <NuxtLink v-for="tag in post.tags" :key="tag?.tags_id?.id" :to="`/nyheder?tags=${tag?.tags_id?.name}`" class="inline-block rounded-full border border-gray-400 hover:border-transparent hover:text-white hover:bg-black focus:bg-black font-semibold px-3 py-1">
-                        {{ tag?.tags_id?.name }}
-                    </NuxtLink>
                 </div>
             </div>
         </div>
     </div>
-    
 </template>
