@@ -1,4 +1,5 @@
 fragment Partner on partners {
+    id
     status
     name
     logo {
@@ -11,6 +12,7 @@ fragment Partner on partners {
 }
 
 fragment PartnersBlock on partners_blocks {
+    id
     title
     show_title
     partners(filter: { partners_id: { status: { _eq: "published" } }  }, sort: [ "sort" ]) {
@@ -21,6 +23,7 @@ fragment PartnersBlock on partners_blocks {
 }
 
 fragment NewsBlock on news_blocks {
+    id
     title
     tags {
         tags_id {
@@ -30,19 +33,23 @@ fragment NewsBlock on news_blocks {
 }
 
 fragment Color on colors {
+    id
     class
 }
 
 fragment Width on widths {
+    id
     class
     name
 }
 
 fragment Height on heights {
+    id
     class
 }
 
 fragment ServicesListBlock on services_list_blocks {
+    id
     background_color {
         ...Color
     }
@@ -82,9 +89,12 @@ fragment ServicesListBlock on services_list_blocks {
 }
 
 fragment BannerHeroBlock on banner_hero_blocks {
+    id
     width {
         ...Width
     }
+    has_vertical_padding
+    has_horizontal_padding
     title
     banners {
         title
@@ -117,6 +127,7 @@ fragment BannerHeroBlock on banner_hero_blocks {
 }
 
 fragment TextHeroBlock on text_hero_blocks {
+    id
     background_color {
         ...Color
     }
@@ -124,6 +135,7 @@ fragment TextHeroBlock on text_hero_blocks {
         ...Width
     }
     has_vertical_padding
+    has_horizontal_padding
     illustration_type
     icon {
         filename_download
@@ -140,6 +152,7 @@ fragment TextHeroBlock on text_hero_blocks {
 }
 
 fragment TextAndImageBlock on text_and_image_blocks {
+    id
     width {
         ...Width
     }
@@ -161,6 +174,7 @@ fragment TextAndImageBlock on text_and_image_blocks {
 }
 
 fragment ImageBlock on image_blocks {
+    id
     image_position
     image_fit
     image_size
@@ -175,6 +189,7 @@ fragment ImageBlock on image_blocks {
 }
 
 fragment RichTextBlock on richtext_blocks {
+    id
     width {
         ...Width
     }
@@ -187,6 +202,7 @@ fragment RichTextBlock on richtext_blocks {
 }
 
 fragment DisclosureGroupBlock on disclosure_group_blocks {
+    id
     width {
         ...Width
     }
@@ -222,13 +238,52 @@ fragment DisclosureBlock on disclosure_blocks {
     editor_js_content: content
 }
 
+fragment TabsBlock on tabs_blocks {
+    id
+    width {
+        ...Width
+    }
+    background_color {
+        ...Color
+    }
+    has_vertical_padding
+    has_horizontal_padding
+    title
+    tabs(sort: [ "sort" ]) {
+        ...TabsBlockTab
+    }
+}
+
+fragment TabsBlockTab on tabs_blocks_tab {
+    id
+    name
+    blocks(sort: [ "sort" ]) {
+        item {
+            ... on richtext_blocks {
+                ...RichTextBlock
+            }
+            ... on text_and_image_blocks {
+                ...TextAndImageBlock
+            }
+            ... on spacer_blocks {
+                ...SpacerBlock
+            }
+            ... on columns_blocks {
+                ...ColumnsBlock
+            }
+        }
+    }
+}
+
 fragment SpacerBlock on spacer_blocks {
+    id
     height {
         ...Height
     }
 }
 
 fragment GoogleMapsBlock on google_maps_blocks {
+    id
     width {
         ...Width
     }
@@ -236,6 +291,7 @@ fragment GoogleMapsBlock on google_maps_blocks {
 }
 
 fragment CookieSelectionBlock on cookie_selection_blocks {
+    id
     width {
         ...Width
     }
@@ -244,6 +300,7 @@ fragment CookieSelectionBlock on cookie_selection_blocks {
 }
 
 fragment ContactFormBlock on contact_form_blocks {
+    id
     background_color {
         ...Color
     }
@@ -257,6 +314,7 @@ fragment ContactFormBlock on contact_form_blocks {
 }
 
 fragment CardBlock on card_blocks {
+    id
     background_color {
         ...Color
     }
@@ -282,6 +340,7 @@ fragment CardBlock on card_blocks {
 }
 
 fragment GalleryBlock on gallery_blocks {
+    id
     width {
         ...Width
     }
@@ -310,9 +369,12 @@ fragment GalleryBlock on gallery_blocks {
 }
 
 fragment ColumnsBlock on columns_blocks {
+    id
     width {
         ...Width
     }
+    has_vertical_padding
+    has_horizontal_padding
     extended_control
     custom_css
     vertical_alignment
