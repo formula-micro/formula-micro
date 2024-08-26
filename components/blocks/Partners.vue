@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import type { Partners, Partners_Blocks } from "@/graphql/generated/graphql";
-    import { useHeadingClass } from "@/components/helpers/useHeadingClass";
+    import { useHeadingClass } from "@/helpers/useHeadingClass";
 
     // Properties.
     interface Properties

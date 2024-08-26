@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import type { Services_List_Blocks } from "@/graphql/generated/graphql";
-    import { useHeadingClass } from "@/components/helpers/useHeadingClass";
+    import { useHeadingClass } from "@/helpers/useHeadingClass";
     import { useRoute } from 'vue-router';
 
     // Properties.

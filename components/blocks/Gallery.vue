@@ -8,7 +8,7 @@
     import "lightgallery/css/lg-thumbnail.css";
     import "lightgallery/css/lg-zoom.css";
     import "lightgallery/css/lg-video.css";
-    import { useHeadingClass } from "@/components/helpers/useHeadingClass";
+    import { useHeadingClass } from "@/helpers/useHeadingClass";
 
     // Properties.
     interface Properties

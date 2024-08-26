@@ -2,8 +2,7 @@
     import { ref, computed, toRefs } from 'vue';
     import type { News_Blocks, News_Posts } from "@/graphql/generated/graphql";
     import { useNewsPostsQuery } from "@/graphql/generated/graphql";
-    import { startCase, toLower } from 'lodash';
-    import { useHeadingClass } from "@/components/helpers/useHeadingClass";
+    import { useHeadingClass } from "@/helpers/useHeadingClass";
 
     // Properties.
     interface Properties {
@@ -31,10 +30,7 @@
         const dateFormat: Intl.DateTimeFormatOptions = { year: "numeric", month: "long", day: "numeric" };
         const date = new Date(published);
         
-        // TODO: Requires lodash.
-        //`${useStartCase(useToLower((date.toLocaleDateString(undefined, dateFormat))))}`;
-        //return date.toLocaleDateString(undefined, dateFormat);
-        return startCase(toLower(date.toLocaleDateString(undefined, dateFormat)));
+        return date.toLocaleDateString(undefined, dateFormat).toLowerCase();
     };
 
     const publishedTime = (published: any) =>
@@ -76,7 +72,7 @@
 
                             <!-- Information -->
                             <p class="mt-4 text-xl font-semibold">{{ post.title }}</p>
-                            <p class="mt-2 font-medium text-gray-600">{{ publishedDate(post.date_published) }} &middot; {{ publishedTime(post.date_published) }}</p>
+                            <p class="mt-2 font-medium text-gray-600 capitalize">{{ publishedDate(post.date_published) }} &middot; {{ publishedTime(post.date_published) }}</p>
                             <p class="mt-2 line-clamp-3 prose" v-html="post.summary"></p>
                         </NuxtLink>
 

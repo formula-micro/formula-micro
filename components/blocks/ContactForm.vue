@@ -3,7 +3,7 @@
     import { useCreate_Contact_FormMutation } from "@/graphql/generated/graphql";
     import * as zod from "zod";
     import { toTypedSchema } from "@vee-validate/zod";
-    import { useHeadingClass } from "@/components/helpers/useHeadingClass";
+    import { useHeadingClass } from "@/helpers/useHeadingClass";
 
     // Translate zod errors to danish.
     const danishErrorMap: zod.ZodErrorMap = (issue, ctx) =>
