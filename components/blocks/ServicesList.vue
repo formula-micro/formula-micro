@@ -1,5 +1,7 @@
 <script setup lang="ts">
     import type { Services_List_Blocks } from "@/graphql/generated/graphql";
+    import { useHeadingClass } from "@/components/helpers/useHeadingClass";
+    import { useRoute } from 'vue-router';
 
     // Properties.
     interface Properties
@@ -8,9 +10,17 @@
     }
     const props = defineProps<Properties>();
 
+    const route = useRoute();
+
     // Fields.
     const size = "large";
-    const { __typename, background_color, width, has_vertical_padding, has_horizontal_padding, text_size, title, content, links_placement, links } = toRefs(props.data);
+    const { __typename, background_color, width, has_vertical_padding, has_horizontal_padding, title, content, links_placement, links } = toRefs(props.data);
+    const { headingClass } = useHeadingClass();
+    const textSize = computed(() => {
+        // Check if the current route path is the homepage
+        return route.path === '/' ? 'text-lg sm:text-2xl font-medium' : 'text-lg font-medium';
+    });
+
 </script>
 
 <template>
@@ -18,7 +28,7 @@
         <div :class="[ background_color?.class, background_color?.class !== 'bg-transparent' ? 'text-white xl:rounded-xl px-6 xl:px-12 py-10' : 'py-8', 'flex justify-center items-center w-full' ]">
             <div :class="[ width?.class, has_vertical_padding ? 'py-8 xl:py-32' : '', has_horizontal_padding ? 'px-6' : 'px-6 xl:px-0', 'grid w-full grid-cols-1 xl:grid-cols-[2fr,1fr,2fr] gap-x-8 gap-y-6 items-center' ]">
                 <div :class="[ links_placement === 'right' ? '' : 'xl:order-3', 'prose' ]">
-                    <h2 :class="[ background_color?.class !== 'bg-transparent' ? 'text-white' : '', text_size === 'large' ? 'text-3xl xl:text-5xl xl:font-normal' : '' ]">{{ title }}</h2>
+                    <h2 :class="[ background_color?.class !== 'bg-transparent' ? 'text-white' : '', headingClass ]">{{ title }}</h2>
                     <div class="mt-5">
                         <div v-html="content" :class="[ background_color?.class !== 'bg-transparent' ? 'text-white' : '' ]" />
                     </div>
@@ -29,7 +39,8 @@
                 <div :class="[ links_placement === 'right' ? '' : 'xl:-order-3', 'grid gap-y-5 sm:gap-y-8' ]">
                     <template v-for="(link, index) in links">
                         <NuxtLink :to="link?.item?.slug" class="inline-flex justify-between items-center hover:underline focus:underline outline-none group">
-                            <span :class="[ text_size === 'large' ? 'text-lg sm:text-2xl font-medium' : 'text-lg font-medium' ]">{{ link?.item?.title }}</span>
+                            <!-- <span :class="[ text_size === 'large' ? 'text-lg sm:text-2xl font-medium' : 'text-lg font-medium' ]">{{ link?.item?.title }}</span> -->
+                            <span :class="textSize">{{ link?.item?.title }}</span>
                             <Icon name="tabler:arrow-right" class="h-5 w-5 sm:h-6 sm:w-6 transition transform duration-300 group-hover:scale-125 group-focus:scale-125" />
                         </NuxtLink>
 

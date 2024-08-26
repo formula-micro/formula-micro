@@ -191,7 +191,7 @@
 <template>
     <footer class="bg-white w-full py-8 xl:py-16 xl:mt-12 flex justify-center">
         <div :class="`grid grid-cols-2 lg:grid-cols-3 ${gridColsXl} gap-x-8 gap-y-12 w-full max-w-7xl px-7`">
-            <div v-for="cat in categories" :key="cat.id" class="flex flex-col mx-10">
+            <div v-for="cat in categories" :key="cat.id" class="flex flex-col lg:mx-10">
                 <p class="text-lg font-semibold tracking-wide">{{ cat.name }}</p>
                 <div class="mt-2 flex flex-col gap-3">
                     <div v-for="link in cat.links" :key="link?.id">

@@ -2,6 +2,8 @@
     import { ref, computed, toRefs } from 'vue';
     import type { News_Blocks, News_Posts } from "@/graphql/generated/graphql";
     import { useNewsPostsQuery } from "@/graphql/generated/graphql";
+    import { startCase, toLower } from 'lodash';
+    import { useHeadingClass } from "@/components/helpers/useHeadingClass";
 
     // Properties.
     interface Properties {
@@ -10,7 +12,7 @@
     const props = defineProps<Properties>();
 
     // Fields.
-    const { __typename, tags } = toRefs(props.data);
+    const { __typename, tags, width, has_horizontal_padding, has_vertical_padding } = toRefs(props.data);
     const tagIds = computed(() =>
     {
         if (!tags || !tags.value) return [] as string[];
@@ -26,27 +28,30 @@
     // Methods.
     const publishedDate = (published: any) =>
     {
-        const dateFormat = { year: "numeric", month: "long", day: "numeric" };
+        const dateFormat: Intl.DateTimeFormatOptions = { year: "numeric", month: "long", day: "numeric" };
         const date = new Date(published);
         
         // TODO: Requires lodash.
         //`${useStartCase(useToLower((date.toLocaleDateString(undefined, dateFormat))))}`;
-        return date.toLocaleDateString(undefined, dateFormat);
+        //return date.toLocaleDateString(undefined, dateFormat);
+        return startCase(toLower(date.toLocaleDateString(undefined, dateFormat)));
     };
 
     const publishedTime = (published: any) =>
     {
-        const timeFormat = { hour: "numeric", minute: "numeric" };
+        const timeFormat: Intl.DateTimeFormatOptions = { hour: "numeric", minute: "numeric" };
         const date = new Date(published);
         
         return `${date.toLocaleTimeString(undefined, timeFormat).replace(".", ":")}`;
     };
+
+    const { headingClass } = useHeadingClass();
 </script>
 
 <template>
-    <div class="flex justify-center items-center w-full py-4 px-6 xl:px-12"> <!-- TODO: Mangler has_vertical_padding & has_horizontal_padding i CMS og efterfølgende styring her (se f. eks RichText.vue) --> 
-        <div class="flex flex-col w-full max-w-7xl xl:max-w-8xl 4xl:max-w-10xl py-8 xl:py-16"> <!-- TODO: Mangler width & has_vertical_padding i CMS og efterfølgende styring her (se f. eks RichText.vue ) -->
-            <h2 class="text-3xl xl:text-5xl xl:font-normal mb-5">Nyheder</h2> <!-- TODO: Mangler styring af header størrelse (se f. eks ServicesList.vue) -->
+    <div :class="[has_vertical_padding ? 'py-4' : '', has_horizontal_padding ? 'px-6 xl:px-12' : '', 'flex justify-center items-center w-full']"> <!-- TODO: Mangler has_vertical_padding & has_horizontal_padding i CMS og efterfølgende styring her (se f. eks RichText.vue) --> 
+        <div :class="[width?.class, has_vertical_padding ? 'py-8 xl:py-16' : '', 'flex flex-col w-full max-w-7xl xl:max-w-8xl 4xl:max-w-10xl']"> <!-- TODO: Mangler width & has_vertical_padding i CMS og efterfølgende styring her (se f. eks RichText.vue ) -->
+            <h2 :class="headingClass">Nyheder</h2> <!-- TODO: Mangler styring af header størrelse (se f. eks ServicesList.vue) -->
 
             <NuxtLink to="/nyheder" class="ml-2 text-xl focus:underline hover:underline focus:outline-none">
                 Se alle nyheder
@@ -62,16 +67,16 @@
                 <div v-if="!errorMessage" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-12 xl:gap-y-0 md:gap-x-8 pb-16">
                     <div v-for="post in newsPosts" :key="post.id" class="w-full">
                         <!-- TODO: Indsæt hover og focus styling -->
-                        <NuxtLink :to="`/nyheder/${post.slug}`" class="">
+                        <NuxtLink :to="`/nyheder/${post.slug}`" class="block transition-transform transform hover:scale-105 focus:scale-105 duration-300">
                             <!-- Image -->
                             <div class="aspect-w-16 aspect-h-9 overflow-hidden">
                                 <!-- TODO: Indsæt statisk placeholder billede, når cover billede mangler -->
-                                <NuxtImg :src="`https://cms.formula.nu/assets/${post.cover_image.id}`" class="w-full h-full object-cover rounded-xl" />
+                                <NuxtImg :src="post.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'" class="w-full h-full object-cover rounded-xl" />
                             </div>
 
                             <!-- Information -->
                             <p class="mt-4 text-xl font-semibold">{{ post.title }}</p>
-                            <p class="mt-2 font-medium text-gray-600">{{ publishedDate(post.date_published) }} • {{ publishedTime(post.date_published) }}</p>
+                            <p class="mt-2 font-medium text-gray-600">{{ publishedDate(post.date_published) }} &middot; {{ publishedTime(post.date_published) }}</p>
                             <p class="mt-2 line-clamp-3 prose" v-html="post.summary"></p>
                         </NuxtLink>
 

@@ -21,6 +21,11 @@ fragment PartnersBlock on partners_blocks {
 }
 
 fragment NewsBlock on news_blocks {
+    width {
+        ...Width
+    }
+    has_vertical_padding
+    has_horizontal_padding
     title
     tags {
         tags_id {
@@ -51,7 +56,6 @@ fragment ServicesListBlock on services_list_blocks {
     }
     has_vertical_padding
     has_horizontal_padding
-    text_size
     title
     content
     links_placement

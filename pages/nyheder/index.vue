@@ -10,6 +10,7 @@
     // Fields.
     const route = useRoute();
     const router = useRouter();
+    
     // Ensure "tags" is always an array.
     const tags = computed(() =>
     {
@@ -129,8 +130,8 @@
 
         <div class="mt-16 flex flex-col">
             <div v-for="post in posts" :key="post.id" class="flex flex-col md:flex-row mb-8">
-                <NuxtLink :to="`/nyheder/${post.slug}`" class="flex flex-col md:flex-row w-full">
-                    <NuxtImg :src="`https://cms.formula.nu/assets/${post.cover_image.id}`" sizes="sm:640px md:768px lg:1920px" width="1920" height="1080" class="w-full h-48 md:h-full md:w-1/3 object-cover rounded-xl"/>
+                <NuxtLink :to="`/nyheder/${post.slug}`" class="flex flex-col md:flex-row w-full block transition-transform transform hover:scale-105 focus:scale-105 duration-300">
+                    <NuxtImg :src="post.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'" sizes="sm:640px md:768px lg:1920px" width="1920" height="1080" class="w-full h-48 md:h-full md:w-1/3 object-cover rounded-xl"/>
                     <div class="mt-4 md:mt-0 md:ml-6 flex flex-col justify-between flex-grow">
                         <div>
                             <p class="text-sm text-gray-500 mb-2">{{ new Date(post.date_published).toLocaleDateString() }}</p>

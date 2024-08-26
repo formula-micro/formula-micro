@@ -46,7 +46,7 @@
         variables: { 
             filter: { 
                 status: { _eq: "published" }, 
-                tags: { tags_id: { name: { _in: tags.value.map(tag => tag.name) } } }, 
+                tags: { tags_id: { name: { _in: tags.value?.map(tag => tag?.name) } } }, 
                 slug: { _neq: post.value?.slug }  // Exclude the current post
             }, 
             limit: 3 
@@ -90,17 +90,17 @@
                 enter-to="opacity-100 translate-y-0"
             >
                 <div class="w-full max-w-4xl text-center prose-lg prose-blue">
-                    <h1 class="font-semibold">{{ post.title }}</h1>
-                    <div class="text-lg font-medium" v-html="post.summary" />
+                    <h1 class="font-semibold">{{ post?.title }}</h1>
+                    <div class="text-lg font-medium" v-html="post?.summary" />
                 </div>
             </HeadlessTransitionRoot>
         </div>
 
         <div class="z-20">
-            <NuxtImg class="mt-6 object-cover rounded-lg w-full max-h-[600px]" :src="`https://cms.formula.nu/assets/${post.cover_image.id}`" :width="post.cover_image.width" :height="post.cover_image.height" aria-hidden="true" role="presentation" sizes="sm:512px md:860px lg:1200px" />
-            <p class="text-sm font-medium" v-if="post.cover_image.description">{{ post.cover_image.description }}</p>
-            <div class="text-sm font-medium prose" v-html="post.cover_image.attribution" v-if="post.cover_image.attribution" />
-            <p class="text-sm text-gray-500 mb-2">Udgivet d. {{ new Date(post.date_published).toLocaleDateString() }}</p>
+            <NuxtImg class="mt-6 object-cover rounded-lg w-full max-h-[600px]" :src="post?.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'"  aria-hidden="true" role="presentation" sizes="sm:512px md:860px lg:1200px" />
+            <p class="text-sm font-medium" v-if="post?.cover_image?.description">{{ post.cover_image.description }}</p>
+            <div class="text-sm font-medium prose" v-html="post?.cover_image?.attribution" v-if="post?.cover_image?.attribution" />
+            <p class="text-sm text-gray-500 mb-2">Udgivet d. {{ new Date(post?.date_published).toLocaleDateString() }}</p>
         </div>
 
         <div class="flex flex-col space-y-4 py-12 prose-lg prose-blue">
@@ -126,7 +126,7 @@
                 <div v-for="post in similarPosts" :key="post.id" class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">     
                     <NuxtLink :to="`/nyheder/${post.slug}`" class="block">
                         <div class="aspect-w-16 aspect-h-9 overflow-hidden">
-                            <NuxtImg :src="`https://cms.formula.nu/assets/${post.cover_image.id}`" class="w-full h-full object-cover rounded" />
+                            <NuxtImg :src="post.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'" class="w-full h-full object-cover rounded" />
                         </div>
                         <h3 class="text-xl font-semibold mt-4 mb-2">{{ post.title }}</h3>
                         <p class="text-sm text-gray-500 mb-2">{{ new Date(post.date_published).toLocaleDateString() }}</p>
