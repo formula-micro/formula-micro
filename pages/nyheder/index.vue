@@ -1,6 +1,7 @@
 <script setup lang="ts">
-    import { useNewsPostsQuery, useTagCountersQuery } from "@/graphql/generated/graphql";
+    import { useNewsPostsQuery, useTagCountersQuery, useNewsPostsCountQuery } from "@/graphql/generated/graphql";
     import { useRoute, useRouter } from "vue-router";
+    import Paginator from 'primevue/paginator';
 
     // Page meta.
     definePageMeta({
@@ -35,6 +36,19 @@
             })) ?? []
     );
 
+    // Pagination
+    const rows = 3; 
+    const currentPage = ref(Number(route.query.page) || 1);
+    const first = computed(() => (currentPage.value - 1) * rows);
+    
+    const { data: totalPostsData } = await useNewsPostsCountQuery({variables: { filter: { status: { _eq: "published" } } }});
+    const totalPosts = computed(() => totalPostsData.value?.news_posts_aggregated[0].count?.count ?? 0);
+    
+    const onPageChange = (event: any) => {
+        currentPage.value = event.page + 1;
+        router.push({ query: { ...route.query, page: currentPage.value } });
+    };
+
     // Get news posts.
     const newsPostsQueryVariables = computed(() =>
     {
@@ -44,7 +58,8 @@
                 tags: tags.value.length > 0 ? { tags_id: { name: { _in: tags.value } } } : undefined
             },
             sort: [ "-date_published" ],
-            limit: 15
+            limit: rows,
+            offset: first.value
         };
     });
     const { data: newsPostsData } = await useNewsPostsQuery({ variables: newsPostsQueryVariables });
@@ -145,6 +160,15 @@
                         </div>
                     </div>
                 </NuxtLink>
+            </div>
+            <div class="flex justify-center mt-8">
+                <Paginator
+                    :rows="rows"
+                    :totalRecords="totalPosts"
+                    :first="first"
+                    :pageLinkSize="3"
+                    @page="onPageChange"
+                />
             </div>
         </div>
     </div>

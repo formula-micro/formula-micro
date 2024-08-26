@@ -21,8 +21,8 @@ fragment NewsPost on news_posts {
     }
 }
 
-query NewsPostsCount {
-    news_posts_aggregated {
+query NewsPostsCount($filter: news_posts_filter) {
+    news_posts_aggregated(filter: $filter) {
         count {
             count: id
         }
