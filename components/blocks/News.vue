@@ -28,9 +28,9 @@
 </script>
 
 <template>
-    <div :class="[has_vertical_padding ? 'py-4' : '', has_horizontal_padding ? 'px-6 xl:px-12' : '', 'flex justify-center items-center w-full']"> <!-- TODO: Mangler has_vertical_padding & has_horizontal_padding i CMS og efterfølgende styring her (se f. eks RichText.vue) --> 
-        <div :class="[width?.class, has_vertical_padding ? 'py-8 xl:py-16' : '', 'flex flex-col w-full max-w-7xl xl:max-w-8xl 4xl:max-w-10xl']"> <!-- TODO: Mangler width & has_vertical_padding i CMS og efterfølgende styring her (se f. eks RichText.vue ) -->
-            <h2 :class="headingClass">Nyheder</h2> <!-- TODO: Mangler styring af header størrelse (se f. eks ServicesList.vue) -->
+    <div :class="[ has_vertical_padding ? 'py-4' : '', has_horizontal_padding ? 'px-6 xl:px-12' : '', 'flex justify-center items-center w-full' ]">
+        <div :class="[ width?.class, has_vertical_padding ? 'py-8 xl:py-16' : '', 'flex flex-col w-full max-w-7xl xl:max-w-8xl 4xl:max-w-10xl' ]">
+            <h2 :class="headingClass">Nyheder</h2>
 
             <NuxtLink to="/nyheder" class="ml-2 text-xl focus:underline hover:underline focus:outline-none">
                 Se alle nyheder
@@ -45,11 +45,10 @@
                 <!-- News posts -->
                 <div v-if="!errorMessage" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-12 xl:gap-y-0 md:gap-x-8 pb-16">
                     <div v-for="post in newsPosts" :key="post.id" class="w-full">
-                        <!-- TODO: Indsæt hover og focus styling -->
                         <NuxtLink :to="`/nyheder/${post.slug}`" class="block transition-transform transform hover:scale-105 focus:scale-105 duration-300">
                             <!-- Image -->
+                            <!-- <NuxtImg :class="[ 'min-h-72 max-h-72', 'object-cover rounded-xl w-full' ]" :src="post.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'" alt="" role="presentation" format="webp" sizes="sm:512px md:1024px" loading="lazy" /> -->
                             <div class="aspect-w-16 aspect-h-9 overflow-hidden">
-                                <!-- TODO: Indsæt statisk placeholder billede, når cover billede mangler -->
                                 <NuxtImg :src="post.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'" class="w-full h-full object-cover rounded-xl" />
                             </div>
 
@@ -60,7 +59,7 @@
                         </NuxtLink>
 
                         <!-- Tags -->
-                        <div class="flex flex-wrap gap-2 mt-6">
+                        <div class="flex flex-wrap gap-2 mt-6 self-end">
                             <NuxtLink v-for="tag in post.tags" :key="tag?.tags_id?.id" :to="`/nyheder?tags=${tag?.tags_id?.name}`" class="inline-block rounded-full border border-gray-400 hover:border-transparent hover:text-white hover:bg-black focus:text-white focus:bg-black font-semibold transition duration-150 px-3 py-1">
                                 {{ tag?.tags_id?.name }}
                             </NuxtLink>

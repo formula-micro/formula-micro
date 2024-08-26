@@ -145,9 +145,10 @@
 
         <div class="mt-16 flex flex-col">
             <div v-for="post in posts" :key="post.id" class="flex flex-col md:flex-row mb-8">
-                <NuxtLink :to="`/nyheder/${post.slug}`" class="flex flex-col md:flex-row w-full block transition-transform transform hover:scale-105 focus:scale-105 duration-300">
-                    <NuxtImg :src="post.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'" sizes="sm:640px md:768px lg:1920px" width="1920" height="1080" class="w-full h-48 md:h-full md:w-1/3 object-cover rounded-xl"/>
-                    <div class="mt-4 md:mt-0 md:ml-6 flex flex-col justify-between flex-grow">
+                <NuxtLink :to="`/nyheder/${post.slug}`" class="flex flex-col md:flex-row w-full transition-transform transform hover:scale-95 focus:scale-95 duration-300">
+                    <NuxtImg :src="post.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'" sizes="sm:640px md:768px lg:1920px" width="1920" height="1080" class="w-full min-w-xs max-w-xs lg:max-w-sm 2xl:max-w-md object-cover rounded-xl"/>
+
+                    <div class="mt-4 md:mt-0 md:ml-6 flex flex-col justify-between">
                         <div>
                             <p class="text-sm text-gray-500 mb-2">{{ getDate(post.date_published) }} &middot; {{ getTime(post.date_published) }}</p>
                             <p class="text-xl font-semibold mb-2">{{ post.title }}</p>
