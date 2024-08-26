@@ -12,7 +12,7 @@ export default defineNuxtPlugin(nuxt =>
     });
 
     // When app has been rendered on the server, send SSR state to client.
-    if (process.server) nuxt.hook("app:rendered", () => nuxt.payload[SSR_KEY] = ssr.extractData());
+    if (import.meta.server) nuxt.hook("app:rendered", () => nuxt.payload[SSR_KEY] = ssr.extractData());
 
     const urql = createClient(
     {

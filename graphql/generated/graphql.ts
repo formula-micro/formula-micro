@@ -1869,10 +1869,10 @@ export default {
             ]
           },
           {
-            "name": "create_frontpage_banners_item",
+            "name": "create_footer_categories_item",
             "type": {
               "kind": "OBJECT",
-              "name": "frontpage_banners",
+              "name": "footer_categories",
               "ofType": null
             },
             "args": [
@@ -1889,7 +1889,7 @@ export default {
             ]
           },
           {
-            "name": "create_frontpage_banners_items",
+            "name": "create_footer_categories_items",
             "type": {
               "kind": "NON_NULL",
               "ofType": {
@@ -1898,7 +1898,104 @@ export default {
                   "kind": "NON_NULL",
                   "ofType": {
                     "kind": "OBJECT",
-                    "name": "frontpage_banners",
+                    "name": "footer_categories",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              },
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "create_footer_links_item",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_links",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "create_footer_links_items",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "footer_links",
                     "ofType": null
                   }
                 }
@@ -5167,6 +5264,297 @@ export default {
             ]
           },
           {
+            "name": "create_tabs_blocks_item",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "create_tabs_blocks_items",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              },
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "create_tabs_blocks_tab_blocks_item",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_blocks",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "create_tabs_blocks_tab_blocks_items",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks_tab_blocks",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              },
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "create_tabs_blocks_tab_item",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "create_tabs_blocks_tab_items",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks_tab",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              },
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
             "name": "create_tags_counters_item",
             "type": {
               "kind": "OBJECT",
@@ -6566,7 +6954,7 @@ export default {
             ]
           },
           {
-            "name": "delete_frontpage_banners_item",
+            "name": "delete_footer_categories_item",
             "type": {
               "kind": "OBJECT",
               "name": "delete_one",
@@ -6586,7 +6974,50 @@ export default {
             ]
           },
           {
-            "name": "delete_frontpage_banners_items",
+            "name": "delete_footer_categories_items",
+            "type": {
+              "kind": "OBJECT",
+              "name": "delete_many",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "ids",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "LIST",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "delete_footer_links_item",
+            "type": {
+              "kind": "OBJECT",
+              "name": "delete_one",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "delete_footer_links_items",
             "type": {
               "kind": "OBJECT",
               "name": "delete_many",
@@ -8006,6 +8437,135 @@ export default {
           },
           {
             "name": "delete_spacer_blocks_items",
+            "type": {
+              "kind": "OBJECT",
+              "name": "delete_many",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "ids",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "LIST",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "delete_tabs_blocks_item",
+            "type": {
+              "kind": "OBJECT",
+              "name": "delete_one",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "delete_tabs_blocks_items",
+            "type": {
+              "kind": "OBJECT",
+              "name": "delete_many",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "ids",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "LIST",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "delete_tabs_blocks_tab_blocks_item",
+            "type": {
+              "kind": "OBJECT",
+              "name": "delete_one",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "delete_tabs_blocks_tab_blocks_items",
+            "type": {
+              "kind": "OBJECT",
+              "name": "delete_many",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "ids",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "LIST",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "delete_tabs_blocks_tab_item",
+            "type": {
+              "kind": "OBJECT",
+              "name": "delete_one",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "delete_tabs_blocks_tab_items",
             "type": {
               "kind": "OBJECT",
               "name": "delete_many",
@@ -11972,27 +12532,7 @@ export default {
             ]
           },
           {
-            "name": "update_frontpage",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_frontpage_banners_batch",
+            "name": "update_footer_categories_batch",
             "type": {
               "kind": "NON_NULL",
               "ofType": {
@@ -12001,7 +12541,7 @@ export default {
                   "kind": "NON_NULL",
                   "ofType": {
                     "kind": "OBJECT",
-                    "name": "frontpage_banners",
+                    "name": "footer_categories",
                     "ofType": null
                   }
                 }
@@ -12069,10 +12609,10 @@ export default {
             ]
           },
           {
-            "name": "update_frontpage_banners_item",
+            "name": "update_footer_categories_item",
             "type": {
               "kind": "OBJECT",
-              "name": "frontpage_banners",
+              "name": "footer_categories",
               "ofType": null
             },
             "args": [
@@ -12099,7 +12639,7 @@ export default {
             ]
           },
           {
-            "name": "update_frontpage_banners_items",
+            "name": "update_footer_categories_items",
             "type": {
               "kind": "NON_NULL",
               "ofType": {
@@ -12108,7 +12648,7 @@ export default {
                   "kind": "NON_NULL",
                   "ofType": {
                     "kind": "OBJECT",
-                    "name": "frontpage_banners",
+                    "name": "footer_categories",
                     "ofType": null
                   }
                 }
@@ -12177,6 +12717,220 @@ export default {
                 "name": "sort",
                 "type": {
                   "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "update_footer_links_batch",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "footer_links",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              },
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "update_footer_links_item",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_links",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "update_footer_links_items",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "footer_links",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "ids",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "LIST",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "update_frontpage",
+            "type": {
+              "kind": "OBJECT",
+              "name": "frontpage",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "NON_NULL",
                   "ofType": {
                     "kind": "SCALAR",
                     "name": "Any"
@@ -18608,6 +19362,588 @@ export default {
             ]
           },
           {
+            "name": "update_tabs_blocks_batch",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              },
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "update_tabs_blocks_item",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "update_tabs_blocks_items",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "ids",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "LIST",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "update_tabs_blocks_tab_batch",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks_tab",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              },
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "update_tabs_blocks_tab_blocks_batch",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks_tab_blocks",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              },
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "update_tabs_blocks_tab_blocks_item",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_blocks",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "update_tabs_blocks_tab_blocks_items",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks_tab_blocks",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "ids",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "LIST",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "update_tabs_blocks_tab_item",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "update_tabs_blocks_tab_items",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks_tab",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "data",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "ids",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "LIST",
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "Any"
+                    }
+                  }
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
             "name": "update_tags_batch",
             "type": {
               "kind": "NON_NULL",
@@ -23484,24 +24820,7 @@ export default {
             ]
           },
           {
-            "name": "frontpage",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "version",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "frontpage_banners",
+            "name": "footer_categories",
             "type": {
               "kind": "NON_NULL",
               "ofType": {
@@ -23510,7 +24829,7 @@ export default {
                   "kind": "NON_NULL",
                   "ofType": {
                     "kind": "OBJECT",
-                    "name": "frontpage_banners",
+                    "name": "footer_categories",
                     "ofType": null
                   }
                 }
@@ -23565,7 +24884,7 @@ export default {
             ]
           },
           {
-            "name": "frontpage_banners_aggregated",
+            "name": "footer_categories_aggregated",
             "type": {
               "kind": "NON_NULL",
               "ofType": {
@@ -23574,7 +24893,7 @@ export default {
                   "kind": "NON_NULL",
                   "ofType": {
                     "kind": "OBJECT",
-                    "name": "frontpage_banners_aggregated",
+                    "name": "footer_categories_aggregated",
                     "ofType": null
                   }
                 }
@@ -23639,10 +24958,10 @@ export default {
             ]
           },
           {
-            "name": "frontpage_banners_by_id",
+            "name": "footer_categories_by_id",
             "type": {
               "kind": "OBJECT",
-              "name": "frontpage_banners",
+              "name": "footer_categories",
               "ofType": null
             },
             "args": [
@@ -23666,10 +24985,10 @@ export default {
             ]
           },
           {
-            "name": "frontpage_banners_by_version",
+            "name": "footer_categories_by_version",
             "type": {
               "kind": "OBJECT",
-              "name": "version_frontpage_banners",
+              "name": "version_footer_categories",
               "ofType": null
             },
             "args": [
@@ -23691,6 +25010,218 @@ export default {
                     "kind": "SCALAR",
                     "name": "Any"
                   }
+                }
+              }
+            ]
+          },
+          {
+            "name": "footer_links",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "footer_links",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "footer_links_aggregated",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "footer_links_aggregated",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "groupBy",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "footer_links_by_id",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_links",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "version",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              }
+            ]
+          },
+          {
+            "name": "footer_links_by_version",
+            "type": {
+              "kind": "OBJECT",
+              "name": "version_footer_links",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "version",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "frontpage",
+            "type": {
+              "kind": "OBJECT",
+              "name": "frontpage",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "version",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
                 }
               }
             ]
@@ -30188,6 +31719,591 @@ export default {
             ]
           },
           {
+            "name": "tabs_blocks",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_blocks_aggregated",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks_aggregated",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "groupBy",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_blocks_by_id",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "version",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_blocks_by_version",
+            "type": {
+              "kind": "OBJECT",
+              "name": "version_tabs_blocks",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "version",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_blocks_tab",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks_tab",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_blocks_tab_aggregated",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks_tab_aggregated",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "groupBy",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_blocks_tab_blocks",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks_tab_blocks",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_blocks_tab_blocks_aggregated",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "tabs_blocks_tab_blocks_aggregated",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "groupBy",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_blocks_tab_blocks_by_id",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_blocks",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "version",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_blocks_tab_blocks_by_version",
+            "type": {
+              "kind": "OBJECT",
+              "name": "version_tabs_blocks_tab_blocks",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "version",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_blocks_tab_by_id",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "version",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_blocks_tab_by_version",
+            "type": {
+              "kind": "OBJECT",
+              "name": "version_tabs_blocks_tab",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              },
+              {
+                "name": "version",
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
             "name": "tags",
             "type": {
               "kind": "NON_NULL",
@@ -31994,10 +34110,27 @@ export default {
             ]
           },
           {
-            "name": "frontpage_banners_mutated",
+            "name": "footer_categories_mutated",
             "type": {
               "kind": "OBJECT",
-              "name": "frontpage_banners_mutated",
+              "name": "footer_categories_mutated",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "event",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              }
+            ]
+          },
+          {
+            "name": "footer_links_mutated",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_links_mutated",
               "ofType": null
             },
             "args": [
@@ -32606,6 +34739,57 @@ export default {
             ]
           },
           {
+            "name": "tabs_blocks_mutated",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_mutated",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "event",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_blocks_tab_blocks_mutated",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_blocks_mutated",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "event",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_blocks_tab_mutated",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_mutated",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "event",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              }
+            ]
+          },
+          {
             "name": "tags_counters_mutated",
             "type": {
               "kind": "OBJECT",
@@ -32820,6 +35004,22 @@ export default {
               "kind": "OBJECT",
               "name": "datetime_functions",
               "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
             },
             "args": []
           },
@@ -33151,6 +35351,22 @@ export default {
           },
           {
             "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -37347,6 +39563,22 @@ export default {
             "args": []
           },
           {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "id",
             "type": {
               "kind": "NON_NULL",
@@ -37682,6 +39914,22 @@ export default {
           },
           {
             "name": "extended_control",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -47157,6 +49405,1027 @@ export default {
       },
       {
         "kind": "OBJECT",
+        "name": "footer_categories",
+        "fields": [
+          {
+            "name": "date_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_created_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "datetime_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "datetime_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "links",
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "footer_links",
+                "ofType": null
+              }
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "links_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "count_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_created",
+            "type": {
+              "kind": "OBJECT",
+              "name": "directus_users",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "user_updated",
+            "type": {
+              "kind": "OBJECT",
+              "name": "directus_users",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "footer_categories_aggregated",
+        "fields": [
+          {
+            "name": "avg",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_categories_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "avgDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_categories_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "count",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_categories_aggregated_count",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "countAll",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "countDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_categories_aggregated_count",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "group",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "max",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_categories_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "min",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_categories_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "sum",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_categories_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "sumDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_categories_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "footer_categories_aggregated_count",
+        "fields": [
+          {
+            "name": "date_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "links",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "footer_categories_aggregated_fields",
+        "fields": [
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "footer_categories_mutated",
+        "fields": [
+          {
+            "name": "data",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_categories",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "event",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "key",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any"
+              }
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "footer_links",
+        "fields": [
+          {
+            "name": "category",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_categories",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "date_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_created_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "datetime_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "datetime_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "link",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "page",
+            "type": {
+              "kind": "OBJECT",
+              "name": "pages",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "status",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "type",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_created",
+            "type": {
+              "kind": "OBJECT",
+              "name": "directus_users",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "user_updated",
+            "type": {
+              "kind": "OBJECT",
+              "name": "directus_users",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "footer_links_aggregated",
+        "fields": [
+          {
+            "name": "avg",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_links_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "avgDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_links_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "count",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_links_aggregated_count",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "countAll",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "countDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_links_aggregated_count",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "group",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "max",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_links_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "min",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_links_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "sum",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_links_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "sumDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_links_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "footer_links_aggregated_count",
+        "fields": [
+          {
+            "name": "category",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "link",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "page",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "status",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "type",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "footer_links_aggregated_fields",
+        "fields": [
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "footer_links_mutated",
+        "fields": [
+          {
+            "name": "data",
+            "type": {
+              "kind": "OBJECT",
+              "name": "footer_links",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "event",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "key",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any"
+              }
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
         "name": "frontpage",
         "fields": [
           {
@@ -47256,73 +50525,6 @@ export default {
             "type": {
               "kind": "OBJECT",
               "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "hero_banners",
-            "type": {
-              "kind": "LIST",
-              "ofType": {
-                "kind": "OBJECT",
-                "name": "frontpage_banners",
-                "ofType": null
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "hero_banners_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "count_functions",
               "ofType": null
             },
             "args": []
@@ -47471,685 +50673,6 @@ export default {
                 }
               }
             ]
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "frontpage_banners",
-        "fields": [
-          {
-            "name": "button_link",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_page",
-            "type": {
-              "kind": "OBJECT",
-              "name": "pages",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "button_text",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_type",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "description",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "frontpage_id",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          },
-          {
-            "name": "image",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_files",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "overlay_color",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "status",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "title",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "frontpage_banners_aggregated",
-        "fields": [
-          {
-            "name": "avg",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "avgDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "count",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "countAll",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "countDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "group",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "max",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "min",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sum",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sumDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "frontpage_banners_aggregated_count",
-        "fields": [
-          {
-            "name": "button_link",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_page",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_text",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_type",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "description",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "frontpage_id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "image",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "overlay_color",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "status",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "title",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "frontpage_banners_aggregated_fields",
-        "fields": [
-          {
-            "name": "frontpage_id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "frontpage_banners_mutated",
-        "fields": [
-          {
-            "name": "data",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "event",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "key",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
           }
         ],
         "interfaces": []
@@ -54050,6 +56573,22 @@ export default {
             "args": []
           },
           {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "id",
             "type": {
               "kind": "NON_NULL",
@@ -54260,6 +56799,61 @@ export default {
                 }
               }
             ]
+          },
+          {
+            "name": "width",
+            "type": {
+              "kind": "OBJECT",
+              "name": "widths",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
           }
         ],
         "interfaces": []
@@ -54380,6 +56974,22 @@ export default {
             "args": []
           },
           {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "id",
             "type": {
               "kind": "SCALAR",
@@ -54429,6 +57039,14 @@ export default {
           },
           {
             "name": "user_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "width",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -57343,6 +59961,10 @@ export default {
           {
             "kind": "OBJECT",
             "name": "spacer_blocks"
+          },
+          {
+            "kind": "OBJECT",
+            "name": "tabs_blocks"
           },
           {
             "kind": "OBJECT",
@@ -62510,14 +65132,6 @@ export default {
             "args": []
           },
           {
-            "name": "text_size",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
             "name": "title",
             "type": {
               "kind": "SCALAR",
@@ -62866,14 +65480,6 @@ export default {
           },
           {
             "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "text_size",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -63692,6 +66298,1469 @@ export default {
             "type": {
               "kind": "OBJECT",
               "name": "spacer_blocks",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "event",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "key",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any"
+              }
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks",
+        "fields": [
+          {
+            "name": "background_color",
+            "type": {
+              "kind": "OBJECT",
+              "name": "colors",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "date_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_created_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "datetime_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "datetime_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "tabs",
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "tabs_blocks_tab",
+                "ofType": null
+              }
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "tabs_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "count_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "title",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_created",
+            "type": {
+              "kind": "OBJECT",
+              "name": "directus_users",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "user_updated",
+            "type": {
+              "kind": "OBJECT",
+              "name": "directus_users",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "width",
+            "type": {
+              "kind": "OBJECT",
+              "name": "widths",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_aggregated",
+        "fields": [
+          {
+            "name": "avg",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "avgDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "count",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_aggregated_count",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "countAll",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "countDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_aggregated_count",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "group",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "max",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "min",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "sum",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "sumDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_aggregated_count",
+        "fields": [
+          {
+            "name": "background_color",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "tabs",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "title",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "width",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_aggregated_fields",
+        "fields": [
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_mutated",
+        "fields": [
+          {
+            "name": "data",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "event",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "key",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any"
+              }
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_tab",
+        "fields": [
+          {
+            "name": "blocks",
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "tabs_blocks_tab_blocks",
+                "ofType": null
+              }
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "blocks_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "count_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "date_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_created_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "datetime_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "datetime_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "tabs_block_id",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "user_created",
+            "type": {
+              "kind": "OBJECT",
+              "name": "directus_users",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "user_updated",
+            "type": {
+              "kind": "OBJECT",
+              "name": "directus_users",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_tab_aggregated",
+        "fields": [
+          {
+            "name": "avg",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "avgDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "count",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_aggregated_count",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "countAll",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "countDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_aggregated_count",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "group",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "max",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "min",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "sum",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "sumDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_tab_aggregated_count",
+        "fields": [
+          {
+            "name": "blocks",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "tabs_block_id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_tab_aggregated_fields",
+        "fields": [
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_tab_blocks",
+        "fields": [
+          {
+            "name": "collection",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "item",
+            "type": {
+              "kind": "UNION",
+              "name": "tabs_blocks_tab_blocks_item_union",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "tabs_blocks_tab_id",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_tab_blocks_aggregated",
+        "fields": [
+          {
+            "name": "avg",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_blocks_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "avgDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_blocks_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "count",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_blocks_aggregated_count",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "countAll",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "countDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_blocks_aggregated_count",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "group",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "max",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_blocks_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "min",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_blocks_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "sum",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_blocks_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "sumDistinct",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_blocks_aggregated_fields",
+              "ofType": null
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_tab_blocks_aggregated_count",
+        "fields": [
+          {
+            "name": "collection",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "item",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "tabs_blocks_tab_id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_tab_blocks_aggregated_fields",
+        "fields": [
+          {
+            "name": "id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "UNION",
+        "name": "tabs_blocks_tab_blocks_item_union",
+        "possibleTypes": [
+          {
+            "kind": "OBJECT",
+            "name": "columns_blocks"
+          },
+          {
+            "kind": "OBJECT",
+            "name": "richtext_blocks"
+          },
+          {
+            "kind": "OBJECT",
+            "name": "spacer_blocks"
+          },
+          {
+            "kind": "OBJECT",
+            "name": "text_and_image_blocks"
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_tab_blocks_mutated",
+        "fields": [
+          {
+            "name": "data",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab_blocks",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "event",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "key",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any"
+              }
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "tabs_blocks_tab_mutated",
+        "fields": [
+          {
+            "name": "data",
+            "type": {
+              "kind": "OBJECT",
+              "name": "tabs_blocks_tab",
               "ofType": null
             },
             "args": []
@@ -65312,6 +69381,14 @@ export default {
             "args": []
           },
           {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "has_vertical_padding",
             "type": {
               "kind": "SCALAR",
@@ -65764,6 +69841,14 @@ export default {
             "args": []
           },
           {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "has_vertical_padding",
             "type": {
               "kind": "SCALAR",
@@ -65926,6 +70011,22 @@ export default {
           },
           {
             "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -66685,6 +70786,22 @@ export default {
           },
           {
             "name": "extended_control",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -67479,10 +71596,81 @@ export default {
       },
       {
         "kind": "OBJECT",
-        "name": "version_frontpage",
+        "name": "version_footer_categories",
         "fields": [
           {
-            "name": "blocks",
+            "name": "date_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "links",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "version_footer_links",
+        "fields": [
+          {
+            "name": "category",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -67506,7 +71694,102 @@ export default {
             "args": []
           },
           {
-            "name": "hero_banners",
+            "name": "id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "link",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "page",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "status",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "type",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "version_frontpage",
+        "fields": [
+          {
+            "name": "blocks",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -67539,141 +71822,6 @@ export default {
           },
           {
             "name": "seo_title",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "version_frontpage_banners",
-        "fields": [
-          {
-            "name": "button_link",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_page",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_text",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_type",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "description",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "frontpage_id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "image",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "overlay_color",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "status",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "title",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -68723,6 +72871,22 @@ export default {
             "args": []
           },
           {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "id",
             "type": {
               "kind": "SCALAR",
@@ -68772,6 +72936,14 @@ export default {
           },
           {
             "name": "user_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "width",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -70145,14 +74317,6 @@ export default {
             "args": []
           },
           {
-            "name": "text_size",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
             "name": "title",
             "type": {
               "kind": "SCALAR",
@@ -70288,6 +74452,235 @@ export default {
           },
           {
             "name": "user_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "version_tabs_blocks",
+        "fields": [
+          {
+            "name": "background_color",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "tabs",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "title",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "width",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "version_tabs_blocks_tab",
+        "fields": [
+          {
+            "name": "blocks",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "tabs_block_id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_created",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "user_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          }
+        ],
+        "interfaces": []
+      },
+      {
+        "kind": "OBJECT",
+        "name": "version_tabs_blocks_tab_blocks",
+        "fields": [
+          {
+            "name": "collection",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "item",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "sort",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "tabs_blocks_tab_id",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -70604,6 +74997,14 @@ export default {
           },
           {
             "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_horizontal_padding",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -71676,8 +76077,10 @@ export type Mutation = {
   create_disclosure_group_categories_disclosure_blocks_items: Array<Disclosure_Group_Categories_Disclosure_Blocks>;
   create_disclosure_group_categories_item?: Maybe<Disclosure_Group_Categories>;
   create_disclosure_group_categories_items: Array<Disclosure_Group_Categories>;
-  create_frontpage_banners_item?: Maybe<Frontpage_Banners>;
-  create_frontpage_banners_items: Array<Frontpage_Banners>;
+  create_footer_categories_item?: Maybe<Footer_Categories>;
+  create_footer_categories_items: Array<Footer_Categories>;
+  create_footer_links_item?: Maybe<Footer_Links>;
+  create_footer_links_items: Array<Footer_Links>;
   create_frontpage_blocks_item?: Maybe<Frontpage_Blocks>;
   create_frontpage_blocks_items: Array<Frontpage_Blocks>;
   create_gallery_blocks_files_item?: Maybe<Gallery_Blocks_Files>;
@@ -71744,6 +76147,12 @@ export type Mutation = {
   create_services_list_blocks_links_items: Array<Services_List_Blocks_Links>;
   create_spacer_blocks_item?: Maybe<Spacer_Blocks>;
   create_spacer_blocks_items: Array<Spacer_Blocks>;
+  create_tabs_blocks_item?: Maybe<Tabs_Blocks>;
+  create_tabs_blocks_items: Array<Tabs_Blocks>;
+  create_tabs_blocks_tab_blocks_item?: Maybe<Tabs_Blocks_Tab_Blocks>;
+  create_tabs_blocks_tab_blocks_items: Array<Tabs_Blocks_Tab_Blocks>;
+  create_tabs_blocks_tab_item?: Maybe<Tabs_Blocks_Tab>;
+  create_tabs_blocks_tab_items: Array<Tabs_Blocks_Tab>;
   create_tags_counters_item?: Maybe<Tags_Counters>;
   create_tags_counters_items: Array<Tags_Counters>;
   create_tags_item?: Maybe<Tags>;
@@ -71794,8 +76203,10 @@ export type Mutation = {
   delete_disclosure_group_categories_disclosure_blocks_items?: Maybe<Delete_Many>;
   delete_disclosure_group_categories_item?: Maybe<Delete_One>;
   delete_disclosure_group_categories_items?: Maybe<Delete_Many>;
-  delete_frontpage_banners_item?: Maybe<Delete_One>;
-  delete_frontpage_banners_items?: Maybe<Delete_Many>;
+  delete_footer_categories_item?: Maybe<Delete_One>;
+  delete_footer_categories_items?: Maybe<Delete_Many>;
+  delete_footer_links_item?: Maybe<Delete_One>;
+  delete_footer_links_items?: Maybe<Delete_Many>;
   delete_frontpage_blocks_item?: Maybe<Delete_One>;
   delete_frontpage_blocks_items?: Maybe<Delete_Many>;
   delete_gallery_blocks_files_item?: Maybe<Delete_One>;
@@ -71862,6 +76273,12 @@ export type Mutation = {
   delete_services_list_blocks_links_items?: Maybe<Delete_Many>;
   delete_spacer_blocks_item?: Maybe<Delete_One>;
   delete_spacer_blocks_items?: Maybe<Delete_Many>;
+  delete_tabs_blocks_item?: Maybe<Delete_One>;
+  delete_tabs_blocks_items?: Maybe<Delete_Many>;
+  delete_tabs_blocks_tab_blocks_item?: Maybe<Delete_One>;
+  delete_tabs_blocks_tab_blocks_items?: Maybe<Delete_Many>;
+  delete_tabs_blocks_tab_item?: Maybe<Delete_One>;
+  delete_tabs_blocks_tab_items?: Maybe<Delete_Many>;
   delete_tags_counters_item?: Maybe<Delete_One>;
   delete_tags_counters_items?: Maybe<Delete_Many>;
   delete_tags_item?: Maybe<Delete_One>;
@@ -71931,10 +76348,13 @@ export type Mutation = {
   update_disclosure_group_categories_disclosure_blocks_items: Array<Disclosure_Group_Categories_Disclosure_Blocks>;
   update_disclosure_group_categories_item?: Maybe<Disclosure_Group_Categories>;
   update_disclosure_group_categories_items: Array<Disclosure_Group_Categories>;
+  update_footer_categories_batch: Array<Footer_Categories>;
+  update_footer_categories_item?: Maybe<Footer_Categories>;
+  update_footer_categories_items: Array<Footer_Categories>;
+  update_footer_links_batch: Array<Footer_Links>;
+  update_footer_links_item?: Maybe<Footer_Links>;
+  update_footer_links_items: Array<Footer_Links>;
   update_frontpage?: Maybe<Frontpage>;
-  update_frontpage_banners_batch: Array<Frontpage_Banners>;
-  update_frontpage_banners_item?: Maybe<Frontpage_Banners>;
-  update_frontpage_banners_items: Array<Frontpage_Banners>;
   update_frontpage_blocks_batch: Array<Frontpage_Blocks>;
   update_frontpage_blocks_item?: Maybe<Frontpage_Blocks>;
   update_frontpage_blocks_items: Array<Frontpage_Blocks>;
@@ -72035,6 +76455,15 @@ export type Mutation = {
   update_spacer_blocks_batch: Array<Spacer_Blocks>;
   update_spacer_blocks_item?: Maybe<Spacer_Blocks>;
   update_spacer_blocks_items: Array<Spacer_Blocks>;
+  update_tabs_blocks_batch: Array<Tabs_Blocks>;
+  update_tabs_blocks_item?: Maybe<Tabs_Blocks>;
+  update_tabs_blocks_items: Array<Tabs_Blocks>;
+  update_tabs_blocks_tab_batch: Array<Tabs_Blocks_Tab>;
+  update_tabs_blocks_tab_blocks_batch: Array<Tabs_Blocks_Tab_Blocks>;
+  update_tabs_blocks_tab_blocks_item?: Maybe<Tabs_Blocks_Tab_Blocks>;
+  update_tabs_blocks_tab_blocks_items: Array<Tabs_Blocks_Tab_Blocks>;
+  update_tabs_blocks_tab_item?: Maybe<Tabs_Blocks_Tab>;
+  update_tabs_blocks_tab_items: Array<Tabs_Blocks_Tab>;
   update_tags_batch: Array<Tags>;
   update_tags_counters_batch: Array<Tags_Counters>;
   update_tags_counters_item?: Maybe<Tags_Counters>;
@@ -72360,14 +76789,30 @@ export type MutationCreate_Disclosure_Group_Categories_ItemsArgs = {
 };
 
 
-export type MutationCreate_Frontpage_Banners_ItemArgs = {
-  data: Create_Frontpage_Banners_Input;
+export type MutationCreate_Footer_Categories_ItemArgs = {
+  data: Create_Footer_Categories_Input;
 };
 
 
-export type MutationCreate_Frontpage_Banners_ItemsArgs = {
-  data?: InputMaybe<Array<Create_Frontpage_Banners_Input>>;
-  filter?: InputMaybe<Frontpage_Banners_Filter>;
+export type MutationCreate_Footer_Categories_ItemsArgs = {
+  data?: InputMaybe<Array<Create_Footer_Categories_Input>>;
+  filter?: InputMaybe<Footer_Categories_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type MutationCreate_Footer_Links_ItemArgs = {
+  data: Create_Footer_Links_Input;
+};
+
+
+export type MutationCreate_Footer_Links_ItemsArgs = {
+  data?: InputMaybe<Array<Create_Footer_Links_Input>>;
+  filter?: InputMaybe<Footer_Links_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
@@ -72904,6 +77349,54 @@ export type MutationCreate_Spacer_Blocks_ItemsArgs = {
 };
 
 
+export type MutationCreate_Tabs_Blocks_ItemArgs = {
+  data: Create_Tabs_Blocks_Input;
+};
+
+
+export type MutationCreate_Tabs_Blocks_ItemsArgs = {
+  data?: InputMaybe<Array<Create_Tabs_Blocks_Input>>;
+  filter?: InputMaybe<Tabs_Blocks_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type MutationCreate_Tabs_Blocks_Tab_Blocks_ItemArgs = {
+  data: Create_Tabs_Blocks_Tab_Blocks_Input;
+};
+
+
+export type MutationCreate_Tabs_Blocks_Tab_Blocks_ItemsArgs = {
+  data?: InputMaybe<Array<Create_Tabs_Blocks_Tab_Blocks_Input>>;
+  filter?: InputMaybe<Tabs_Blocks_Tab_Blocks_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type MutationCreate_Tabs_Blocks_Tab_ItemArgs = {
+  data: Create_Tabs_Blocks_Tab_Input;
+};
+
+
+export type MutationCreate_Tabs_Blocks_Tab_ItemsArgs = {
+  data?: InputMaybe<Array<Create_Tabs_Blocks_Tab_Input>>;
+  filter?: InputMaybe<Tabs_Blocks_Tab_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
 export type MutationCreate_Tags_Counters_ItemArgs = {
   data: Create_Tags_Counters_Input;
 };
@@ -73190,12 +77683,22 @@ export type MutationDelete_Disclosure_Group_Categories_ItemsArgs = {
 };
 
 
-export type MutationDelete_Frontpage_Banners_ItemArgs = {
+export type MutationDelete_Footer_Categories_ItemArgs = {
   id: Scalars['ID']['input'];
 };
 
 
-export type MutationDelete_Frontpage_Banners_ItemsArgs = {
+export type MutationDelete_Footer_Categories_ItemsArgs = {
+  ids: Array<InputMaybe<Scalars['ID']['input']>>;
+};
+
+
+export type MutationDelete_Footer_Links_ItemArgs = {
+  id: Scalars['ID']['input'];
+};
+
+
+export type MutationDelete_Footer_Links_ItemsArgs = {
   ids: Array<InputMaybe<Scalars['ID']['input']>>;
 };
 
@@ -73526,6 +78029,36 @@ export type MutationDelete_Spacer_Blocks_ItemArgs = {
 
 
 export type MutationDelete_Spacer_Blocks_ItemsArgs = {
+  ids: Array<InputMaybe<Scalars['ID']['input']>>;
+};
+
+
+export type MutationDelete_Tabs_Blocks_ItemArgs = {
+  id: Scalars['ID']['input'];
+};
+
+
+export type MutationDelete_Tabs_Blocks_ItemsArgs = {
+  ids: Array<InputMaybe<Scalars['ID']['input']>>;
+};
+
+
+export type MutationDelete_Tabs_Blocks_Tab_Blocks_ItemArgs = {
+  id: Scalars['ID']['input'];
+};
+
+
+export type MutationDelete_Tabs_Blocks_Tab_Blocks_ItemsArgs = {
+  ids: Array<InputMaybe<Scalars['ID']['input']>>;
+};
+
+
+export type MutationDelete_Tabs_Blocks_Tab_ItemArgs = {
+  id: Scalars['ID']['input'];
+};
+
+
+export type MutationDelete_Tabs_Blocks_Tab_ItemsArgs = {
   ids: Array<InputMaybe<Scalars['ID']['input']>>;
 };
 
@@ -74141,14 +78674,9 @@ export type MutationUpdate_Disclosure_Group_Categories_ItemsArgs = {
 };
 
 
-export type MutationUpdate_FrontpageArgs = {
-  data: Update_Frontpage_Input;
-};
-
-
-export type MutationUpdate_Frontpage_Banners_BatchArgs = {
-  data?: InputMaybe<Array<Update_Frontpage_Banners_Input>>;
-  filter?: InputMaybe<Frontpage_Banners_Filter>;
+export type MutationUpdate_Footer_Categories_BatchArgs = {
+  data?: InputMaybe<Array<Update_Footer_Categories_Input>>;
+  filter?: InputMaybe<Footer_Categories_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
@@ -74157,21 +78685,55 @@ export type MutationUpdate_Frontpage_Banners_BatchArgs = {
 };
 
 
-export type MutationUpdate_Frontpage_Banners_ItemArgs = {
-  data: Update_Frontpage_Banners_Input;
+export type MutationUpdate_Footer_Categories_ItemArgs = {
+  data: Update_Footer_Categories_Input;
   id: Scalars['ID']['input'];
 };
 
 
-export type MutationUpdate_Frontpage_Banners_ItemsArgs = {
-  data: Update_Frontpage_Banners_Input;
-  filter?: InputMaybe<Frontpage_Banners_Filter>;
+export type MutationUpdate_Footer_Categories_ItemsArgs = {
+  data: Update_Footer_Categories_Input;
+  filter?: InputMaybe<Footer_Categories_Filter>;
   ids: Array<InputMaybe<Scalars['ID']['input']>>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
   search?: InputMaybe<Scalars['String']['input']>;
   sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type MutationUpdate_Footer_Links_BatchArgs = {
+  data?: InputMaybe<Array<Update_Footer_Links_Input>>;
+  filter?: InputMaybe<Footer_Links_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type MutationUpdate_Footer_Links_ItemArgs = {
+  data: Update_Footer_Links_Input;
+  id: Scalars['ID']['input'];
+};
+
+
+export type MutationUpdate_Footer_Links_ItemsArgs = {
+  data: Update_Footer_Links_Input;
+  filter?: InputMaybe<Footer_Links_Filter>;
+  ids: Array<InputMaybe<Scalars['ID']['input']>>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type MutationUpdate_FrontpageArgs = {
+  data: Update_Frontpage_Input;
 };
 
 
@@ -75137,6 +79699,93 @@ export type MutationUpdate_Spacer_Blocks_ItemsArgs = {
 };
 
 
+export type MutationUpdate_Tabs_Blocks_BatchArgs = {
+  data?: InputMaybe<Array<Update_Tabs_Blocks_Input>>;
+  filter?: InputMaybe<Tabs_Blocks_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type MutationUpdate_Tabs_Blocks_ItemArgs = {
+  data: Update_Tabs_Blocks_Input;
+  id: Scalars['ID']['input'];
+};
+
+
+export type MutationUpdate_Tabs_Blocks_ItemsArgs = {
+  data: Update_Tabs_Blocks_Input;
+  filter?: InputMaybe<Tabs_Blocks_Filter>;
+  ids: Array<InputMaybe<Scalars['ID']['input']>>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type MutationUpdate_Tabs_Blocks_Tab_BatchArgs = {
+  data?: InputMaybe<Array<Update_Tabs_Blocks_Tab_Input>>;
+  filter?: InputMaybe<Tabs_Blocks_Tab_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type MutationUpdate_Tabs_Blocks_Tab_Blocks_BatchArgs = {
+  data?: InputMaybe<Array<Update_Tabs_Blocks_Tab_Blocks_Input>>;
+  filter?: InputMaybe<Tabs_Blocks_Tab_Blocks_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type MutationUpdate_Tabs_Blocks_Tab_Blocks_ItemArgs = {
+  data: Update_Tabs_Blocks_Tab_Blocks_Input;
+  id: Scalars['ID']['input'];
+};
+
+
+export type MutationUpdate_Tabs_Blocks_Tab_Blocks_ItemsArgs = {
+  data: Update_Tabs_Blocks_Tab_Blocks_Input;
+  filter?: InputMaybe<Tabs_Blocks_Tab_Blocks_Filter>;
+  ids: Array<InputMaybe<Scalars['ID']['input']>>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type MutationUpdate_Tabs_Blocks_Tab_ItemArgs = {
+  data: Update_Tabs_Blocks_Tab_Input;
+  id: Scalars['ID']['input'];
+};
+
+
+export type MutationUpdate_Tabs_Blocks_Tab_ItemsArgs = {
+  data: Update_Tabs_Blocks_Tab_Input;
+  filter?: InputMaybe<Tabs_Blocks_Tab_Filter>;
+  ids: Array<InputMaybe<Scalars['ID']['input']>>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
 export type MutationUpdate_Tags_BatchArgs = {
   data?: InputMaybe<Array<Update_Tags_Input>>;
   filter?: InputMaybe<Tags_Filter>;
@@ -75388,11 +80037,15 @@ export type Query = {
   disclosure_group_categories_disclosure_blocks_aggregated: Array<Disclosure_Group_Categories_Disclosure_Blocks_Aggregated>;
   disclosure_group_categories_disclosure_blocks_by_id?: Maybe<Disclosure_Group_Categories_Disclosure_Blocks>;
   disclosure_group_categories_disclosure_blocks_by_version?: Maybe<Version_Disclosure_Group_Categories_Disclosure_Blocks>;
+  footer_categories: Array<Footer_Categories>;
+  footer_categories_aggregated: Array<Footer_Categories_Aggregated>;
+  footer_categories_by_id?: Maybe<Footer_Categories>;
+  footer_categories_by_version?: Maybe<Version_Footer_Categories>;
+  footer_links: Array<Footer_Links>;
+  footer_links_aggregated: Array<Footer_Links_Aggregated>;
+  footer_links_by_id?: Maybe<Footer_Links>;
+  footer_links_by_version?: Maybe<Version_Footer_Links>;
   frontpage?: Maybe<Frontpage>;
-  frontpage_banners: Array<Frontpage_Banners>;
-  frontpage_banners_aggregated: Array<Frontpage_Banners_Aggregated>;
-  frontpage_banners_by_id?: Maybe<Frontpage_Banners>;
-  frontpage_banners_by_version?: Maybe<Version_Frontpage_Banners>;
   frontpage_blocks: Array<Frontpage_Blocks>;
   frontpage_blocks_aggregated: Array<Frontpage_Blocks_Aggregated>;
   frontpage_blocks_by_id?: Maybe<Frontpage_Blocks>;
@@ -75528,6 +80181,18 @@ export type Query = {
   spacer_blocks_aggregated: Array<Spacer_Blocks_Aggregated>;
   spacer_blocks_by_id?: Maybe<Spacer_Blocks>;
   spacer_blocks_by_version?: Maybe<Version_Spacer_Blocks>;
+  tabs_blocks: Array<Tabs_Blocks>;
+  tabs_blocks_aggregated: Array<Tabs_Blocks_Aggregated>;
+  tabs_blocks_by_id?: Maybe<Tabs_Blocks>;
+  tabs_blocks_by_version?: Maybe<Version_Tabs_Blocks>;
+  tabs_blocks_tab: Array<Tabs_Blocks_Tab>;
+  tabs_blocks_tab_aggregated: Array<Tabs_Blocks_Tab_Aggregated>;
+  tabs_blocks_tab_blocks: Array<Tabs_Blocks_Tab_Blocks>;
+  tabs_blocks_tab_blocks_aggregated: Array<Tabs_Blocks_Tab_Blocks_Aggregated>;
+  tabs_blocks_tab_blocks_by_id?: Maybe<Tabs_Blocks_Tab_Blocks>;
+  tabs_blocks_tab_blocks_by_version?: Maybe<Version_Tabs_Blocks_Tab_Blocks>;
+  tabs_blocks_tab_by_id?: Maybe<Tabs_Blocks_Tab>;
+  tabs_blocks_tab_by_version?: Maybe<Version_Tabs_Blocks_Tab>;
   tags: Array<Tags>;
   tags_aggregated: Array<Tags_Aggregated>;
   tags_by_id?: Maybe<Tags>;
@@ -76182,13 +80847,8 @@ export type QueryDisclosure_Group_Categories_Disclosure_Blocks_By_VersionArgs = 
 };
 
 
-export type QueryFrontpageArgs = {
-  version?: InputMaybe<Scalars['String']['input']>;
-};
-
-
-export type QueryFrontpage_BannersArgs = {
-  filter?: InputMaybe<Frontpage_Banners_Filter>;
+export type QueryFooter_CategoriesArgs = {
+  filter?: InputMaybe<Footer_Categories_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
@@ -76197,8 +80857,8 @@ export type QueryFrontpage_BannersArgs = {
 };
 
 
-export type QueryFrontpage_Banners_AggregatedArgs = {
-  filter?: InputMaybe<Frontpage_Banners_Filter>;
+export type QueryFooter_Categories_AggregatedArgs = {
+  filter?: InputMaybe<Footer_Categories_Filter>;
   groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
@@ -76208,15 +80868,53 @@ export type QueryFrontpage_Banners_AggregatedArgs = {
 };
 
 
-export type QueryFrontpage_Banners_By_IdArgs = {
+export type QueryFooter_Categories_By_IdArgs = {
   id: Scalars['ID']['input'];
   version?: InputMaybe<Scalars['String']['input']>;
 };
 
 
-export type QueryFrontpage_Banners_By_VersionArgs = {
+export type QueryFooter_Categories_By_VersionArgs = {
   id: Scalars['ID']['input'];
   version: Scalars['String']['input'];
+};
+
+
+export type QueryFooter_LinksArgs = {
+  filter?: InputMaybe<Footer_Links_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type QueryFooter_Links_AggregatedArgs = {
+  filter?: InputMaybe<Footer_Links_Filter>;
+  groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type QueryFooter_Links_By_IdArgs = {
+  id: Scalars['ID']['input'];
+  version?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+export type QueryFooter_Links_By_VersionArgs = {
+  id: Scalars['ID']['input'];
+  version: Scalars['String']['input'];
+};
+
+
+export type QueryFrontpageArgs = {
+  version?: InputMaybe<Scalars['String']['input']>;
 };
 
 
@@ -77324,6 +82022,105 @@ export type QuerySpacer_Blocks_By_VersionArgs = {
 };
 
 
+export type QueryTabs_BlocksArgs = {
+  filter?: InputMaybe<Tabs_Blocks_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type QueryTabs_Blocks_AggregatedArgs = {
+  filter?: InputMaybe<Tabs_Blocks_Filter>;
+  groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type QueryTabs_Blocks_By_IdArgs = {
+  id: Scalars['ID']['input'];
+  version?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+export type QueryTabs_Blocks_By_VersionArgs = {
+  id: Scalars['ID']['input'];
+  version: Scalars['String']['input'];
+};
+
+
+export type QueryTabs_Blocks_TabArgs = {
+  filter?: InputMaybe<Tabs_Blocks_Tab_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type QueryTabs_Blocks_Tab_AggregatedArgs = {
+  filter?: InputMaybe<Tabs_Blocks_Tab_Filter>;
+  groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type QueryTabs_Blocks_Tab_BlocksArgs = {
+  filter?: InputMaybe<Tabs_Blocks_Tab_Blocks_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type QueryTabs_Blocks_Tab_Blocks_AggregatedArgs = {
+  filter?: InputMaybe<Tabs_Blocks_Tab_Blocks_Filter>;
+  groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type QueryTabs_Blocks_Tab_Blocks_By_IdArgs = {
+  id: Scalars['ID']['input'];
+  version?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+export type QueryTabs_Blocks_Tab_Blocks_By_VersionArgs = {
+  id: Scalars['ID']['input'];
+  version: Scalars['String']['input'];
+};
+
+
+export type QueryTabs_Blocks_Tab_By_IdArgs = {
+  id: Scalars['ID']['input'];
+  version?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+export type QueryTabs_Blocks_Tab_By_VersionArgs = {
+  id: Scalars['ID']['input'];
+  version: Scalars['String']['input'];
+};
+
+
 export type QueryTagsArgs = {
   filter?: InputMaybe<Tags_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
@@ -77560,7 +82357,8 @@ export type Subscription = {
   disclosure_group_blocks_mutated?: Maybe<Disclosure_Group_Blocks_Mutated>;
   disclosure_group_categories_disclosure_blocks_mutated?: Maybe<Disclosure_Group_Categories_Disclosure_Blocks_Mutated>;
   disclosure_group_categories_mutated?: Maybe<Disclosure_Group_Categories_Mutated>;
-  frontpage_banners_mutated?: Maybe<Frontpage_Banners_Mutated>;
+  footer_categories_mutated?: Maybe<Footer_Categories_Mutated>;
+  footer_links_mutated?: Maybe<Footer_Links_Mutated>;
   frontpage_blocks_mutated?: Maybe<Frontpage_Blocks_Mutated>;
   frontpage_mutated?: Maybe<Frontpage_Mutated>;
   gallery_blocks_files_mutated?: Maybe<Gallery_Blocks_Files_Mutated>;
@@ -77596,6 +82394,9 @@ export type Subscription = {
   services_list_blocks_links_mutated?: Maybe<Services_List_Blocks_Links_Mutated>;
   services_list_blocks_mutated?: Maybe<Services_List_Blocks_Mutated>;
   spacer_blocks_mutated?: Maybe<Spacer_Blocks_Mutated>;
+  tabs_blocks_mutated?: Maybe<Tabs_Blocks_Mutated>;
+  tabs_blocks_tab_blocks_mutated?: Maybe<Tabs_Blocks_Tab_Blocks_Mutated>;
+  tabs_blocks_tab_mutated?: Maybe<Tabs_Blocks_Tab_Mutated>;
   tags_counters_mutated?: Maybe<Tags_Counters_Mutated>;
   tags_mutated?: Maybe<Tags_Mutated>;
   text_and_image_blocks_mutated?: Maybe<Text_And_Image_Blocks_Mutated>;
@@ -77790,7 +82591,12 @@ export type SubscriptionDisclosure_Group_Categories_MutatedArgs = {
 };
 
 
-export type SubscriptionFrontpage_Banners_MutatedArgs = {
+export type SubscriptionFooter_Categories_MutatedArgs = {
+  event?: InputMaybe<EventEnum>;
+};
+
+
+export type SubscriptionFooter_Links_MutatedArgs = {
   event?: InputMaybe<EventEnum>;
 };
 
@@ -77970,6 +82776,21 @@ export type SubscriptionSpacer_Blocks_MutatedArgs = {
 };
 
 
+export type SubscriptionTabs_Blocks_MutatedArgs = {
+  event?: InputMaybe<EventEnum>;
+};
+
+
+export type SubscriptionTabs_Blocks_Tab_Blocks_MutatedArgs = {
+  event?: InputMaybe<EventEnum>;
+};
+
+
+export type SubscriptionTabs_Blocks_Tab_MutatedArgs = {
+  event?: InputMaybe<EventEnum>;
+};
+
+
 export type SubscriptionTags_Counters_MutatedArgs = {
   event?: InputMaybe<EventEnum>;
 };
@@ -78008,6 +82829,8 @@ export type Banner_Hero_Blocks = {
   date_created_func?: Maybe<Datetime_Functions>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   date_updated_func?: Maybe<Datetime_Functions>;
+  has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id: Scalars['ID']['output'];
   interval?: Maybe<Scalars['Int']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
@@ -78077,6 +82900,8 @@ export type Banner_Hero_Blocks_Aggregated_Count = {
   banners?: Maybe<Scalars['Int']['output']>;
   date_created?: Maybe<Scalars['Int']['output']>;
   date_updated?: Maybe<Scalars['Int']['output']>;
+  has_horizontal_padding?: Maybe<Scalars['Int']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Int']['output']>;
   id?: Maybe<Scalars['Int']['output']>;
   interval?: Maybe<Scalars['Int']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
@@ -78247,6 +83072,8 @@ export type Banner_Hero_Blocks_Filter = {
   date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   date_updated?: InputMaybe<Date_Filter_Operators>;
   date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  has_horizontal_padding?: InputMaybe<Boolean_Filter_Operators>;
+  has_vertical_padding?: InputMaybe<Boolean_Filter_Operators>;
   id?: InputMaybe<String_Filter_Operators>;
   interval?: InputMaybe<Number_Filter_Operators>;
   sort?: InputMaybe<Number_Filter_Operators>;
@@ -78996,6 +83823,8 @@ export type Columns_Blocks = {
   date_updated?: Maybe<Scalars['Date']['output']>;
   date_updated_func?: Maybe<Datetime_Functions>;
   extended_control?: Maybe<Scalars['Boolean']['output']>;
+  has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id: Scalars['ID']['output'];
   sort?: Maybe<Scalars['Int']['output']>;
   title?: Maybe<Scalars['String']['output']>;
@@ -79066,6 +83895,8 @@ export type Columns_Blocks_Aggregated_Count = {
   date_created?: Maybe<Scalars['Int']['output']>;
   date_updated?: Maybe<Scalars['Int']['output']>;
   extended_control?: Maybe<Scalars['Int']['output']>;
+  has_horizontal_padding?: Maybe<Scalars['Int']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Int']['output']>;
   id?: Maybe<Scalars['Int']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   title?: Maybe<Scalars['Int']['output']>;
@@ -79163,6 +83994,8 @@ export type Columns_Blocks_Filter = {
   date_updated?: InputMaybe<Date_Filter_Operators>;
   date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   extended_control?: InputMaybe<Boolean_Filter_Operators>;
+  has_horizontal_padding?: InputMaybe<Boolean_Filter_Operators>;
+  has_vertical_padding?: InputMaybe<Boolean_Filter_Operators>;
   id?: InputMaybe<String_Filter_Operators>;
   sort?: InputMaybe<Number_Filter_Operators>;
   title?: InputMaybe<String_Filter_Operators>;
@@ -79525,6 +84358,8 @@ export type Create_Banner_Hero_Blocks_Input = {
   banners?: InputMaybe<Array<InputMaybe<Create_Banner_Hero_Blocks_Banners_Input>>>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
+  has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
   interval?: InputMaybe<Scalars['Int']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
@@ -79630,6 +84465,8 @@ export type Create_Columns_Blocks_Input = {
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
   extended_control?: InputMaybe<Scalars['Boolean']['input']>;
+  has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
+  has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   title?: InputMaybe<Scalars['String']['input']>;
@@ -79816,21 +84653,28 @@ export type Create_Disclosure_Group_Categories_Input = {
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
 };
 
-export type Create_Frontpage_Banners_Input = {
-  button_link?: InputMaybe<Scalars['String']['input']>;
-  button_page?: InputMaybe<Create_Pages_Input>;
-  button_text?: InputMaybe<Scalars['String']['input']>;
-  button_type?: InputMaybe<Scalars['String']['input']>;
+export type Create_Footer_Categories_Input = {
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
-  description?: InputMaybe<Scalars['String']['input']>;
-  frontpage_id?: InputMaybe<Create_Frontpage_Input>;
   id?: InputMaybe<Scalars['ID']['input']>;
-  image?: InputMaybe<Create_Directus_Files_Input>;
-  overlay_color?: InputMaybe<Scalars['String']['input']>;
+  links?: InputMaybe<Array<InputMaybe<Create_Footer_Links_Input>>>;
+  name?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Scalars['Int']['input']>;
+  user_created?: InputMaybe<Create_Directus_Users_Input>;
+  user_updated?: InputMaybe<Create_Directus_Users_Input>;
+};
+
+export type Create_Footer_Links_Input = {
+  category?: InputMaybe<Create_Footer_Categories_Input>;
+  date_created?: InputMaybe<Scalars['Date']['input']>;
+  date_updated?: InputMaybe<Scalars['Date']['input']>;
+  id?: InputMaybe<Scalars['ID']['input']>;
+  link?: InputMaybe<Scalars['String']['input']>;
+  name?: InputMaybe<Scalars['String']['input']>;
+  page?: InputMaybe<Create_Pages_Input>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   status?: InputMaybe<Scalars['String']['input']>;
-  title?: InputMaybe<Scalars['String']['input']>;
+  type?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Create_Directus_Users_Input>;
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
 };
@@ -79847,7 +84691,6 @@ export type Create_Frontpage_Input = {
   blocks?: InputMaybe<Array<InputMaybe<Create_Frontpage_Blocks_Input>>>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
-  hero_banners?: InputMaybe<Array<InputMaybe<Create_Frontpage_Banners_Input>>>;
   id?: InputMaybe<Scalars['ID']['input']>;
   interval?: InputMaybe<Scalars['Float']['input']>;
   seo_description?: InputMaybe<Scalars['String']['input']>;
@@ -80004,6 +84847,8 @@ export type Create_Navigation_Menu_Subitems_Input = {
 export type Create_News_Blocks_Input = {
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
+  has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   status?: InputMaybe<Scalars['String']['input']>;
@@ -80011,6 +84856,7 @@ export type Create_News_Blocks_Input = {
   title?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Create_Directus_Users_Input>;
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
+  width?: InputMaybe<Create_Widths_Input>;
 };
 
 export type Create_News_Blocks_News_Posts_Input = {
@@ -80222,7 +85068,6 @@ export type Create_Services_List_Blocks_Input = {
   links?: InputMaybe<Array<InputMaybe<Create_Services_List_Blocks_Links_Input>>>;
   links_placement?: InputMaybe<Scalars['String']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
-  text_size?: InputMaybe<Scalars['String']['input']>;
   title?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Create_Directus_Users_Input>;
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
@@ -80243,6 +85088,41 @@ export type Create_Spacer_Blocks_Input = {
   height?: InputMaybe<Create_Heights_Input>;
   id?: InputMaybe<Scalars['ID']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
+  user_created?: InputMaybe<Create_Directus_Users_Input>;
+  user_updated?: InputMaybe<Create_Directus_Users_Input>;
+};
+
+export type Create_Tabs_Blocks_Input = {
+  background_color?: InputMaybe<Create_Colors_Input>;
+  date_created?: InputMaybe<Scalars['Date']['input']>;
+  date_updated?: InputMaybe<Scalars['Date']['input']>;
+  has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
+  has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
+  id?: InputMaybe<Scalars['ID']['input']>;
+  sort?: InputMaybe<Scalars['Int']['input']>;
+  tabs?: InputMaybe<Array<InputMaybe<Create_Tabs_Blocks_Tab_Input>>>;
+  title?: InputMaybe<Scalars['String']['input']>;
+  user_created?: InputMaybe<Create_Directus_Users_Input>;
+  user_updated?: InputMaybe<Create_Directus_Users_Input>;
+  width?: InputMaybe<Create_Widths_Input>;
+};
+
+export type Create_Tabs_Blocks_Tab_Blocks_Input = {
+  collection?: InputMaybe<Scalars['String']['input']>;
+  id?: InputMaybe<Scalars['ID']['input']>;
+  item?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Scalars['Int']['input']>;
+  tabs_blocks_tab_id?: InputMaybe<Create_Tabs_Blocks_Tab_Input>;
+};
+
+export type Create_Tabs_Blocks_Tab_Input = {
+  blocks?: InputMaybe<Array<InputMaybe<Create_Tabs_Blocks_Tab_Blocks_Input>>>;
+  date_created?: InputMaybe<Scalars['Date']['input']>;
+  date_updated?: InputMaybe<Scalars['Date']['input']>;
+  id?: InputMaybe<Scalars['ID']['input']>;
+  name?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Scalars['Int']['input']>;
+  tabs_block_id?: InputMaybe<Create_Tabs_Blocks_Input>;
   user_created?: InputMaybe<Create_Directus_Users_Input>;
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
 };
@@ -80293,6 +85173,7 @@ export type Create_Text_Hero_Blocks_Input = {
   content?: InputMaybe<Scalars['String']['input']>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
   has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   icon?: InputMaybe<Create_Directus_Files_Input>;
   id?: InputMaybe<Scalars['ID']['input']>;
@@ -81978,6 +86859,224 @@ export type Disclosure_Group_Categories_Mutated = {
   key: Scalars['ID']['output'];
 };
 
+export type Footer_Categories = {
+  __typename?: 'footer_categories';
+  date_created?: Maybe<Scalars['Date']['output']>;
+  date_created_func?: Maybe<Datetime_Functions>;
+  date_updated?: Maybe<Scalars['Date']['output']>;
+  date_updated_func?: Maybe<Datetime_Functions>;
+  id: Scalars['ID']['output'];
+  links?: Maybe<Array<Maybe<Footer_Links>>>;
+  links_func?: Maybe<Count_Functions>;
+  name?: Maybe<Scalars['String']['output']>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  user_created?: Maybe<Directus_Users>;
+  user_updated?: Maybe<Directus_Users>;
+};
+
+
+export type Footer_CategoriesLinksArgs = {
+  filter?: InputMaybe<Footer_Links_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type Footer_CategoriesUser_CreatedArgs = {
+  filter?: InputMaybe<Directus_Users_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type Footer_CategoriesUser_UpdatedArgs = {
+  filter?: InputMaybe<Directus_Users_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type Footer_Categories_Aggregated = {
+  __typename?: 'footer_categories_aggregated';
+  avg?: Maybe<Footer_Categories_Aggregated_Fields>;
+  avgDistinct?: Maybe<Footer_Categories_Aggregated_Fields>;
+  count?: Maybe<Footer_Categories_Aggregated_Count>;
+  countAll?: Maybe<Scalars['Int']['output']>;
+  countDistinct?: Maybe<Footer_Categories_Aggregated_Count>;
+  group?: Maybe<Scalars['JSON']['output']>;
+  max?: Maybe<Footer_Categories_Aggregated_Fields>;
+  min?: Maybe<Footer_Categories_Aggregated_Fields>;
+  sum?: Maybe<Footer_Categories_Aggregated_Fields>;
+  sumDistinct?: Maybe<Footer_Categories_Aggregated_Fields>;
+};
+
+export type Footer_Categories_Aggregated_Count = {
+  __typename?: 'footer_categories_aggregated_count';
+  date_created?: Maybe<Scalars['Int']['output']>;
+  date_updated?: Maybe<Scalars['Int']['output']>;
+  id?: Maybe<Scalars['Int']['output']>;
+  links?: Maybe<Scalars['Int']['output']>;
+  name?: Maybe<Scalars['Int']['output']>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  user_created?: Maybe<Scalars['Int']['output']>;
+  user_updated?: Maybe<Scalars['Int']['output']>;
+};
+
+export type Footer_Categories_Aggregated_Fields = {
+  __typename?: 'footer_categories_aggregated_fields';
+  sort?: Maybe<Scalars['Float']['output']>;
+};
+
+export type Footer_Categories_Filter = {
+  _and?: InputMaybe<Array<InputMaybe<Footer_Categories_Filter>>>;
+  _or?: InputMaybe<Array<InputMaybe<Footer_Categories_Filter>>>;
+  date_created?: InputMaybe<Date_Filter_Operators>;
+  date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  date_updated?: InputMaybe<Date_Filter_Operators>;
+  date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  id?: InputMaybe<String_Filter_Operators>;
+  links?: InputMaybe<Footer_Links_Filter>;
+  links_func?: InputMaybe<Count_Function_Filter_Operators>;
+  name?: InputMaybe<String_Filter_Operators>;
+  sort?: InputMaybe<Number_Filter_Operators>;
+  user_created?: InputMaybe<Directus_Users_Filter>;
+  user_updated?: InputMaybe<Directus_Users_Filter>;
+};
+
+export type Footer_Categories_Mutated = {
+  __typename?: 'footer_categories_mutated';
+  data?: Maybe<Footer_Categories>;
+  event?: Maybe<EventEnum>;
+  key: Scalars['ID']['output'];
+};
+
+export type Footer_Links = {
+  __typename?: 'footer_links';
+  category?: Maybe<Footer_Categories>;
+  date_created?: Maybe<Scalars['Date']['output']>;
+  date_created_func?: Maybe<Datetime_Functions>;
+  date_updated?: Maybe<Scalars['Date']['output']>;
+  date_updated_func?: Maybe<Datetime_Functions>;
+  id: Scalars['ID']['output'];
+  link?: Maybe<Scalars['String']['output']>;
+  name?: Maybe<Scalars['String']['output']>;
+  page?: Maybe<Pages>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  status?: Maybe<Scalars['String']['output']>;
+  type?: Maybe<Scalars['String']['output']>;
+  user_created?: Maybe<Directus_Users>;
+  user_updated?: Maybe<Directus_Users>;
+};
+
+
+export type Footer_LinksCategoryArgs = {
+  filter?: InputMaybe<Footer_Categories_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type Footer_LinksPageArgs = {
+  filter?: InputMaybe<Pages_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type Footer_LinksUser_CreatedArgs = {
+  filter?: InputMaybe<Directus_Users_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type Footer_LinksUser_UpdatedArgs = {
+  filter?: InputMaybe<Directus_Users_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type Footer_Links_Aggregated = {
+  __typename?: 'footer_links_aggregated';
+  avg?: Maybe<Footer_Links_Aggregated_Fields>;
+  avgDistinct?: Maybe<Footer_Links_Aggregated_Fields>;
+  count?: Maybe<Footer_Links_Aggregated_Count>;
+  countAll?: Maybe<Scalars['Int']['output']>;
+  countDistinct?: Maybe<Footer_Links_Aggregated_Count>;
+  group?: Maybe<Scalars['JSON']['output']>;
+  max?: Maybe<Footer_Links_Aggregated_Fields>;
+  min?: Maybe<Footer_Links_Aggregated_Fields>;
+  sum?: Maybe<Footer_Links_Aggregated_Fields>;
+  sumDistinct?: Maybe<Footer_Links_Aggregated_Fields>;
+};
+
+export type Footer_Links_Aggregated_Count = {
+  __typename?: 'footer_links_aggregated_count';
+  category?: Maybe<Scalars['Int']['output']>;
+  date_created?: Maybe<Scalars['Int']['output']>;
+  date_updated?: Maybe<Scalars['Int']['output']>;
+  id?: Maybe<Scalars['Int']['output']>;
+  link?: Maybe<Scalars['Int']['output']>;
+  name?: Maybe<Scalars['Int']['output']>;
+  page?: Maybe<Scalars['Int']['output']>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  status?: Maybe<Scalars['Int']['output']>;
+  type?: Maybe<Scalars['Int']['output']>;
+  user_created?: Maybe<Scalars['Int']['output']>;
+  user_updated?: Maybe<Scalars['Int']['output']>;
+};
+
+export type Footer_Links_Aggregated_Fields = {
+  __typename?: 'footer_links_aggregated_fields';
+  sort?: Maybe<Scalars['Float']['output']>;
+};
+
+export type Footer_Links_Filter = {
+  _and?: InputMaybe<Array<InputMaybe<Footer_Links_Filter>>>;
+  _or?: InputMaybe<Array<InputMaybe<Footer_Links_Filter>>>;
+  category?: InputMaybe<Footer_Categories_Filter>;
+  date_created?: InputMaybe<Date_Filter_Operators>;
+  date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  date_updated?: InputMaybe<Date_Filter_Operators>;
+  date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  id?: InputMaybe<String_Filter_Operators>;
+  link?: InputMaybe<String_Filter_Operators>;
+  name?: InputMaybe<String_Filter_Operators>;
+  page?: InputMaybe<Pages_Filter>;
+  sort?: InputMaybe<Number_Filter_Operators>;
+  status?: InputMaybe<String_Filter_Operators>;
+  type?: InputMaybe<String_Filter_Operators>;
+  user_created?: InputMaybe<Directus_Users_Filter>;
+  user_updated?: InputMaybe<Directus_Users_Filter>;
+};
+
+export type Footer_Links_Mutated = {
+  __typename?: 'footer_links_mutated';
+  data?: Maybe<Footer_Links>;
+  event?: Maybe<EventEnum>;
+  key: Scalars['ID']['output'];
+};
+
 export type Frontpage = {
   __typename?: 'frontpage';
   blocks?: Maybe<Array<Maybe<Frontpage_Blocks>>>;
@@ -81986,8 +87085,6 @@ export type Frontpage = {
   date_created_func?: Maybe<Datetime_Functions>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   date_updated_func?: Maybe<Datetime_Functions>;
-  hero_banners?: Maybe<Array<Maybe<Frontpage_Banners>>>;
-  hero_banners_func?: Maybe<Count_Functions>;
   id: Scalars['ID']['output'];
   interval?: Maybe<Scalars['Float']['output']>;
   seo_description?: Maybe<Scalars['String']['output']>;
@@ -81999,16 +87096,6 @@ export type Frontpage = {
 
 export type FrontpageBlocksArgs = {
   filter?: InputMaybe<Frontpage_Blocks_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type FrontpageHero_BannersArgs = {
-  filter?: InputMaybe<Frontpage_Banners_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
@@ -82034,148 +87121,6 @@ export type FrontpageUser_UpdatedArgs = {
   page?: InputMaybe<Scalars['Int']['input']>;
   search?: InputMaybe<Scalars['String']['input']>;
   sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-export type Frontpage_Banners = {
-  __typename?: 'frontpage_banners';
-  button_link?: Maybe<Scalars['String']['output']>;
-  button_page?: Maybe<Pages>;
-  button_text?: Maybe<Scalars['String']['output']>;
-  button_type?: Maybe<Scalars['String']['output']>;
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_created_func?: Maybe<Datetime_Functions>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  date_updated_func?: Maybe<Datetime_Functions>;
-  description?: Maybe<Scalars['String']['output']>;
-  frontpage_id?: Maybe<Frontpage>;
-  id: Scalars['ID']['output'];
-  image?: Maybe<Directus_Files>;
-  overlay_color?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  status?: Maybe<Scalars['String']['output']>;
-  title?: Maybe<Scalars['String']['output']>;
-  user_created?: Maybe<Directus_Users>;
-  user_updated?: Maybe<Directus_Users>;
-};
-
-
-export type Frontpage_BannersButton_PageArgs = {
-  filter?: InputMaybe<Pages_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Frontpage_BannersFrontpage_IdArgs = {
-  filter?: InputMaybe<Frontpage_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Frontpage_BannersImageArgs = {
-  filter?: InputMaybe<Directus_Files_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Frontpage_BannersUser_CreatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Frontpage_BannersUser_UpdatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-export type Frontpage_Banners_Aggregated = {
-  __typename?: 'frontpage_banners_aggregated';
-  avg?: Maybe<Frontpage_Banners_Aggregated_Fields>;
-  avgDistinct?: Maybe<Frontpage_Banners_Aggregated_Fields>;
-  count?: Maybe<Frontpage_Banners_Aggregated_Count>;
-  countAll?: Maybe<Scalars['Int']['output']>;
-  countDistinct?: Maybe<Frontpage_Banners_Aggregated_Count>;
-  group?: Maybe<Scalars['JSON']['output']>;
-  max?: Maybe<Frontpage_Banners_Aggregated_Fields>;
-  min?: Maybe<Frontpage_Banners_Aggregated_Fields>;
-  sum?: Maybe<Frontpage_Banners_Aggregated_Fields>;
-  sumDistinct?: Maybe<Frontpage_Banners_Aggregated_Fields>;
-};
-
-export type Frontpage_Banners_Aggregated_Count = {
-  __typename?: 'frontpage_banners_aggregated_count';
-  button_link?: Maybe<Scalars['Int']['output']>;
-  button_page?: Maybe<Scalars['Int']['output']>;
-  button_text?: Maybe<Scalars['Int']['output']>;
-  button_type?: Maybe<Scalars['Int']['output']>;
-  date_created?: Maybe<Scalars['Int']['output']>;
-  date_updated?: Maybe<Scalars['Int']['output']>;
-  description?: Maybe<Scalars['Int']['output']>;
-  frontpage_id?: Maybe<Scalars['Int']['output']>;
-  id?: Maybe<Scalars['Int']['output']>;
-  image?: Maybe<Scalars['Int']['output']>;
-  overlay_color?: Maybe<Scalars['Int']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  status?: Maybe<Scalars['Int']['output']>;
-  title?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Scalars['Int']['output']>;
-  user_updated?: Maybe<Scalars['Int']['output']>;
-};
-
-export type Frontpage_Banners_Aggregated_Fields = {
-  __typename?: 'frontpage_banners_aggregated_fields';
-  frontpage_id?: Maybe<Scalars['Float']['output']>;
-  sort?: Maybe<Scalars['Float']['output']>;
-};
-
-export type Frontpage_Banners_Filter = {
-  _and?: InputMaybe<Array<InputMaybe<Frontpage_Banners_Filter>>>;
-  _or?: InputMaybe<Array<InputMaybe<Frontpage_Banners_Filter>>>;
-  button_link?: InputMaybe<String_Filter_Operators>;
-  button_page?: InputMaybe<Pages_Filter>;
-  button_text?: InputMaybe<String_Filter_Operators>;
-  button_type?: InputMaybe<String_Filter_Operators>;
-  date_created?: InputMaybe<Date_Filter_Operators>;
-  date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  date_updated?: InputMaybe<Date_Filter_Operators>;
-  date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  description?: InputMaybe<String_Filter_Operators>;
-  frontpage_id?: InputMaybe<Frontpage_Filter>;
-  id?: InputMaybe<String_Filter_Operators>;
-  image?: InputMaybe<Directus_Files_Filter>;
-  overlay_color?: InputMaybe<String_Filter_Operators>;
-  sort?: InputMaybe<Number_Filter_Operators>;
-  status?: InputMaybe<String_Filter_Operators>;
-  title?: InputMaybe<String_Filter_Operators>;
-  user_created?: InputMaybe<Directus_Users_Filter>;
-  user_updated?: InputMaybe<Directus_Users_Filter>;
-};
-
-export type Frontpage_Banners_Mutated = {
-  __typename?: 'frontpage_banners_mutated';
-  data?: Maybe<Frontpage_Banners>;
-  event?: Maybe<EventEnum>;
-  key: Scalars['ID']['output'];
 };
 
 export type Frontpage_Blocks = {
@@ -82262,8 +87207,6 @@ export type Frontpage_Filter = {
   date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   date_updated?: InputMaybe<Date_Filter_Operators>;
   date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  hero_banners?: InputMaybe<Frontpage_Banners_Filter>;
-  hero_banners_func?: InputMaybe<Count_Function_Filter_Operators>;
   id?: InputMaybe<Number_Filter_Operators>;
   interval?: InputMaybe<Number_Filter_Operators>;
   seo_description?: InputMaybe<String_Filter_Operators>;
@@ -83475,6 +88418,8 @@ export type News_Blocks = {
   date_created_func?: Maybe<Datetime_Functions>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   date_updated_func?: Maybe<Datetime_Functions>;
+  has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id: Scalars['ID']['output'];
   sort?: Maybe<Scalars['Int']['output']>;
   status?: Maybe<Scalars['String']['output']>;
@@ -83483,6 +88428,7 @@ export type News_Blocks = {
   title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Directus_Users>;
   user_updated?: Maybe<Directus_Users>;
+  width?: Maybe<Widths>;
 };
 
 
@@ -83515,6 +88461,16 @@ export type News_BlocksUser_UpdatedArgs = {
   sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
+
+export type News_BlocksWidthArgs = {
+  filter?: InputMaybe<Widths_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
 export type News_Blocks_Aggregated = {
   __typename?: 'news_blocks_aggregated';
   avg?: Maybe<News_Blocks_Aggregated_Fields>;
@@ -83533,6 +88489,8 @@ export type News_Blocks_Aggregated_Count = {
   __typename?: 'news_blocks_aggregated_count';
   date_created?: Maybe<Scalars['Int']['output']>;
   date_updated?: Maybe<Scalars['Int']['output']>;
+  has_horizontal_padding?: Maybe<Scalars['Int']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Int']['output']>;
   id?: Maybe<Scalars['Int']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   status?: Maybe<Scalars['Int']['output']>;
@@ -83540,6 +88498,7 @@ export type News_Blocks_Aggregated_Count = {
   title?: Maybe<Scalars['Int']['output']>;
   user_created?: Maybe<Scalars['Int']['output']>;
   user_updated?: Maybe<Scalars['Int']['output']>;
+  width?: Maybe<Scalars['Int']['output']>;
 };
 
 export type News_Blocks_Aggregated_Fields = {
@@ -83554,6 +88513,8 @@ export type News_Blocks_Filter = {
   date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   date_updated?: InputMaybe<Date_Filter_Operators>;
   date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  has_horizontal_padding?: InputMaybe<Boolean_Filter_Operators>;
+  has_vertical_padding?: InputMaybe<Boolean_Filter_Operators>;
   id?: InputMaybe<String_Filter_Operators>;
   sort?: InputMaybe<Number_Filter_Operators>;
   status?: InputMaybe<String_Filter_Operators>;
@@ -83562,6 +88523,7 @@ export type News_Blocks_Filter = {
   title?: InputMaybe<String_Filter_Operators>;
   user_created?: InputMaybe<Directus_Users_Filter>;
   user_updated?: InputMaybe<Directus_Users_Filter>;
+  width?: InputMaybe<Widths_Filter>;
 };
 
 export type News_Blocks_Mutated = {
@@ -84182,13 +89144,14 @@ export type Pages_Blocks_Filter = {
   item__richtext_blocks?: InputMaybe<Richtext_Blocks_Filter>;
   item__services_list_blocks?: InputMaybe<Services_List_Blocks_Filter>;
   item__spacer_blocks?: InputMaybe<Spacer_Blocks_Filter>;
+  item__tabs_blocks?: InputMaybe<Tabs_Blocks_Filter>;
   item__text_and_image_blocks?: InputMaybe<Text_And_Image_Blocks_Filter>;
   item__text_hero_blocks?: InputMaybe<Text_Hero_Blocks_Filter>;
   pages_id?: InputMaybe<Pages_Filter>;
   sort?: InputMaybe<Number_Filter_Operators>;
 };
 
-export type Pages_Blocks_Item_Union = Banner_Hero_Blocks | Columns_Blocks | Contact_Form_Blocks | Cookie_Selection_Blocks | Disclosure_Blocks | Disclosure_Group_Blocks | Gallery_Blocks | Google_Maps_Blocks | News_Blocks | Partners_Blocks | Richtext_Blocks | Services_List_Blocks | Spacer_Blocks | Text_And_Image_Blocks | Text_Hero_Blocks;
+export type Pages_Blocks_Item_Union = Banner_Hero_Blocks | Columns_Blocks | Contact_Form_Blocks | Cookie_Selection_Blocks | Disclosure_Blocks | Disclosure_Group_Blocks | Gallery_Blocks | Google_Maps_Blocks | News_Blocks | Partners_Blocks | Richtext_Blocks | Services_List_Blocks | Spacer_Blocks | Tabs_Blocks | Text_And_Image_Blocks | Text_Hero_Blocks;
 
 export type Pages_Blocks_Mutated = {
   __typename?: 'pages_blocks_mutated';
@@ -85284,7 +90247,6 @@ export type Services_List_Blocks = {
   links_func?: Maybe<Count_Functions>;
   links_placement?: Maybe<Scalars['String']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
-  text_size?: Maybe<Scalars['String']['output']>;
   title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Directus_Users>;
   user_updated?: Maybe<Directus_Users>;
@@ -85367,7 +90329,6 @@ export type Services_List_Blocks_Aggregated_Count = {
   links?: Maybe<Scalars['Int']['output']>;
   links_placement?: Maybe<Scalars['Int']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
-  text_size?: Maybe<Scalars['Int']['output']>;
   title?: Maybe<Scalars['Int']['output']>;
   user_created?: Maybe<Scalars['Int']['output']>;
   user_updated?: Maybe<Scalars['Int']['output']>;
@@ -85395,7 +90356,6 @@ export type Services_List_Blocks_Filter = {
   links_func?: InputMaybe<Count_Function_Filter_Operators>;
   links_placement?: InputMaybe<String_Filter_Operators>;
   sort?: InputMaybe<Number_Filter_Operators>;
-  text_size?: InputMaybe<String_Filter_Operators>;
   title?: InputMaybe<String_Filter_Operators>;
   user_created?: InputMaybe<Directus_Users_Filter>;
   user_updated?: InputMaybe<Directus_Users_Filter>;
@@ -85593,6 +90553,319 @@ export type String_Filter_Operators = {
   _nstarts_with?: InputMaybe<Scalars['String']['input']>;
   _null?: InputMaybe<Scalars['Boolean']['input']>;
   _starts_with?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type Tabs_Blocks = {
+  __typename?: 'tabs_blocks';
+  background_color?: Maybe<Colors>;
+  date_created?: Maybe<Scalars['Date']['output']>;
+  date_created_func?: Maybe<Datetime_Functions>;
+  date_updated?: Maybe<Scalars['Date']['output']>;
+  date_updated_func?: Maybe<Datetime_Functions>;
+  has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
+  id: Scalars['ID']['output'];
+  sort?: Maybe<Scalars['Int']['output']>;
+  tabs?: Maybe<Array<Maybe<Tabs_Blocks_Tab>>>;
+  tabs_func?: Maybe<Count_Functions>;
+  title?: Maybe<Scalars['String']['output']>;
+  user_created?: Maybe<Directus_Users>;
+  user_updated?: Maybe<Directus_Users>;
+  width?: Maybe<Widths>;
+};
+
+
+export type Tabs_BlocksBackground_ColorArgs = {
+  filter?: InputMaybe<Colors_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type Tabs_BlocksTabsArgs = {
+  filter?: InputMaybe<Tabs_Blocks_Tab_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type Tabs_BlocksUser_CreatedArgs = {
+  filter?: InputMaybe<Directus_Users_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type Tabs_BlocksUser_UpdatedArgs = {
+  filter?: InputMaybe<Directus_Users_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type Tabs_BlocksWidthArgs = {
+  filter?: InputMaybe<Widths_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type Tabs_Blocks_Aggregated = {
+  __typename?: 'tabs_blocks_aggregated';
+  avg?: Maybe<Tabs_Blocks_Aggregated_Fields>;
+  avgDistinct?: Maybe<Tabs_Blocks_Aggregated_Fields>;
+  count?: Maybe<Tabs_Blocks_Aggregated_Count>;
+  countAll?: Maybe<Scalars['Int']['output']>;
+  countDistinct?: Maybe<Tabs_Blocks_Aggregated_Count>;
+  group?: Maybe<Scalars['JSON']['output']>;
+  max?: Maybe<Tabs_Blocks_Aggregated_Fields>;
+  min?: Maybe<Tabs_Blocks_Aggregated_Fields>;
+  sum?: Maybe<Tabs_Blocks_Aggregated_Fields>;
+  sumDistinct?: Maybe<Tabs_Blocks_Aggregated_Fields>;
+};
+
+export type Tabs_Blocks_Aggregated_Count = {
+  __typename?: 'tabs_blocks_aggregated_count';
+  background_color?: Maybe<Scalars['Int']['output']>;
+  date_created?: Maybe<Scalars['Int']['output']>;
+  date_updated?: Maybe<Scalars['Int']['output']>;
+  has_horizontal_padding?: Maybe<Scalars['Int']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Int']['output']>;
+  id?: Maybe<Scalars['Int']['output']>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  tabs?: Maybe<Scalars['Int']['output']>;
+  title?: Maybe<Scalars['Int']['output']>;
+  user_created?: Maybe<Scalars['Int']['output']>;
+  user_updated?: Maybe<Scalars['Int']['output']>;
+  width?: Maybe<Scalars['Int']['output']>;
+};
+
+export type Tabs_Blocks_Aggregated_Fields = {
+  __typename?: 'tabs_blocks_aggregated_fields';
+  sort?: Maybe<Scalars['Float']['output']>;
+};
+
+export type Tabs_Blocks_Filter = {
+  _and?: InputMaybe<Array<InputMaybe<Tabs_Blocks_Filter>>>;
+  _or?: InputMaybe<Array<InputMaybe<Tabs_Blocks_Filter>>>;
+  background_color?: InputMaybe<Colors_Filter>;
+  date_created?: InputMaybe<Date_Filter_Operators>;
+  date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  date_updated?: InputMaybe<Date_Filter_Operators>;
+  date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  has_horizontal_padding?: InputMaybe<Boolean_Filter_Operators>;
+  has_vertical_padding?: InputMaybe<Boolean_Filter_Operators>;
+  id?: InputMaybe<String_Filter_Operators>;
+  sort?: InputMaybe<Number_Filter_Operators>;
+  tabs?: InputMaybe<Tabs_Blocks_Tab_Filter>;
+  tabs_func?: InputMaybe<Count_Function_Filter_Operators>;
+  title?: InputMaybe<String_Filter_Operators>;
+  user_created?: InputMaybe<Directus_Users_Filter>;
+  user_updated?: InputMaybe<Directus_Users_Filter>;
+  width?: InputMaybe<Widths_Filter>;
+};
+
+export type Tabs_Blocks_Mutated = {
+  __typename?: 'tabs_blocks_mutated';
+  data?: Maybe<Tabs_Blocks>;
+  event?: Maybe<EventEnum>;
+  key: Scalars['ID']['output'];
+};
+
+export type Tabs_Blocks_Tab = {
+  __typename?: 'tabs_blocks_tab';
+  blocks?: Maybe<Array<Maybe<Tabs_Blocks_Tab_Blocks>>>;
+  blocks_func?: Maybe<Count_Functions>;
+  date_created?: Maybe<Scalars['Date']['output']>;
+  date_created_func?: Maybe<Datetime_Functions>;
+  date_updated?: Maybe<Scalars['Date']['output']>;
+  date_updated_func?: Maybe<Datetime_Functions>;
+  id: Scalars['ID']['output'];
+  name?: Maybe<Scalars['String']['output']>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  tabs_block_id?: Maybe<Tabs_Blocks>;
+  user_created?: Maybe<Directus_Users>;
+  user_updated?: Maybe<Directus_Users>;
+};
+
+
+export type Tabs_Blocks_TabBlocksArgs = {
+  filter?: InputMaybe<Tabs_Blocks_Tab_Blocks_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type Tabs_Blocks_TabTabs_Block_IdArgs = {
+  filter?: InputMaybe<Tabs_Blocks_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type Tabs_Blocks_TabUser_CreatedArgs = {
+  filter?: InputMaybe<Directus_Users_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+export type Tabs_Blocks_TabUser_UpdatedArgs = {
+  filter?: InputMaybe<Directus_Users_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type Tabs_Blocks_Tab_Aggregated = {
+  __typename?: 'tabs_blocks_tab_aggregated';
+  avg?: Maybe<Tabs_Blocks_Tab_Aggregated_Fields>;
+  avgDistinct?: Maybe<Tabs_Blocks_Tab_Aggregated_Fields>;
+  count?: Maybe<Tabs_Blocks_Tab_Aggregated_Count>;
+  countAll?: Maybe<Scalars['Int']['output']>;
+  countDistinct?: Maybe<Tabs_Blocks_Tab_Aggregated_Count>;
+  group?: Maybe<Scalars['JSON']['output']>;
+  max?: Maybe<Tabs_Blocks_Tab_Aggregated_Fields>;
+  min?: Maybe<Tabs_Blocks_Tab_Aggregated_Fields>;
+  sum?: Maybe<Tabs_Blocks_Tab_Aggregated_Fields>;
+  sumDistinct?: Maybe<Tabs_Blocks_Tab_Aggregated_Fields>;
+};
+
+export type Tabs_Blocks_Tab_Aggregated_Count = {
+  __typename?: 'tabs_blocks_tab_aggregated_count';
+  blocks?: Maybe<Scalars['Int']['output']>;
+  date_created?: Maybe<Scalars['Int']['output']>;
+  date_updated?: Maybe<Scalars['Int']['output']>;
+  id?: Maybe<Scalars['Int']['output']>;
+  name?: Maybe<Scalars['Int']['output']>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  tabs_block_id?: Maybe<Scalars['Int']['output']>;
+  user_created?: Maybe<Scalars['Int']['output']>;
+  user_updated?: Maybe<Scalars['Int']['output']>;
+};
+
+export type Tabs_Blocks_Tab_Aggregated_Fields = {
+  __typename?: 'tabs_blocks_tab_aggregated_fields';
+  sort?: Maybe<Scalars['Float']['output']>;
+};
+
+export type Tabs_Blocks_Tab_Blocks = {
+  __typename?: 'tabs_blocks_tab_blocks';
+  collection?: Maybe<Scalars['String']['output']>;
+  id: Scalars['ID']['output'];
+  item?: Maybe<Tabs_Blocks_Tab_Blocks_Item_Union>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  tabs_blocks_tab_id?: Maybe<Tabs_Blocks_Tab>;
+};
+
+
+export type Tabs_Blocks_Tab_BlocksTabs_Blocks_Tab_IdArgs = {
+  filter?: InputMaybe<Tabs_Blocks_Tab_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type Tabs_Blocks_Tab_Blocks_Aggregated = {
+  __typename?: 'tabs_blocks_tab_blocks_aggregated';
+  avg?: Maybe<Tabs_Blocks_Tab_Blocks_Aggregated_Fields>;
+  avgDistinct?: Maybe<Tabs_Blocks_Tab_Blocks_Aggregated_Fields>;
+  count?: Maybe<Tabs_Blocks_Tab_Blocks_Aggregated_Count>;
+  countAll?: Maybe<Scalars['Int']['output']>;
+  countDistinct?: Maybe<Tabs_Blocks_Tab_Blocks_Aggregated_Count>;
+  group?: Maybe<Scalars['JSON']['output']>;
+  max?: Maybe<Tabs_Blocks_Tab_Blocks_Aggregated_Fields>;
+  min?: Maybe<Tabs_Blocks_Tab_Blocks_Aggregated_Fields>;
+  sum?: Maybe<Tabs_Blocks_Tab_Blocks_Aggregated_Fields>;
+  sumDistinct?: Maybe<Tabs_Blocks_Tab_Blocks_Aggregated_Fields>;
+};
+
+export type Tabs_Blocks_Tab_Blocks_Aggregated_Count = {
+  __typename?: 'tabs_blocks_tab_blocks_aggregated_count';
+  collection?: Maybe<Scalars['Int']['output']>;
+  id?: Maybe<Scalars['Int']['output']>;
+  item?: Maybe<Scalars['Int']['output']>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  tabs_blocks_tab_id?: Maybe<Scalars['Int']['output']>;
+};
+
+export type Tabs_Blocks_Tab_Blocks_Aggregated_Fields = {
+  __typename?: 'tabs_blocks_tab_blocks_aggregated_fields';
+  id?: Maybe<Scalars['Float']['output']>;
+  sort?: Maybe<Scalars['Float']['output']>;
+};
+
+export type Tabs_Blocks_Tab_Blocks_Filter = {
+  _and?: InputMaybe<Array<InputMaybe<Tabs_Blocks_Tab_Blocks_Filter>>>;
+  _or?: InputMaybe<Array<InputMaybe<Tabs_Blocks_Tab_Blocks_Filter>>>;
+  collection?: InputMaybe<String_Filter_Operators>;
+  id?: InputMaybe<Number_Filter_Operators>;
+  item__columns_blocks?: InputMaybe<Columns_Blocks_Filter>;
+  item__richtext_blocks?: InputMaybe<Richtext_Blocks_Filter>;
+  item__spacer_blocks?: InputMaybe<Spacer_Blocks_Filter>;
+  item__text_and_image_blocks?: InputMaybe<Text_And_Image_Blocks_Filter>;
+  sort?: InputMaybe<Number_Filter_Operators>;
+  tabs_blocks_tab_id?: InputMaybe<Tabs_Blocks_Tab_Filter>;
+};
+
+export type Tabs_Blocks_Tab_Blocks_Item_Union = Columns_Blocks | Richtext_Blocks | Spacer_Blocks | Text_And_Image_Blocks;
+
+export type Tabs_Blocks_Tab_Blocks_Mutated = {
+  __typename?: 'tabs_blocks_tab_blocks_mutated';
+  data?: Maybe<Tabs_Blocks_Tab_Blocks>;
+  event?: Maybe<EventEnum>;
+  key: Scalars['ID']['output'];
+};
+
+export type Tabs_Blocks_Tab_Filter = {
+  _and?: InputMaybe<Array<InputMaybe<Tabs_Blocks_Tab_Filter>>>;
+  _or?: InputMaybe<Array<InputMaybe<Tabs_Blocks_Tab_Filter>>>;
+  blocks?: InputMaybe<Tabs_Blocks_Tab_Blocks_Filter>;
+  blocks_func?: InputMaybe<Count_Function_Filter_Operators>;
+  date_created?: InputMaybe<Date_Filter_Operators>;
+  date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  date_updated?: InputMaybe<Date_Filter_Operators>;
+  date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  id?: InputMaybe<String_Filter_Operators>;
+  name?: InputMaybe<String_Filter_Operators>;
+  sort?: InputMaybe<Number_Filter_Operators>;
+  tabs_block_id?: InputMaybe<Tabs_Blocks_Filter>;
+  user_created?: InputMaybe<Directus_Users_Filter>;
+  user_updated?: InputMaybe<Directus_Users_Filter>;
+};
+
+export type Tabs_Blocks_Tab_Mutated = {
+  __typename?: 'tabs_blocks_tab_mutated';
+  data?: Maybe<Tabs_Blocks_Tab>;
+  event?: Maybe<EventEnum>;
+  key: Scalars['ID']['output'];
 };
 
 export type Tags = {
@@ -85921,6 +91194,7 @@ export type Text_Hero_Blocks = {
   date_created_func?: Maybe<Datetime_Functions>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   date_updated_func?: Maybe<Datetime_Functions>;
+  has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
   has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   icon?: Maybe<Directus_Files>;
   id: Scalars['ID']['output'];
@@ -86013,6 +91287,7 @@ export type Text_Hero_Blocks_Aggregated_Count = {
   content?: Maybe<Scalars['Int']['output']>;
   date_created?: Maybe<Scalars['Int']['output']>;
   date_updated?: Maybe<Scalars['Int']['output']>;
+  has_horizontal_padding?: Maybe<Scalars['Int']['output']>;
   has_vertical_padding?: Maybe<Scalars['Int']['output']>;
   icon?: Maybe<Scalars['Int']['output']>;
   id?: Maybe<Scalars['Int']['output']>;
@@ -86039,6 +91314,7 @@ export type Text_Hero_Blocks_Filter = {
   date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   date_updated?: InputMaybe<Date_Filter_Operators>;
   date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  has_horizontal_padding?: InputMaybe<Boolean_Filter_Operators>;
   has_vertical_padding?: InputMaybe<Boolean_Filter_Operators>;
   icon?: InputMaybe<Directus_Files_Filter>;
   id?: InputMaybe<String_Filter_Operators>;
@@ -86080,6 +91356,8 @@ export type Update_Banner_Hero_Blocks_Input = {
   banners?: InputMaybe<Array<InputMaybe<Update_Banner_Hero_Blocks_Banners_Input>>>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
+  has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
   interval?: InputMaybe<Scalars['Int']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
@@ -86185,6 +91463,8 @@ export type Update_Columns_Blocks_Input = {
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
   extended_control?: InputMaybe<Scalars['Boolean']['input']>;
+  has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
+  has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   title?: InputMaybe<Scalars['String']['input']>;
@@ -86371,21 +91651,28 @@ export type Update_Disclosure_Group_Categories_Input = {
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
 };
 
-export type Update_Frontpage_Banners_Input = {
-  button_link?: InputMaybe<Scalars['String']['input']>;
-  button_page?: InputMaybe<Update_Pages_Input>;
-  button_text?: InputMaybe<Scalars['String']['input']>;
-  button_type?: InputMaybe<Scalars['String']['input']>;
+export type Update_Footer_Categories_Input = {
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
-  description?: InputMaybe<Scalars['String']['input']>;
-  frontpage_id?: InputMaybe<Update_Frontpage_Input>;
   id?: InputMaybe<Scalars['ID']['input']>;
-  image?: InputMaybe<Update_Directus_Files_Input>;
-  overlay_color?: InputMaybe<Scalars['String']['input']>;
+  links?: InputMaybe<Array<InputMaybe<Update_Footer_Links_Input>>>;
+  name?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Scalars['Int']['input']>;
+  user_created?: InputMaybe<Update_Directus_Users_Input>;
+  user_updated?: InputMaybe<Update_Directus_Users_Input>;
+};
+
+export type Update_Footer_Links_Input = {
+  category?: InputMaybe<Update_Footer_Categories_Input>;
+  date_created?: InputMaybe<Scalars['Date']['input']>;
+  date_updated?: InputMaybe<Scalars['Date']['input']>;
+  id?: InputMaybe<Scalars['ID']['input']>;
+  link?: InputMaybe<Scalars['String']['input']>;
+  name?: InputMaybe<Scalars['String']['input']>;
+  page?: InputMaybe<Update_Pages_Input>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   status?: InputMaybe<Scalars['String']['input']>;
-  title?: InputMaybe<Scalars['String']['input']>;
+  type?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Update_Directus_Users_Input>;
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
 };
@@ -86402,7 +91689,6 @@ export type Update_Frontpage_Input = {
   blocks?: InputMaybe<Array<InputMaybe<Update_Frontpage_Blocks_Input>>>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
-  hero_banners?: InputMaybe<Array<InputMaybe<Update_Frontpage_Banners_Input>>>;
   id?: InputMaybe<Scalars['ID']['input']>;
   interval?: InputMaybe<Scalars['Float']['input']>;
   seo_description?: InputMaybe<Scalars['String']['input']>;
@@ -86559,6 +91845,8 @@ export type Update_Navigation_Menu_Subitems_Input = {
 export type Update_News_Blocks_Input = {
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
+  has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   status?: InputMaybe<Scalars['String']['input']>;
@@ -86566,6 +91854,7 @@ export type Update_News_Blocks_Input = {
   title?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Update_Directus_Users_Input>;
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
+  width?: InputMaybe<Update_Widths_Input>;
 };
 
 export type Update_News_Blocks_News_Posts_Input = {
@@ -86777,7 +92066,6 @@ export type Update_Services_List_Blocks_Input = {
   links?: InputMaybe<Array<InputMaybe<Update_Services_List_Blocks_Links_Input>>>;
   links_placement?: InputMaybe<Scalars['String']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
-  text_size?: InputMaybe<Scalars['String']['input']>;
   title?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Update_Directus_Users_Input>;
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
@@ -86798,6 +92086,41 @@ export type Update_Spacer_Blocks_Input = {
   height?: InputMaybe<Update_Heights_Input>;
   id?: InputMaybe<Scalars['ID']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
+  user_created?: InputMaybe<Update_Directus_Users_Input>;
+  user_updated?: InputMaybe<Update_Directus_Users_Input>;
+};
+
+export type Update_Tabs_Blocks_Input = {
+  background_color?: InputMaybe<Update_Colors_Input>;
+  date_created?: InputMaybe<Scalars['Date']['input']>;
+  date_updated?: InputMaybe<Scalars['Date']['input']>;
+  has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
+  has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
+  id?: InputMaybe<Scalars['ID']['input']>;
+  sort?: InputMaybe<Scalars['Int']['input']>;
+  tabs?: InputMaybe<Array<InputMaybe<Update_Tabs_Blocks_Tab_Input>>>;
+  title?: InputMaybe<Scalars['String']['input']>;
+  user_created?: InputMaybe<Update_Directus_Users_Input>;
+  user_updated?: InputMaybe<Update_Directus_Users_Input>;
+  width?: InputMaybe<Update_Widths_Input>;
+};
+
+export type Update_Tabs_Blocks_Tab_Blocks_Input = {
+  collection?: InputMaybe<Scalars['String']['input']>;
+  id?: InputMaybe<Scalars['ID']['input']>;
+  item?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Scalars['Int']['input']>;
+  tabs_blocks_tab_id?: InputMaybe<Update_Tabs_Blocks_Tab_Input>;
+};
+
+export type Update_Tabs_Blocks_Tab_Input = {
+  blocks?: InputMaybe<Array<InputMaybe<Update_Tabs_Blocks_Tab_Blocks_Input>>>;
+  date_created?: InputMaybe<Scalars['Date']['input']>;
+  date_updated?: InputMaybe<Scalars['Date']['input']>;
+  id?: InputMaybe<Scalars['ID']['input']>;
+  name?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Scalars['Int']['input']>;
+  tabs_block_id?: InputMaybe<Update_Tabs_Blocks_Input>;
   user_created?: InputMaybe<Update_Directus_Users_Input>;
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
 };
@@ -86848,6 +92171,7 @@ export type Update_Text_Hero_Blocks_Input = {
   content?: InputMaybe<Scalars['String']['input']>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
   has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   icon?: InputMaybe<Update_Directus_Files_Input>;
   id?: InputMaybe<Scalars['ID']['input']>;
@@ -86885,6 +92209,8 @@ export type Version_Banner_Hero_Blocks = {
   banners?: Maybe<Scalars['JSON']['output']>;
   date_created?: Maybe<Scalars['Date']['output']>;
   date_updated?: Maybe<Scalars['Date']['output']>;
+  has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id?: Maybe<Scalars['ID']['output']>;
   interval?: Maybe<Scalars['Int']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
@@ -87008,6 +92334,8 @@ export type Version_Columns_Blocks = {
   date_created?: Maybe<Scalars['Date']['output']>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   extended_control?: Maybe<Scalars['Boolean']['output']>;
+  has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id?: Maybe<Scalars['ID']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   title?: Maybe<Scalars['String']['output']>;
@@ -87136,36 +92464,43 @@ export type Version_Disclosure_Group_Categories_Disclosure_Blocks = {
   sort?: Maybe<Scalars['Int']['output']>;
 };
 
+export type Version_Footer_Categories = {
+  __typename?: 'version_footer_categories';
+  date_created?: Maybe<Scalars['Date']['output']>;
+  date_updated?: Maybe<Scalars['Date']['output']>;
+  id?: Maybe<Scalars['ID']['output']>;
+  links?: Maybe<Scalars['JSON']['output']>;
+  name?: Maybe<Scalars['String']['output']>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  user_created?: Maybe<Scalars['JSON']['output']>;
+  user_updated?: Maybe<Scalars['JSON']['output']>;
+};
+
+export type Version_Footer_Links = {
+  __typename?: 'version_footer_links';
+  category?: Maybe<Scalars['JSON']['output']>;
+  date_created?: Maybe<Scalars['Date']['output']>;
+  date_updated?: Maybe<Scalars['Date']['output']>;
+  id?: Maybe<Scalars['ID']['output']>;
+  link?: Maybe<Scalars['String']['output']>;
+  name?: Maybe<Scalars['String']['output']>;
+  page?: Maybe<Scalars['JSON']['output']>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  status?: Maybe<Scalars['String']['output']>;
+  type?: Maybe<Scalars['String']['output']>;
+  user_created?: Maybe<Scalars['JSON']['output']>;
+  user_updated?: Maybe<Scalars['JSON']['output']>;
+};
+
 export type Version_Frontpage = {
   __typename?: 'version_frontpage';
   blocks?: Maybe<Scalars['JSON']['output']>;
   date_created?: Maybe<Scalars['Date']['output']>;
   date_updated?: Maybe<Scalars['Date']['output']>;
-  hero_banners?: Maybe<Scalars['JSON']['output']>;
   id?: Maybe<Scalars['ID']['output']>;
   interval?: Maybe<Scalars['Float']['output']>;
   seo_description?: Maybe<Scalars['String']['output']>;
   seo_title?: Maybe<Scalars['String']['output']>;
-  user_created?: Maybe<Scalars['JSON']['output']>;
-  user_updated?: Maybe<Scalars['JSON']['output']>;
-};
-
-export type Version_Frontpage_Banners = {
-  __typename?: 'version_frontpage_banners';
-  button_link?: Maybe<Scalars['String']['output']>;
-  button_page?: Maybe<Scalars['JSON']['output']>;
-  button_text?: Maybe<Scalars['String']['output']>;
-  button_type?: Maybe<Scalars['String']['output']>;
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  description?: Maybe<Scalars['String']['output']>;
-  frontpage_id?: Maybe<Scalars['JSON']['output']>;
-  id?: Maybe<Scalars['ID']['output']>;
-  image?: Maybe<Scalars['JSON']['output']>;
-  overlay_color?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  status?: Maybe<Scalars['String']['output']>;
-  title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Scalars['JSON']['output']>;
   user_updated?: Maybe<Scalars['JSON']['output']>;
 };
@@ -87340,6 +92675,8 @@ export type Version_News_Blocks = {
   __typename?: 'version_news_blocks';
   date_created?: Maybe<Scalars['Date']['output']>;
   date_updated?: Maybe<Scalars['Date']['output']>;
+  has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id?: Maybe<Scalars['ID']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   status?: Maybe<Scalars['String']['output']>;
@@ -87347,6 +92684,7 @@ export type Version_News_Blocks = {
   title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Scalars['JSON']['output']>;
   user_updated?: Maybe<Scalars['JSON']['output']>;
+  width?: Maybe<Scalars['JSON']['output']>;
 };
 
 export type Version_News_Blocks_News_Posts = {
@@ -87576,7 +92914,6 @@ export type Version_Services_List_Blocks = {
   links?: Maybe<Scalars['JSON']['output']>;
   links_placement?: Maybe<Scalars['String']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
-  text_size?: Maybe<Scalars['String']['output']>;
   title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Scalars['JSON']['output']>;
   user_updated?: Maybe<Scalars['JSON']['output']>;
@@ -87601,6 +92938,44 @@ export type Version_Spacer_Blocks = {
   sort?: Maybe<Scalars['Int']['output']>;
   user_created?: Maybe<Scalars['JSON']['output']>;
   user_updated?: Maybe<Scalars['JSON']['output']>;
+};
+
+export type Version_Tabs_Blocks = {
+  __typename?: 'version_tabs_blocks';
+  background_color?: Maybe<Scalars['JSON']['output']>;
+  date_created?: Maybe<Scalars['Date']['output']>;
+  date_updated?: Maybe<Scalars['Date']['output']>;
+  has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
+  id?: Maybe<Scalars['ID']['output']>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  tabs?: Maybe<Scalars['JSON']['output']>;
+  title?: Maybe<Scalars['String']['output']>;
+  user_created?: Maybe<Scalars['JSON']['output']>;
+  user_updated?: Maybe<Scalars['JSON']['output']>;
+  width?: Maybe<Scalars['JSON']['output']>;
+};
+
+export type Version_Tabs_Blocks_Tab = {
+  __typename?: 'version_tabs_blocks_tab';
+  blocks?: Maybe<Scalars['JSON']['output']>;
+  date_created?: Maybe<Scalars['Date']['output']>;
+  date_updated?: Maybe<Scalars['Date']['output']>;
+  id?: Maybe<Scalars['ID']['output']>;
+  name?: Maybe<Scalars['String']['output']>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  tabs_block_id?: Maybe<Scalars['JSON']['output']>;
+  user_created?: Maybe<Scalars['JSON']['output']>;
+  user_updated?: Maybe<Scalars['JSON']['output']>;
+};
+
+export type Version_Tabs_Blocks_Tab_Blocks = {
+  __typename?: 'version_tabs_blocks_tab_blocks';
+  collection?: Maybe<Scalars['String']['output']>;
+  id?: Maybe<Scalars['ID']['output']>;
+  item?: Maybe<Scalars['String']['output']>;
+  sort?: Maybe<Scalars['Int']['output']>;
+  tabs_blocks_tab_id?: Maybe<Scalars['JSON']['output']>;
 };
 
 export type Version_Tags = {
@@ -87653,6 +93028,7 @@ export type Version_Text_Hero_Blocks = {
   content?: Maybe<Scalars['String']['output']>;
   date_created?: Maybe<Scalars['Date']['output']>;
   date_updated?: Maybe<Scalars['Date']['output']>;
+  has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
   has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   icon?: Maybe<Scalars['JSON']['output']>;
   id?: Maybe<Scalars['ID']['output']>;
@@ -87859,49 +93235,53 @@ export type Widths_Translations_Mutated = {
   key: Scalars['ID']['output'];
 };
 
-export type BannerFragment = { __typename?: 'frontpage_banners', id: string, status?: string | null, overlay_color?: string | null, title?: string | null, description?: string | null, button_type?: string | null, button_text?: string | null, button_link?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, button_page?: { __typename?: 'pages', slug?: string | null } | null };
+export type PartnerFragment = { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null };
 
-export type PartnerFragment = { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null };
+export type PartnersBlockFragment = { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
 
-export type PartnersBlockFragment = { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
+export type NewsBlockFragment = { __typename?: 'news_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, tags?: Array<{ __typename?: 'news_blocks_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null };
 
-export type ColorFragment = { __typename?: 'colors', class?: string | null };
+export type ColorFragment = { __typename?: 'colors', id: string, class?: string | null };
 
-export type WidthFragment = { __typename?: 'widths', class?: string | null, name?: string | null };
+export type WidthFragment = { __typename?: 'widths', id: string, class?: string | null, name?: string | null };
 
-export type HeightFragment = { __typename?: 'heights', class?: string | null };
+export type HeightFragment = { __typename?: 'heights', id: string, class?: string | null };
 
-export type ServicesListBlockFragment = { __typename?: 'services_list_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, text_size?: string | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null };
+export type ServicesListBlockFragment = { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null };
 
-export type BannerHeroBlockFragment = { __typename?: 'banner_hero_blocks', title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null };
+export type BannerHeroBlockFragment = { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null };
 
-export type TextHeroBlockFragment = { __typename?: 'text_hero_blocks', has_vertical_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null };
+export type TextHeroBlockFragment = { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null };
 
-export type TextAndImageBlockFragment = { __typename?: 'text_and_image_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null };
+export type TextAndImageBlockFragment = { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null };
 
-export type ImageBlockFragment = { __typename?: 'image_blocks', image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null };
+export type ImageBlockFragment = { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null };
 
-export type RichTextBlockFragment = { __typename?: 'richtext_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null };
+export type RichTextBlockFragment = { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null };
 
-export type DisclosureGroupBlockFragment = { __typename?: 'disclosure_group_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null };
+export type DisclosureGroupBlockFragment = { __typename?: 'disclosure_group_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null };
 
-export type DisclosureGroupCategoryFragment = { __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | null } | null> | null };
+export type DisclosureGroupCategoryFragment = { __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null };
 
-export type DisclosureBlockFragment = { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null };
+export type DisclosureBlockFragment = { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null };
 
-export type SpacerBlockFragment = { __typename?: 'spacer_blocks', height?: { __typename?: 'heights', class?: string | null } | null };
+export type TabsBlockFragment = { __typename?: 'tabs_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, tabs?: Array<{ __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null> | null };
 
-export type GoogleMapsBlockFragment = { __typename?: 'google_maps_blocks', has_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null };
+export type TabsBlockTabFragment = { __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
 
-export type CookieSelectionBlockFragment = { __typename?: 'cookie_selection_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null };
+export type SpacerBlockFragment = { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null };
 
-export type ContactFormBlockFragment = { __typename?: 'contact_form_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null };
+export type GoogleMapsBlockFragment = { __typename?: 'google_maps_blocks', id: string, has_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null };
 
-export type CardBlockFragment = { __typename?: 'card_blocks', show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, background_color_active?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null };
+export type CookieSelectionBlockFragment = { __typename?: 'cookie_selection_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null };
 
-export type GalleryBlockFragment = { __typename?: 'gallery_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null };
+export type ContactFormBlockFragment = { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null };
 
-export type ColumnsBlockFragment = { __typename?: 'columns_blocks', extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, background_color_active?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null };
+export type CardBlockFragment = { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null };
+
+export type GalleryBlockFragment = { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null };
+
+export type ColumnsBlockFragment = { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null };
 
 export type BlogPostFragment = { __typename?: 'blog_posts', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, content?: any | null, cover_image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null, tags?: Array<{ __typename?: 'blog_posts_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null };
 
@@ -87922,7 +93302,7 @@ export type BlogPostsQueryVariables = Exact<{
 
 export type BlogPostsQuery = { __typename?: 'Query', blog_posts: Array<{ __typename?: 'blog_posts', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, content?: any | null, cover_image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null, tags?: Array<{ __typename?: 'blog_posts_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null }> };
 
-export type CaseFragment = { __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'contact_form_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'text_and_image_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', has_vertical_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
+export type CaseFragment = { __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
 
 export type CasesCountQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -87939,7 +93319,7 @@ export type CasesQueryVariables = Exact<{
 }>;
 
 
-export type CasesQuery = { __typename?: 'Query', cases: Array<{ __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'contact_form_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'text_and_image_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', has_vertical_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
+export type CasesQuery = { __typename?: 'Query', cases: Array<{ __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
 
 export type ContactFormFragment = { __typename?: 'contact_forms', name?: string | null, company?: string | null, email?: string | null, phone?: string | null, message?: string | null };
 
@@ -87950,12 +93330,16 @@ export type Create_Contact_FormMutationVariables = Exact<{
 
 export type Create_Contact_FormMutation = { __typename?: 'Mutation', create_contact_forms_item?: { __typename?: 'contact_forms', name?: string | null, company?: string | null, email?: string | null, phone?: string | null, message?: string | null } | null };
 
-export type FrontpageFragment = { __typename?: 'frontpage', id: string, seo_title?: string | null, seo_description?: string | null, hero_banners?: Array<{ __typename?: 'frontpage_banners', id: string, status?: string | null, overlay_color?: string | null, title?: string | null, description?: string | null, button_type?: string | null, button_text?: string | null, button_link?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, button_page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null, blocks?: Array<{ __typename?: 'frontpage_blocks', item?: { __typename?: 'contact_form_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, text_size?: string | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', height?: { __typename?: 'heights', class?: string | null } | null } | { __typename?: 'text_and_image_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
+export type FooterCategoryFragment = { __typename?: 'footer_categories', id: string, name?: string | null, links?: Array<{ __typename?: 'footer_links', id: string, name?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null };
 
-export type FrontpageQueryVariables = Exact<{ [key: string]: never; }>;
+export type FooterLinkFragment = { __typename?: 'footer_links', id: string, name?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null };
+
+export type FooterLinkPageFragment = { __typename?: 'pages', id: string, title?: string | null, slug?: string | null };
+
+export type FooterCategoriesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type FrontpageQuery = { __typename?: 'Query', frontpage?: { __typename?: 'frontpage', id: string, seo_title?: string | null, seo_description?: string | null, hero_banners?: Array<{ __typename?: 'frontpage_banners', id: string, status?: string | null, overlay_color?: string | null, title?: string | null, description?: string | null, button_type?: string | null, button_text?: string | null, button_link?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, button_page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null, blocks?: Array<{ __typename?: 'frontpage_blocks', item?: { __typename?: 'contact_form_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, text_size?: string | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', height?: { __typename?: 'heights', class?: string | null } | null } | { __typename?: 'text_and_image_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null };
+export type FooterCategoriesQuery = { __typename?: 'Query', footer_categories: Array<{ __typename?: 'footer_categories', id: string, name?: string | null, links?: Array<{ __typename?: 'footer_links', id: string, name?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null }> };
 
 export type NavigationMenuFragment = { __typename?: 'navigation_menu', links?: Array<{ __typename?: 'navigation_menu_items', id: string, text?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null, subitems?: Array<{ __typename?: 'navigation_menu_subitems', id: string, title?: string | null, description?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null, calls_to_action?: Array<{ __typename?: 'navigation_menu_calls_to_action', id: string, text?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | null> | null };
 
@@ -87991,7 +93375,17 @@ export type NewsPostsQueryVariables = Exact<{
 
 export type NewsPostsQuery = { __typename?: 'Query', news_posts: Array<{ __typename?: 'news_posts', id: string, status?: string | null, date_published?: any | null, title?: string | null, slug?: string | null, summary?: string | null, content?: any | null, cover_image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null, tags?: Array<{ __typename?: 'news_posts_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null }> };
 
-export type PageFragment = { __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, background_color_active?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'cookie_selection_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'gallery_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', has_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'news_blocks' } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, text_size?: string | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', height?: { __typename?: 'heights', class?: string | null } | null } | { __typename?: 'text_and_image_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', has_vertical_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
+export type NewsPostsByTagsQueryVariables = Exact<{
+  tags?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>> | InputMaybe<Scalars['String']['input']>>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>> | InputMaybe<Scalars['String']['input']>>;
+}>;
+
+
+export type NewsPostsByTagsQuery = { __typename?: 'Query', news_posts: Array<{ __typename?: 'news_posts', id: string, status?: string | null, date_published?: any | null, title?: string | null, slug?: string | null, summary?: string | null, content?: any | null, cover_image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null, tags?: Array<{ __typename?: 'news_posts_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null }> };
+
+export type PageFragment = { __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'cookie_selection_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', id: string, has_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'news_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, tags?: Array<{ __typename?: 'news_blocks_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'tabs_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, tabs?: Array<{ __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
 
 export type PageCountQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -88008,7 +93402,7 @@ export type PagesQueryVariables = Exact<{
 }>;
 
 
-export type PagesQuery = { __typename?: 'Query', pages: Array<{ __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, background_color_active?: { __typename?: 'colors', class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'cookie_selection_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'gallery_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', has_padding?: boolean | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'news_blocks' } | { __typename?: 'partners_blocks', title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, text_size?: string | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', height?: { __typename?: 'heights', class?: string | null } | null } | { __typename?: 'text_and_image_blocks', has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', has_vertical_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', class?: string | null } | null, width?: { __typename?: 'widths', class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
+export type PagesQuery = { __typename?: 'Query', pages: Array<{ __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'cookie_selection_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', id: string, has_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'news_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, tags?: Array<{ __typename?: 'news_blocks_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'tabs_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, tabs?: Array<{ __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
 
 export type TagFragment = { __typename?: 'tags', id: string, name?: string | null };
 
@@ -88069,20 +93463,25 @@ export const BlogPostFragmentDoc = gql`
     ${TagFragmentDoc}`;
 export const WidthFragmentDoc = gql`
     fragment Width on widths {
+  id
   class
   name
 }
     `;
 export const ColorFragmentDoc = gql`
     fragment Color on colors {
+  id
   class
 }
     `;
 export const BannerHeroBlockFragmentDoc = gql`
     fragment BannerHeroBlock on banner_hero_blocks {
+  id
   width {
     ...Width
   }
+  has_vertical_padding
+  has_horizontal_padding
   title
   banners {
     title
@@ -88117,6 +93516,7 @@ export const BannerHeroBlockFragmentDoc = gql`
 ${ColorFragmentDoc}`;
 export const PartnerFragmentDoc = gql`
     fragment Partner on partners {
+  id
   status
   name
   logo {
@@ -88130,6 +93530,7 @@ export const PartnerFragmentDoc = gql`
     `;
 export const PartnersBlockFragmentDoc = gql`
     fragment PartnersBlock on partners_blocks {
+  id
   title
   show_title
   partners(filter: {partners_id: {status: {_eq: "published"}}}, sort: ["sort"]) {
@@ -88141,6 +93542,7 @@ export const PartnersBlockFragmentDoc = gql`
     ${PartnerFragmentDoc}`;
 export const TextHeroBlockFragmentDoc = gql`
     fragment TextHeroBlock on text_hero_blocks {
+  id
   background_color {
     ...Color
   }
@@ -88148,6 +93550,7 @@ export const TextHeroBlockFragmentDoc = gql`
     ...Width
   }
   has_vertical_padding
+  has_horizontal_padding
   illustration_type
   icon {
     filename_download
@@ -88166,6 +93569,7 @@ export const TextHeroBlockFragmentDoc = gql`
 ${WidthFragmentDoc}`;
 export const TextAndImageBlockFragmentDoc = gql`
     fragment TextAndImageBlock on text_and_image_blocks {
+  id
   width {
     ...Width
   }
@@ -88188,6 +93592,7 @@ export const TextAndImageBlockFragmentDoc = gql`
     ${WidthFragmentDoc}`;
 export const RichTextBlockFragmentDoc = gql`
     fragment RichTextBlock on richtext_blocks {
+  id
   width {
     ...Width
   }
@@ -88214,6 +93619,7 @@ export const DisclosureBlockFragmentDoc = gql`
     ${WidthFragmentDoc}`;
 export const ContactFormBlockFragmentDoc = gql`
     fragment ContactFormBlock on contact_form_blocks {
+  id
   background_color {
     ...Color
   }
@@ -88229,6 +93635,7 @@ export const ContactFormBlockFragmentDoc = gql`
 ${WidthFragmentDoc}`;
 export const GalleryBlockFragmentDoc = gql`
     fragment GalleryBlock on gallery_blocks {
+  id
   width {
     ...Width
   }
@@ -88309,123 +93716,33 @@ export const ContactFormFragmentDoc = gql`
   message
 }
     `;
-export const BannerFragmentDoc = gql`
-    fragment Banner on frontpage_banners {
+export const FooterLinkPageFragmentDoc = gql`
+    fragment FooterLinkPage on pages {
   id
-  status
-  image {
-    id
-    title
-    description
-    width
-    height
-  }
-  overlay_color
   title
-  description
-  button_type
-  button_text
-  button_link
-  button_page {
-    slug
-  }
+  slug
 }
     `;
-export const ServicesListBlockFragmentDoc = gql`
-    fragment ServicesListBlock on services_list_blocks {
-  background_color {
-    ...Color
+export const FooterLinkFragmentDoc = gql`
+    fragment FooterLink on footer_links {
+  id
+  name
+  type
+  link
+  page {
+    ...FooterLinkPage
   }
-  width {
-    ...Width
-  }
-  has_vertical_padding
-  has_horizontal_padding
-  text_size
-  title
-  content
-  links_placement
+}
+    ${FooterLinkPageFragmentDoc}`;
+export const FooterCategoryFragmentDoc = gql`
+    fragment FooterCategory on footer_categories {
+  id
+  name
   links {
-    item {
-      ... on news_posts {
-        id
-        title
-        slug
-      }
-      ... on blog_posts {
-        id
-        title
-        slug
-      }
-      ... on cases {
-        id
-        title
-        slug
-      }
-      ... on pages {
-        id
-        title
-        slug
-      }
-    }
+    ...FooterLink
   }
 }
-    ${ColorFragmentDoc}
-${WidthFragmentDoc}`;
-export const HeightFragmentDoc = gql`
-    fragment Height on heights {
-  class
-}
-    `;
-export const SpacerBlockFragmentDoc = gql`
-    fragment SpacerBlock on spacer_blocks {
-  height {
-    ...Height
-  }
-}
-    ${HeightFragmentDoc}`;
-export const FrontpageFragmentDoc = gql`
-    fragment Frontpage on frontpage {
-  id
-  hero_banners(sort: ["sort"]) {
-    ...Banner
-  }
-  seo_title
-  seo_description
-  blocks {
-    item {
-      ... on partners_blocks {
-        ...PartnersBlock
-      }
-      ... on services_list_blocks {
-        ...ServicesListBlock
-      }
-      ... on text_and_image_blocks {
-        ...TextAndImageBlock
-      }
-      ... on richtext_blocks {
-        ...RichTextBlock
-      }
-      ... on spacer_blocks {
-        ...SpacerBlock
-      }
-      ... on disclosure_blocks {
-        ...DisclosureBlock
-      }
-      ... on contact_form_blocks {
-        ...ContactFormBlock
-      }
-    }
-  }
-}
-    ${BannerFragmentDoc}
-${PartnersBlockFragmentDoc}
-${ServicesListBlockFragmentDoc}
-${TextAndImageBlockFragmentDoc}
-${RichTextBlockFragmentDoc}
-${SpacerBlockFragmentDoc}
-${DisclosureBlockFragmentDoc}
-${ContactFormBlockFragmentDoc}`;
+    ${FooterLinkFragmentDoc}`;
 export const NavigationMenuItemPageFragmentDoc = gql`
     fragment NavigationMenuItemPage on pages {
   id
@@ -88512,6 +93829,47 @@ export const NewsPostFragmentDoc = gql`
   }
 }
     ${TagFragmentDoc}`;
+export const ServicesListBlockFragmentDoc = gql`
+    fragment ServicesListBlock on services_list_blocks {
+  id
+  background_color {
+    ...Color
+  }
+  width {
+    ...Width
+  }
+  has_vertical_padding
+  has_horizontal_padding
+  title
+  content
+  links_placement
+  links {
+    item {
+      ... on news_posts {
+        id
+        title
+        slug
+      }
+      ... on blog_posts {
+        id
+        title
+        slug
+      }
+      ... on cases {
+        id
+        title
+        slug
+      }
+      ... on pages {
+        id
+        title
+        slug
+      }
+    }
+  }
+}
+    ${ColorFragmentDoc}
+${WidthFragmentDoc}`;
 export const DisclosureGroupCategoryFragmentDoc = gql`
     fragment DisclosureGroupCategory on disclosure_group_categories {
   id
@@ -88526,6 +93884,7 @@ export const DisclosureGroupCategoryFragmentDoc = gql`
     ${DisclosureBlockFragmentDoc}`;
 export const DisclosureGroupBlockFragmentDoc = gql`
     fragment DisclosureGroupBlock on disclosure_group_blocks {
+  id
   width {
     ...Width
   }
@@ -88539,25 +93898,23 @@ export const DisclosureGroupBlockFragmentDoc = gql`
 }
     ${WidthFragmentDoc}
 ${DisclosureGroupCategoryFragmentDoc}`;
-export const GoogleMapsBlockFragmentDoc = gql`
-    fragment GoogleMapsBlock on google_maps_blocks {
-  width {
-    ...Width
-  }
-  has_padding
+export const HeightFragmentDoc = gql`
+    fragment Height on heights {
+  id
+  class
 }
-    ${WidthFragmentDoc}`;
-export const CookieSelectionBlockFragmentDoc = gql`
-    fragment CookieSelectionBlock on cookie_selection_blocks {
-  width {
-    ...Width
+    `;
+export const SpacerBlockFragmentDoc = gql`
+    fragment SpacerBlock on spacer_blocks {
+  id
+  height {
+    ...Height
   }
-  has_vertical_padding
-  has_horizontal_padding
 }
-    ${WidthFragmentDoc}`;
+    ${HeightFragmentDoc}`;
 export const CardBlockFragmentDoc = gql`
     fragment CardBlock on card_blocks {
+  id
   background_color {
     ...Color
   }
@@ -88584,6 +93941,7 @@ export const CardBlockFragmentDoc = gql`
     ${ColorFragmentDoc}`;
 export const ImageBlockFragmentDoc = gql`
     fragment ImageBlock on image_blocks {
+  id
   image_position
   image_fit
   image_size
@@ -88599,9 +93957,12 @@ export const ImageBlockFragmentDoc = gql`
     `;
 export const ColumnsBlockFragmentDoc = gql`
     fragment ColumnsBlock on columns_blocks {
+  id
   width {
     ...Width
   }
+  has_vertical_padding
+  has_horizontal_padding
   extended_control
   custom_css
   vertical_alignment
@@ -88631,6 +93992,86 @@ ${DisclosureBlockFragmentDoc}
 ${GalleryBlockFragmentDoc}
 ${CardBlockFragmentDoc}
 ${ImageBlockFragmentDoc}`;
+export const TabsBlockTabFragmentDoc = gql`
+    fragment TabsBlockTab on tabs_blocks_tab {
+  id
+  name
+  blocks(sort: ["sort"]) {
+    item {
+      ... on richtext_blocks {
+        ...RichTextBlock
+      }
+      ... on text_and_image_blocks {
+        ...TextAndImageBlock
+      }
+      ... on spacer_blocks {
+        ...SpacerBlock
+      }
+      ... on columns_blocks {
+        ...ColumnsBlock
+      }
+    }
+  }
+}
+    ${RichTextBlockFragmentDoc}
+${TextAndImageBlockFragmentDoc}
+${SpacerBlockFragmentDoc}
+${ColumnsBlockFragmentDoc}`;
+export const TabsBlockFragmentDoc = gql`
+    fragment TabsBlock on tabs_blocks {
+  id
+  width {
+    ...Width
+  }
+  background_color {
+    ...Color
+  }
+  has_vertical_padding
+  has_horizontal_padding
+  title
+  tabs(sort: ["sort"]) {
+    ...TabsBlockTab
+  }
+}
+    ${WidthFragmentDoc}
+${ColorFragmentDoc}
+${TabsBlockTabFragmentDoc}`;
+export const GoogleMapsBlockFragmentDoc = gql`
+    fragment GoogleMapsBlock on google_maps_blocks {
+  id
+  width {
+    ...Width
+  }
+  has_padding
+}
+    ${WidthFragmentDoc}`;
+export const CookieSelectionBlockFragmentDoc = gql`
+    fragment CookieSelectionBlock on cookie_selection_blocks {
+  id
+  width {
+    ...Width
+  }
+  has_vertical_padding
+  has_horizontal_padding
+}
+    ${WidthFragmentDoc}`;
+export const NewsBlockFragmentDoc = gql`
+    fragment NewsBlock on news_blocks {
+  id
+  width {
+    ...Width
+  }
+  has_vertical_padding
+  has_horizontal_padding
+  title
+  tags {
+    tags_id {
+      ...Tag
+    }
+  }
+}
+    ${WidthFragmentDoc}
+${TagFragmentDoc}`;
 export const PageFragmentDoc = gql`
     fragment Page on pages {
   id
@@ -88665,6 +94106,9 @@ export const PageFragmentDoc = gql`
       ... on disclosure_blocks {
         ...DisclosureBlock
       }
+      ... on tabs_blocks {
+        ...TabsBlock
+      }
       ... on spacer_blocks {
         ...SpacerBlock
       }
@@ -88683,6 +94127,9 @@ export const PageFragmentDoc = gql`
       ... on columns_blocks {
         ...ColumnsBlock
       }
+      ... on news_blocks {
+        ...NewsBlock
+      }
     }
   }
 }
@@ -88694,12 +94141,14 @@ ${TextAndImageBlockFragmentDoc}
 ${RichTextBlockFragmentDoc}
 ${DisclosureGroupBlockFragmentDoc}
 ${DisclosureBlockFragmentDoc}
+${TabsBlockFragmentDoc}
 ${SpacerBlockFragmentDoc}
 ${GoogleMapsBlockFragmentDoc}
 ${CookieSelectionBlockFragmentDoc}
 ${ContactFormBlockFragmentDoc}
 ${GalleryBlockFragmentDoc}
-${ColumnsBlockFragmentDoc}`;
+${ColumnsBlockFragmentDoc}
+${NewsBlockFragmentDoc}`;
 export const TagCounterFragmentDoc = gql`
     fragment TagCounter on tags_counters {
   id
@@ -88783,16 +94232,16 @@ export const Create_Contact_FormDocument = gql`
 export function useCreate_Contact_FormMutation() {
   return Urql.useMutation<Create_Contact_FormMutation, Create_Contact_FormMutationVariables>(Create_Contact_FormDocument);
 };
-export const FrontpageDocument = gql`
-    query frontpage {
-  frontpage {
-    ...Frontpage
+export const FooterCategoriesDocument = gql`
+    query FooterCategories {
+  footer_categories {
+    ...FooterCategory
   }
 }
-    ${FrontpageFragmentDoc}`;
+    ${FooterCategoryFragmentDoc}`;
 
-export function useFrontpageQuery(options: Omit<Urql.UseQueryArgs<never, FrontpageQueryVariables>, 'query'>) {
-  return Urql.useQuery<FrontpageQuery, FrontpageQueryVariables>({ query: FrontpageDocument, ...options });
+export function useFooterCategoriesQuery(options: Omit<Urql.UseQueryArgs<never, FooterCategoriesQueryVariables>, 'query'>) {
+  return Urql.useQuery<FooterCategoriesQuery, FooterCategoriesQueryVariables>({ query: FooterCategoriesDocument, ...options });
 };
 export const NavigationMenuDocument = gql`
     query NavigationMenu {
@@ -88835,6 +94284,22 @@ export const NewsPostsDocument = gql`
 
 export function useNewsPostsQuery(options: Omit<Urql.UseQueryArgs<never, NewsPostsQueryVariables>, 'query'>) {
   return Urql.useQuery<NewsPostsQuery, NewsPostsQueryVariables>({ query: NewsPostsDocument, ...options });
+};
+export const NewsPostsByTagsDocument = gql`
+    query NewsPostsByTags($tags: [String], $limit: Int, $offset: Int, $sort: [String]) {
+  news_posts(
+    filter: {tags: {tags_id: {id: {_in: $tags}}}}
+    limit: $limit
+    offset: $offset
+    sort: $sort
+  ) {
+    ...NewsPost
+  }
+}
+    ${NewsPostFragmentDoc}`;
+
+export function useNewsPostsByTagsQuery(options: Omit<Urql.UseQueryArgs<never, NewsPostsByTagsQueryVariables>, 'query'>) {
+  return Urql.useQuery<NewsPostsByTagsQuery, NewsPostsByTagsQueryVariables>({ query: NewsPostsByTagsDocument, ...options });
 };
 export const PageCountDocument = gql`
     query PageCount {

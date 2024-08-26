@@ -3,6 +3,7 @@
     import { useCreate_Contact_FormMutation } from "@/graphql/generated/graphql";
     import * as zod from "zod";
     import { toTypedSchema } from "@vee-validate/zod";
+    import { useHeadingClass } from "@/helpers/useHeadingClass";
 
     // Translate zod errors to danish.
     const danishErrorMap: zod.ZodErrorMap = (issue, ctx) =>
@@ -65,10 +66,12 @@
     });
 
     const checkMarkAnimationFinished = () => setTimeout(() => showCheckmark.value = false, 1500);
+
+    const { headingClass } = useHeadingClass();
 </script>
 
 <template>
-    <section id="contact-form-section" :class="[ has_vertical_padding ? 'py-12 mt-8' : '', 'flex justify-center items-center w-full xl:px-12' ]">
+    <section id="contact-form-section" :class="[ has_vertical_padding ? 'py-12 mt-8' : '', has_horizontal_padding ? 'xl:px-12' : '', 'flex justify-center items-center w-full' ]">
         <div :class="[ has_vertical_padding ? 'py-10' : '', has_horizontal_padding ? 'lg:px-6' : 'lg:px-6', 'flex justify-center items-center w-full' ]">
             <div :class="[ width?.class,
                             width?.class === 'max-w-7xl xl:max-w-8xl 4xl:max-w-10xl' ? 'grid-cols-1 lg:grid-cols-[1.2fr,0.2fr,1.5fr] 4xl:grid-cols-[1.2fr,0.5fr,1.2fr]' : 'grid-cols-1 lg:grid-cols-[1.2fr,0.5fr,1.4fr] 4xl:grid-cols-[1.2fr,0.5fr,1.5fr]',
@@ -76,26 +79,26 @@
 
                 <!-- Description -->
                 <div class="prose px-6 lg:px-0">
-                    <h2>{{ title }}</h2>
+                    <h2 :class="headingClass">{{ title }}</h2>
                     <div class="mt-5" v-html="description" />
 
                     <dl class="mt-12 flex flex-col gap-5">
                         <div class="inline-flex space-x-5 items-center">
-                            <dt >
+                            <dt class="inline-flex justify-center !mt-0">
                                 <Icon name="tabler:phone" class="h-5 w-5 text-gray-900" aria-hidden="true" role="presentation" />
                                 <span class="sr-only">Telefon</span>
                             </dt>
-                            <dd>
+                            <dd class="!mt-0">
                                 <a href="tel:+4520136133" class="text-gray-700 !font-normal !no-underline hover:underline">+45 20 13 61 33</a>
                             </dd>
                         </div>
                         
                         <div class="inline-flex space-x-5 items-center">
-                            <dt >
+                            <dt class="inline-flex justify-center !mt-0">
                                 <Icon name="tabler:mail" class="h-5 w-5 text-gray-900" aria-hidden="true" role="presentation" />
                                 <span class="sr-only">E-mail</span>
                             </dt>
-                            <dd>
+                            <dd class="!mt-0">
                                 <a href="mailto:info@formula-micro.dk" class="text-gray-700 !font-normal !no-underline hover:underline">info@formula-micro.dk</a>
                             </dd>
                         </div>
