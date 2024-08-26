@@ -2063,103 +2063,6 @@ export default {
             ]
           },
           {
-            "name": "create_frontpage_banners_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_frontpage_banners_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "frontpage_banners",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
             "name": "create_frontpage_blocks_item",
             "type": {
               "kind": "OBJECT",
@@ -7115,49 +7018,6 @@ export default {
           },
           {
             "name": "delete_footer_links_items",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_many",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_frontpage_banners_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_one",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_frontpage_banners_items",
             "type": {
               "kind": "OBJECT",
               "name": "delete_many",
@@ -13071,200 +12931,6 @@ export default {
                 "name": "data",
                 "type": {
                   "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_frontpage_banners_batch",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "frontpage_banners",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_frontpage_banners_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_frontpage_banners_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "frontpage_banners",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
                   "ofType": {
                     "kind": "SCALAR",
                     "name": "Any"
@@ -25561,201 +25227,6 @@ export default {
             ]
           },
           {
-            "name": "frontpage_banners",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "frontpage_banners",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "frontpage_banners_aggregated",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "frontpage_banners_aggregated",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "groupBy",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "frontpage_banners_by_id",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "frontpage_banners_by_version",
-            "type": {
-              "kind": "OBJECT",
-              "name": "version_frontpage_banners",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
             "name": "frontpage_blocks",
             "type": {
               "kind": "NON_NULL",
@@ -34660,23 +34131,6 @@ export default {
             "type": {
               "kind": "OBJECT",
               "name": "footer_links_mutated",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "event",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "frontpage_banners_mutated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_mutated",
               "ofType": null
             },
             "args": [
@@ -51076,73 +50530,6 @@ export default {
             "args": []
           },
           {
-            "name": "hero_banners",
-            "type": {
-              "kind": "LIST",
-              "ofType": {
-                "kind": "OBJECT",
-                "name": "frontpage_banners",
-                "ofType": null
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "hero_banners_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "count_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
             "name": "id",
             "type": {
               "kind": "NON_NULL",
@@ -51286,685 +50673,6 @@ export default {
                 }
               }
             ]
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "frontpage_banners",
-        "fields": [
-          {
-            "name": "button_link",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_page",
-            "type": {
-              "kind": "OBJECT",
-              "name": "pages",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "button_text",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_type",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "description",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "frontpage_id",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          },
-          {
-            "name": "image",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_files",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "overlay_color",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "status",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "title",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "frontpage_banners_aggregated",
-        "fields": [
-          {
-            "name": "avg",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "avgDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "count",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "countAll",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "countDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "group",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "max",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "min",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sum",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sumDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "frontpage_banners_aggregated_count",
-        "fields": [
-          {
-            "name": "button_link",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_page",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_text",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_type",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "description",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "frontpage_id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "image",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "overlay_color",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "status",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "title",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "frontpage_banners_aggregated_fields",
-        "fields": [
-          {
-            "name": "frontpage_id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "frontpage_banners_mutated",
-        "fields": [
-          {
-            "name": "data",
-            "type": {
-              "kind": "OBJECT",
-              "name": "frontpage_banners",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "event",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "key",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
           }
         ],
         "interfaces": []
@@ -73089,14 +71797,6 @@ export default {
             "args": []
           },
           {
-            "name": "hero_banners",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
             "name": "id",
             "type": {
               "kind": "SCALAR",
@@ -73122,141 +71822,6 @@ export default {
           },
           {
             "name": "seo_title",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "version_frontpage_banners",
-        "fields": [
-          {
-            "name": "button_link",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_page",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_text",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "button_type",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "description",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "frontpage_id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "image",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "overlay_color",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "status",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "title",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -77516,8 +76081,6 @@ export type Mutation = {
   create_footer_categories_items: Array<Footer_Categories>;
   create_footer_links_item?: Maybe<Footer_Links>;
   create_footer_links_items: Array<Footer_Links>;
-  create_frontpage_banners_item?: Maybe<Frontpage_Banners>;
-  create_frontpage_banners_items: Array<Frontpage_Banners>;
   create_frontpage_blocks_item?: Maybe<Frontpage_Blocks>;
   create_frontpage_blocks_items: Array<Frontpage_Blocks>;
   create_gallery_blocks_files_item?: Maybe<Gallery_Blocks_Files>;
@@ -77644,8 +76207,6 @@ export type Mutation = {
   delete_footer_categories_items?: Maybe<Delete_Many>;
   delete_footer_links_item?: Maybe<Delete_One>;
   delete_footer_links_items?: Maybe<Delete_Many>;
-  delete_frontpage_banners_item?: Maybe<Delete_One>;
-  delete_frontpage_banners_items?: Maybe<Delete_Many>;
   delete_frontpage_blocks_item?: Maybe<Delete_One>;
   delete_frontpage_blocks_items?: Maybe<Delete_Many>;
   delete_gallery_blocks_files_item?: Maybe<Delete_One>;
@@ -77794,9 +76355,6 @@ export type Mutation = {
   update_footer_links_item?: Maybe<Footer_Links>;
   update_footer_links_items: Array<Footer_Links>;
   update_frontpage?: Maybe<Frontpage>;
-  update_frontpage_banners_batch: Array<Frontpage_Banners>;
-  update_frontpage_banners_item?: Maybe<Frontpage_Banners>;
-  update_frontpage_banners_items: Array<Frontpage_Banners>;
   update_frontpage_blocks_batch: Array<Frontpage_Blocks>;
   update_frontpage_blocks_item?: Maybe<Frontpage_Blocks>;
   update_frontpage_blocks_items: Array<Frontpage_Blocks>;
@@ -78255,22 +76813,6 @@ export type MutationCreate_Footer_Links_ItemArgs = {
 export type MutationCreate_Footer_Links_ItemsArgs = {
   data?: InputMaybe<Array<Create_Footer_Links_Input>>;
   filter?: InputMaybe<Footer_Links_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationCreate_Frontpage_Banners_ItemArgs = {
-  data: Create_Frontpage_Banners_Input;
-};
-
-
-export type MutationCreate_Frontpage_Banners_ItemsArgs = {
-  data?: InputMaybe<Array<Create_Frontpage_Banners_Input>>;
-  filter?: InputMaybe<Frontpage_Banners_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
@@ -79157,16 +77699,6 @@ export type MutationDelete_Footer_Links_ItemArgs = {
 
 
 export type MutationDelete_Footer_Links_ItemsArgs = {
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-};
-
-
-export type MutationDelete_Frontpage_Banners_ItemArgs = {
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationDelete_Frontpage_Banners_ItemsArgs = {
   ids: Array<InputMaybe<Scalars['ID']['input']>>;
 };
 
@@ -80202,35 +78734,6 @@ export type MutationUpdate_Footer_Links_ItemsArgs = {
 
 export type MutationUpdate_FrontpageArgs = {
   data: Update_Frontpage_Input;
-};
-
-
-export type MutationUpdate_Frontpage_Banners_BatchArgs = {
-  data?: InputMaybe<Array<Update_Frontpage_Banners_Input>>;
-  filter?: InputMaybe<Frontpage_Banners_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Frontpage_Banners_ItemArgs = {
-  data: Update_Frontpage_Banners_Input;
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationUpdate_Frontpage_Banners_ItemsArgs = {
-  data: Update_Frontpage_Banners_Input;
-  filter?: InputMaybe<Frontpage_Banners_Filter>;
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
 
@@ -81543,10 +80046,6 @@ export type Query = {
   footer_links_by_id?: Maybe<Footer_Links>;
   footer_links_by_version?: Maybe<Version_Footer_Links>;
   frontpage?: Maybe<Frontpage>;
-  frontpage_banners: Array<Frontpage_Banners>;
-  frontpage_banners_aggregated: Array<Frontpage_Banners_Aggregated>;
-  frontpage_banners_by_id?: Maybe<Frontpage_Banners>;
-  frontpage_banners_by_version?: Maybe<Version_Frontpage_Banners>;
   frontpage_blocks: Array<Frontpage_Blocks>;
   frontpage_blocks_aggregated: Array<Frontpage_Blocks_Aggregated>;
   frontpage_blocks_by_id?: Maybe<Frontpage_Blocks>;
@@ -82416,39 +80915,6 @@ export type QueryFooter_Links_By_VersionArgs = {
 
 export type QueryFrontpageArgs = {
   version?: InputMaybe<Scalars['String']['input']>;
-};
-
-
-export type QueryFrontpage_BannersArgs = {
-  filter?: InputMaybe<Frontpage_Banners_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryFrontpage_Banners_AggregatedArgs = {
-  filter?: InputMaybe<Frontpage_Banners_Filter>;
-  groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryFrontpage_Banners_By_IdArgs = {
-  id: Scalars['ID']['input'];
-  version?: InputMaybe<Scalars['String']['input']>;
-};
-
-
-export type QueryFrontpage_Banners_By_VersionArgs = {
-  id: Scalars['ID']['input'];
-  version: Scalars['String']['input'];
 };
 
 
@@ -83893,7 +82359,6 @@ export type Subscription = {
   disclosure_group_categories_mutated?: Maybe<Disclosure_Group_Categories_Mutated>;
   footer_categories_mutated?: Maybe<Footer_Categories_Mutated>;
   footer_links_mutated?: Maybe<Footer_Links_Mutated>;
-  frontpage_banners_mutated?: Maybe<Frontpage_Banners_Mutated>;
   frontpage_blocks_mutated?: Maybe<Frontpage_Blocks_Mutated>;
   frontpage_mutated?: Maybe<Frontpage_Mutated>;
   gallery_blocks_files_mutated?: Maybe<Gallery_Blocks_Files_Mutated>;
@@ -84132,11 +82597,6 @@ export type SubscriptionFooter_Categories_MutatedArgs = {
 
 
 export type SubscriptionFooter_Links_MutatedArgs = {
-  event?: InputMaybe<EventEnum>;
-};
-
-
-export type SubscriptionFrontpage_Banners_MutatedArgs = {
   event?: InputMaybe<EventEnum>;
 };
 
@@ -86219,25 +84679,6 @@ export type Create_Footer_Links_Input = {
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
 };
 
-export type Create_Frontpage_Banners_Input = {
-  button_link?: InputMaybe<Scalars['String']['input']>;
-  button_page?: InputMaybe<Create_Pages_Input>;
-  button_text?: InputMaybe<Scalars['String']['input']>;
-  button_type?: InputMaybe<Scalars['String']['input']>;
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  description?: InputMaybe<Scalars['String']['input']>;
-  frontpage_id?: InputMaybe<Create_Frontpage_Input>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  image?: InputMaybe<Create_Directus_Files_Input>;
-  overlay_color?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  status?: InputMaybe<Scalars['String']['input']>;
-  title?: InputMaybe<Scalars['String']['input']>;
-  user_created?: InputMaybe<Create_Directus_Users_Input>;
-  user_updated?: InputMaybe<Create_Directus_Users_Input>;
-};
-
 export type Create_Frontpage_Blocks_Input = {
   collection?: InputMaybe<Scalars['String']['input']>;
   frontpage_id?: InputMaybe<Create_Frontpage_Input>;
@@ -86250,7 +84691,6 @@ export type Create_Frontpage_Input = {
   blocks?: InputMaybe<Array<InputMaybe<Create_Frontpage_Blocks_Input>>>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
-  hero_banners?: InputMaybe<Array<InputMaybe<Create_Frontpage_Banners_Input>>>;
   id?: InputMaybe<Scalars['ID']['input']>;
   interval?: InputMaybe<Scalars['Float']['input']>;
   seo_description?: InputMaybe<Scalars['String']['input']>;
@@ -88645,8 +87085,6 @@ export type Frontpage = {
   date_created_func?: Maybe<Datetime_Functions>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   date_updated_func?: Maybe<Datetime_Functions>;
-  hero_banners?: Maybe<Array<Maybe<Frontpage_Banners>>>;
-  hero_banners_func?: Maybe<Count_Functions>;
   id: Scalars['ID']['output'];
   interval?: Maybe<Scalars['Float']['output']>;
   seo_description?: Maybe<Scalars['String']['output']>;
@@ -88658,16 +87096,6 @@ export type Frontpage = {
 
 export type FrontpageBlocksArgs = {
   filter?: InputMaybe<Frontpage_Blocks_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type FrontpageHero_BannersArgs = {
-  filter?: InputMaybe<Frontpage_Banners_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
@@ -88693,148 +87121,6 @@ export type FrontpageUser_UpdatedArgs = {
   page?: InputMaybe<Scalars['Int']['input']>;
   search?: InputMaybe<Scalars['String']['input']>;
   sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-export type Frontpage_Banners = {
-  __typename?: 'frontpage_banners';
-  button_link?: Maybe<Scalars['String']['output']>;
-  button_page?: Maybe<Pages>;
-  button_text?: Maybe<Scalars['String']['output']>;
-  button_type?: Maybe<Scalars['String']['output']>;
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_created_func?: Maybe<Datetime_Functions>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  date_updated_func?: Maybe<Datetime_Functions>;
-  description?: Maybe<Scalars['String']['output']>;
-  frontpage_id?: Maybe<Frontpage>;
-  id: Scalars['ID']['output'];
-  image?: Maybe<Directus_Files>;
-  overlay_color?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  status?: Maybe<Scalars['String']['output']>;
-  title?: Maybe<Scalars['String']['output']>;
-  user_created?: Maybe<Directus_Users>;
-  user_updated?: Maybe<Directus_Users>;
-};
-
-
-export type Frontpage_BannersButton_PageArgs = {
-  filter?: InputMaybe<Pages_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Frontpage_BannersFrontpage_IdArgs = {
-  filter?: InputMaybe<Frontpage_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Frontpage_BannersImageArgs = {
-  filter?: InputMaybe<Directus_Files_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Frontpage_BannersUser_CreatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Frontpage_BannersUser_UpdatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-export type Frontpage_Banners_Aggregated = {
-  __typename?: 'frontpage_banners_aggregated';
-  avg?: Maybe<Frontpage_Banners_Aggregated_Fields>;
-  avgDistinct?: Maybe<Frontpage_Banners_Aggregated_Fields>;
-  count?: Maybe<Frontpage_Banners_Aggregated_Count>;
-  countAll?: Maybe<Scalars['Int']['output']>;
-  countDistinct?: Maybe<Frontpage_Banners_Aggregated_Count>;
-  group?: Maybe<Scalars['JSON']['output']>;
-  max?: Maybe<Frontpage_Banners_Aggregated_Fields>;
-  min?: Maybe<Frontpage_Banners_Aggregated_Fields>;
-  sum?: Maybe<Frontpage_Banners_Aggregated_Fields>;
-  sumDistinct?: Maybe<Frontpage_Banners_Aggregated_Fields>;
-};
-
-export type Frontpage_Banners_Aggregated_Count = {
-  __typename?: 'frontpage_banners_aggregated_count';
-  button_link?: Maybe<Scalars['Int']['output']>;
-  button_page?: Maybe<Scalars['Int']['output']>;
-  button_text?: Maybe<Scalars['Int']['output']>;
-  button_type?: Maybe<Scalars['Int']['output']>;
-  date_created?: Maybe<Scalars['Int']['output']>;
-  date_updated?: Maybe<Scalars['Int']['output']>;
-  description?: Maybe<Scalars['Int']['output']>;
-  frontpage_id?: Maybe<Scalars['Int']['output']>;
-  id?: Maybe<Scalars['Int']['output']>;
-  image?: Maybe<Scalars['Int']['output']>;
-  overlay_color?: Maybe<Scalars['Int']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  status?: Maybe<Scalars['Int']['output']>;
-  title?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Scalars['Int']['output']>;
-  user_updated?: Maybe<Scalars['Int']['output']>;
-};
-
-export type Frontpage_Banners_Aggregated_Fields = {
-  __typename?: 'frontpage_banners_aggregated_fields';
-  frontpage_id?: Maybe<Scalars['Float']['output']>;
-  sort?: Maybe<Scalars['Float']['output']>;
-};
-
-export type Frontpage_Banners_Filter = {
-  _and?: InputMaybe<Array<InputMaybe<Frontpage_Banners_Filter>>>;
-  _or?: InputMaybe<Array<InputMaybe<Frontpage_Banners_Filter>>>;
-  button_link?: InputMaybe<String_Filter_Operators>;
-  button_page?: InputMaybe<Pages_Filter>;
-  button_text?: InputMaybe<String_Filter_Operators>;
-  button_type?: InputMaybe<String_Filter_Operators>;
-  date_created?: InputMaybe<Date_Filter_Operators>;
-  date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  date_updated?: InputMaybe<Date_Filter_Operators>;
-  date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  description?: InputMaybe<String_Filter_Operators>;
-  frontpage_id?: InputMaybe<Frontpage_Filter>;
-  id?: InputMaybe<String_Filter_Operators>;
-  image?: InputMaybe<Directus_Files_Filter>;
-  overlay_color?: InputMaybe<String_Filter_Operators>;
-  sort?: InputMaybe<Number_Filter_Operators>;
-  status?: InputMaybe<String_Filter_Operators>;
-  title?: InputMaybe<String_Filter_Operators>;
-  user_created?: InputMaybe<Directus_Users_Filter>;
-  user_updated?: InputMaybe<Directus_Users_Filter>;
-};
-
-export type Frontpage_Banners_Mutated = {
-  __typename?: 'frontpage_banners_mutated';
-  data?: Maybe<Frontpage_Banners>;
-  event?: Maybe<EventEnum>;
-  key: Scalars['ID']['output'];
 };
 
 export type Frontpage_Blocks = {
@@ -88921,8 +87207,6 @@ export type Frontpage_Filter = {
   date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   date_updated?: InputMaybe<Date_Filter_Operators>;
   date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  hero_banners?: InputMaybe<Frontpage_Banners_Filter>;
-  hero_banners_func?: InputMaybe<Count_Function_Filter_Operators>;
   id?: InputMaybe<Number_Filter_Operators>;
   interval?: InputMaybe<Number_Filter_Operators>;
   seo_description?: InputMaybe<String_Filter_Operators>;
@@ -93393,25 +91677,6 @@ export type Update_Footer_Links_Input = {
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
 };
 
-export type Update_Frontpage_Banners_Input = {
-  button_link?: InputMaybe<Scalars['String']['input']>;
-  button_page?: InputMaybe<Update_Pages_Input>;
-  button_text?: InputMaybe<Scalars['String']['input']>;
-  button_type?: InputMaybe<Scalars['String']['input']>;
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  description?: InputMaybe<Scalars['String']['input']>;
-  frontpage_id?: InputMaybe<Update_Frontpage_Input>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  image?: InputMaybe<Update_Directus_Files_Input>;
-  overlay_color?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  status?: InputMaybe<Scalars['String']['input']>;
-  title?: InputMaybe<Scalars['String']['input']>;
-  user_created?: InputMaybe<Update_Directus_Users_Input>;
-  user_updated?: InputMaybe<Update_Directus_Users_Input>;
-};
-
 export type Update_Frontpage_Blocks_Input = {
   collection?: InputMaybe<Scalars['String']['input']>;
   frontpage_id?: InputMaybe<Update_Frontpage_Input>;
@@ -93424,7 +91689,6 @@ export type Update_Frontpage_Input = {
   blocks?: InputMaybe<Array<InputMaybe<Update_Frontpage_Blocks_Input>>>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
-  hero_banners?: InputMaybe<Array<InputMaybe<Update_Frontpage_Banners_Input>>>;
   id?: InputMaybe<Scalars['ID']['input']>;
   interval?: InputMaybe<Scalars['Float']['input']>;
   seo_description?: InputMaybe<Scalars['String']['input']>;
@@ -94233,31 +92497,10 @@ export type Version_Frontpage = {
   blocks?: Maybe<Scalars['JSON']['output']>;
   date_created?: Maybe<Scalars['Date']['output']>;
   date_updated?: Maybe<Scalars['Date']['output']>;
-  hero_banners?: Maybe<Scalars['JSON']['output']>;
   id?: Maybe<Scalars['ID']['output']>;
   interval?: Maybe<Scalars['Float']['output']>;
   seo_description?: Maybe<Scalars['String']['output']>;
   seo_title?: Maybe<Scalars['String']['output']>;
-  user_created?: Maybe<Scalars['JSON']['output']>;
-  user_updated?: Maybe<Scalars['JSON']['output']>;
-};
-
-export type Version_Frontpage_Banners = {
-  __typename?: 'version_frontpage_banners';
-  button_link?: Maybe<Scalars['String']['output']>;
-  button_page?: Maybe<Scalars['JSON']['output']>;
-  button_text?: Maybe<Scalars['String']['output']>;
-  button_type?: Maybe<Scalars['String']['output']>;
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  description?: Maybe<Scalars['String']['output']>;
-  frontpage_id?: Maybe<Scalars['JSON']['output']>;
-  id?: Maybe<Scalars['ID']['output']>;
-  image?: Maybe<Scalars['JSON']['output']>;
-  overlay_color?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  status?: Maybe<Scalars['String']['output']>;
-  title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Scalars['JSON']['output']>;
   user_updated?: Maybe<Scalars['JSON']['output']>;
 };
@@ -94992,13 +93235,11 @@ export type Widths_Translations_Mutated = {
   key: Scalars['ID']['output'];
 };
 
-export type BannerFragment = { __typename?: 'frontpage_banners', id: string, status?: string | null, overlay_color?: string | null, title?: string | null, description?: string | null, button_type?: string | null, button_text?: string | null, button_link?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, button_page?: { __typename?: 'pages', slug?: string | null } | null };
-
 export type PartnerFragment = { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null };
 
 export type PartnersBlockFragment = { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
 
-export type NewsBlockFragment = { __typename?: 'news_blocks', id: string, title?: string | null, tags?: Array<{ __typename?: 'news_blocks_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null };
+export type NewsBlockFragment = { __typename?: 'news_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, tags?: Array<{ __typename?: 'news_blocks_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null };
 
 export type ColorFragment = { __typename?: 'colors', id: string, class?: string | null };
 
@@ -95006,7 +93247,7 @@ export type WidthFragment = { __typename?: 'widths', id: string, class?: string 
 
 export type HeightFragment = { __typename?: 'heights', id: string, class?: string | null };
 
-export type ServicesListBlockFragment = { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, text_size?: string | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null };
+export type ServicesListBlockFragment = { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null };
 
 export type BannerHeroBlockFragment = { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null };
 
@@ -95089,12 +93330,16 @@ export type Create_Contact_FormMutationVariables = Exact<{
 
 export type Create_Contact_FormMutation = { __typename?: 'Mutation', create_contact_forms_item?: { __typename?: 'contact_forms', name?: string | null, company?: string | null, email?: string | null, phone?: string | null, message?: string | null } | null };
 
-export type FrontpageFragment = { __typename?: 'frontpage', id: string, seo_title?: string | null, seo_description?: string | null, hero_banners?: Array<{ __typename?: 'frontpage_banners', id: string, status?: string | null, overlay_color?: string | null, title?: string | null, description?: string | null, button_type?: string | null, button_text?: string | null, button_link?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, button_page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null, blocks?: Array<{ __typename?: 'frontpage_blocks', item?: { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, text_size?: string | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
+export type FooterCategoryFragment = { __typename?: 'footer_categories', id: string, name?: string | null, links?: Array<{ __typename?: 'footer_links', id: string, name?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null };
 
-export type FrontpageQueryVariables = Exact<{ [key: string]: never; }>;
+export type FooterLinkFragment = { __typename?: 'footer_links', id: string, name?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null };
+
+export type FooterLinkPageFragment = { __typename?: 'pages', id: string, title?: string | null, slug?: string | null };
+
+export type FooterCategoriesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type FrontpageQuery = { __typename?: 'Query', frontpage?: { __typename?: 'frontpage', id: string, seo_title?: string | null, seo_description?: string | null, hero_banners?: Array<{ __typename?: 'frontpage_banners', id: string, status?: string | null, overlay_color?: string | null, title?: string | null, description?: string | null, button_type?: string | null, button_text?: string | null, button_link?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, button_page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null, blocks?: Array<{ __typename?: 'frontpage_blocks', item?: { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, text_size?: string | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null };
+export type FooterCategoriesQuery = { __typename?: 'Query', footer_categories: Array<{ __typename?: 'footer_categories', id: string, name?: string | null, links?: Array<{ __typename?: 'footer_links', id: string, name?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null }> };
 
 export type NavigationMenuFragment = { __typename?: 'navigation_menu', links?: Array<{ __typename?: 'navigation_menu_items', id: string, text?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null, subitems?: Array<{ __typename?: 'navigation_menu_subitems', id: string, title?: string | null, description?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null, calls_to_action?: Array<{ __typename?: 'navigation_menu_calls_to_action', id: string, text?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | null> | null };
 
@@ -95140,7 +93385,7 @@ export type NewsPostsByTagsQueryVariables = Exact<{
 
 export type NewsPostsByTagsQuery = { __typename?: 'Query', news_posts: Array<{ __typename?: 'news_posts', id: string, status?: string | null, date_published?: any | null, title?: string | null, slug?: string | null, summary?: string | null, content?: any | null, cover_image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null, tags?: Array<{ __typename?: 'news_posts_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null }> };
 
-export type PageFragment = { __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'cookie_selection_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', id: string, has_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'news_blocks', id: string, title?: string | null, tags?: Array<{ __typename?: 'news_blocks_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, text_size?: string | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'tabs_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, tabs?: Array<{ __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
+export type PageFragment = { __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'cookie_selection_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', id: string, has_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'news_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, tags?: Array<{ __typename?: 'news_blocks_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'tabs_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, tabs?: Array<{ __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
 
 export type PageCountQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -95157,7 +93402,7 @@ export type PagesQueryVariables = Exact<{
 }>;
 
 
-export type PagesQuery = { __typename?: 'Query', pages: Array<{ __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'cookie_selection_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', id: string, has_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'news_blocks', id: string, title?: string | null, tags?: Array<{ __typename?: 'news_blocks_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, text_size?: string | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'tabs_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, tabs?: Array<{ __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
+export type PagesQuery = { __typename?: 'Query', pages: Array<{ __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'cookie_selection_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', id: string, has_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'news_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, tags?: Array<{ __typename?: 'news_blocks_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'tabs_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, tabs?: Array<{ __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
 
 export type TagFragment = { __typename?: 'tags', id: string, name?: string | null };
 
@@ -95498,125 +93743,6 @@ export const FooterCategoryFragmentDoc = gql`
   }
 }
     ${FooterLinkFragmentDoc}`;
-export const BannerFragmentDoc = gql`
-    fragment Banner on frontpage_banners {
-  id
-  status
-  image {
-    id
-    title
-    description
-    width
-    height
-  }
-  overlay_color
-  title
-  description
-  button_type
-  button_text
-  button_link
-  button_page {
-    slug
-  }
-}
-    `;
-export const ServicesListBlockFragmentDoc = gql`
-    fragment ServicesListBlock on services_list_blocks {
-  id
-  background_color {
-    ...Color
-  }
-  width {
-    ...Width
-  }
-  has_vertical_padding
-  has_horizontal_padding
-  title
-  content
-  links_placement
-  links {
-    item {
-      ... on news_posts {
-        id
-        title
-        slug
-      }
-      ... on blog_posts {
-        id
-        title
-        slug
-      }
-      ... on cases {
-        id
-        title
-        slug
-      }
-      ... on pages {
-        id
-        title
-        slug
-      }
-    }
-  }
-}
-    ${ColorFragmentDoc}
-${WidthFragmentDoc}`;
-export const HeightFragmentDoc = gql`
-    fragment Height on heights {
-  id
-  class
-}
-    `;
-export const SpacerBlockFragmentDoc = gql`
-    fragment SpacerBlock on spacer_blocks {
-  id
-  height {
-    ...Height
-  }
-}
-    ${HeightFragmentDoc}`;
-export const FrontpageFragmentDoc = gql`
-    fragment Frontpage on frontpage {
-  id
-  hero_banners(sort: ["sort"]) {
-    ...Banner
-  }
-  seo_title
-  seo_description
-  blocks {
-    item {
-      ... on partners_blocks {
-        ...PartnersBlock
-      }
-      ... on services_list_blocks {
-        ...ServicesListBlock
-      }
-      ... on text_and_image_blocks {
-        ...TextAndImageBlock
-      }
-      ... on richtext_blocks {
-        ...RichTextBlock
-      }
-      ... on spacer_blocks {
-        ...SpacerBlock
-      }
-      ... on disclosure_blocks {
-        ...DisclosureBlock
-      }
-      ... on contact_form_blocks {
-        ...ContactFormBlock
-      }
-    }
-  }
-}
-    ${BannerFragmentDoc}
-${PartnersBlockFragmentDoc}
-${ServicesListBlockFragmentDoc}
-${TextAndImageBlockFragmentDoc}
-${RichTextBlockFragmentDoc}
-${SpacerBlockFragmentDoc}
-${DisclosureBlockFragmentDoc}
-${ContactFormBlockFragmentDoc}`;
 export const NavigationMenuItemPageFragmentDoc = gql`
     fragment NavigationMenuItemPage on pages {
   id
@@ -95703,6 +93829,47 @@ export const NewsPostFragmentDoc = gql`
   }
 }
     ${TagFragmentDoc}`;
+export const ServicesListBlockFragmentDoc = gql`
+    fragment ServicesListBlock on services_list_blocks {
+  id
+  background_color {
+    ...Color
+  }
+  width {
+    ...Width
+  }
+  has_vertical_padding
+  has_horizontal_padding
+  title
+  content
+  links_placement
+  links {
+    item {
+      ... on news_posts {
+        id
+        title
+        slug
+      }
+      ... on blog_posts {
+        id
+        title
+        slug
+      }
+      ... on cases {
+        id
+        title
+        slug
+      }
+      ... on pages {
+        id
+        title
+        slug
+      }
+    }
+  }
+}
+    ${ColorFragmentDoc}
+${WidthFragmentDoc}`;
 export const DisclosureGroupCategoryFragmentDoc = gql`
     fragment DisclosureGroupCategory on disclosure_group_categories {
   id
@@ -95731,6 +93898,20 @@ export const DisclosureGroupBlockFragmentDoc = gql`
 }
     ${WidthFragmentDoc}
 ${DisclosureGroupCategoryFragmentDoc}`;
+export const HeightFragmentDoc = gql`
+    fragment Height on heights {
+  id
+  class
+}
+    `;
+export const SpacerBlockFragmentDoc = gql`
+    fragment SpacerBlock on spacer_blocks {
+  id
+  height {
+    ...Height
+  }
+}
+    ${HeightFragmentDoc}`;
 export const CardBlockFragmentDoc = gql`
     fragment CardBlock on card_blocks {
   id
@@ -95877,6 +94058,11 @@ export const CookieSelectionBlockFragmentDoc = gql`
 export const NewsBlockFragmentDoc = gql`
     fragment NewsBlock on news_blocks {
   id
+  width {
+    ...Width
+  }
+  has_vertical_padding
+  has_horizontal_padding
   title
   tags {
     tags_id {
@@ -96056,17 +94242,6 @@ export const FooterCategoriesDocument = gql`
 
 export function useFooterCategoriesQuery(options: Omit<Urql.UseQueryArgs<never, FooterCategoriesQueryVariables>, 'query'>) {
   return Urql.useQuery<FooterCategoriesQuery, FooterCategoriesQueryVariables>({ query: FooterCategoriesDocument, ...options });
-};
-export const FrontpageDocument = gql`
-    query frontpage {
-  frontpage {
-    ...Frontpage
-  }
-}
-    ${FrontpageFragmentDoc}`;
-
-export function useFrontpageQuery(options: Omit<Urql.UseQueryArgs<never, FrontpageQueryVariables>, 'query'>) {
-  return Urql.useQuery<FrontpageQuery, FrontpageQueryVariables>({ query: FrontpageDocument, ...options });
 };
 export const NavigationMenuDocument = gql`
     query NavigationMenu {
