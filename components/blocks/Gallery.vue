@@ -8,6 +8,7 @@
     import "lightgallery/css/lg-thumbnail.css";
     import "lightgallery/css/lg-zoom.css";
     import "lightgallery/css/lg-video.css";
+    import { useHeadingClass } from "@/helpers/useHeadingClass";
 
     // Properties.
     interface Properties
@@ -24,13 +25,15 @@
 
     // Methods.
     const getVideoData = (pic : any) => '{ "source": [ { "src": "https://cms.formula.nu/assets/' + pic?.id + '", "type": "video/mp4" } ], "attributes": { "preload": false, "controls": true } }';
+
+    const { headingClass } = useHeadingClass();
 </script>
 
 <template>
     <div class="w-full">
         <div :class="[ has_vertical_padding ? 'py-8' : '', has_horizontal_padding ? 'xl:px-12' : '', 'flex justify-center items-center w-full' ]">
             <div :class="[ width?.class, has_horizontal_padding ? 'px-6 xl:px-0' : '', 'w-full' ]">
-                <h2 v-if="show_title" class="text-2xl font-semibold mb-5">{{ title }}</h2>
+                <h2 v-if="show_title" :class="[ headingClass, 'text-2xl font-semibold mb-5' ]">{{ title }}</h2>
 
                 <Lightgallery :settings="{ mode: 'lg-slide', download: false, plugins }" :class="[ 'w-full grid grid-cols-5 items-center gap-6' ]">
                     <template v-for="pic in pictures" :key="pic!.id" class="w-1/5">

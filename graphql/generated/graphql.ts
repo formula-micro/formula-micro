@@ -57865,6 +57865,22 @@ export default {
             "args": []
           },
           {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "id",
             "type": {
               "kind": "NON_NULL",
@@ -58075,6 +58091,61 @@ export default {
                 }
               }
             ]
+          },
+          {
+            "name": "width",
+            "type": {
+              "kind": "OBJECT",
+              "name": "widths",
+              "ofType": null
+            },
+            "args": [
+              {
+                "name": "filter",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "limit",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "offset",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "page",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "search",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Any"
+                }
+              },
+              {
+                "name": "sort",
+                "type": {
+                  "kind": "LIST",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "Any"
+                  }
+                }
+              }
+            ]
           }
         ],
         "interfaces": []
@@ -58195,6 +58266,22 @@ export default {
             "args": []
           },
           {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "id",
             "type": {
               "kind": "SCALAR",
@@ -58244,6 +58331,14 @@ export default {
           },
           {
             "name": "user_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "width",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -66329,14 +66424,6 @@ export default {
             "args": []
           },
           {
-            "name": "text_size",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
             "name": "title",
             "type": {
               "kind": "SCALAR",
@@ -66685,14 +66772,6 @@ export default {
           },
           {
             "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "text_size",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -74227,6 +74306,22 @@ export default {
             "args": []
           },
           {
+            "name": "has_horizontal_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "has_vertical_padding",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "id",
             "type": {
               "kind": "SCALAR",
@@ -74276,6 +74371,14 @@ export default {
           },
           {
             "name": "user_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "width",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -75642,14 +75745,6 @@ export default {
           },
           {
             "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "text_size",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -86312,6 +86407,8 @@ export type Create_Navigation_Menu_Subitems_Input = {
 export type Create_News_Blocks_Input = {
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
+  has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   status?: InputMaybe<Scalars['String']['input']>;
@@ -86319,6 +86416,7 @@ export type Create_News_Blocks_Input = {
   title?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Create_Directus_Users_Input>;
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
+  width?: InputMaybe<Create_Widths_Input>;
 };
 
 export type Create_News_Blocks_News_Posts_Input = {
@@ -86530,7 +86628,6 @@ export type Create_Services_List_Blocks_Input = {
   links?: InputMaybe<Array<InputMaybe<Create_Services_List_Blocks_Links_Input>>>;
   links_placement?: InputMaybe<Scalars['String']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
-  text_size?: InputMaybe<Scalars['String']['input']>;
   title?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Create_Directus_Users_Input>;
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
@@ -90037,6 +90134,8 @@ export type News_Blocks = {
   date_created_func?: Maybe<Datetime_Functions>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   date_updated_func?: Maybe<Datetime_Functions>;
+  has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id: Scalars['ID']['output'];
   sort?: Maybe<Scalars['Int']['output']>;
   status?: Maybe<Scalars['String']['output']>;
@@ -90045,6 +90144,7 @@ export type News_Blocks = {
   title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Directus_Users>;
   user_updated?: Maybe<Directus_Users>;
+  width?: Maybe<Widths>;
 };
 
 
@@ -90077,6 +90177,16 @@ export type News_BlocksUser_UpdatedArgs = {
   sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
+
+export type News_BlocksWidthArgs = {
+  filter?: InputMaybe<Widths_Filter>;
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  page?: InputMaybe<Scalars['Int']['input']>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
 export type News_Blocks_Aggregated = {
   __typename?: 'news_blocks_aggregated';
   avg?: Maybe<News_Blocks_Aggregated_Fields>;
@@ -90095,6 +90205,8 @@ export type News_Blocks_Aggregated_Count = {
   __typename?: 'news_blocks_aggregated_count';
   date_created?: Maybe<Scalars['Int']['output']>;
   date_updated?: Maybe<Scalars['Int']['output']>;
+  has_horizontal_padding?: Maybe<Scalars['Int']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Int']['output']>;
   id?: Maybe<Scalars['Int']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   status?: Maybe<Scalars['Int']['output']>;
@@ -90102,6 +90214,7 @@ export type News_Blocks_Aggregated_Count = {
   title?: Maybe<Scalars['Int']['output']>;
   user_created?: Maybe<Scalars['Int']['output']>;
   user_updated?: Maybe<Scalars['Int']['output']>;
+  width?: Maybe<Scalars['Int']['output']>;
 };
 
 export type News_Blocks_Aggregated_Fields = {
@@ -90116,6 +90229,8 @@ export type News_Blocks_Filter = {
   date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   date_updated?: InputMaybe<Date_Filter_Operators>;
   date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  has_horizontal_padding?: InputMaybe<Boolean_Filter_Operators>;
+  has_vertical_padding?: InputMaybe<Boolean_Filter_Operators>;
   id?: InputMaybe<String_Filter_Operators>;
   sort?: InputMaybe<Number_Filter_Operators>;
   status?: InputMaybe<String_Filter_Operators>;
@@ -90124,6 +90239,7 @@ export type News_Blocks_Filter = {
   title?: InputMaybe<String_Filter_Operators>;
   user_created?: InputMaybe<Directus_Users_Filter>;
   user_updated?: InputMaybe<Directus_Users_Filter>;
+  width?: InputMaybe<Widths_Filter>;
 };
 
 export type News_Blocks_Mutated = {
@@ -91847,7 +91963,6 @@ export type Services_List_Blocks = {
   links_func?: Maybe<Count_Functions>;
   links_placement?: Maybe<Scalars['String']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
-  text_size?: Maybe<Scalars['String']['output']>;
   title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Directus_Users>;
   user_updated?: Maybe<Directus_Users>;
@@ -91930,7 +92045,6 @@ export type Services_List_Blocks_Aggregated_Count = {
   links?: Maybe<Scalars['Int']['output']>;
   links_placement?: Maybe<Scalars['Int']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
-  text_size?: Maybe<Scalars['Int']['output']>;
   title?: Maybe<Scalars['Int']['output']>;
   user_created?: Maybe<Scalars['Int']['output']>;
   user_updated?: Maybe<Scalars['Int']['output']>;
@@ -91958,7 +92072,6 @@ export type Services_List_Blocks_Filter = {
   links_func?: InputMaybe<Count_Function_Filter_Operators>;
   links_placement?: InputMaybe<String_Filter_Operators>;
   sort?: InputMaybe<Number_Filter_Operators>;
-  text_size?: InputMaybe<String_Filter_Operators>;
   title?: InputMaybe<String_Filter_Operators>;
   user_created?: InputMaybe<Directus_Users_Filter>;
   user_updated?: InputMaybe<Directus_Users_Filter>;
@@ -93468,6 +93581,8 @@ export type Update_Navigation_Menu_Subitems_Input = {
 export type Update_News_Blocks_Input = {
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
+  has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   status?: InputMaybe<Scalars['String']['input']>;
@@ -93475,6 +93590,7 @@ export type Update_News_Blocks_Input = {
   title?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Update_Directus_Users_Input>;
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
+  width?: InputMaybe<Update_Widths_Input>;
 };
 
 export type Update_News_Blocks_News_Posts_Input = {
@@ -93686,7 +93802,6 @@ export type Update_Services_List_Blocks_Input = {
   links?: InputMaybe<Array<InputMaybe<Update_Services_List_Blocks_Links_Input>>>;
   links_placement?: InputMaybe<Scalars['String']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
-  text_size?: InputMaybe<Scalars['String']['input']>;
   title?: InputMaybe<Scalars['String']['input']>;
   user_created?: InputMaybe<Update_Directus_Users_Input>;
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
@@ -94317,6 +94432,8 @@ export type Version_News_Blocks = {
   __typename?: 'version_news_blocks';
   date_created?: Maybe<Scalars['Date']['output']>;
   date_updated?: Maybe<Scalars['Date']['output']>;
+  has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
+  has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id?: Maybe<Scalars['ID']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   status?: Maybe<Scalars['String']['output']>;
@@ -94324,6 +94441,7 @@ export type Version_News_Blocks = {
   title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Scalars['JSON']['output']>;
   user_updated?: Maybe<Scalars['JSON']['output']>;
+  width?: Maybe<Scalars['JSON']['output']>;
 };
 
 export type Version_News_Blocks_News_Posts = {
@@ -94553,7 +94671,6 @@ export type Version_Services_List_Blocks = {
   links?: Maybe<Scalars['JSON']['output']>;
   links_placement?: Maybe<Scalars['String']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
-  text_size?: Maybe<Scalars['String']['output']>;
   title?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Scalars['JSON']['output']>;
   user_updated?: Maybe<Scalars['JSON']['output']>;
@@ -95354,6 +95471,33 @@ export const ContactFormFragmentDoc = gql`
   message
 }
     `;
+export const FooterLinkPageFragmentDoc = gql`
+    fragment FooterLinkPage on pages {
+  id
+  title
+  slug
+}
+    `;
+export const FooterLinkFragmentDoc = gql`
+    fragment FooterLink on footer_links {
+  id
+  name
+  type
+  link
+  page {
+    ...FooterLinkPage
+  }
+}
+    ${FooterLinkPageFragmentDoc}`;
+export const FooterCategoryFragmentDoc = gql`
+    fragment FooterCategory on footer_categories {
+  id
+  name
+  links {
+    ...FooterLink
+  }
+}
+    ${FooterLinkFragmentDoc}`;
 export const BannerFragmentDoc = gql`
     fragment Banner on frontpage_banners {
   id
@@ -95387,7 +95531,6 @@ export const ServicesListBlockFragmentDoc = gql`
   }
   has_vertical_padding
   has_horizontal_padding
-  text_size
   title
   content
   links_placement
@@ -95741,7 +95884,8 @@ export const NewsBlockFragmentDoc = gql`
     }
   }
 }
-    ${TagFragmentDoc}`;
+    ${WidthFragmentDoc}
+${TagFragmentDoc}`;
 export const PageFragmentDoc = gql`
     fragment Page on pages {
   id
@@ -95901,6 +96045,17 @@ export const Create_Contact_FormDocument = gql`
 
 export function useCreate_Contact_FormMutation() {
   return Urql.useMutation<Create_Contact_FormMutation, Create_Contact_FormMutationVariables>(Create_Contact_FormDocument);
+};
+export const FooterCategoriesDocument = gql`
+    query FooterCategories {
+  footer_categories {
+    ...FooterCategory
+  }
+}
+    ${FooterCategoryFragmentDoc}`;
+
+export function useFooterCategoriesQuery(options: Omit<Urql.UseQueryArgs<never, FooterCategoriesQueryVariables>, 'query'>) {
+  return Urql.useQuery<FooterCategoriesQuery, FooterCategoriesQueryVariables>({ query: FooterCategoriesDocument, ...options });
 };
 export const FrontpageDocument = gql`
     query frontpage {

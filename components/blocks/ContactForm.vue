@@ -3,6 +3,7 @@
     import { useCreate_Contact_FormMutation } from "@/graphql/generated/graphql";
     import * as zod from "zod";
     import { toTypedSchema } from "@vee-validate/zod";
+    import { useHeadingClass } from "@/helpers/useHeadingClass";
 
     // Translate zod errors to danish.
     const danishErrorMap: zod.ZodErrorMap = (issue, ctx) =>
@@ -65,6 +66,8 @@
     });
 
     const checkMarkAnimationFinished = () => setTimeout(() => showCheckmark.value = false, 1500);
+
+    const { headingClass } = useHeadingClass();
 </script>
 
 <template>
@@ -76,7 +79,7 @@
 
                 <!-- Description -->
                 <div class="prose px-6 lg:px-0">
-                    <h2>{{ title }}</h2>
+                    <h2 :class="headingClass">{{ title }}</h2>
                     <div class="mt-5" v-html="description" />
 
                     <dl class="mt-12 flex flex-col gap-5">

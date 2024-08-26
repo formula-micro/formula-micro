@@ -1,6 +1,7 @@
 <script setup lang="ts">
     import type { Disclosure_Group_Blocks } from "@/graphql/generated/graphql";
     import Divider from "primevue/divider";
+    import { useHeadingClass } from "@/helpers/useHeadingClass";
 
     // Properties.
     interface Properties
@@ -14,12 +15,14 @@
     const disclosure_categories = computed(() => disclosure_group_categories?.value);
     const selectedCategory = ref<string>(disclosure_categories.value[0]?.id);
     const disclosure_blocks = computed(() => disclosure_group_categories?.value?.filter(category => category?.id === selectedCategory.value).flatMap(category => category?.disclosures));
+
+    const { headingClass } = useHeadingClass();
 </script>
 
 <template>
     <div :class="[ has_vertical_padding ? 'py-4' : '', has_horizontal_padding ? 'xl:px-12' : '', 'flex justify-center items-center w-full' ]">
         <div :class="[ width!.class, (title_placement === 'left' || title_placement === 'right') ? 'grid grid-cols-1 xl:grid-cols-[3fr,0.5fr,5fr] gap-x-8' : '', title_placement === 'right' ? 'order-3' : '', has_vertical_padding ? 'py-8 xl:py-16' : '', has_horizontal_padding ? 'px-6 xl:px-0' : '', 'w-full prose' ]">
-            <h2 :class="[ title_placement === 'left' || title_placement === 'right' ? 'xl:!mb-0' : '' ]">{{ title }}</h2>
+            <h2 :class="[ headingClass, title_placement === 'left' || title_placement === 'right' ? 'xl:!mb-0' : '' ]">{{ title }}</h2>
 
             <div v-if="(title_placement === 'left' || title_placement === 'right')" />
 

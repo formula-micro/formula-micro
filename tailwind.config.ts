@@ -233,6 +233,7 @@ export default {
         "text-yellow-600",
         "hover:text-yellow-600",
         "items-stretch",
+        "xl:font-normal",
         "order-1",
         "-order-1",
         "order-2",
