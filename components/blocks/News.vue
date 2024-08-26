@@ -2,7 +2,7 @@
     import { ref, computed, toRefs } from 'vue';
     import type { News_Blocks, News_Posts } from "@/graphql/generated/graphql";
     import { useNewsPostsQuery } from "@/graphql/generated/graphql";
-    import { useHeadingClass } from "@/helpers/useHeadingClass";
+    import { getDate, getTime, useHeadingClass } from "@/helpers";
 
     // Properties.
     interface Properties {
@@ -23,23 +23,6 @@
 
     const errorMessage = ref<string|null>(null);
     watch(error, (value) => errorMessage.value = 'Der opstod en fejl under indlæsningen af nyhederne.');
-
-    // Methods.
-    const publishedDate = (published: any) =>
-    {
-        const dateFormat: Intl.DateTimeFormatOptions = { year: "numeric", month: "long", day: "numeric" };
-        const date = new Date(published);
-        
-        return date.toLocaleDateString(undefined, dateFormat).toLowerCase();
-    };
-
-    const publishedTime = (published: any) =>
-    {
-        const timeFormat: Intl.DateTimeFormatOptions = { hour: "numeric", minute: "numeric" };
-        const date = new Date(published);
-        
-        return `${date.toLocaleTimeString(undefined, timeFormat).replace(".", ":")}`;
-    };
 
     const { headingClass } = useHeadingClass();
 </script>
@@ -72,7 +55,7 @@
 
                             <!-- Information -->
                             <p class="mt-4 text-xl font-semibold">{{ post.title }}</p>
-                            <p class="mt-2 font-medium text-gray-600 capitalize">{{ publishedDate(post.date_published) }} &middot; {{ publishedTime(post.date_published) }}</p>
+                            <p class="mt-2 font-medium text-gray-600 capitalize">{{ getDate(post.date_published) }} &middot; {{ getTime(post.date_published) }}</p>
                             <p class="mt-2 line-clamp-3 prose" v-html="post.summary"></p>
                         </NuxtLink>
 

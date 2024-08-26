@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import { useNewsPostsQuery } from "@/graphql/generated/graphql";
+    import { getDate, getTime, useHeadingClass } from "@/helpers";
 
     // Page meta.
     definePageMeta({
@@ -53,9 +54,6 @@
         }
     });
     const similarPosts = computed(() => similarPostsData.value?.news_posts ?? []);
-    
-    
-
 </script>
 
 <template>
@@ -129,7 +127,7 @@
                             <NuxtImg :src="post.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'" class="w-full h-full object-cover rounded" />
                         </div>
                         <h3 class="text-xl font-semibold mt-4 mb-2">{{ post.title }}</h3>
-                        <p class="text-sm text-gray-500 mb-2">{{ new Date(post.date_published).toLocaleDateString() }}</p>
+                        <p class="text-sm text-gray-500 capitalize mb-2">{{ getDate(post.date_published) }} &middot; {{ getTime(post.date_published) }}</p>
                         <p v-html="post.summary"></p>
                     </NuxtLink>
 
