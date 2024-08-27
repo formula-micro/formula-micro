@@ -93358,7 +93358,9 @@ export type NavigationMenuQuery = { __typename?: 'Query', navigation_menu?: { __
 
 export type NewsPostFragment = { __typename?: 'news_posts', id: string, status?: string | null, date_published?: any | null, title?: string | null, slug?: string | null, summary?: string | null, content?: any | null, cover_image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null, tags?: Array<{ __typename?: 'news_posts_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null };
 
-export type NewsPostsCountQueryVariables = Exact<{ [key: string]: never; }>;
+export type NewsPostsCountQueryVariables = Exact<{
+  filter?: InputMaybe<News_Posts_Filter>;
+}>;
 
 
 export type NewsPostsCountQuery = { __typename?: 'Query', news_posts_aggregated: Array<{ __typename?: 'news_posts_aggregated', count?: { __typename?: 'news_posts_aggregated_count', count?: number | null } | null }> };
@@ -94255,8 +94257,8 @@ export function useNavigationMenuQuery(options: Omit<Urql.UseQueryArgs<never, Na
   return Urql.useQuery<NavigationMenuQuery, NavigationMenuQueryVariables>({ query: NavigationMenuDocument, ...options });
 };
 export const NewsPostsCountDocument = gql`
-    query NewsPostsCount {
-  news_posts_aggregated {
+    query NewsPostsCount($filter: news_posts_filter) {
+  news_posts_aggregated(filter: $filter) {
     count {
       count: id
     }
