@@ -2,6 +2,7 @@
     import type { News_Posts } from "@/graphql/generated/graphql";
     import { useNewsPostsQuery, useTagCountersQuery, useNewsPostsCountQuery } from "@/graphql/generated/graphql";
     import { getDate, getTime, useBreadcrumbs } from "@/helpers";
+    import type { PageState } from "primevue/paginator";
 
     // Page meta.
     definePageMeta({
@@ -41,7 +42,7 @@
     const totalPosts = computed(() => totalPostsData.value?.news_posts_aggregated[0].count?.count ?? 0);
     const pageSize = 5;
     const currentPage = ref(Number(route.query.page) || 1);
-    const onPageChange = (event: any) =>
+    const onPageChange = (event: PageState) =>
     {
         currentPage.value = event.page + 1;
         router.push({ query: { ...route.query, page: currentPage.value } });
@@ -131,11 +132,10 @@
             <!-- Pagination -->
             <div class="flex justify-center mt-8 mb-12">
                 <Paginator
-                    v-if="!isFetchingNews"
+                    v-show="!isFetchingNews"
                     :rows="pageSize"
                     :totalRecords="totalPosts"
-                    :first="1"
-                    :pageLinkSize="3"
+                    :pageLinkSize="5"
                     @page="onPageChange"
                 />
             </div>
