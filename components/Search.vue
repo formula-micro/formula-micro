@@ -2,16 +2,25 @@
     import { AisInstantSearch, AisHits, AisSearchBox, AisIndex } from "vue-instantsearch/vue3/es";
     import Dialog from "primevue/dialog";
     import Chip from "primevue/chip";
+    import { useSearchStore } from "@/stores";
 
     // Fields.
     const visible = ref(false);
     const client = useInstantSearch();
-    
-    // onMounted(async () =>
-    // {
-    //     await search("server");
-    //     console.log(result);
-    // });
+    const searchStore = useSearchStore();
+
+    // Methods.
+    const showSearchDialog = () =>
+    {
+        visible.value = true;
+        searchStore.showDialog();
+    };
+
+    const closeSearchDialog = (callback : any) =>
+    {
+        callback();
+        searchStore.hideDialog();
+    };
 </script>
 
 <template>
@@ -27,13 +36,13 @@
                     <div class="flex justify-between items-center w-full">
                         <h1 class="font-bold text-4xl">Hvad søger du efter?</h1>
 
-                        <button class="font-bold tracking-wide" @click="closeCallback">Luk søgning</button>
+                        <button class="font-bold tracking-wide" @click="closeSearchDialog(closeCallback)">Luk søgning</button>
                     </div>
 
                     <ais-instant-search :search-client="client" index-name="pages" class="mt-12">
                         <ais-search-box>
                             <template v-slot="{ currentRefinement, isSearchStalled, refine }">
-                                <input type="search" :value="currentRefinement" @input="refine($event.currentTarget.value)" class="w-full text-lg bg-gray-50 rounded-xl border-gray-300 p-3" placeholder="Søg på formula-micro.dk">
+                                <input type="search" :value="currentRefinement" @input="refine($event.currentTarget.value)" class="w-full text-lg bg-gray-50 rounded-xl border-gray-200 p-3" placeholder="Søg på formula-micro.dk">
                                 <span :hidden="!isSearchStalled">Loading...</span>
                             </template>
                         </ais-search-box>
@@ -49,10 +58,10 @@
                         <ais-index index-name="pages">
                             <ais-hits>
                                 <template v-slot="{ items }">
-                                    <ul>
+                                    <ul class="space-y-5">
                                         <li v-for="{ id,title } in items" :key="id">
                                             <!-- Insert breadcrumbs Sider > Kategori -->
-                                            <SearchResultCard :breadcrumbs="[ 'Test', 'Side' ]" :title="title" />
+                                            <SearchResultCard :breadcrumbs="[ 'Kategori', 'Side' ]" :title="title" summary="awdawdawdawdwadawdadadadwad" />
                                             <!-- Indsæt beskrivelse og marker funden tekst, hvis den er i beskrivelsen -->
                                         </li>
                                     </ul>

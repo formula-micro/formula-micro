@@ -301,6 +301,8 @@ export default {
         "xl:font-normal",
         "mb-5",
         "mt-12",
-        "mt-4"
+        "mt-4",
+        "overflow-hidden",
+        "max-h-screen"
     ]
 } satisfies Config;

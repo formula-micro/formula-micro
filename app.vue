@@ -18,7 +18,7 @@
 </script>
 
 <template>
-    <main class="relative min-w-full min-h-full h-full bg-white font-plusjakartasans">
+    <main :class="[ searchStore.isDialogVisible ? 'overflow-hidden max-h-screen' : '', 'relative min-w-full min-h-full h-full bg-white font-plusjakartasans' ]">
         <Navigation />
         
         <NuxtLayout>
