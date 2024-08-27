@@ -2,7 +2,6 @@
     import { useNavigationMenuQuery } from "@/graphql/generated/graphql";
 
     // Fields.
-    const isSearchModalVisible = ref(false);
     const isMobileMenuVisible = ref(false);
     const activeLink = ref<any>(undefined);
     const { data: navigationMenuData } = await useNavigationMenuQuery({ variables: {} });
@@ -20,7 +19,7 @@
 
 <template>
     <!-- Skip to content button -->
-    <a href="#main-content" class="bg-white border border-black text-black px-4 py-2 focus:underline sr-only focus:not-sr-only" :aria-hidden="isSearchModalVisible">Spring til hovedindhold</a>
+    <a href="#main-content" class="bg-white border border-black text-black px-4 py-2 focus:underline sr-only focus:not-sr-only">Spring til hovedindhold</a>
 
     <div class="mt-2 hidden 2xl:flex justify-center items-center w-full z-50">
         <div class="grid grid-cols-[1fr,2fr,1fr] justify-center items-center w-full">
@@ -80,10 +79,7 @@
             </div>
 
             <div class="flex justify-end">
-                <button type="button" class="inline-flex justify-end text-gray-900 z-50 py-8 px-7 mr-5 focus-visible:outline-none" @click="isSearchModalVisible = true">
-                    <span class="sr-only">Søg</span>
-                    <Icon name="tabler:search" class="h-5 w-5 flex-none" aria-hidden="true" role="presentation" />
-                </button>
+                <Search />
             </div>
         </div>
     </div>
@@ -159,6 +155,4 @@
             </div>
         </HeadlessDialog>
     </HeadlessTransitionRoot>
-
-    <Search :open="isSearchModalVisible" @close="isSearchModalVisible = false" />
 </template>
