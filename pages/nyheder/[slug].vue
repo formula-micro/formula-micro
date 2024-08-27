@@ -1,5 +1,7 @@
 <script setup lang="ts">
+    import type { News_Blocks } from "@/graphql/generated/graphql";
     import { useNewsPostsQuery } from "@/graphql/generated/graphql";
+    import { getDate, getTime, useBreadcrumbs } from "@/helpers";
 
     // Page meta.
     definePageMeta({
@@ -17,49 +19,38 @@
     if (!post.value) throw createError({ statusCode: 404, statusMessage: "Siden blev ikke fundet" });
 
     // Get breadcrumbs.
-    const route = useRoute();
-    const pages = computed(() =>
-    {
-        const pages = route.path.split("/").filter(page => page !== "").map(page => `/${page}`);
-        let previousPage;
-        const result = [];
-        
-        for(const page of pages)
-        {
-            const name = (page.charAt(1).toUpperCase() + page.slice(2)).replace(/-/g, " ");
-            const href: string = !previousPage ? page : previousPage + page;
-
-            result.push({ name: name, href: href, current: page === `/${route.params.slug}` });
-            previousPage = href;
-        }
-        
-        return result;
-    });
+    const { pages } = useBreadcrumbs();
 
     // Get blocks and tags.
     const blocks = computed(() => post.value?.content.blocks);
     const tags = computed(() => post.value?.tags?.map(tag => tag?.tags_id));
-    console.log(tags.value);
 
     // Get similar posts, excluding the current post.
-    const { data: similarPostsData } = await useNewsPostsQuery({
-        variables: { 
-            filter: { 
-                status: { _eq: "published" }, 
-                tags: { tags_id: { name: { _in: tags.value?.map(tag => tag?.name) } } }, 
-                slug: { _neq: post.value?.slug }  // Exclude the current post
-            }, 
-            limit: 3 
-        }
-    });
-    const similarPosts = computed(() => similarPostsData.value?.news_posts ?? []);
-    
-    
-
+    const similarPostsBlockData =
+    {
+        "id": "1f47db8a-3465-4fb8-a248-e71e67cfcb3x",
+        "width": {
+            "id": "70704ba2-26ea-47ec-9941-0370ee08e725",
+            "class": "max-w-7xl xl:max-w-8xl 4xl:max-w-10xl",
+            "name": "wide",
+            "__typename": "widths"
+        },
+        "has_vertical_padding": false,
+        "has_horizontal_padding": false,
+        "title": "Nyheder",
+        "tags": tags.value?.map(tag => ({
+            "tags_id": {
+                ...tag
+            },
+            "__typename": "news_blocks_tags"
+        })),
+        "__typename": "news_blocks"
+    } as News_Blocks;
 </script>
 
 <template>
     <article>
+        <!-- Breadcrumbs -->
         <nav class="mt-4 flex" aria-label="Breadcrumb">
             <ol role="list" class="flex items-center space-x-2">
                 <li>
@@ -80,67 +71,52 @@
             </ol>
         </nav>
 
-        <div class="mt-32 flex flex-col justify-center items-center">
-            <HeadlessTransitionRoot
-                appear
-                :show="true"
-                as="template"
-                enter="transform transition duration-700"
-                enter-from="opacity-20 translate-y-1/3"
-                enter-to="opacity-100 translate-y-0"
-            >
-                <div class="w-full max-w-4xl text-center prose-lg prose-blue">
+        <!-- Title -->
+        <div class="mt-32 flex flex-col justify-center items-center h-56">
+            <ClientOnly>
+                <div class="w-full max-w-4xl text-center prose-lg prose-blue" v-motion :initial="{ opacity: 0, y: 100 }" :enter="{ opacity: 1, y: 0 }" :delay="100" :duration="700">
                     <h1 class="font-semibold">{{ post?.title }}</h1>
                     <div class="text-lg font-medium" v-html="post?.summary" />
                 </div>
-            </HeadlessTransitionRoot>
+            </ClientOnly>
         </div>
 
-        <div class="z-20">
-            <NuxtImg class="mt-6 object-cover rounded-lg w-full max-h-[600px]" :src="post?.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'"  aria-hidden="true" role="presentation" sizes="sm:512px md:860px lg:1200px" />
-            <p class="text-sm font-medium" v-if="post?.cover_image?.description">{{ post.cover_image.description }}</p>
-            <div class="text-sm font-medium prose" v-html="post?.cover_image?.attribution" v-if="post?.cover_image?.attribution" />
-            <p class="text-sm text-gray-500 mb-2">Udgivet d. {{ new Date(post?.date_published).toLocaleDateString() }}</p>
+        <!-- Image cover -->
+        <div>
+            <!-- v-motion is used on the image to keep the title and summary visible behind the image when animating in -->
+            <!-- It seems v-motion doesn't respect css z-index -->
+            <NuxtImg class="mt-6 object-cover rounded-xl w-full max-h-2xl" v-motion :initial="{ opacity: 100 }" :src="post?.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'"  aria-hidden="true" role="presentation" sizes="sm:512px md:860px lg:1200px" />
+            <div class="mt-1 space-y-1">
+                <p class="text-sm font-medium" v-if="post?.cover_image?.description">{{ post.cover_image.description }}</p>
+                <div class="text-sm font-medium prose" v-html="post?.cover_image?.attribution" v-if="post?.cover_image?.attribution" />
+                <p class="text-sm text-gray-500 mb-2">Udgivet d. {{ getDate(post?.date_published) }} &middot; {{ getTime(post?.date_published) }}</p>
+            </div>
         </div>
 
+        <!-- Content -->
         <div class="flex flex-col space-y-4 py-12 prose-lg prose-blue">
             <EditorjsEditorJS :blocks="blocks" />
         </div>
 
-        <div class="mt-16 border-b border-gray-300 w-full" />
+        <!-- Divider -->
+        <div class="mt-12 border-b border-gray-300 w-full" />
 
+        <!-- Tags -->
         <div class="mt-16" v-if="tags">
             <p class="text-lg font-medium">Tags</p>
 
             <div class="mt-3 flex flex-wrap gap-3">
-                    <NuxtLink v-for="tag in tags" :key="tag?.id" :to="`/nyheder?tags=${tag?.name}`" :alt="`Gå til siden nyheder og vis nyheder hvor tag er ${tag?.name}`" class="inline-block rounded-full border border-gray-400 hover:border-transparent hover:text-white hover:bg-black focus:bg-black font-semibold px-3 py-1" >
-                        {{ tag?.name }}
-                    </NuxtLink>
-                </div>
+                <NuxtLink v-for="tag in tags" :key="tag?.id" :to="`/nyheder?tags=${tag?.name}`" :alt="`Gå til siden nyheder og vis nyheder hvor tag er ${tag?.name}`" class="inline-block rounded-full border border-gray-400 hover:border-transparent hover:text-white hover:bg-black focus:bg-black font-semibold px-3 py-1" >
+                    {{ tag?.name }}
+                </NuxtLink>
+            </div>
         </div>
 
+        <!-- Similar news posts -->
         <div class="mt-16 ">
             <p class="text-lg font-medium">Lignende nyheder</p>
 
-            <div class="flex flex-wrap justify-start w-full mt-3">
-                <div v-for="post in similarPosts" :key="post.id" class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">     
-                    <NuxtLink :to="`/nyheder/${post.slug}`" class="block">
-                        <div class="aspect-w-16 aspect-h-9 overflow-hidden">
-                            <NuxtImg :src="post.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'" class="w-full h-full object-cover rounded" />
-                        </div>
-                        <h3 class="text-xl font-semibold mt-4 mb-2">{{ post.title }}</h3>
-                        <p class="text-sm text-gray-500 mb-2">{{ new Date(post.date_published).toLocaleDateString() }}</p>
-                        <p v-html="post.summary"></p>
-                    </NuxtLink>
-
-                    
-                    <div class="flex flex-wrap gap-2 mt-2">
-                        <NuxtLink v-for="tag in post.tags" :key="tag?.tags_id?.id" :to="`/nyheder?tags=${tag?.tags_id?.name}`" class="inline-block rounded-full border border-gray-400 hover:border-transparent hover:text-white hover:bg-black focus:bg-black font-semibold px-3 py-1">
-                            {{ tag?.tags_id?.name }}
-                        </NuxtLink>
-                    </div>
-                </div>
-            </div>
+            <BlocksNews :data="similarPostsBlockData" :exclude-post-id="post?.id"/>
         </div>
     </article>
 </template>

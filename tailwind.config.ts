@@ -41,6 +41,12 @@ export default {
             fontFamily: {
                 plusjakartasans: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
             },
+            scale: {
+                "101": "1.01",
+                "102": "1.02",
+                "103": "1.03",
+                "104": "1.04",
+            },
             colors: {
                 "banner": {
                     "100": "#F6F7F8",
@@ -285,17 +291,16 @@ export default {
         "xl:px-0",
         "xl:mb-0",
         "!font-semibold",
-        "lg:grid-cols-[1fr,0fr,1fr]",
-        "lg:grid-cols-[2fr,0fr,2fr]",
-        "lg:grid-cols-[3fr,0fr,3fr]",
-        "lg:grid-cols-[4fr,0fr,4fr]",
-        "lg:grid-cols-[4fr,0fr,3fr]",
-        "lg:grid-cols-[3fr,0fr,4fr]",
-        "lg:grid-cols-[1fr,0.5fr,1fr]",
-        "lg:grid-cols-[2fr,0.5fr,2fr]",
-        "lg:grid-cols-[3fr,0.5fr,3fr]",
-        "lg:grid-cols-[4fr,0.5fr,4fr]",
-        "lg:grid-cols-[4fr,0.5fr,3fr]",
-        "lg:grid-cols-[3fr,0.5fr,4fr]",
+        "grid-cols-1",
+        "grid-cols-2",
+        "lg:grid-cols-3",
+        "lg:grid-cols-4",
+        "xl:grid-cols-5",
+        "text-3xl",
+        "xl:text-5xl",
+        "xl:font-normal",
+        "mb-5",
+        "mt-12",
+        "mt-4"
     ]
 } satisfies Config;
