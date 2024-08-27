@@ -41,6 +41,12 @@ export default {
             fontFamily: {
                 plusjakartasans: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
             },
+            scale: {
+                "101": "1.01",
+                "102": "1.02",
+                "103": "1.03",
+                "104": "1.04",
+            },
             colors: {
                 "banner": {
                     "100": "#F6F7F8",
@@ -289,6 +295,12 @@ export default {
         "grid-cols-2",
         "lg:grid-cols-3",
         "lg:grid-cols-4",
-        "xl:grid-cols-5"
+        "xl:grid-cols-5",
+        "text-3xl",
+        "xl:text-5xl",
+        "xl:font-normal",
+        "mb-5",
+        "mt-12",
+        "mt-4"
     ]
 } satisfies Config;

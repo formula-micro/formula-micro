@@ -3,9 +3,11 @@
 
     // Fields.
     const { data, error } = await useFooterCategoriesQuery({ variables: {} });
+    const categories = computed(() => (data.value?.footer_categories));
+
     const errorMessage = ref<string|undefined>(undefined);
     watch(error, (value) => errorMessage.value = value?.message);
-    const categories = computed(() => (data.value?.footer_categories));
+
     const gridCols = computed(() =>
     {
         const length = categories.value?.length ?? 1;

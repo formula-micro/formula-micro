@@ -34,9 +34,3 @@ query NewsPosts($filter: news_posts_filter, $limit: Int, $offset: Int, $page: In
         ...NewsPost
     }
 }
-
-query NewsPostsByTags($tags: [String], $limit: Int, $offset: Int, $sort: [String]) {
-  news_posts(filter: { tags: { tags_id: { id: { _in: $tags } } } }, limit: $limit, offset: $offset, sort: $sort) {
-    ...NewsPost
-  }
-}
