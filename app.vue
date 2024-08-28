@@ -28,6 +28,7 @@
         </NuxtLayout>
 
         <Footer />
+        <CookieBanner />
     </main>
 </template>
 
