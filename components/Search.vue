@@ -24,12 +24,12 @@
 </script>
 
 <template>
-    <button type="button" @click="visible = true" class="inline-flex justify-end text-gray-900 z-50 py-8 px-7 mr-5 focus-visible:outline-none">
+    <button type="button" @click="showSearchDialog()" class="inline-flex justify-end text-gray-900 z-50 py-8 px-7 mr-5 focus-visible:outline-none">
         <span class="sr-only">Søg</span>
         <Icon name="tabler:search" class="h-5 w-5 flex-none" aria-hidden="true" role="presentation" />
     </button>
     
-    <Dialog v-model:visible="visible" @after-hide="$emit('close')" pt:root:class="!min-w-full !min-h-full !bg-white !border-0 !rounded-none">
+    <Dialog v-model:visible="visible" @after-hide="$emit('close')" pt:root:class="!min-w-full !min-h-full !bg-white !border-0 !rounded-none overflow-y-scroll">
         <template #container="{ closeCallback }">
             <div class="flex justify-center items-start w-full h-full">
                 <div class="mt-16 flex flex-col w-full h-full max-w-7xl">
@@ -42,26 +42,40 @@
                     <ais-instant-search :search-client="client" index-name="pages" class="mt-12">
                         <ais-search-box>
                             <template v-slot="{ currentRefinement, isSearchStalled, refine }">
-                                <input type="search" :value="currentRefinement" @input="refine($event.currentTarget.value)" class="w-full text-lg bg-gray-50 rounded-xl border-gray-200 p-3" placeholder="Søg på formula-micro.dk">
+                                <input type="search" :value="currentRefinement" @input="refine($event.currentTarget.value)" class="w-full text-lg bg-white rounded-xl border-gray-400 p-3 shadow-inner" placeholder="Søg på formula-micro.dk">
                                 <span :hidden="!isSearchStalled">Loading...</span>
                             </template>
                         </ais-search-box>
 
                         <div class="mt-8 mb-16 flex items-center w-full space-x-3">
-                            <Chip label="Alle" />
+                            <button class="inline-block rounded-full border border-gray-400 font-semibold px-3 py-1">
+                                Alle
+                            </button>
+                            <button class="inline-block rounded-full border border-gray-400 font-semibold px-3 py-1">
+                                Sider
+                            </button>
+                            <button class="inline-block rounded-full border border-gray-400 font-semibold px-3 py-1">
+                                Nyheder
+                            </button>
+                            <button class="inline-block rounded-full border border-gray-400 font-semibold px-3 py-1">
+                                Blog
+                            </button>
+                            <button class="inline-block rounded-full border border-gray-400 font-semibold px-3 py-1">
+                                Cases
+                            </button>
+                            <!-- <Chip label="Alle" />
                             <Chip label="Sider" />
                             <Chip label="Nyheder" />
                             <Chip label="Blog" />
-                            <Chip label="Cases" />
+                            <Chip label="Cases" /> -->
                         </div>
 
                         <ais-index index-name="pages">
                             <ais-hits>
                                 <template v-slot="{ items }">
-                                    <ul class="space-y-5">
-                                        <li v-for="{ id,title } in items" :key="id">
-                                            <!-- Insert breadcrumbs Sider > Kategori -->
-                                            <SearchResultCard :breadcrumbs="[ 'Kategori', 'Side' ]" :title="title" summary="awdawdawdawdwadawdadadadwad" />
+                                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                        <li v-for="{ id, category, title, slug } in items" :key="id">
+                                            <SearchResultCard :breadcrumbs="[ 'Sider', category ]" :title="title" summary="awdawdawdawdwadawdadadadwad" :to="slug" />
                                             <!-- Indsæt beskrivelse og marker funden tekst, hvis den er i beskrivelsen -->
                                         </li>
                                     </ul>

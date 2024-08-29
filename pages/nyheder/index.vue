@@ -9,6 +9,13 @@
         layout: "news"
     });
 
+    useHead({ titleTemplate: () => "Nyheder | Formula Micro" });
+
+    useServerSeoMeta({
+        title: () => "Nyheder",
+        description: () => "Find alle vores nyheder, nye såvel som gamle"
+    });
+
     // Fields.
     const route = useRoute();
     const router = useRouter();

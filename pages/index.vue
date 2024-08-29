@@ -19,20 +19,7 @@
         layout: "default"
     });
 
-    useHead({
-        title: page.value.title,
-        titleTemplate: (titleChunk) => titleChunk ? `${titleChunk} | Formula Micro` : "Formula Micro"
-    });
-
-    useServerHead({
-        title: page.value.title,
-        titleTemplate: (titleChunk) => titleChunk ? `${titleChunk} | Formula Micro` : "Formula Micro"
-    });
-
-    useSeoMeta({
-        title: () => page.value?.seo_title ?? "Formula Micro",
-        description: () => page.value?.seo_description ?? ""
-    });
+    useHead({ titleTemplate: () => "Forside | Formula Micro" });
 
     useServerSeoMeta({
         title: () => page.value?.seo_title ?? "Formula Micro",

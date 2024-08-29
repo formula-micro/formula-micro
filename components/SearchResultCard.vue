@@ -5,14 +5,18 @@
         breadcrumbs: string[];
         title: string;
         summary: string;
+        to: string;
     }
     const props = defineProps<Properties>();
 </script>
 
 <template>
-    <NuxtLink>
-        <div class="flex flex-col transition duration-150 hover:bg-gray-50 focus:bg-gray-50 rounded-xl p-3">
+    <NuxtLink :to="to">
+        <div class="flex flex-col transition duration-150 border border-gray-400 hover:bg-gray-50 focus:bg-gray-50 rounded-xl p-3">
             <Breadcrumb :model="breadcrumbs.map(breadcrumb => ({ label: breadcrumb }))" pt:root="bg-transparent text-xs px-0 py-2">
+                <template #item="{ item }">
+                    {{ item.label }}
+                </template>
                 <template #separator>
                     <Icon name="tabler:chevron-right" class="w-3 h-3" style="margin-top: 1px;" />
                 </template>

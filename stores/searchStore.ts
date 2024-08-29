@@ -2,29 +2,33 @@ export const useSearchStore = defineStore("search",
 {
     state: () => 
     ({
-        query: "",
-        isDialogVisible: false,
+        _query: "",
+        _isDialogVisible: false,
     }),
     getters:
     {
+        query() : string
+        {
+            return this._query;
+        },
         isDialogVisible() : boolean
         {
-            return this.isDialogVisible;
+            return this._isDialogVisible;
         },
     },
     actions:
     {
         setQuery(query : string)
         {
-            this.query = query;
+            this._query = query;
         },
         showDialog()
         {
-            this.isDialogVisible = true;
+            this._isDialogVisible = true;
         },
         hideDialog()
         {
-            this.isDialogVisible = false;
+            this._isDialogVisible = false;
         }
     },
 });
