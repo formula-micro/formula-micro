@@ -21,7 +21,7 @@
     <!-- Skip to content button -->
     <a href="#main-content" class="bg-white border border-black text-black px-4 py-2 focus:underline sr-only focus:not-sr-only">Spring til hovedindhold</a>
 
-    <div class="mt-2 hidden 2xl:flex justify-center items-center w-full z-50">
+    <div class="mt-2 hidden 3xl:flex justify-center items-center w-full z-50">
         <div class="grid grid-cols-[1fr,2fr,1fr] justify-center items-center w-full">
             <NuxtLink to="/" class="-mb-0.5 ml-12 z-50 w-min focus-visible:outline-none">
                 <NuxtImg src="https://formula-micro.dk/wp-content/uploads/2019/04/FM-logo-flad-300x43.png" class="object-scale-down max-w-50" sizes="sm:300px" width="300" height="43" alt="Formula Micro logo" />
@@ -85,16 +85,20 @@
     </div>
 
     <!-- Mobile Navigation -->
-    <div class="flex 2xl:hidden justify-center items-center w-full z-50">
-        <div class="flex justify-between items-center w-full pt-5 px-3">
+    <div class="flex 3xl:hidden justify-center items-center w-full z-50">
+        <div class="flex justify-between items-center w-full px-6 xl:px-12">
             <NuxtLink to="/" class="-mb-0.5 z-50 w-min focus-visible:outline-none">
                 <NuxtImg src="https://formula-micro.dk/wp-content/uploads/2019/04/FM-logo-flad-300x43.png" class="object-scale-down max-w-46" sizes="sm:300px" width="300" height="43" alt="Formula Micro logo" />
             </NuxtLink>
 
-            <button type="button" @click="isMobileMenuVisible = true">
-                <Icon name="ci:hamburger" class="h-7 w-7 text-gray-800" />
-                <span class="sr-only">Menu</span>
-            </button>
+            <div class="flex space-x-5 py-6 md:py-8">
+                <Search />
+                
+                <button type="button" class="inline-flex justify-center items-center" @click="isMobileMenuVisible = true">
+                    <Icon name="ci:hamburger" class="h-7 w-7 text-gray-800" />
+                    <span class="sr-only">Menu</span>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -146,10 +150,6 @@
                                 </template>
                             </template>
                         </div>
-
-
-                        
-
                     </HeadlessDialogPanel>
                 </HeadlessTransitionChild>
             </div>

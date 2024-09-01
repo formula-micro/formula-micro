@@ -23,7 +23,13 @@
 
     useServerSeoMeta({
         title: () => page.value?.seo_title ?? "Formula Micro",
-        description: () => page.value?.seo_description ?? ""
+        description: () => page.value?.seo_description ?? "",
+        ogDescription: page.value?.seo_description ?? "",
+        // ogImage: '[og:image]',
+        twitterTitle: page.value?.seo_title ?? "Formula Micro",
+        twitterDescription: page.value?.seo_description ?? "",
+        // twitterImage: '[twitter:image]',
+        // twitterCard: 'summary'
     });
 
     // Get blocks.
@@ -31,7 +37,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col items-center w-full mt-8 xl:mt-2">
+    <div class="flex flex-col items-center w-full 3xl:mt-2">
         <div class="flex flex-col justify-center items-center w-full">
             <template v-for="block in blocks">
                 <BlocksBannerHero v-if="block.__typename === 'banner_hero_blocks'" :data="block" />

@@ -95,7 +95,7 @@
         <div>
             <!-- v-motion is used on the image to keep the title and summary visible behind the image when animating in -->
             <!-- It seems v-motion doesn't respect css z-index -->
-            <NuxtImg v-motion :initial="{ opacity: 100 }" :src="post?.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'" :width="post?.cover_image?.width ?? 1280" :height="post?.cover_image?.height ?? 826" format="webp" sizes="sm:512px md:860px lg:1920px" class="mt-6 object-cover rounded-xl w-full max-h-2xl" aria-hidden="true" role="presentation" />
+            <NuxtImg v-motion :initial="{ opacity: 100 }" :src="post?.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'" :width="post?.cover_image?.width ?? 1280" :height="post?.cover_image?.height ?? 826" format="webp" sizes="sm:512px md:860px lg:1920px" class="mt-6 object-cover rounded-xl w-full max-h-2xl" alt="" role="presentation" />
             <div class="mt-1 space-y-1">
                 <p class="text-sm font-medium" v-if="post?.cover_image?.description">{{ post.cover_image.description }}</p>
                 <div class="text-sm font-medium prose" v-html="post?.cover_image?.attribution" v-if="post?.cover_image?.attribution" />
