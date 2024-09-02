@@ -10,12 +10,12 @@
     const acceptButton = ref();
     useFocus(acceptButton, { initialValue: true });
 
-    watch(cookieState, (value) =>
+    watch(isBannerVisible, (value) =>
     {
-        if (value)
+        if (cookieState.value)
         {
-            necessary.value = value.includes('necessary');
-            googleMaps.value = value.includes('googleMaps');
+            necessary.value = cookieState.value.includes('necessary');
+            googleMaps.value = cookieState.value.includes('googleMaps');
         }
     });
 
