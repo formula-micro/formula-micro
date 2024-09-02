@@ -13,7 +13,7 @@ COPY --chown=nuxtuser:nuxtuser . /app
 # COPY . ./
 # install all the project npm dependencies
 # build the nuxt project to generate the artifacts in .output directory
-RUN yarn install && yarn build
+RUN npm install && npm run build
 
 # we are using multi stage build process to keep the image size as small as possible
 FROM node:19-alpine
