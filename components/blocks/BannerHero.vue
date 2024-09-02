@@ -14,6 +14,7 @@
 
     // Fields.
     const { __typename, width, has_vertical_padding, has_horizontal_padding, banners, autoplay, interval } = toRefs(props.data);
+    const img = useImage();
 </script>
 
 <template>
@@ -29,11 +30,11 @@
                     <SplideSlide v-for="banner in banners" :key="banner?.id" :data-splide-html-video="banner?.image?.video_thumbnail ? 'https://cms.formula.nu/assets/' + banner?.image?.id : null">
                         <template v-if="banner?.image?.video_thumbnail">
                             <!-- Video Thumbnail -->
-                            <NuxtImg :src="`https://cms.formula.nu/assets/${banner?.image?.video_thumbnail?.id}`" :width="banner?.image?.width > 1920 ? banner?.image?.width : 1920" :height="banner?.image?.height" alt="" role="presentation" format="webp" sizes="sm:100vw md:50vw lg:2560px" :class="[ 'object-cover object-center rounded-xl w-full min-h-md max-h-md sm:min-h-xl sm:max-h-xl xl:min-h-2xl xl:max-h-2xl', width.name === 'full' ? '3xl:min-h-5xl 3xl:max-h-5xl' : '' ]" />
+                            <NuxtImg :src="`https://cms.formula.nu/assets/${banner?.image?.video_thumbnail?.id}`" :width="banner?.image?.width > 1920 ? banner?.image?.width : 1920" :height="banner?.image?.height" preload format="webp" sizes="sm:100vw md:50vw lg:1920px" placeholder :class="[ 'object-cover object-center rounded-xl w-full min-h-md max-h-md sm:min-h-xl sm:max-h-xl xl:min-h-2xl xl:max-h-2xl', width.name === 'full' ? '3xl:min-h-5xl 3xl:max-h-5xl' : '' ]" alt="" role="presentation" />
                         </template>
                         <template v-else>
                             <!-- Image -->
-                            <NuxtImg :src="`https://cms.formula.nu/assets/${banner?.image?.id}`" :width="banner?.image?.width > 1920 ? banner?.image?.width : 1920" :height="banner?.image?.height" alt="" role="presentation" format="webp" sizes="sm:100vw md:50vw lg:2560px" :class="[ 'object-cover object-center rounded-xl w-full min-h-md max-h-md sm:min-h-xl sm:max-h-xl xl:min-h-2xl xl:max-h-2xl', width.name === 'full' ? '3xl:min-h-5xl 3xl:max-h-5xl' : '' ]" />
+                            <NuxtImg :src="`https://cms.formula.nu/assets/${banner?.image?.id}`" :width="banner?.image?.width > 1920 ? banner?.image?.width : 1920" :height="banner?.image?.height" preload format="webp" sizes="sm:100vw md:50vw lg:1920px" placeholder :class="[ 'object-cover object-center rounded-xl w-full min-h-md max-h-md sm:min-h-xl sm:max-h-xl xl:min-h-2xl xl:max-h-2xl', width.name === 'full' ? '3xl:min-h-5xl 3xl:max-h-5xl' : '' ]" alt="" role="presentation" />
                         </template>
                         
                         <div :class="[ banner?.overlay_color?.class, 'absolute inset-0 bg-opacity-35 rounded-xl' ]">

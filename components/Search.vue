@@ -12,6 +12,7 @@
     const popover = ref();
     const searchInput = ref();
     const activeCollectionType = ref("all");
+    const isInstantSearchVisible = ref(false);
     useFocus(searchInput, { initialValue: true });
 
     // Methods.
@@ -43,6 +44,8 @@
     const hideMarkWordOnPageGif = (event : any) => popover.value.hide(event);
 
     // Events.
+    onMounted(() => setTimeout(() => isInstantSearchVisible.value = true, 1500));
+
     onBeforeRouteLeave((to, from, next) =>
     {
         next();
@@ -59,7 +62,7 @@
     
     <Dialog v-model:visible="visible" @after-hide="$emit('close')" pt:root:class="font-plusjakartasans !min-w-full !min-h-full !bg-white !border-0 !rounded-none overflow-y-scroll px-6 lg:px-6 pb-8 lg:pb-12">
         <template #container="{ closeCallback }">
-            <UseFocusTrap v-if="visible" :options="{ immediate: true }">
+            <UseFocusTrap v-if="isInstantSearchVisible" :options="{ immediate: true }">
                 <ais-instant-search :search-client="client" index-name="pages" class="flex justify-center items-start w-full h-full">
                     <div class="flex flex-col w-full h-full max-w-7xl">
                         <!-- Header -->

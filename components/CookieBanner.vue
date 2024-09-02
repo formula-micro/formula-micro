@@ -45,26 +45,27 @@
 <template>
     <!-- Button to open cookiebanner -->
     <button @click="isBannerVisible = !isBannerVisible" class="fixed bottom-4 left-4 flex justify-center items-center bg-black text-white p-3 rounded-full shadow-lg hover:scale-110 focus:scale-110 transform duration-150">
-        <Icon name="tabler:cookie" class="w-5 h-5 lg:w-6 lg:h-6" />
+        <span class="sr-only">Åbn cookiebanner</span>
+        <Icon name="tabler:cookie" class="w-6 h-6 3xl:w-7 3xl:h-7" alt="" role="presentation" />
     </button>
 
     <!-- Cookiebanner -->
     <div v-if="isBannerVisible" v-motion-slide-bottom
-        class="fixed bottom-0 left-0 right-0 mx-auto my-0 sm:my-[3.75rem] md:mx-[3.75rem] w-full sm:max-w-lg bg-white shadow-xl border border-gray-200 sm:rounded-lg p-7">
+        class="fixed bottom-0 left-0 right-0 mx-auto my-0 sm:my-[3.75rem] md:mx-[3.75rem] 3xl:mx-[4rem] 3xl:my-[4rem] w-full sm:max-w-lg bg-white shadow-xl border border-gray-200 sm:rounded-lg p-7 z-50">
 
         <!-- Information -->
         <div class="prose !text-sm 2xl:!text-base">
-            <h2 class="text-base 2xl:text-lg">Denne hjemmeside bruger cookies</h2>
-            <p>Vi bruger cookies til at integrere med Google Maps og for at give dig en mere personlig oplevelse på vores hjemmeside. Ved at klikke på 'Tillad alle' giver du dit samtykke til brugen af cookies til dette formål.</p>
+            <h2 class="text-base 2xl:text-lg 3xl:text-xl">Vores hjemmeside bruger cookies</h2>
+            <p>Vi bruger cookies til at integrere med Google Maps, og for at give dig en bedre oplevelse på vores hjemmeside. Ved at klikke på 'Tillad alle' giver du dit samtykke til brugen af cookies til disse formål.</p>
             <NuxtLink to="/cookiepolitik">Læs mere i vores Cookiepolitik</NuxtLink>
         </div>
 
         <!-- Options -->
-        <div class="mt-12 grid text-sm 2xl:text-base text-gray-700">
+        <div class="mt-12 grid text-sm 2xl:text-base text-gray-700 select-none">
             <!-- Google Maps -->
             <div class="inline-flex justify-between items-center max-w-md">
                 <div class="inline-flex items-center w-full space-x-2">
-                    <NuxtImg src="/images/googleMapsLogo.png" alt="Google Maps Logo" class="w-5 h-5 lg:w-6 lg:h-6" />
+                    <NuxtImg src="/images/googleMapsLogo.png" alt="" role="presentation" class="w-5 h-5 lg:w-6 lg:h-6" />
                     <label for="googleMaps">Google Maps</label>
                 </div>
 
@@ -79,8 +80,8 @@
             <!-- Nessecary -->
             <div class="inline-flex justify-between items-center max-w-md">
                 <div class="inline-flex items-center w-full space-x-2">
-                    <Icon name="tabler:alert-square-rounded-filled" class="w-6 h-6 lg:w-[1.6rem] lg:h-[1.6rem] text-gray-900" />
-                    <label for="necessary">Nødvendig</label>
+                    <Icon name="tabler:alert-square-rounded-filled" class="w-6 h-6 lg:w-[1.6rem] lg:h-[1.6rem] text-gray-900" alt="" role="presentation" />
+                    <label for="necessary">Nødvendige cookies</label>
                 </div>
                 
                 <button id="necessary" type="button" disabled class="opacity-50 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-black transition-colors duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2" role="switch" aria-checked="false">
