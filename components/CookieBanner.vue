@@ -1,99 +1,101 @@
 <script setup lang="ts">
-  import { ref, onMounted } from 'vue';
-  import Cookies from 'js-cookie';
-  import ToggleSwitch from 'primevue/toggleswitch';
+    // import { UseFocusTrap } from "@vueuse/integrations/useFocusTrap/component";
+    import { useFocus } from "@vueuse/core";
 
-  // Define the toggle states
-  const necessary = ref(true);
-  const googleMap = ref(true);
-  const showBanner = ref(false);
+    // Fields.
+    const cookieState = useCookie("cookieState", { maxAge: 31536000, watch: true });
+    const necessary = ref(true);
+    const googleMaps = ref(true);
+    const isBannerVisible = ref(!cookieState.value);
+    const acceptButton = ref();
+    useFocus(acceptButton, { initialValue: true });
 
-  onMounted(() => {
-    const cookieValue = Cookies.get('cookiesAccepted');
-    if (!cookieValue) {
-      showBanner.value = true;
-    } else {
-      // Initialize toggle states based on cookie value
-      const acceptedCookies = cookieValue.split(',');
-      necessary.value = acceptedCookies.includes('necessary');
-      googleMap.value = acceptedCookies.includes('googleMap');
-    }
-  });
+    watch(cookieState, (value) =>
+    {
+        if (value)
+        {
+            necessary.value = value.includes('necessary');
+            googleMaps.value = value.includes('googleMaps');
+        }
+    });
 
-  const acceptAll = () => {
-    Cookies.set('cookiesAccepted', 'necessary,googleMap', { expires: 365 });
-    refreshCookie("cookiesAccepted");
-    showBanner.value = false;
-  };
+    // Methods.
+    const acceptAll = () =>
+    {
+        cookieState.value = "necessary,googleMaps";
+        refreshCookie("cookiesAccepted");
+        isBannerVisible.value = false;
+    };
 
-  const acceptSelected = () => {
-    const selectedOptions = [];
-    if (googleMap.value) selectedOptions.push('googleMap');
-    
-    Cookies.set('cookiesAccepted', `necessary,${selectedOptions.join(',')}`, { expires: 365 });
-    showBanner.value = false;
-  };
+    const acceptSelected = () =>
+    {
+        const selectedOptions = [];
+        if (googleMaps.value) selectedOptions.push('googleMaps');
+        
+        cookieState.value = `necessary,${selectedOptions.join(',')}`;
+        isBannerVisible.value = false;
+    };
 
-  const acceptNecessary = () => {
-    Cookies.set('cookiesAccepted', 'necessary', { expires: 365 });
-    showBanner.value = false;
-  };
+    const acceptNecessary = () =>
+    {
+        cookieState.value = "necessary";
+        isBannerVisible.value = false;
+    };
 </script>
 
 <template>
-  <div v-if="showBanner" class="fixed bottom-0 left-0 right-0 bg-white border-t-2 border-gray-200 shadow-md py-4 lg:py-6">
-    <div class="container max-w-8xl mx-auto px-4 py-4 flex flex-col lg:flex-row items-start lg:items-center">
-      
-      <div class="flex-1 lg:w-2/3 lg:pr-6 mb-4 lg:mb-0">
-        <p class="text-base lg:text-lg font-semibold mb-2 lg:mb-4">Denne hjemmeside bruger cookies</p>
-        <p class="text-sm lg:text-base mb-2">Vi bruger cookies til at integrere med Google Maps og for at give dig en mere personlig oplevelse på vores hjemmeside. Ved at klikke på 'Tillad alle' giver du dit samtykke til brugen af cookies til dette formål.</p>
-        <p class="text-sm lg:text-base mb-4 lg:mb-6">Læs mere om vores <a href="/cookiepolitik" class="text-sky-900 underline">Cookiepolitik</a></p>
-        
-        <div class="flex flex-wrap gap-4 lg:gap-6"> 
-          <!-- Google Map Switch -->
-          <div class="flex items-center">
-            <NuxtImg src="/images/googleMapsLogo.png" alt="Google Maps Logo" class="w-5 h-5 lg:w-6 lg:h-6 mr-2" />
-            <label for="googleMap" class="text-sm lg:text-base text-gray-700 mr-2">Google Map</label>
-            <ToggleSwitch
-              id="googleMap" 
-              v-model="googleMap"  
-            />
-          </div>
+    <!-- Button to open cookiebanner -->
+    <button @click="isBannerVisible = !isBannerVisible" class="fixed bottom-4 left-4 flex justify-center items-center bg-black text-white p-3 rounded-full shadow-lg hover:scale-110 focus:scale-110 transform duration-150">
+        <Icon name="tabler:cookie" class="w-5 h-5 lg:w-6 lg:h-6" />
+    </button>
 
-          <!-- Necessary Switch (Inactive) -->
-          <div class="flex items-center">
-            <label for="necessary" class="text-sm lg:text-base text-gray-700 mr-2">Nødvendig</label>
-            <ToggleSwitch 
-              id="necessary" 
-              v-model="necessary" 
-              disabled 
-            />
-          </div>
-        </div>
-      </div>
+    <!-- Cookiebanner -->
+    <div v-if="isBannerVisible" v-motion-slide-bottom
+        class="fixed bottom-0 left-0 right-0 mx-auto my-0 sm:my-[3.75rem] md:mx-[3.75rem] w-full sm:max-w-lg bg-white shadow-xl border border-gray-200 sm:rounded-lg p-7">
 
-      <div class="flex-none lg:w-1/3 w-full">
-        <div class="flex flex-col gap-2 w-full">
-          <button @click="acceptAll" class="w-full bg-pinkoi-navy-900 text-white py-3 lg:py-4 transition-transform transform hover:scale-105 focus:scale-105 duration-300 rounded-md lg:rounded-md">
-            Tillad alle
-          </button>
-          <button @click="acceptSelected" class="w-full bg-white border-2 border-pinkoi-navy-700 text-gray-600 py-3 lg:py-4 transition-transform transform hover:scale-105 focus:scale-105 duration-300 rounded-md lg:rounded-md">
-            Tillad valgte
-          </button>
-          <button @click="acceptNecessary" class="w-full bg-white border-2 border-gray-400 text-gray-600 py-3 lg:py-4 transition-transform transform hover:scale-105 focus:scale-105 duration-300 rounded-md lg:rounded-md">
-            Kun nødvendige
-          </button>
+        <!-- Information -->
+        <div class="prose !text-sm 2xl:!text-base">
+            <h2 class="text-base 2xl:text-lg">Denne hjemmeside bruger cookies</h2>
+            <p>Vi bruger cookies til at integrere med Google Maps og for at give dig en mere personlig oplevelse på vores hjemmeside. Ved at klikke på 'Tillad alle' giver du dit samtykke til brugen af cookies til dette formål.</p>
+            <NuxtLink to="/cookiepolitik">Læs mere i vores Cookiepolitik</NuxtLink>
         </div>
-      </div>
+
+        <!-- Options -->
+        <div class="mt-12 grid text-sm 2xl:text-base text-gray-700">
+            <!-- Google Maps -->
+            <div class="inline-flex justify-between items-center max-w-md">
+                <div class="inline-flex items-center w-full space-x-2">
+                    <NuxtImg src="/images/googleMapsLogo.png" alt="Google Maps Logo" class="w-5 h-5 lg:w-6 lg:h-6" />
+                    <label for="googleMaps">Google Maps</label>
+                </div>
+
+                <button id="googleMaps" type="button" @click="googleMaps = !googleMaps" :class="[ googleMaps ? 'bg-black' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2' ]" role="switch" aria-checked="false">
+                    <span class="sr-only">Tillad Google Maps</span>
+                    <span aria-hidden="true" :class="[ googleMaps ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-150 ease-in-out' ]"></span>
+                </button>
+            </div>
+
+            <Divider />
+
+            <!-- Nessecary -->
+            <div class="inline-flex justify-between items-center max-w-md">
+                <div class="inline-flex items-center w-full space-x-2">
+                    <Icon name="tabler:alert-square-rounded-filled" class="w-6 h-6 lg:w-[1.6rem] lg:h-[1.6rem] text-gray-900" />
+                    <label for="necessary">Nødvendig</label>
+                </div>
+                
+                <button id="necessary" type="button" disabled class="opacity-50 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-black transition-colors duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2" role="switch" aria-checked="false">
+                    <span class="sr-only">Tillad nødvændige cookies</span>
+                    <span aria-hidden="true" class="'pointer-events-none inline-block h-5 w-5 translate-x-5 transform rounded-full bg-white shadow ring-0 transition duration-150 ease-in-out"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="mt-8 grid gap-3">
+            <Button label="Tillad alle" type="button" @click="acceptAll" ref="acceptButton" pt:root="text-sm 2xl:text-base" />
+            <Button label="Tillad valgte" type="button" @click="acceptSelected" outlined pt:root="text-sm 2xl:text-base" />
+            <Button label="Kun nødvændige" type="button" @click="acceptNecessary" outlined pt:root="text-sm 2xl:text-base" />
+        </div>
     </div>
-  </div>
-  
-  <button @click="showBanner = true" class="fixed bottom-4 left-4 bg-gradient-to-r from-pinkoi-navy-900 via-sky-700 to-cyan-600 text-white py-2 px-2 rounded-full shadow-lg">
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 13v.01M12 17v.01M12 12v.01M16 14v.01M11 8v.01m2.148-4.534l2.667 1.104a4 4 0 0 0 4.656 6.14l.053.132a3 3 0 0 1 0 2.296Q19.779 14.328 19.5 15q-.283.684-.66 2.216a3 3 0 0 1-1.624 1.623q-1.572.394-2.216.661q-.712.295-1.852 1.024a3 3 0 0 1-2.296 0Q9.649 19.77 9 19.5q-.707-.292-2.216-.66a3 3 0 0 1-1.623-1.624Q4.764 15.639 4.5 15q-.298-.718-1.024-1.852a3 3 0 0 1 0-2.296Q4.195 9.736 4.5 9q.257-.62.66-2.216a3 3 0 0 1 1.624-1.623Q8.331 4.777 9 4.5q.687-.285 1.852-1.024a3 3 0 0 1 2.296 0"/></svg>
-  </button>
 </template>
-
-
-
-
-
