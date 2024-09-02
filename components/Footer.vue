@@ -1,9 +1,10 @@
 <script setup lang="ts">
+    import type { Footer_Categories, Footer_Links } from "@/graphql/generated/graphql";
     import { useFooterCategoriesQuery } from "@/graphql/generated/graphql";
 
     // Fields.
     const { data, error } = await useFooterCategoriesQuery({ variables: {} });
-    const categories = computed(() => (data.value?.footer_categories));
+    const categories = computed(() => (data.value?.footer_categories as Footer_Categories[] ?? [] as Footer_Categories[]));
 
     const errorMessage = ref<string|undefined>(undefined);
     watch(error, (value) => errorMessage.value = value?.message);
@@ -26,11 +27,9 @@
                 <div>
                     <p class="text-lg font-semibold tracking-wide">{{ category.name }}</p>
                     <div class="mt-2 flex flex-col gap-3">
-                        <div v-for="link in category.links" :key="link?.id">
-                            <NuxtLink :to="link?.type === 'link' ? link.link : link?.page?.slug" class="text-gray-600 no-underline hover:text-gray-950 ">
-                                {{ link?.name }}
-                            </NuxtLink>
-                        </div>
+                        <NuxtLink v-for="link in category.links" :key="link.id" :to="link?.type === 'link' ? link.link : link?.page?.slug" class="text-gray-600 rounded-lg no-underline focus:outline-none focus:ring-2 ring-offset-2 focus:ring-black hover:text-gray-900 focus:text-gray-900 transition duration-150">
+                            {{ link?.name }}
+                        </NuxtLink>
                     </div>
                 </div>
             </div>

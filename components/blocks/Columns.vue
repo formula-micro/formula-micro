@@ -25,6 +25,8 @@
 
                 <BlocksDisclosure v-if="block.__typename === 'disclosure_blocks'" :is-child="false" :data="block" />
 
+                <BlocksGoogleMaps v-if="block.__typename === 'google_maps_blocks'" :data="block" />
+
                 <BlocksCard v-if="block.__typename === 'card_blocks'" :data="block" />
 
                 <BlocksImage v-if="block.__typename === 'image_blocks'" :data="block" />

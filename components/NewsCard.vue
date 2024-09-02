@@ -19,7 +19,7 @@
         <!-- Image -->
         <div :class="[ orientation === 'horizontal' ? 'w-full min-w-xs max-w-xs lg:max-w-sm 2xl:max-w-md h-auto' : '' ]">
             <div class="relative aspect-w-16 aspect-h-9 overflow-hidden">
-                <NuxtImg :src="cover_image?.id ? `https://cms.formula.nu/assets/${cover_image.id}` : '/images/nyheder.jpg'" alt="" role="presentation" format="webp" sizes="sm:640px md:1024px" :width="cover_image?.width ?? 1280" :height="cover_image?.height ?? 826" loading="lazy" class="w-full h-full object-cover rounded-xl" />
+                <NuxtImg :src="cover_image?.id ? `https://cms.formula.nu/assets/${cover_image.id}` : '/images/nyheder.jpg'" format="webp" sizes="sm:640px" loading="lazy" :width="cover_image?.width ?? 1280" :height="cover_image?.height ?? 826" class="w-full h-full object-cover rounded-xl" alt="" role="presentation" />
                 <div class="absolute inset-0 bg-black rounded-xl bg-opacity-0 group-hover:bg-opacity-20 group-focus:bg-opacity-20 transition duration-500"></div>
             </div>
         </div>

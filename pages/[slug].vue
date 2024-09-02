@@ -25,19 +25,15 @@
         titleTemplate: (titleChunk) => titleChunk ? `${titleChunk} | Formula Micro` : "Formula Micro"
     });
 
-    useServerHead({
-        title: page.value.title,
-        titleTemplate: (titleChunk) => titleChunk ? `${titleChunk} | Formula Micro` : "Formula Micro"
-    });
-
-    useSeoMeta({
-        title: () => page.value?.seo_title ?? "Formula Micro",
-        description: () => page.value?.seo_description ?? ""
-    });
-
     useServerSeoMeta({
         title: () => page.value?.seo_title ?? "Formula Micro",
-        description: () => page.value?.seo_description ?? ""
+        description: () => page.value?.seo_description ?? "",
+        ogDescription: page.value?.seo_description ?? "",
+        // ogImage: '[og:image]',
+        twitterTitle: page.value?.seo_title ?? "Formula Micro",
+        twitterDescription: page.value?.seo_description ?? "",
+        // twitterImage: '[twitter:image]',
+        // twitterCard: 'summary'
     });
 
     // Get blocks.

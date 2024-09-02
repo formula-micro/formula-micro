@@ -292,6 +292,8 @@ fragment GoogleMapsBlock on google_maps_blocks {
         ...Width
     }
     has_padding
+    has_vertical_padding
+    has_horizontal_padding
 }
 
 fragment CookieSelectionBlock on cookie_selection_blocks {
