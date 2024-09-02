@@ -38030,11 +38030,23 @@ export default {
           },
           {
             "kind": "OBJECT",
+            "name": "card_blocks"
+          },
+          {
+            "kind": "OBJECT",
+            "name": "columns_blocks"
+          },
+          {
+            "kind": "OBJECT",
             "name": "contact_form_blocks"
           },
           {
             "kind": "OBJECT",
             "name": "disclosure_blocks"
+          },
+          {
+            "kind": "OBJECT",
+            "name": "disclosure_group_blocks"
           },
           {
             "kind": "OBJECT",
@@ -38051,6 +38063,14 @@ export default {
           {
             "kind": "OBJECT",
             "name": "services_list_blocks"
+          },
+          {
+            "kind": "OBJECT",
+            "name": "spacer_blocks"
+          },
+          {
+            "kind": "OBJECT",
+            "name": "tabs_blocks"
           },
           {
             "kind": "OBJECT",
@@ -59181,6 +59201,14 @@ export default {
             "args": []
           },
           {
+            "name": "field_to_force_item_update",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "id",
             "type": {
               "kind": "NON_NULL",
@@ -59477,6 +59505,14 @@ export default {
           },
           {
             "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "field_to_force_item_update",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -73180,6 +73216,14 @@ export default {
             "args": []
           },
           {
+            "name": "field_to_force_item_update",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "id",
             "type": {
               "kind": "SCALAR",
@@ -83392,18 +83436,23 @@ export type Cases_Blocks_Filter = {
   collection?: InputMaybe<String_Filter_Operators>;
   id?: InputMaybe<Number_Filter_Operators>;
   item__banner_hero_blocks?: InputMaybe<Banner_Hero_Blocks_Filter>;
+  item__card_blocks?: InputMaybe<Card_Blocks_Filter>;
+  item__columns_blocks?: InputMaybe<Columns_Blocks_Filter>;
   item__contact_form_blocks?: InputMaybe<Contact_Form_Blocks_Filter>;
   item__disclosure_blocks?: InputMaybe<Disclosure_Blocks_Filter>;
+  item__disclosure_group_blocks?: InputMaybe<Disclosure_Group_Blocks_Filter>;
   item__gallery_blocks?: InputMaybe<Gallery_Blocks_Filter>;
   item__partners_blocks?: InputMaybe<Partners_Blocks_Filter>;
   item__richtext_blocks?: InputMaybe<Richtext_Blocks_Filter>;
   item__services_list_blocks?: InputMaybe<Services_List_Blocks_Filter>;
+  item__spacer_blocks?: InputMaybe<Spacer_Blocks_Filter>;
+  item__tabs_blocks?: InputMaybe<Tabs_Blocks_Filter>;
   item__text_and_image_blocks?: InputMaybe<Text_And_Image_Blocks_Filter>;
   item__text_hero_blocks?: InputMaybe<Text_Hero_Blocks_Filter>;
   sort?: InputMaybe<Number_Filter_Operators>;
 };
 
-export type Cases_Blocks_Item_Union = Banner_Hero_Blocks | Contact_Form_Blocks | Disclosure_Blocks | Gallery_Blocks | Partners_Blocks | Richtext_Blocks | Services_List_Blocks | Text_And_Image_Blocks | Text_Hero_Blocks;
+export type Cases_Blocks_Item_Union = Banner_Hero_Blocks | Card_Blocks | Columns_Blocks | Contact_Form_Blocks | Disclosure_Blocks | Disclosure_Group_Blocks | Gallery_Blocks | Partners_Blocks | Richtext_Blocks | Services_List_Blocks | Spacer_Blocks | Tabs_Blocks | Text_And_Image_Blocks | Text_Hero_Blocks;
 
 export type Cases_Blocks_Mutated = {
   __typename?: 'cases_blocks_mutated';
@@ -84738,6 +84787,7 @@ export type Create_Pages_Input = {
   category?: InputMaybe<Create_Page_Categories_Input>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  field_to_force_item_update?: InputMaybe<Scalars['String']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
   /** $t:seo_description_note */
   seo_description?: InputMaybe<Scalars['String']['input']>;
@@ -88911,6 +88961,7 @@ export type Pages = {
   date_created_func?: Maybe<Datetime_Functions>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   date_updated_func?: Maybe<Datetime_Functions>;
+  field_to_force_item_update?: Maybe<Scalars['String']['output']>;
   id: Scalars['ID']['output'];
   /** $t:seo_description_note */
   seo_description?: Maybe<Scalars['String']['output']>;
@@ -88984,6 +89035,7 @@ export type Pages_Aggregated_Count = {
   category?: Maybe<Scalars['Int']['output']>;
   date_created?: Maybe<Scalars['Int']['output']>;
   date_updated?: Maybe<Scalars['Int']['output']>;
+  field_to_force_item_update?: Maybe<Scalars['Int']['output']>;
   id?: Maybe<Scalars['Int']['output']>;
   /** $t:seo_description_note */
   seo_description?: Maybe<Scalars['Int']['output']>;
@@ -89094,6 +89146,7 @@ export type Pages_Filter = {
   date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   date_updated?: InputMaybe<Date_Filter_Operators>;
   date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  field_to_force_item_update?: InputMaybe<String_Filter_Operators>;
   id?: InputMaybe<String_Filter_Operators>;
   seo_description?: InputMaybe<String_Filter_Operators>;
   seo_title?: InputMaybe<String_Filter_Operators>;
@@ -91872,6 +91925,7 @@ export type Update_Pages_Input = {
   category?: InputMaybe<Update_Page_Categories_Input>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  field_to_force_item_update?: InputMaybe<Scalars['String']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
   /** $t:seo_description_note */
   seo_description?: InputMaybe<Scalars['String']['input']>;
@@ -92692,6 +92746,7 @@ export type Version_Pages = {
   category?: Maybe<Scalars['JSON']['output']>;
   date_created?: Maybe<Scalars['Date']['output']>;
   date_updated?: Maybe<Scalars['Date']['output']>;
+  field_to_force_item_update?: Maybe<Scalars['String']['output']>;
   id?: Maybe<Scalars['ID']['output']>;
   /** $t:seo_description_note */
   seo_description?: Maybe<Scalars['String']['output']>;
@@ -93248,7 +93303,7 @@ export type BlogPostsQueryVariables = Exact<{
 
 export type BlogPostsQuery = { __typename?: 'Query', blog_posts: Array<{ __typename?: 'blog_posts', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, content?: any | null, cover_image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null, tags?: Array<{ __typename?: 'blog_posts_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null }> };
 
-export type CaseFragment = { __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
+export type CaseFragment = { __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'card_blocks' } | { __typename?: 'columns_blocks' } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks' } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'spacer_blocks' } | { __typename?: 'tabs_blocks' } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
 
 export type CasesCountQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -93265,7 +93320,7 @@ export type CasesQueryVariables = Exact<{
 }>;
 
 
-export type CasesQuery = { __typename?: 'Query', cases: Array<{ __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
+export type CasesQuery = { __typename?: 'Query', cases: Array<{ __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'card_blocks' } | { __typename?: 'columns_blocks' } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks' } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'spacer_blocks' } | { __typename?: 'tabs_blocks' } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
 
 export type ContactFormFragment = { __typename?: 'contact_forms', name?: string | null, company?: string | null, email?: string | null, phone?: string | null, message?: string | null };
 
@@ -93287,11 +93342,11 @@ export type FooterCategoriesQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type FooterCategoriesQuery = { __typename?: 'Query', footer_categories: Array<{ __typename?: 'footer_categories', id: string, name?: string | null, links?: Array<{ __typename?: 'footer_links', id: string, name?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null }> };
 
-export type NavigationMenuFragment = { __typename?: 'navigation_menu', links?: Array<{ __typename?: 'navigation_menu_items', id: string, text?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null, subitems?: Array<{ __typename?: 'navigation_menu_subitems', id: string, title?: string | null, description?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null, calls_to_action?: Array<{ __typename?: 'navigation_menu_calls_to_action', id: string, text?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | null> | null };
+export type NavigationMenuFragment = { __typename?: 'navigation_menu', links?: Array<{ __typename?: 'navigation_menu_items', id: string, status?: string | null, text?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null, subitems?: Array<{ __typename?: 'navigation_menu_subitems', id: string, title?: string | null, description?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null, calls_to_action?: Array<{ __typename?: 'navigation_menu_calls_to_action', id: string, text?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | null> | null };
 
 export type NavigationMenuItemPageFragment = { __typename?: 'pages', id: string, title?: string | null, slug?: string | null };
 
-export type NavigationMenuItemFragment = { __typename?: 'navigation_menu_items', id: string, text?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null, subitems?: Array<{ __typename?: 'navigation_menu_subitems', id: string, title?: string | null, description?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null, calls_to_action?: Array<{ __typename?: 'navigation_menu_calls_to_action', id: string, text?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null };
+export type NavigationMenuItemFragment = { __typename?: 'navigation_menu_items', id: string, status?: string | null, text?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null, subitems?: Array<{ __typename?: 'navigation_menu_subitems', id: string, title?: string | null, description?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null, calls_to_action?: Array<{ __typename?: 'navigation_menu_calls_to_action', id: string, text?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null };
 
 export type NavigationMenuSubItemFragment = { __typename?: 'navigation_menu_subitems', id: string, title?: string | null, description?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null };
 
@@ -93300,7 +93355,7 @@ export type NavigationMenuCallToActionFragment = { __typename?: 'navigation_menu
 export type NavigationMenuQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type NavigationMenuQuery = { __typename?: 'Query', navigation_menu?: { __typename?: 'navigation_menu', links?: Array<{ __typename?: 'navigation_menu_items', id: string, text?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null, subitems?: Array<{ __typename?: 'navigation_menu_subitems', id: string, title?: string | null, description?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null, calls_to_action?: Array<{ __typename?: 'navigation_menu_calls_to_action', id: string, text?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | null> | null } | null };
+export type NavigationMenuQuery = { __typename?: 'Query', navigation_menu?: { __typename?: 'navigation_menu', links?: Array<{ __typename?: 'navigation_menu_items', id: string, status?: string | null, text?: string | null, type?: string | null, link?: string | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null, subitems?: Array<{ __typename?: 'navigation_menu_subitems', id: string, title?: string | null, description?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null, calls_to_action?: Array<{ __typename?: 'navigation_menu_calls_to_action', id: string, text?: string | null, type?: string | null, link?: string | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, page?: { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | null> | null } | null };
 
 export type NewsPostFragment = { __typename?: 'news_posts', id: string, status?: string | null, date_published?: any | null, title?: string | null, slug?: string | null, summary?: string | null, content?: any | null, cover_image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null, tags?: Array<{ __typename?: 'news_posts_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null };
 
@@ -93720,6 +93775,7 @@ export const NavigationMenuCallToActionFragmentDoc = gql`
 export const NavigationMenuItemFragmentDoc = gql`
     fragment NavigationMenuItem on navigation_menu_items {
   id
+  status
   text
   type
   link

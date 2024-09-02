@@ -12,6 +12,7 @@ fragment NavigationMenuItemPage on pages {
 
 fragment NavigationMenuItem on navigation_menu_items {
     id
+    status
     text
     type
     link

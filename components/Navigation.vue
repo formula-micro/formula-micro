@@ -1,11 +1,12 @@
 <script setup lang="ts">
+    import type { Navigation_Menu_Items } from "@/graphql/generated/graphql";
     import { useNavigationMenuQuery } from "@/graphql/generated/graphql";
 
     // Fields.
     const isMobileMenuVisible = ref(false);
     const activeLink = ref<any>(undefined);
-    const { data: navigationMenuData } = await useNavigationMenuQuery({ variables: {} });
-    const links = computed(() => navigationMenuData.value?.navigation_menu?.links ?? []);
+    const { data: navigationMenuData } = await useNavigationMenuQuery({ variables: { } });
+    const links = computed(() => navigationMenuData.value?.navigation_menu?.links?.filter(link => link?.status === "published") as Navigation_Menu_Items[] ?? [] as Navigation_Menu_Items[]);
 
     // Methods.
     const onMobileMenuClose = () =>
