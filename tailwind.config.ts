@@ -347,6 +347,9 @@ export default {
         "mt-12",
         "mt-4",
         "overflow-hidden",
-        "max-h-screen"
+        "max-h-screen",
+        "!bg-transparent",
+        "!px-0",
+        "!py-2"
     ]
 } satisfies Config;
