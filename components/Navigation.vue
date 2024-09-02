@@ -1,12 +1,12 @@
 <script setup lang="ts">
+    import type { Navigation_Menu_Items } from "@/graphql/generated/graphql";
     import { useNavigationMenuQuery } from "@/graphql/generated/graphql";
 
     // Fields.
-    const isSearchModalVisible = ref(false);
     const isMobileMenuVisible = ref(false);
     const activeLink = ref<any>(undefined);
-    const { data: navigationMenuData } = await useNavigationMenuQuery({ variables: {} });
-    const links = computed(() => navigationMenuData.value?.navigation_menu?.links ?? []);
+    const { data: navigationMenuData } = await useNavigationMenuQuery({ variables: { } });
+    const links = computed(() => navigationMenuData.value?.navigation_menu?.links?.filter(link => link?.status === "published") as Navigation_Menu_Items[] ?? [] as Navigation_Menu_Items[]);
 
     // Methods.
     const onMobileMenuClose = () =>
@@ -20,9 +20,9 @@
 
 <template>
     <!-- Skip to content button -->
-    <a href="#main-content" class="bg-white border border-black text-black px-4 py-2 focus:underline sr-only focus:not-sr-only" :aria-hidden="isSearchModalVisible">Spring til hovedindhold</a>
+    <a href="#main-content" class="bg-white border border-black text-black px-4 py-2 focus:underline sr-only focus:not-sr-only">Spring til hovedindhold</a>
 
-    <div class="mt-2 hidden 2xl:flex justify-center items-center w-full z-50">
+    <div class="mt-2 hidden 3xl:flex justify-center items-center w-full z-50">
         <div class="grid grid-cols-[1fr,2fr,1fr] justify-center items-center w-full">
             <NuxtLink to="/" class="-mb-0.5 ml-12 z-50 w-min focus-visible:outline-none">
                 <NuxtImg src="https://formula-micro.dk/wp-content/uploads/2019/04/FM-logo-flad-300x43.png" class="object-scale-down max-w-50" sizes="sm:300px" width="300" height="43" alt="Formula Micro logo" />
@@ -80,25 +80,26 @@
             </div>
 
             <div class="flex justify-end">
-                <button type="button" class="inline-flex justify-end text-gray-900 z-50 py-8 px-7 mr-5 focus-visible:outline-none" @click="isSearchModalVisible = true">
-                    <span class="sr-only">Søg</span>
-                    <Icon name="tabler:search" class="h-5 w-5 flex-none" aria-hidden="true" role="presentation" />
-                </button>
+                <Search />
             </div>
         </div>
     </div>
 
     <!-- Mobile Navigation -->
-    <div class="flex 2xl:hidden justify-center items-center w-full z-50">
-        <div class="flex justify-between items-center w-full pt-5 px-3">
+    <div class="flex 3xl:hidden justify-center items-center w-full z-50">
+        <div class="flex justify-between items-center w-full px-6 xl:px-12">
             <NuxtLink to="/" class="-mb-0.5 z-50 w-min focus-visible:outline-none">
                 <NuxtImg src="https://formula-micro.dk/wp-content/uploads/2019/04/FM-logo-flad-300x43.png" class="object-scale-down max-w-46" sizes="sm:300px" width="300" height="43" alt="Formula Micro logo" />
             </NuxtLink>
 
-            <button type="button" @click="isMobileMenuVisible = true">
-                <Icon name="ci:hamburger" class="h-7 w-7 text-gray-800" />
-                <span class="sr-only">Menu</span>
-            </button>
+            <div class="flex space-x-5 py-6 md:py-8">
+                <Search />
+                
+                <button type="button" class="inline-flex justify-center items-center" @click="isMobileMenuVisible = true">
+                    <Icon name="ci:hamburger" class="h-7 w-7 text-gray-800" />
+                    <span class="sr-only">Menu</span>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -150,15 +151,9 @@
                                 </template>
                             </template>
                         </div>
-
-
-                        
-
                     </HeadlessDialogPanel>
                 </HeadlessTransitionChild>
             </div>
         </HeadlessDialog>
     </HeadlessTransitionRoot>
-
-    <Search :open="isSearchModalVisible" @close="isSearchModalVisible = false" />
 </template>

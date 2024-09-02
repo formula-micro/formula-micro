@@ -3,11 +3,6 @@
     import { useNewsPostsQuery } from "@/graphql/generated/graphql";
     import { getDate, getTime, useBreadcrumbs } from "@/helpers";
 
-    // Page meta.
-    definePageMeta({
-        layout: "news"
-    });
-
     // Fields.
     const { slug } = useRoute().params;
 
@@ -46,10 +41,25 @@
         })),
         "__typename": "news_blocks"
     } as News_Blocks;
+
+    // Page meta.
+    definePageMeta({
+        layout: "news"
+    });
+
+    useHead({
+        title: post.value.title,
+        titleTemplate: (titleChunk) => titleChunk ? `Nyheder | ${titleChunk} | Formula Micro` : "Formula Micro"
+    });
+
+    useServerSeoMeta({
+        title: () => post.value?.title ?? "Formula Micro",
+        description: () => post.value?.summary ?? ""
+    });
 </script>
 
 <template>
-    <article>
+    <article class="w-full">
         <!-- Breadcrumbs -->
         <nav class="mt-4 flex" aria-label="Breadcrumb">
             <ol role="list" class="flex items-center space-x-2">
@@ -85,7 +95,7 @@
         <div>
             <!-- v-motion is used on the image to keep the title and summary visible behind the image when animating in -->
             <!-- It seems v-motion doesn't respect css z-index -->
-            <NuxtImg class="mt-6 object-cover rounded-xl w-full max-h-2xl" v-motion :initial="{ opacity: 100 }" :src="post?.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'"  aria-hidden="true" role="presentation" sizes="sm:512px md:860px lg:1200px" />
+            <NuxtImg v-motion :initial="{ opacity: 100 }" :src="post?.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.jpg'" :width="post?.cover_image?.width ?? 1280" :height="post?.cover_image?.height ?? 826" preload format="webp" sizes="sm:512px md:860px lg:1600px" class="mt-6 object-cover rounded-xl w-full max-h-2xl" alt="" role="presentation" />
             <div class="mt-1 space-y-1">
                 <p class="text-sm font-medium" v-if="post?.cover_image?.description">{{ post.cover_image.description }}</p>
                 <div class="text-sm font-medium prose" v-html="post?.cover_image?.attribution" v-if="post?.cover_image?.attribution" />

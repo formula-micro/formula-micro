@@ -12,13 +12,13 @@
 
     useServerHead({
         htmlAttrs: {
-            lang: "en",
+            lang: "da",
         },
     });
 </script>
 
 <template>
-    <main class="relative min-w-full min-h-full h-full bg-white font-plusjakartasans">
+    <main :class="[ searchStore.isDialogVisible ? 'overflow-hidden' : '', 'relative min-w-full min-h-full h-full bg-white font-plusjakartasans' ]">
         <Navigation />
         
         <NuxtLayout>
@@ -28,6 +28,7 @@
         </NuxtLayout>
 
         <Footer />
+        <CookieBanner />
     </main>
 </template>
 
