@@ -27,7 +27,7 @@
                 <div>
                     <p class="text-lg font-semibold tracking-wide">{{ category.name }}</p>
                     <div class="mt-2 flex flex-col gap-3">
-                        <NuxtLink v-for="link in category.links" :key="link.id" :to="link?.type === 'link' ? link.link : link?.page?.slug" class="text-gray-600 rounded-lg no-underline focus:outline-none focus:ring-2 ring-offset-2 focus:ring-black hover:text-gray-900 focus:text-gray-900 transition duration-150">
+                        <NuxtLink v-for="link in category.links" :key="link.id" :to="link?.type === 'link' ? link.link : `/${link?.page?.slug}`" class="text-gray-600 rounded-lg no-underline focus:outline-none focus:ring-2 ring-offset-2 focus:ring-black hover:text-gray-900 focus:text-gray-900 transition duration-150">
                             {{ link?.name }}
                         </NuxtLink>
                     </div>

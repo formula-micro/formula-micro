@@ -133,7 +133,7 @@
 
                             <template v-if="!activeLink" v-for="link in links" :key="link.id">
                                 <template v-if="link?.type === 'link' || link?.type === 'page'">
-                                    <NuxtLink :to="link?.type === 'link' ? link?.link : link?.page?.slug" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.text }}</NuxtLink>
+                                    <NuxtLink :to="link?.type === 'link' ? link?.link : `/${link?.page?.slug}`" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.text }}</NuxtLink>
                                 </template>
 
                                 <template v-if="link?.type === 'menu'">
@@ -143,7 +143,7 @@
 
                             <template v-if="activeLink" v-for="link in activeLink?.subitems" :key="link.id">
                                 <template v-if="link?.type === 'link' || link?.type === 'page'">
-                                    <NuxtLink :to="link?.type === 'link' ? link?.link : link?.page?.slug" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.title }}</NuxtLink>
+                                    <NuxtLink :to="link?.type === 'link' ? link?.link : `/${link?.page?.slug}`" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.title }}</NuxtLink>
                                 </template>
 
                                 <template v-if="link?.type === 'menu'">
