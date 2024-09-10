@@ -47,7 +47,7 @@
 </template>
 
 <!-- This CSS is nessecary as the TabList "tabList pt option" isn't available, even though it is listed in the primevue documentation. -->
-<style>
+<style scoped>
     .p-tab {
         flex: 1;
         padding: 1.25rem 1.25rem !important;
