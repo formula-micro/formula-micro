@@ -64,7 +64,7 @@
                                         <div class="bg-gray-50 rounded-b-lg">
                                             <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
                                                 <div class="grid grid-cols-1 divide-y divide-gray-900/5 sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
-                                                    <NuxtLink v-for="item in link.calls_to_action" :key="item?.id" :to="item?.type === 'link' ? item?.link : `/${item?.page?.slug}`" class="flex items-center gap-x-2.5 p-3 px-6 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100 sm:justify-center sm:px-0">
+                                                    <NuxtLink v-for="item in link.calls_to_action" :key="item?.id" :to="item?.type === 'link' ? item?.link : `/${item?.page?.slug}`" @click="close" class="flex items-center gap-x-2.5 p-3 px-6 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100 sm:justify-center sm:px-0">
                                                         <Icon :name="getIconName(item?.icon?.filename_download)" class="h-5 w-5 flex-none text-gray-400" aria-hidden="true" role="presentation" />
                                                         {{ item?.text }}
                                                     </NuxtLink>
@@ -88,8 +88,8 @@
     <!-- Mobile Navigation -->
     <div class="flex 3xl:hidden justify-center items-center w-full z-50">
         <div class="flex justify-between items-center w-full px-6 xl:px-12">
-            <NuxtLink to="/" class="-mb-0.5 z-50 w-min focus-visible:outline-none">
-                <NuxtImg src="https://formula-micro.dk/wp-content/uploads/2019/04/FM-logo-flad-300x43.png" class="object-scale-down max-w-46" sizes="sm:300px" width="300" height="43" alt="Formula Micro logo" />
+            <NuxtLink to="/" class="-mb-0.5 w-min focus-visible:outline-none">
+                <NuxtImg src="https://formula-micro.dk/wp-content/uploads/2019/04/FM-logo-flad-300x43.png" class="object-scale-down max-w-46" sizes="sm:300px md:800px" width="300" height="43" alt="Formula Micro logo" />
             </NuxtLink>
 
             <div class="flex space-x-5 py-6 md:py-8">
@@ -114,7 +114,7 @@
                 <HeadlessTransitionChild as="template" enter="ease-out duration-300" enter-from="translate-x-full" enter-to="translate-x-0" leave="ease-in duration-200" leave-from="translate-x-0" leave-to="translate-x-full">
                     <HeadlessDialogPanel class="mx-auto h-full transform overflow-hidden rounded-tl-3xl bg-white shadow-2xl ring-1 ring-black ring-opacity-5 transition-all px-5">
                         <div class="flex justify-between items-center w-full pt-5">
-                            <NuxtLink to="/" class="-mb-0.5 z-50 w-min focus-visible:outline-none">
+                            <NuxtLink to="/" @click="isMobileMenuVisible = false" class="-mb-0.5 z-50 w-min focus-visible:outline-none">
                                 <NuxtImg src="https://formula-micro.dk/wp-content/uploads/2019/04/FM-logo-flad-300x43.png" class="object-scale-down max-w-46" sizes="sm:300px" width="300" height="43" alt="Formula Micro logo" />
                             </NuxtLink>
 
@@ -124,32 +124,43 @@
                         </div>
 
                         <div class="mt-20 flex flex-col w-full h-full justify-start items-start">
-                            <button type="button" v-if="activeLink !== undefined" @click="activeLink = undefined" class="inline-flex items-center space-x-4 mb-4" v-motion-slide-right>
-                                <span class="inline-flex justify-center items-center bg-gray-100 rounded-full w-9 h-9">
-                                    <Icon name="tabler:arrow-left" class="h-5 w-5" aria-hidden="true" role="presentation" />
-                                </span>
-                                <span class="text-lg font-medium text-gray-900 py-2">{{ activeLink.text }}</span>
-                            </button>
+                            <MotionGroup preset="slideVisibleRight" :duration="400">
+                                <button type="button" v-if="activeLink !== undefined" @click="activeLink = undefined" class="inline-flex items-center space-x-4 mb-4">
+                                    <span class="inline-flex justify-center items-center bg-gray-100 rounded-full w-9 h-9">
+                                        <Icon name="tabler:arrow-left" class="h-5 w-5" aria-hidden="true" role="presentation" />
+                                    </span>
+                                    <span class="text-lg md:text-2xl font-medium text-gray-900 py-2">{{ activeLink.text }}</span>
+                                </button>
+                            </MotionGroup>
 
-                            <template v-if="!activeLink" v-for="link in links" :key="link.id">
-                                <template v-if="link?.type === 'link' || link?.type === 'page'">
-                                    <NuxtLink :to="link?.type === 'link' ? link?.link : `/${link?.page?.slug}`" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.text }}</NuxtLink>
-                                </template>
+                            <div v-if="!activeLink" v-for="link in links" :key="link.id" class="mb-3">
+                                <MotionGroup preset="slideVisibleRight" :duration="400">
+                                    <div v-if="link?.type === 'link' || link?.type === 'page'">
+                                        <NuxtLink :to="link?.type === 'link' ? link?.link : `/${link?.page?.slug}`" @click="isMobileMenuVisible = false" class="text-2xl md:text-3xl font-medium text-gray-900 z-50 focus-visible:outline-none" >{{ link.text }}</NuxtLink>                                  
+                                    </div>
 
-                                <template v-if="link?.type === 'menu'">
-                                    <button type="button" @click="activeLink = link" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.text }}</button>
-                                </template>
-                            </template>
+                                    <div v-if="link?.type === 'menu'">
+                                        <button type="button" @click="activeLink = link" class="inline-flex items-center space-x-4">
+                                            <span class="text-2xl md:text-3xl font-medium text-gray-900 z-50 focus-visible:outline-none">{{ link.text }}</span>
+                                            <span class="inline-flex justify-center items-center bg-gray-100 rounded-full w-6 h-6">
+                                                <Icon name="tabler:arrow-right" class="h-4 w-4" aria-hidden="true" role="presentation" />
+                                            </span>
+                                        </button>
+                                    </div>
+                                </MotionGroup>
+                            </div>
 
-                            <template v-if="activeLink" v-for="link in activeLink?.subitems" :key="link.id">
-                                <template v-if="link?.type === 'link' || link?.type === 'page'">
-                                    <NuxtLink :to="link?.type === 'link' ? link?.link : `/${link?.page?.slug}`" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.title }}</NuxtLink>
-                                </template>
+                            <div v-if="activeLink" v-for="link in activeLink?.subitems" :key="link.id" class="mb-3">
+                                <MotionGroup preset="slideVisibleRight" :duration="400">
+                                    <div v-if="link?.type === 'link' || link?.type === 'page'">
+                                        <NuxtLink :to="link?.type === 'link' ? link?.link : `/${link?.page?.slug}`" @click="isMobileMenuVisible = false" class="text-2xl md:text-3xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.title }}</NuxtLink>
+                                    </div>
 
-                                <template v-if="link?.type === 'menu'">
-                                    <button type="button" @click="activeLink = link" class="text-2xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.text }}</button>
-                                </template>
-                            </template>
+                                    <div v-if="link?.type === 'menu'">
+                                        <button type="button" @click="activeLink = link" class="text-2xl md:text-3xl font-medium text-gray-900 py-2 z-50 focus-visible:outline-none" >{{ link.text }}</button>
+                                    </div>
+                                </MotionGroup>                             
+                            </div>
                         </div>
                     </HeadlessDialogPanel>
                 </HeadlessTransitionChild>
