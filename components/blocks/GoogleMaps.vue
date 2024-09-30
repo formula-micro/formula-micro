@@ -26,7 +26,7 @@
             </div>
             <!-- Placeholder -->
             <div v-else class="relative w-full h-96 rounded-lg">
-                <NuxtImg src="/images/googleMapsPlaceholder.jpg" alt="Placeholder Map" class="w-full h-full object-cover absolute inset-0" />
+                <NuxtImg src="/images/googleMapsPlaceholder.webp" alt="Placeholder Map" class="w-full h-full object-cover absolute inset-0" />
                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70">
                     <p class="text-white text-lg font-semibold text-center px-4">
                         Du har ikke tilladt cookies, der gør det muligt at vise Google Maps. Opdater dine præferencer for at se kortet.
