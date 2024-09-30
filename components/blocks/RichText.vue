@@ -15,8 +15,8 @@
 </script>
 
 <template>
-    <div :class="[ has_vertical_padding ? 'py-4' : '', has_horizontal_padding ? 'xl:px-12' : '', 'flex justify-center items-center w-full' ]">
-        <div :class="[ width?.class, show_title && (title_placement === 'left' || title_placement === 'right') ? 'grid grid-cols-1 xl:grid-cols-[3fr,0.5fr,5fr] gap-x-8' : '', title_placement === 'right' ? 'order-3' : '', has_vertical_padding ? 'py-8 xl:py-16' : '', has_horizontal_padding ? 'px-6 xl:px-0' : '', 'w-full prose' ]">
+    <div :class="[ has_vertical_padding ? 'py-4' : '', has_horizontal_padding ? 'px-6 xl:px-12' : '', 'flex justify-center items-center w-full' ]">
+        <div :class="[ width?.class, show_title && (title_placement === 'left' || title_placement === 'right') ? 'grid grid-cols-1 xl:grid-cols-[3fr,0.5fr,5fr] gap-x-8' : '', title_placement === 'right' ? 'order-3' : '', has_vertical_padding ? 'py-8 xl:py-16' : '', 'w-full prose' ]">
             <h2 v-if="show_title" :class="[ headingClass, title_placement === 'left' || title_placement === 'right' ? 'xl:!mb-0' : '' ]">{{ title }}</h2>
 
             <div v-if="show_title && (title_placement === 'left' || title_placement === 'right')" />

@@ -21,9 +21,12 @@
     <div :class="[ background_color!.class, has_vertical_padding ? 'py-4' : '', 'flex justify-center items-center w-full xl:px-12' ]">
         <div :class="[ width!.class, has_vertical_padding ? 'py-8 xl:py-16' : '', has_horizontal_padding ? 'px-6 xl:px-0' : '', 'w-full prose prose-blue' ]">
             <Tabs value="0">
-                <TabList>
+                <TabList class="overflow-auto">
                     <Tab v-for="(tab, index) in tabs" :key="tab!.id" :value="index.toString()">{{ tab!.name }}</Tab>
                 </TabList>
+                <div v-if="tabs?.length > 2" class="xl:hidden flex justify-center items-center">
+                    <p class="text-gray-600 font-small text-xs">Swipe for at se flere</p>
+                </div>
 
                 <TabPanels>
                     <TabPanel v-for="(tab, index) in tabs" :key="tab!.id" :value="index.toString()">
