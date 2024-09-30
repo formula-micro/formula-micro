@@ -65,7 +65,7 @@
             <!-- Google Maps -->
             <div class="inline-flex justify-between items-center max-w-md">
                 <div class="inline-flex items-center w-full space-x-2">
-                    <NuxtImg src="/images/googleMapsLogo.png" alt="" role="presentation" class="w-5 h-5 lg:w-6 lg:h-6" />
+                    <NuxtImg src="/images/googleMapsLogo.webp" alt="" role="presentation" class="w-5 h-5 lg:w-6 lg:h-6" />
                     <label for="googleMaps">Google Maps</label>
                 </div>
 
