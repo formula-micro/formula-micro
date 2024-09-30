@@ -72,7 +72,7 @@
             <button type="button" @click="onClick" :class="[ internalIsExpanded ? 'mb-6' : 'mb-2', 'w-full flex items-center justify-between group' ]">
                 <div class="flex flex-col w-full">
                     <div class="w-full flex justify-between items-center mb-1">
-                        <h3 :class="[ headingClass, '!mt-0 !mb-0' ]">{{ title }}</h3>
+                        <h3 :class="[ headingClass, 'text-left !mt-0 !mb-0' ]">{{ title }}</h3>
 
                         <span class="flex items-center">
                             <Icon name="tabler:chevron-down" :class="[ internalIsExpanded ? '-rotate-180' : 'rotate-0', 'w-6 h-6 transition transform duration-300 ease-in-out text-gray-400 group-focus:text-gray-900' ]" />

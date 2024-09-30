@@ -37,6 +37,25 @@ export default defineNuxtConfig({
       "nuxt-security",
     ],
 
+    security: {
+        headers: {
+            contentSecurityPolicy: {
+                "frame-ancestors": [ "https://*.formula.nu" ],
+            },
+        },
+    },
+
+    routeRules: {
+        "/kontakt": {
+            security: {
+                headers: {
+                    crossOriginEmbedderPolicy: false,
+                },
+            },
+        }
+    },
+
+
     image: {
         domains: [
             "cms.formula.nu",

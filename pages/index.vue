@@ -40,11 +40,9 @@
     <div class="flex flex-col items-center w-full 3xl:mt-2">
         <div class="flex flex-col justify-center items-center w-full">
             <template v-for="block in blocks">
-                <div v-motion :initial="{ opacity: 0, y: 100 }" :enter="{ opacity: 1, y: 0 }" :duration="700">
-                    <BlocksBannerHero v-if="block.__typename === 'banner_hero_blocks'" :data="block" />
+                <BlocksBannerHero v-if="block.__typename === 'banner_hero_blocks'" :data="block" />
 
-                    <BlocksPartners v-if="block.__typename === 'partners_blocks'" :data="block" class="max-w-7xl px-6 xl:px-12" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" :delay="100" :duration="700" />
-                </div>
+                <BlocksPartners v-if="block.__typename === 'partners_blocks'" :data="block" class="max-w-7xl px-6 xl:px-12" />
 
                 <BlocksTextHero v-if="block.__typename === 'text_hero_blocks'" :data="block" />
 

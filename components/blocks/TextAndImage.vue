@@ -19,7 +19,7 @@
 
 <template>
     <div :class="[ has_vertical_padding ? 'py-4' : '', has_horizontal_padding ? 'px-6 xl:px-12' : '', 'flex justify-center items-center w-full' ]">
-        <div :class="[ width?.class, image_placement === 'right' ? 'xl:grid-cols-[3fr,0.5fr,3fr]' : 'xl:grid-cols-[3fr,0.5fr,3fr]', has_vertical_padding ? 'py-8 xl:py-16' : '', has_horizontal_padding ? 'px-6 xl:px-0' : '', 'grid w-full grid-cols-1 gap-x-8 gap-y-6 lg:gap-y-0 items-center' ]">
+        <div :class="[ width?.class, image_placement === 'right' ? 'xl:grid-cols-[3fr,0.5fr,3fr]' : 'xl:grid-cols-[3fr,0.5fr,3fr]', has_vertical_padding ? 'py-8 xl:py-16' : '', 'grid w-full grid-cols-1 gap-x-8 gap-y-6 lg:gap-y-0 items-center' ]">
             <div :class="[ image_placement === 'right' ? '' : 'xl:order-3', 'prose' ]">
                 <h2 :class="headingClass">{{ title }}</h2>
                 <EditorjsEditorJS :blocks="editor_js_content?.blocks" />
