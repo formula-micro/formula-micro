@@ -40,35 +40,35 @@
     <div class="flex flex-col items-center w-full 3xl:mt-2">
         <div class="flex flex-col justify-center items-center w-full">
             <template v-for="block in blocks">
-                <BlocksBannerHero v-if="block.__typename === 'banner_hero_blocks'" :data="block" />
+                <LazyBlocksBannerHero v-if="block.__typename === 'banner_hero_blocks'" :data="block" />
 
-                <BlocksPartners v-if="block.__typename === 'partners_blocks'" :data="block" class="max-w-7xl px-6 xl:px-12" />
+                <LazyBlocksPartners v-if="block.__typename === 'partners_blocks'" :data="block" class="max-w-7xl px-6 xl:px-12" />
 
-                <BlocksTextHero v-if="block.__typename === 'text_hero_blocks'" :data="block" />
+                <LazyBlocksTextHero v-if="block.__typename === 'text_hero_blocks'" :data="block" />
 
-                <BlocksGallery v-if="block.__typename === 'gallery_blocks'" :data="block" />
+                <LazyBlocksGallery v-if="block.__typename === 'gallery_blocks'" :data="block" />
 
-                <BlocksServicesList v-if="block.__typename === 'services_list_blocks'" :data="block" />
+                <LazyBlocksServicesList v-if="block.__typename === 'services_list_blocks'" :data="block" />
 
-                <BlocksTextAndImage v-if="block.__typename === 'text_and_image_blocks'" :data="block" />
+                <LazyBlocksTextAndImage v-if="block.__typename === 'text_and_image_blocks'" :data="block" />
 
-                <BlocksRichText v-if="block.__typename === 'richtext_blocks'" :data="block" />
+                <LazyBlocksRichText v-if="block.__typename === 'richtext_blocks'" :data="block" />
 
-                <BlocksSpacer v-if="block.__typename === 'spacer_blocks'" :data="block" />
+                <LazyBlocksSpacer v-if="block.__typename === 'spacer_blocks'" :data="block" />
 
-                <BlocksDisclosureGroup v-if="block.__typename === 'disclosure_group_blocks'" :data="block" />
+                <LazyBlocksDisclosureGroup v-if="block.__typename === 'disclosure_group_blocks'" :data="block" />
 
-                <BlocksDisclosure v-if="block.__typename === 'disclosure_blocks'" :is-child="false" :data="block" />
+                <LazyBlocksDisclosure v-if="block.__typename === 'disclosure_blocks'" :is-child="false" :data="block" />
 
-                <BlocksGoogleMaps v-if="block.__typename === 'google_maps_blocks'" :data="block" />
+                <LazyBlocksGoogleMaps v-if="block.__typename === 'google_maps_blocks'" :data="block" />
 
-                <BlocksCookieSelection v-if="block.__typename === 'cookie_selection_blocks'" :data="block" />
+                <LazyBlocksCookieSelection v-if="block.__typename === 'cookie_selection_blocks'" :data="block" />
 
-                <BlocksContactForm v-if="block.__typename === 'contact_form_blocks'" :data="block" />
+                <LazyBlocksContactForm v-if="block.__typename === 'contact_form_blocks'" :data="block" />
 
-                <BlocksColumns v-if="block.__typename === 'columns_blocks'" :data="block" />
+                <LazyBlocksColumns v-if="block.__typename === 'columns_blocks'" :data="block" />
 
-                <BlocksNews v-if="block.__typename === 'news_blocks'" :data="block" />
+                <LazyBlocksNews v-if="block.__typename === 'news_blocks'" :data="block" />
             </template>
         </div>
     </div>
