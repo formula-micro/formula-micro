@@ -13,12 +13,27 @@
 </script>
 
 <template>
-    <NuxtLink :to="type === 'link' ? link : page?.slug" :class="[ background_color?.class, `hover:${background_color_active?.class} focus:${background_color_active?.class}`, 'group relative select-none outline-none flex gap-6 rounded-lg p-3 text-sm leading-6 sm:flex-col sm:p-6' ]">
+    <div v-if="type === 'information'">
         <div v-if="image && !show_large_image" class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-white group-hover:bg-white p-2">
             <NuxtImg :src="`https://cms.formula.nu/assets/${image.id}`" :width="image?.width ?? 48" :height="image?.height ?? 48" aria-hidden="true" role="presentation" sizes="sm:100px" class="rounded-xl w-full" />
         </div>
         <div v-if="image && show_large_image">
-            <NuxtImg :src="`https://cms.formula.nu/assets/${image.id}`" :width="image?.width ?? 48" :height="image?.height ?? 48" aria-hidden="true" role="presentation" sizes="sm:360px" class="w-full max-h-64 object-contain rounded-xl w-full" />
+            <NuxtImg :src="`https://cms.formula.nu/assets/${image.id}`" :width="image?.width ?? 48" :height="image?.height ?? 48" aria-hidden="true" role="presentation" sizes="sm:360px" class="w-full max-h-64 object-contain rounded-xl" />
+        </div>
+        <div :class="[ text_alignment, 'prose' ]">
+            <p class="!no-underline font-semibold text-gray-900">
+                {{ title }}
+                <span class="absolute inset-0" />
+            </p>
+            <div class="mt-1 text-gray-600" v-html="description" v-if="description && description.length > 0" />
+        </div>
+    </div>
+    <NuxtLink v-else :to="type === 'link' ? link : page?.slug" :class="[ background_color?.class, `hover:${background_color_active?.class} focus:${background_color_active?.class}`, 'group relative select-none outline-none flex gap-6 rounded-lg p-3 text-sm leading-6 sm:flex-col sm:p-6' ]">
+        <div v-if="image && !show_large_image" class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-white group-hover:bg-white p-2">
+            <NuxtImg :src="`https://cms.formula.nu/assets/${image.id}`" :width="image?.width ?? 48" :height="image?.height ?? 48" aria-hidden="true" role="presentation" sizes="sm:100px" class="rounded-xl w-full" />
+        </div>
+        <div v-if="image && show_large_image">
+            <NuxtImg :src="`https://cms.formula.nu/assets/${image.id}`" :width="image?.width ?? 48" :height="image?.height ?? 48" aria-hidden="true" role="presentation" sizes="sm:360px" class="w-full max-h-64 object-contain rounded-xl" />
         </div>
         <div :class="[ text_alignment, 'prose' ]">
             <p class="!no-underline font-semibold text-gray-900">
