@@ -28,7 +28,7 @@
             <div/>
 
             <div :class="[ image_placement === 'right' ? '' : 'xl:-order-3' ]">
-                <NuxtImg v-if="isImageAvailable" :src="`https://cms.formula.nu/assets/${image.id}`" :width="image?.width" :height="image?.height" aria-hidden="true" role="presentation" sizes="sm:512px md:1024px" quality="80" format="webp" :class="[ image_position, image_fit, image_size, 'rounded-xl w-full' ]" />
+                <NuxtImg v-if="isImageAvailable" :src="`https://cms.formula.nu/assets/${image.id}`" :width="738" :height="492" aria-hidden="true" role="presentation" sizes="sm:512px md:1024px" quality="80" format="webp" :class="[ image_position, image_fit, image_size, 'rounded-xl w-full' ]" />
                 <p v-else class="text-gray-500">Billedet er ikke tilgængeligt.</p>
             </div>
         </div>
