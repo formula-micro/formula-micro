@@ -97,9 +97,9 @@
             <!-- It seems v-motion doesn't respect css z-index -->
             <NuxtImg v-motion :initial="{ opacity: 100 }" :src="post?.cover_image?.id ? `https://cms.formula.nu/assets/${post.cover_image.id}` : '/images/nyheder.webp'" :width="post?.cover_image?.width ?? 1280" :height="post?.cover_image?.height ?? 826" preload format="webp" sizes="sm:512px md:860px lg:1600px" class="mt-6 object-cover rounded-xl w-full max-h-2xl" alt="" role="presentation" />
             <div class="mt-1 space-y-1">
-                <p class="text-sm font-medium" v-if="post?.cover_image?.description">{{ post.cover_image.description }}</p>
-                <div class="text-sm font-medium prose" v-html="post?.cover_image?.attribution" v-if="post?.cover_image?.attribution" />
-                <p class="text-sm text-gray-500 mb-2">Udgivet d. {{ getDate(post?.date_published) }} &middot; {{ getTime(post?.date_published) }}</p>
+                <p class="font-medium" v-if="post?.cover_image?.description">{{ post.cover_image.description }}</p>
+                <div class="font-medium prose" v-html="post?.cover_image?.attribution" v-if="post?.cover_image?.attribution" />
+                <p class="text-gray-500 mb-2">Udgivet d. {{ getDate(post?.date_published) }} &middot; {{ getTime(post?.date_published) }}</p>
             </div>
         </div>
 
