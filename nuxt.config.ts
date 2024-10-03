@@ -34,26 +34,26 @@ export default defineNuxtConfig({
               },
           }
       ],
-      "nuxt-security",
+    //   "nuxt-security",
     ],
 
-    security: {
-        headers: {
-            contentSecurityPolicy: {
-                "frame-ancestors": [ "https://*.formula.nu" ],
-            },
-        },
-    },
+    // security: {
+    //     headers: {
+    //         contentSecurityPolicy: {
+    //             "frame-ancestors": [ "https://*.formula.nu" ],
+    //         },
+    //     },
+    // },
 
-    routeRules: {
-        "/kontakt": {
-            security: {
-                headers: {
-                    crossOriginEmbedderPolicy: false,
-                },
-            },
-        }
-    },
+    // routeRules: {
+    //     "/kontakt": {
+    //         security: {
+    //             headers: {
+    //                 crossOriginEmbedderPolicy: false,
+    //             },
+    //         },
+    //     }
+    // },
 
 
     image: {

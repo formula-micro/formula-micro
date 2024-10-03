@@ -163,7 +163,7 @@ fragment TextAndImageBlock on text_and_image_blocks {
     has_vertical_padding
     has_horizontal_padding
     title
-    editor_js_content: content
+    editorjs_content
     image_placement
     image_position
     image_fit
@@ -202,7 +202,7 @@ fragment RichTextBlock on richtext_blocks {
     title
     show_title
     title_placement
-    editor_js_content: content
+    editorjs_content
 }
 
 fragment DisclosureGroupBlock on disclosure_group_blocks {
@@ -239,7 +239,7 @@ fragment DisclosureBlock on disclosure_blocks {
     has_horizontal_padding
     title
     is_expanded_by_default
-    editor_js_content: content
+    editorjs_content
 }
 
 fragment TabsBlock on tabs_blocks {

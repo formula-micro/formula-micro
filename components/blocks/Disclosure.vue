@@ -11,9 +11,8 @@
     const props = defineProps<Properties>();
 
     // Fields.
-    const { __typename, width, has_vertical_padding, has_horizontal_padding, title, is_expanded_by_default, editor_js_content } = toRefs(props.data);
     const emit = defineEmits(["on-expanded", "on-collapsed"]);
-    const internalIsExpanded = ref(is_expanded_by_default?.value ?? false);
+    const internalIsExpanded = ref(props.data.is_expanded_by_default ?? false);
     const overflowControl = ref("");
     
     // Methods.
@@ -67,12 +66,12 @@
 </script>
  
 <template>
-    <div :class="[ has_horizontal_padding ? 'px-6 xl:px-12' : '', 'flex justify-center items-center w-full' ]">
-        <div :class="[ overflowControl, width?.class, !isChild ? 'py-2' : '', 'w-full prose' ]">               
+    <div :class="[ data.has_horizontal_padding ? 'px-6 xl:px-12' : '', 'flex justify-center items-center w-full' ]">
+        <div :class="[ overflowControl, data.width?.class, !isChild ? 'py-2' : '', 'w-full prose' ]">               
             <button type="button" @click="onClick" :class="[ internalIsExpanded ? 'mb-6' : 'mb-2', 'w-full flex items-center justify-between group' ]">
                 <div class="flex flex-col w-full">
                     <div class="w-full flex justify-between items-center mb-1">
-                        <h3 :class="[ headingClass, 'text-left !mt-0 !mb-0' ]">{{ title }}</h3>
+                        <h3 :class="[ headingClass, 'text-left !mt-0 !mb-0' ]">{{ data.title }}</h3>
 
                         <span class="flex items-center">
                             <Icon name="tabler:chevron-down" :class="[ internalIsExpanded ? '-rotate-180' : 'rotate-0', 'w-6 h-6 transition transform duration-300 ease-in-out text-gray-400 group-focus:text-gray-900' ]" />
@@ -92,7 +91,7 @@
                         @leave="leave">
 
                 <div v-show="internalIsExpanded">
-                    <EditorjsEditorJS :blocks="editor_js_content?.blocks" />
+                    <EditorjsEditorJS :blocks="data.editorjs_content?.blocks" />
                 </div>
             </transition>
         </div>

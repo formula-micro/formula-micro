@@ -1384,103 +1384,6 @@ export default {
             ]
           },
           {
-            "name": "create_customers_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_customers_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "customers",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
             "name": "create_disclosure_blocks_item",
             "type": {
               "kind": "OBJECT",
@@ -2578,103 +2481,6 @@ export default {
                   "ofType": {
                     "kind": "OBJECT",
                     "name": "image_blocks",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_items_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_items_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "items",
                     "ofType": null
                   }
                 }
@@ -4197,10 +4003,10 @@ export default {
             ]
           },
           {
-            "name": "create_printers_and_copiers_item",
+            "name": "create_redirects_item",
             "type": {
               "kind": "OBJECT",
-              "name": "printers_and_copiers",
+              "name": "redirects",
               "ofType": null
             },
             "args": [
@@ -4217,7 +4023,7 @@ export default {
             ]
           },
           {
-            "name": "create_printers_and_copiers_items",
+            "name": "create_redirects_items",
             "type": {
               "kind": "NON_NULL",
               "ofType": {
@@ -4226,298 +4032,7 @@ export default {
                   "kind": "NON_NULL",
                   "ofType": {
                     "kind": "OBJECT",
-                    "name": "printers_and_copiers",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_printers_and_copiers_locations_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_locations",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_printers_and_copiers_locations_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "printers_and_copiers_locations",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_printers_and_copiers_models_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_printers_and_copiers_models_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "printers_and_copiers_models",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_purchase_orders_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "purchase_orders",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_purchase_orders_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "purchase_orders",
+                    "name": "redirects",
                     "ofType": null
                   }
                 }
@@ -4615,200 +4130,6 @@ export default {
                   "ofType": {
                     "kind": "OBJECT",
                     "name": "richtext_blocks",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_sales_invoices_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_invoices",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_sales_invoices_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "sales_invoices",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_sales_orders_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_orders",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "create_sales_orders_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "sales_orders",
                     "ofType": null
                   }
                 }
@@ -6642,49 +5963,6 @@ export default {
             ]
           },
           {
-            "name": "delete_customers_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_one",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_customers_items",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_many",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          {
             "name": "delete_disclosure_blocks_item",
             "type": {
               "kind": "OBJECT",
@@ -7179,49 +6457,6 @@ export default {
           },
           {
             "name": "delete_image_blocks_items",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_many",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_items_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_one",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_items_items",
             "type": {
               "kind": "OBJECT",
               "name": "delete_many",
@@ -7889,7 +7124,7 @@ export default {
             ]
           },
           {
-            "name": "delete_printers_and_copiers_item",
+            "name": "delete_redirects_item",
             "type": {
               "kind": "OBJECT",
               "name": "delete_one",
@@ -7909,136 +7144,7 @@ export default {
             ]
           },
           {
-            "name": "delete_printers_and_copiers_items",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_many",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_printers_and_copiers_locations_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_one",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_printers_and_copiers_locations_items",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_many",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_printers_and_copiers_models_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_one",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_printers_and_copiers_models_items",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_many",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_purchase_orders_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_one",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_purchase_orders_items",
+            "name": "delete_redirects_items",
             "type": {
               "kind": "OBJECT",
               "name": "delete_many",
@@ -8082,92 +7188,6 @@ export default {
           },
           {
             "name": "delete_richtext_blocks_items",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_many",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_sales_invoices_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_one",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_sales_invoices_items",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_many",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_sales_orders_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "delete_one",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "delete_sales_orders_items",
             "type": {
               "kind": "OBJECT",
               "name": "delete_many",
@@ -11422,200 +10442,6 @@ export default {
             ]
           },
           {
-            "name": "update_customers_batch",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "customers",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_customers_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_customers_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "customers",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
             "name": "update_disclosure_blocks_batch",
             "type": {
               "kind": "NON_NULL",
@@ -13867,200 +12693,6 @@ export default {
                   "ofType": {
                     "kind": "OBJECT",
                     "name": "image_blocks",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_items_batch",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "items",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_items_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_items_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "items",
                     "ofType": null
                   }
                 }
@@ -17088,7 +15720,7 @@ export default {
             ]
           },
           {
-            "name": "update_printers_and_copiers_batch",
+            "name": "update_redirects_batch",
             "type": {
               "kind": "NON_NULL",
               "ofType": {
@@ -17097,7 +15729,7 @@ export default {
                   "kind": "NON_NULL",
                   "ofType": {
                     "kind": "OBJECT",
-                    "name": "printers_and_copiers",
+                    "name": "redirects",
                     "ofType": null
                   }
                 }
@@ -17165,10 +15797,10 @@ export default {
             ]
           },
           {
-            "name": "update_printers_and_copiers_item",
+            "name": "update_redirects_item",
             "type": {
               "kind": "OBJECT",
-              "name": "printers_and_copiers",
+              "name": "redirects",
               "ofType": null
             },
             "args": [
@@ -17195,7 +15827,7 @@ export default {
             ]
           },
           {
-            "name": "update_printers_and_copiers_items",
+            "name": "update_redirects_items",
             "type": {
               "kind": "NON_NULL",
               "ofType": {
@@ -17204,589 +15836,7 @@ export default {
                   "kind": "NON_NULL",
                   "ofType": {
                     "kind": "OBJECT",
-                    "name": "printers_and_copiers",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_printers_and_copiers_locations_batch",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "printers_and_copiers_locations",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_printers_and_copiers_locations_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_locations",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_printers_and_copiers_locations_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "printers_and_copiers_locations",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_printers_and_copiers_models_batch",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "printers_and_copiers_models",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_printers_and_copiers_models_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_printers_and_copiers_models_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "printers_and_copiers_models",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_purchase_orders_batch",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "purchase_orders",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_purchase_orders_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "purchase_orders",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_purchase_orders_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "purchase_orders",
+                    "name": "redirects",
                     "ofType": null
                   }
                 }
@@ -17981,394 +16031,6 @@ export default {
                   "ofType": {
                     "kind": "OBJECT",
                     "name": "richtext_blocks",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_sales_invoices_batch",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "sales_invoices",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_sales_invoices_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_invoices",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_sales_invoices_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "sales_invoices",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "ids",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "LIST",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_sales_orders_batch",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "sales_orders",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "NON_NULL",
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "Any"
-                    }
-                  }
-                }
-              },
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_sales_orders_item",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_orders",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "data",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "update_sales_orders_items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "sales_orders",
                     "ofType": null
                   }
                 }
@@ -23511,201 +21173,6 @@ export default {
             ]
           },
           {
-            "name": "customers",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "customers",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "customers_aggregated",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "customers_aggregated",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "groupBy",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "customers_by_id",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "customers_by_version",
-            "type": {
-              "kind": "OBJECT",
-              "name": "version_customers",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
             "name": "disclosure_blocks",
             "type": {
               "kind": "NON_NULL",
@@ -26020,201 +23487,6 @@ export default {
             "type": {
               "kind": "OBJECT",
               "name": "version_image_blocks",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "items",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "items",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "items_aggregated",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "items_aggregated",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "groupBy",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "items_by_id",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "items_by_version",
-            "type": {
-              "kind": "OBJECT",
-              "name": "version_items",
               "ofType": null
             },
             "args": [
@@ -29240,7 +26512,7 @@ export default {
             ]
           },
           {
-            "name": "printers_and_copiers",
+            "name": "redirects",
             "type": {
               "kind": "NON_NULL",
               "ofType": {
@@ -29249,7 +26521,7 @@ export default {
                   "kind": "NON_NULL",
                   "ofType": {
                     "kind": "OBJECT",
-                    "name": "printers_and_copiers",
+                    "name": "redirects",
                     "ofType": null
                   }
                 }
@@ -29304,7 +26576,7 @@ export default {
             ]
           },
           {
-            "name": "printers_and_copiers_aggregated",
+            "name": "redirects_aggregated",
             "type": {
               "kind": "NON_NULL",
               "ofType": {
@@ -29313,202 +26585,7 @@ export default {
                   "kind": "NON_NULL",
                   "ofType": {
                     "kind": "OBJECT",
-                    "name": "printers_and_copiers_aggregated",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "groupBy",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "printers_and_copiers_by_id",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "printers_and_copiers_by_version",
-            "type": {
-              "kind": "OBJECT",
-              "name": "version_printers_and_copiers",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "printers_and_copiers_locations",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "printers_and_copiers_locations",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "printers_and_copiers_locations_aggregated",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "printers_and_copiers_locations_aggregated",
+                    "name": "redirects_aggregated",
                     "ofType": null
                   }
                 }
@@ -29573,10 +26650,10 @@ export default {
             ]
           },
           {
-            "name": "printers_and_copiers_locations_by_id",
+            "name": "redirects_by_id",
             "type": {
               "kind": "OBJECT",
-              "name": "printers_and_copiers_locations",
+              "name": "redirects",
               "ofType": null
             },
             "args": [
@@ -29600,400 +26677,10 @@ export default {
             ]
           },
           {
-            "name": "printers_and_copiers_locations_by_version",
+            "name": "redirects_by_version",
             "type": {
               "kind": "OBJECT",
-              "name": "version_printers_and_copiers_locations",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "printers_and_copiers_models",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "printers_and_copiers_models",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "printers_and_copiers_models_aggregated",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "printers_and_copiers_models_aggregated",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "groupBy",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "printers_and_copiers_models_by_id",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "printers_and_copiers_models_by_version",
-            "type": {
-              "kind": "OBJECT",
-              "name": "version_printers_and_copiers_models",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "purchase_orders",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "purchase_orders",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "purchase_orders_aggregated",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "purchase_orders_aggregated",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "groupBy",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "purchase_orders_by_id",
-            "type": {
-              "kind": "OBJECT",
-              "name": "purchase_orders",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "purchase_orders_by_version",
-            "type": {
-              "kind": "OBJECT",
-              "name": "version_purchase_orders",
+              "name": "version_redirects",
               "ofType": null
             },
             "args": [
@@ -30189,396 +26876,6 @@ export default {
             "type": {
               "kind": "OBJECT",
               "name": "version_richtext_blocks",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "sales_invoices",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "sales_invoices",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "sales_invoices_aggregated",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "sales_invoices_aggregated",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "groupBy",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "sales_invoices_by_id",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_invoices",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "sales_invoices_by_version",
-            "type": {
-              "kind": "OBJECT",
-              "name": "version_sales_invoices",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "sales_orders",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "sales_orders",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "sales_orders_aggregated",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "sales_orders_aggregated",
-                    "ofType": null
-                  }
-                }
-              }
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "groupBy",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "sales_orders_by_id",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_orders",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "id",
-                "type": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              },
-              {
-                "name": "version",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "sales_orders_by_version",
-            "type": {
-              "kind": "OBJECT",
-              "name": "version_sales_orders",
               "ofType": null
             },
             "args": [
@@ -33190,23 +29487,6 @@ export default {
             ]
           },
           {
-            "name": "customers_mutated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers_mutated",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "event",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
             "name": "directus_access_mutated",
             "type": {
               "kind": "OBJECT",
@@ -33751,23 +30031,6 @@ export default {
             ]
           },
           {
-            "name": "items_mutated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items_mutated",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "event",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
             "name": "languages_mutated",
             "type": {
               "kind": "OBJECT",
@@ -34057,61 +30320,10 @@ export default {
             ]
           },
           {
-            "name": "printers_and_copiers_locations_mutated",
+            "name": "redirects_mutated",
             "type": {
               "kind": "OBJECT",
-              "name": "printers_and_copiers_locations_mutated",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "event",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "printers_and_copiers_models_mutated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models_mutated",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "event",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "printers_and_copiers_mutated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_mutated",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "event",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "purchase_orders_mutated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "purchase_orders_mutated",
+              "name": "redirects_mutated",
               "ofType": null
             },
             "args": [
@@ -34129,40 +30341,6 @@ export default {
             "type": {
               "kind": "OBJECT",
               "name": "richtext_blocks_mutated",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "event",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "sales_invoices_mutated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_invoices_mutated",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "event",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              }
-            ]
-          },
-          {
-            "name": "sales_orders_mutated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_orders_mutated",
               "ofType": null
             },
             "args": [
@@ -41377,432 +37555,6 @@ export default {
       },
       {
         "kind": "OBJECT",
-        "name": "customers",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          },
-          {
-            "name": "name",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "status",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "customers_aggregated",
-        "fields": [
-          {
-            "name": "avg",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "avgDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "count",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "countAll",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "countDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "group",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "max",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "min",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sum",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sumDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "customers_aggregated_count",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "name",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "status",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "customers_aggregated_fields",
-        "fields": [
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "customers_mutated",
-        "fields": [
-          {
-            "name": "data",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "event",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "key",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
         "name": "datetime_functions",
         "fields": [
           {
@@ -47833,6 +43585,23 @@ export default {
             "args": []
           },
           {
+            "name": "editorjs_content",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "editorjs_content_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "count_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
             "name": "has_horizontal_padding",
             "type": {
               "kind": "SCALAR",
@@ -48168,6 +43937,14 @@ export default {
           },
           {
             "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "editorjs_content",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -53377,480 +49154,6 @@ export default {
             "type": {
               "kind": "OBJECT",
               "name": "image_blocks",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "event",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "key",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "items",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "description",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "description_2",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number_2",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sales_price",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "search_description",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "items_aggregated",
-        "fields": [
-          {
-            "name": "avg",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "avgDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "count",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "countAll",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "countDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "group",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "max",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "min",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sum",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sumDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "items_aggregated_count",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "description",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "description_2",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number_2",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sales_price",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "search_description",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "items_aggregated_fields",
-        "fields": [
-          {
-            "name": "sales_price",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "items_mutated",
-        "fields": [
-          {
-            "name": "data",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items",
               "ofType": null
             },
             "args": []
@@ -61300,63 +56603,8 @@ export default {
       },
       {
         "kind": "OBJECT",
-        "name": "printers_and_copiers",
+        "name": "redirects",
         "fields": [
-          {
-            "name": "customer",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
           {
             "name": "date_created",
             "type": {
@@ -61403,117 +56651,23 @@ export default {
             "args": []
           },
           {
-            "name": "location",
+            "name": "new_url",
             "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_locations",
-              "ofType": null
+              "kind": "SCALAR",
+              "name": "Any"
             },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
+            "args": []
           },
           {
-            "name": "model",
+            "name": "old_url",
             "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models",
-              "ofType": null
+              "kind": "SCALAR",
+              "name": "Any"
             },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
+            "args": []
           },
           {
-            "name": "serial_number",
+            "name": "response_code",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -61651,13 +56805,13 @@ export default {
       },
       {
         "kind": "OBJECT",
-        "name": "printers_and_copiers_aggregated",
+        "name": "redirects_aggregated",
         "fields": [
           {
             "name": "avg",
             "type": {
               "kind": "OBJECT",
-              "name": "printers_and_copiers_aggregated_fields",
+              "name": "redirects_aggregated_fields",
               "ofType": null
             },
             "args": []
@@ -61666,7 +56820,7 @@ export default {
             "name": "avgDistinct",
             "type": {
               "kind": "OBJECT",
-              "name": "printers_and_copiers_aggregated_fields",
+              "name": "redirects_aggregated_fields",
               "ofType": null
             },
             "args": []
@@ -61675,7 +56829,7 @@ export default {
             "name": "count",
             "type": {
               "kind": "OBJECT",
-              "name": "printers_and_copiers_aggregated_count",
+              "name": "redirects_aggregated_count",
               "ofType": null
             },
             "args": []
@@ -61692,7 +56846,7 @@ export default {
             "name": "countDistinct",
             "type": {
               "kind": "OBJECT",
-              "name": "printers_and_copiers_aggregated_count",
+              "name": "redirects_aggregated_count",
               "ofType": null
             },
             "args": []
@@ -61709,7 +56863,7 @@ export default {
             "name": "max",
             "type": {
               "kind": "OBJECT",
-              "name": "printers_and_copiers_aggregated_fields",
+              "name": "redirects_aggregated_fields",
               "ofType": null
             },
             "args": []
@@ -61718,7 +56872,7 @@ export default {
             "name": "min",
             "type": {
               "kind": "OBJECT",
-              "name": "printers_and_copiers_aggregated_fields",
+              "name": "redirects_aggregated_fields",
               "ofType": null
             },
             "args": []
@@ -61727,7 +56881,7 @@ export default {
             "name": "sum",
             "type": {
               "kind": "OBJECT",
-              "name": "printers_and_copiers_aggregated_fields",
+              "name": "redirects_aggregated_fields",
               "ofType": null
             },
             "args": []
@@ -61736,7 +56890,7 @@ export default {
             "name": "sumDistinct",
             "type": {
               "kind": "OBJECT",
-              "name": "printers_and_copiers_aggregated_fields",
+              "name": "redirects_aggregated_fields",
               "ofType": null
             },
             "args": []
@@ -61746,16 +56900,8 @@ export default {
       },
       {
         "kind": "OBJECT",
-        "name": "printers_and_copiers_aggregated_count",
+        "name": "redirects_aggregated_count",
         "fields": [
-          {
-            "name": "customer",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
           {
             "name": "date_created",
             "type": {
@@ -61781,7 +56927,7 @@ export default {
             "args": []
           },
           {
-            "name": "location",
+            "name": "new_url",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -61789,7 +56935,7 @@ export default {
             "args": []
           },
           {
-            "name": "model",
+            "name": "old_url",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -61797,7 +56943,7 @@ export default {
             "args": []
           },
           {
-            "name": "serial_number",
+            "name": "response_code",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -61841,7 +56987,7 @@ export default {
       },
       {
         "kind": "OBJECT",
-        "name": "printers_and_copiers_aggregated_fields",
+        "name": "redirects_aggregated_fields",
         "fields": [
           {
             "name": "sort",
@@ -61856,1700 +57002,13 @@ export default {
       },
       {
         "kind": "OBJECT",
-        "name": "printers_and_copiers_locations",
-        "fields": [
-          {
-            "name": "address",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "city",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "customer",
-            "type": {
-              "kind": "OBJECT",
-              "name": "customers",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          },
-          {
-            "name": "name",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "phone_number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "post_code",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "printers_and_copiers_locations_aggregated",
-        "fields": [
-          {
-            "name": "avg",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_locations_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "avgDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_locations_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "count",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_locations_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "countAll",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "countDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_locations_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "group",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "max",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_locations_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "min",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_locations_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sum",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_locations_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sumDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_locations_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "printers_and_copiers_locations_aggregated_count",
-        "fields": [
-          {
-            "name": "address",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "city",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "customer",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "name",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "phone_number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "post_code",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "printers_and_copiers_locations_aggregated_fields",
-        "fields": [
-          {
-            "name": "post_code",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "printers_and_copiers_locations_mutated",
+        "name": "redirects_mutated",
         "fields": [
           {
             "name": "data",
             "type": {
               "kind": "OBJECT",
-              "name": "printers_and_copiers_locations",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "event",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "key",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "printers_and_copiers_models",
-        "fields": [
-          {
-            "name": "comments",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "drum_unit",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          },
-          {
-            "name": "name",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "toner_black",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "toner_cyan",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "toner_magenta",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "toner_yellow",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "wastebox",
-            "type": {
-              "kind": "OBJECT",
-              "name": "items",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "printers_and_copiers_models_aggregated",
-        "fields": [
-          {
-            "name": "avg",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "avgDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "count",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "countAll",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "countDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "group",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "max",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "min",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sum",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sumDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "printers_and_copiers_models_aggregated_count",
-        "fields": [
-          {
-            "name": "comments",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "drum_unit",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "name",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "toner_black",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "toner_cyan",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "toner_magenta",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "toner_yellow",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "wastebox",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "printers_and_copiers_models_aggregated_fields",
-        "fields": [
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "printers_and_copiers_models_mutated",
-        "fields": [
-          {
-            "name": "data",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers_models",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "event",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "key",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "printers_and_copiers_mutated",
-        "fields": [
-          {
-            "name": "data",
-            "type": {
-              "kind": "OBJECT",
-              "name": "printers_and_copiers",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "event",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "key",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "purchase_orders",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "purchase_orders_aggregated",
-        "fields": [
-          {
-            "name": "avg",
-            "type": {
-              "kind": "OBJECT",
-              "name": "purchase_orders_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "avgDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "purchase_orders_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "count",
-            "type": {
-              "kind": "OBJECT",
-              "name": "purchase_orders_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "countAll",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "countDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "purchase_orders_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "group",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "max",
-            "type": {
-              "kind": "OBJECT",
-              "name": "purchase_orders_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "min",
-            "type": {
-              "kind": "OBJECT",
-              "name": "purchase_orders_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sum",
-            "type": {
-              "kind": "OBJECT",
-              "name": "purchase_orders_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sumDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "purchase_orders_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "purchase_orders_aggregated_count",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "purchase_orders_aggregated_fields",
-        "fields": [
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "purchase_orders_mutated",
-        "fields": [
-          {
-            "name": "data",
-            "type": {
-              "kind": "OBJECT",
-              "name": "purchase_orders",
+              "name": "redirects",
               "ofType": null
             },
             "args": []
@@ -63627,6 +57086,23 @@ export default {
             "type": {
               "kind": "OBJECT",
               "name": "datetime_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
+            "name": "editorjs_content",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "editorjs_content_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "count_functions",
               "ofType": null
             },
             "args": []
@@ -63982,6 +57458,14 @@ export default {
             "args": []
           },
           {
+            "name": "editorjs_content",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
             "name": "has_horizontal_padding",
             "type": {
               "kind": "SCALAR",
@@ -64088,778 +57572,6 @@ export default {
             "type": {
               "kind": "OBJECT",
               "name": "richtext_blocks",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "event",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "key",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "sales_invoices",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "sales_invoices_aggregated",
-        "fields": [
-          {
-            "name": "avg",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_invoices_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "avgDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_invoices_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "count",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_invoices_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "countAll",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "countDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_invoices_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "group",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "max",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_invoices_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "min",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_invoices_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sum",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_invoices_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sumDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_invoices_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "sales_invoices_aggregated_count",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "sales_invoices_aggregated_fields",
-        "fields": [
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "sales_invoices_mutated",
-        "fields": [
-          {
-            "name": "data",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_invoices",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "event",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "key",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "sales_orders",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated_func",
-            "type": {
-              "kind": "OBJECT",
-              "name": "datetime_functions",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "OBJECT",
-              "name": "directus_users",
-              "ofType": null
-            },
-            "args": [
-              {
-                "name": "filter",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "limit",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "offset",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "page",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "search",
-                "type": {
-                  "kind": "SCALAR",
-                  "name": "Any"
-                }
-              },
-              {
-                "name": "sort",
-                "type": {
-                  "kind": "LIST",
-                  "ofType": {
-                    "kind": "SCALAR",
-                    "name": "Any"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "sales_orders_aggregated",
-        "fields": [
-          {
-            "name": "avg",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_orders_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "avgDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_orders_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "count",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_orders_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "countAll",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "countDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_orders_aggregated_count",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "group",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "max",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_orders_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "min",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_orders_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sum",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_orders_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          },
-          {
-            "name": "sumDistinct",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_orders_aggregated_fields",
-              "ofType": null
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "sales_orders_aggregated_count",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "sales_orders_aggregated_fields",
-        "fields": [
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "sales_orders_mutated",
-        "fields": [
-          {
-            "name": "data",
-            "type": {
-              "kind": "OBJECT",
-              "name": "sales_orders",
               "ofType": null
             },
             "args": []
@@ -68668,6 +61380,23 @@ export default {
             "args": []
           },
           {
+            "name": "editorjs_content",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "editorjs_content_func",
+            "type": {
+              "kind": "OBJECT",
+              "name": "count_functions",
+              "ofType": null
+            },
+            "args": []
+          },
+          {
             "name": "has_horizontal_padding",
             "type": {
               "kind": "SCALAR",
@@ -69082,6 +61811,14 @@ export default {
           },
           {
             "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "editorjs_content",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -71159,85 +63896,6 @@ export default {
       },
       {
         "kind": "OBJECT",
-        "name": "version_customers",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "name",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "status",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
         "name": "version_disclosure_blocks",
         "fields": [
           {
@@ -71258,6 +63916,14 @@ export default {
           },
           {
             "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "editorjs_content",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -72135,109 +64801,6 @@ export default {
           },
           {
             "name": "image_size",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "version_items",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "description",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "description_2",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number_2",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sales_price",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "search_description",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -73552,16 +66115,8 @@ export default {
       },
       {
         "kind": "OBJECT",
-        "name": "version_printers_and_copiers",
+        "name": "version_redirects",
         "fields": [
-          {
-            "name": "customer",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
           {
             "name": "date_created",
             "type": {
@@ -73587,7 +66142,7 @@ export default {
             "args": []
           },
           {
-            "name": "location",
+            "name": "new_url",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -73595,7 +66150,7 @@ export default {
             "args": []
           },
           {
-            "name": "model",
+            "name": "old_url",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -73603,7 +66158,7 @@ export default {
             "args": []
           },
           {
-            "name": "serial_number",
+            "name": "response_code",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -73620,291 +66175,6 @@ export default {
           },
           {
             "name": "status",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "version_printers_and_copiers_locations",
-        "fields": [
-          {
-            "name": "address",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "city",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "customer",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "name",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "phone_number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "post_code",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "version_printers_and_copiers_models",
-        "fields": [
-          {
-            "name": "comments",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "drum_unit",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "name",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "toner_black",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "toner_cyan",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "toner_magenta",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "toner_yellow",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "wastebox",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "version_purchase_orders",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -73952,6 +66222,14 @@ export default {
           },
           {
             "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "editorjs_content",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -74032,132 +66310,6 @@ export default {
           },
           {
             "name": "width",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "version_sales_invoices",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          }
-        ],
-        "interfaces": []
-      },
-      {
-        "kind": "OBJECT",
-        "name": "version_sales_orders",
-        "fields": [
-          {
-            "name": "date_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "date_updated",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "id",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "number",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "sort",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_created",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any"
-            },
-            "args": []
-          },
-          {
-            "name": "user_updated",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -74789,6 +66941,14 @@ export default {
           },
           {
             "name": "date_updated",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any"
+            },
+            "args": []
+          },
+          {
+            "name": "editorjs_content",
             "type": {
               "kind": "SCALAR",
               "name": "Any"
@@ -76002,8 +68162,6 @@ export type Mutation = {
   create_contact_forms_items: Array<Contact_Forms>;
   create_cookie_selection_blocks_item?: Maybe<Cookie_Selection_Blocks>;
   create_cookie_selection_blocks_items: Array<Cookie_Selection_Blocks>;
-  create_customers_item?: Maybe<Customers>;
-  create_customers_items: Array<Customers>;
   create_disclosure_blocks_item?: Maybe<Disclosure_Blocks>;
   create_disclosure_blocks_items: Array<Disclosure_Blocks>;
   create_disclosure_group_blocks_item?: Maybe<Disclosure_Group_Blocks>;
@@ -76028,8 +68186,6 @@ export type Mutation = {
   create_heights_translations_items: Array<Heights_Translations>;
   create_image_blocks_item?: Maybe<Image_Blocks>;
   create_image_blocks_items: Array<Image_Blocks>;
-  create_items_item?: Maybe<Items>;
-  create_items_items: Array<Items>;
   create_languages_item?: Maybe<Languages>;
   create_languages_items: Array<Languages>;
   create_navigation_menu_calls_to_action_item?: Maybe<Navigation_Menu_Calls_To_Action>;
@@ -76060,20 +68216,10 @@ export type Mutation = {
   create_partners_blocks_partners_items: Array<Partners_Blocks_Partners>;
   create_partners_item?: Maybe<Partners>;
   create_partners_items: Array<Partners>;
-  create_printers_and_copiers_item?: Maybe<Printers_And_Copiers>;
-  create_printers_and_copiers_items: Array<Printers_And_Copiers>;
-  create_printers_and_copiers_locations_item?: Maybe<Printers_And_Copiers_Locations>;
-  create_printers_and_copiers_locations_items: Array<Printers_And_Copiers_Locations>;
-  create_printers_and_copiers_models_item?: Maybe<Printers_And_Copiers_Models>;
-  create_printers_and_copiers_models_items: Array<Printers_And_Copiers_Models>;
-  create_purchase_orders_item?: Maybe<Purchase_Orders>;
-  create_purchase_orders_items: Array<Purchase_Orders>;
+  create_redirects_item?: Maybe<Redirects>;
+  create_redirects_items: Array<Redirects>;
   create_richtext_blocks_item?: Maybe<Richtext_Blocks>;
   create_richtext_blocks_items: Array<Richtext_Blocks>;
-  create_sales_invoices_item?: Maybe<Sales_Invoices>;
-  create_sales_invoices_items: Array<Sales_Invoices>;
-  create_sales_orders_item?: Maybe<Sales_Orders>;
-  create_sales_orders_items: Array<Sales_Orders>;
   create_services_list_blocks_item?: Maybe<Services_List_Blocks>;
   create_services_list_blocks_items: Array<Services_List_Blocks>;
   create_services_list_blocks_links_item?: Maybe<Services_List_Blocks_Links>;
@@ -76126,8 +68272,6 @@ export type Mutation = {
   delete_contact_forms_items?: Maybe<Delete_Many>;
   delete_cookie_selection_blocks_item?: Maybe<Delete_One>;
   delete_cookie_selection_blocks_items?: Maybe<Delete_Many>;
-  delete_customers_item?: Maybe<Delete_One>;
-  delete_customers_items?: Maybe<Delete_Many>;
   delete_disclosure_blocks_item?: Maybe<Delete_One>;
   delete_disclosure_blocks_items?: Maybe<Delete_Many>;
   delete_disclosure_group_blocks_item?: Maybe<Delete_One>;
@@ -76152,8 +68296,6 @@ export type Mutation = {
   delete_heights_translations_items?: Maybe<Delete_Many>;
   delete_image_blocks_item?: Maybe<Delete_One>;
   delete_image_blocks_items?: Maybe<Delete_Many>;
-  delete_items_item?: Maybe<Delete_One>;
-  delete_items_items?: Maybe<Delete_Many>;
   delete_languages_item?: Maybe<Delete_One>;
   delete_languages_items?: Maybe<Delete_Many>;
   delete_navigation_menu_calls_to_action_item?: Maybe<Delete_One>;
@@ -76184,20 +68326,10 @@ export type Mutation = {
   delete_partners_blocks_partners_items?: Maybe<Delete_Many>;
   delete_partners_item?: Maybe<Delete_One>;
   delete_partners_items?: Maybe<Delete_Many>;
-  delete_printers_and_copiers_item?: Maybe<Delete_One>;
-  delete_printers_and_copiers_items?: Maybe<Delete_Many>;
-  delete_printers_and_copiers_locations_item?: Maybe<Delete_One>;
-  delete_printers_and_copiers_locations_items?: Maybe<Delete_Many>;
-  delete_printers_and_copiers_models_item?: Maybe<Delete_One>;
-  delete_printers_and_copiers_models_items?: Maybe<Delete_Many>;
-  delete_purchase_orders_item?: Maybe<Delete_One>;
-  delete_purchase_orders_items?: Maybe<Delete_Many>;
+  delete_redirects_item?: Maybe<Delete_One>;
+  delete_redirects_items?: Maybe<Delete_Many>;
   delete_richtext_blocks_item?: Maybe<Delete_One>;
   delete_richtext_blocks_items?: Maybe<Delete_Many>;
-  delete_sales_invoices_item?: Maybe<Delete_One>;
-  delete_sales_invoices_items?: Maybe<Delete_Many>;
-  delete_sales_orders_item?: Maybe<Delete_One>;
-  delete_sales_orders_items?: Maybe<Delete_Many>;
   delete_services_list_blocks_item?: Maybe<Delete_One>;
   delete_services_list_blocks_items?: Maybe<Delete_Many>;
   delete_services_list_blocks_links_item?: Maybe<Delete_One>;
@@ -76264,9 +68396,6 @@ export type Mutation = {
   update_cookie_selection_blocks_batch: Array<Cookie_Selection_Blocks>;
   update_cookie_selection_blocks_item?: Maybe<Cookie_Selection_Blocks>;
   update_cookie_selection_blocks_items: Array<Cookie_Selection_Blocks>;
-  update_customers_batch: Array<Customers>;
-  update_customers_item?: Maybe<Customers>;
-  update_customers_items: Array<Customers>;
   update_disclosure_blocks_batch: Array<Disclosure_Blocks>;
   update_disclosure_blocks_item?: Maybe<Disclosure_Blocks>;
   update_disclosure_blocks_items: Array<Disclosure_Blocks>;
@@ -76303,9 +68432,6 @@ export type Mutation = {
   update_image_blocks_batch: Array<Image_Blocks>;
   update_image_blocks_item?: Maybe<Image_Blocks>;
   update_image_blocks_items: Array<Image_Blocks>;
-  update_items_batch: Array<Items>;
-  update_items_item?: Maybe<Items>;
-  update_items_items: Array<Items>;
   update_languages_batch: Array<Languages>;
   update_languages_item?: Maybe<Languages>;
   update_languages_items: Array<Languages>;
@@ -76353,27 +68479,12 @@ export type Mutation = {
   update_partners_blocks_partners_items: Array<Partners_Blocks_Partners>;
   update_partners_item?: Maybe<Partners>;
   update_partners_items: Array<Partners>;
-  update_printers_and_copiers_batch: Array<Printers_And_Copiers>;
-  update_printers_and_copiers_item?: Maybe<Printers_And_Copiers>;
-  update_printers_and_copiers_items: Array<Printers_And_Copiers>;
-  update_printers_and_copiers_locations_batch: Array<Printers_And_Copiers_Locations>;
-  update_printers_and_copiers_locations_item?: Maybe<Printers_And_Copiers_Locations>;
-  update_printers_and_copiers_locations_items: Array<Printers_And_Copiers_Locations>;
-  update_printers_and_copiers_models_batch: Array<Printers_And_Copiers_Models>;
-  update_printers_and_copiers_models_item?: Maybe<Printers_And_Copiers_Models>;
-  update_printers_and_copiers_models_items: Array<Printers_And_Copiers_Models>;
-  update_purchase_orders_batch: Array<Purchase_Orders>;
-  update_purchase_orders_item?: Maybe<Purchase_Orders>;
-  update_purchase_orders_items: Array<Purchase_Orders>;
+  update_redirects_batch: Array<Redirects>;
+  update_redirects_item?: Maybe<Redirects>;
+  update_redirects_items: Array<Redirects>;
   update_richtext_blocks_batch: Array<Richtext_Blocks>;
   update_richtext_blocks_item?: Maybe<Richtext_Blocks>;
   update_richtext_blocks_items: Array<Richtext_Blocks>;
-  update_sales_invoices_batch: Array<Sales_Invoices>;
-  update_sales_invoices_item?: Maybe<Sales_Invoices>;
-  update_sales_invoices_items: Array<Sales_Invoices>;
-  update_sales_orders_batch: Array<Sales_Orders>;
-  update_sales_orders_item?: Maybe<Sales_Orders>;
-  update_sales_orders_items: Array<Sales_Orders>;
   update_services_list_blocks_batch: Array<Services_List_Blocks>;
   update_services_list_blocks_item?: Maybe<Services_List_Blocks>;
   update_services_list_blocks_items: Array<Services_List_Blocks>;
@@ -76637,22 +68748,6 @@ export type MutationCreate_Cookie_Selection_Blocks_ItemsArgs = {
 };
 
 
-export type MutationCreate_Customers_ItemArgs = {
-  data: Create_Customers_Input;
-};
-
-
-export type MutationCreate_Customers_ItemsArgs = {
-  data?: InputMaybe<Array<Create_Customers_Input>>;
-  filter?: InputMaybe<Customers_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
 export type MutationCreate_Disclosure_Blocks_ItemArgs = {
   data: Create_Disclosure_Blocks_Input;
 };
@@ -76837,22 +68932,6 @@ export type MutationCreate_Image_Blocks_ItemArgs = {
 export type MutationCreate_Image_Blocks_ItemsArgs = {
   data?: InputMaybe<Array<Create_Image_Blocks_Input>>;
   filter?: InputMaybe<Image_Blocks_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationCreate_Items_ItemArgs = {
-  data: Create_Items_Input;
-};
-
-
-export type MutationCreate_Items_ItemsArgs = {
-  data?: InputMaybe<Array<Create_Items_Input>>;
-  filter?: InputMaybe<Items_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
@@ -77101,62 +69180,14 @@ export type MutationCreate_Partners_ItemsArgs = {
 };
 
 
-export type MutationCreate_Printers_And_Copiers_ItemArgs = {
-  data: Create_Printers_And_Copiers_Input;
+export type MutationCreate_Redirects_ItemArgs = {
+  data: Create_Redirects_Input;
 };
 
 
-export type MutationCreate_Printers_And_Copiers_ItemsArgs = {
-  data?: InputMaybe<Array<Create_Printers_And_Copiers_Input>>;
-  filter?: InputMaybe<Printers_And_Copiers_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationCreate_Printers_And_Copiers_Locations_ItemArgs = {
-  data: Create_Printers_And_Copiers_Locations_Input;
-};
-
-
-export type MutationCreate_Printers_And_Copiers_Locations_ItemsArgs = {
-  data?: InputMaybe<Array<Create_Printers_And_Copiers_Locations_Input>>;
-  filter?: InputMaybe<Printers_And_Copiers_Locations_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationCreate_Printers_And_Copiers_Models_ItemArgs = {
-  data: Create_Printers_And_Copiers_Models_Input;
-};
-
-
-export type MutationCreate_Printers_And_Copiers_Models_ItemsArgs = {
-  data?: InputMaybe<Array<Create_Printers_And_Copiers_Models_Input>>;
-  filter?: InputMaybe<Printers_And_Copiers_Models_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationCreate_Purchase_Orders_ItemArgs = {
-  data: Create_Purchase_Orders_Input;
-};
-
-
-export type MutationCreate_Purchase_Orders_ItemsArgs = {
-  data?: InputMaybe<Array<Create_Purchase_Orders_Input>>;
-  filter?: InputMaybe<Purchase_Orders_Filter>;
+export type MutationCreate_Redirects_ItemsArgs = {
+  data?: InputMaybe<Array<Create_Redirects_Input>>;
+  filter?: InputMaybe<Redirects_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
@@ -77173,38 +69204,6 @@ export type MutationCreate_Richtext_Blocks_ItemArgs = {
 export type MutationCreate_Richtext_Blocks_ItemsArgs = {
   data?: InputMaybe<Array<Create_Richtext_Blocks_Input>>;
   filter?: InputMaybe<Richtext_Blocks_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationCreate_Sales_Invoices_ItemArgs = {
-  data: Create_Sales_Invoices_Input;
-};
-
-
-export type MutationCreate_Sales_Invoices_ItemsArgs = {
-  data?: InputMaybe<Array<Create_Sales_Invoices_Input>>;
-  filter?: InputMaybe<Sales_Invoices_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationCreate_Sales_Orders_ItemArgs = {
-  data: Create_Sales_Orders_Input;
-};
-
-
-export type MutationCreate_Sales_Orders_ItemsArgs = {
-  data?: InputMaybe<Array<Create_Sales_Orders_Input>>;
-  filter?: InputMaybe<Sales_Orders_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
@@ -77545,16 +69544,6 @@ export type MutationDelete_Cookie_Selection_Blocks_ItemsArgs = {
 };
 
 
-export type MutationDelete_Customers_ItemArgs = {
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationDelete_Customers_ItemsArgs = {
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-};
-
-
 export type MutationDelete_Disclosure_Blocks_ItemArgs = {
   id: Scalars['ID']['input'];
 };
@@ -77671,16 +69660,6 @@ export type MutationDelete_Image_Blocks_ItemArgs = {
 
 
 export type MutationDelete_Image_Blocks_ItemsArgs = {
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-};
-
-
-export type MutationDelete_Items_ItemArgs = {
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationDelete_Items_ItemsArgs = {
   ids: Array<InputMaybe<Scalars['ID']['input']>>;
 };
 
@@ -77835,42 +69814,12 @@ export type MutationDelete_Partners_ItemsArgs = {
 };
 
 
-export type MutationDelete_Printers_And_Copiers_ItemArgs = {
+export type MutationDelete_Redirects_ItemArgs = {
   id: Scalars['ID']['input'];
 };
 
 
-export type MutationDelete_Printers_And_Copiers_ItemsArgs = {
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-};
-
-
-export type MutationDelete_Printers_And_Copiers_Locations_ItemArgs = {
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationDelete_Printers_And_Copiers_Locations_ItemsArgs = {
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-};
-
-
-export type MutationDelete_Printers_And_Copiers_Models_ItemArgs = {
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationDelete_Printers_And_Copiers_Models_ItemsArgs = {
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-};
-
-
-export type MutationDelete_Purchase_Orders_ItemArgs = {
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationDelete_Purchase_Orders_ItemsArgs = {
+export type MutationDelete_Redirects_ItemsArgs = {
   ids: Array<InputMaybe<Scalars['ID']['input']>>;
 };
 
@@ -77881,26 +69830,6 @@ export type MutationDelete_Richtext_Blocks_ItemArgs = {
 
 
 export type MutationDelete_Richtext_Blocks_ItemsArgs = {
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-};
-
-
-export type MutationDelete_Sales_Invoices_ItemArgs = {
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationDelete_Sales_Invoices_ItemsArgs = {
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-};
-
-
-export type MutationDelete_Sales_Orders_ItemArgs = {
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationDelete_Sales_Orders_ItemsArgs = {
   ids: Array<InputMaybe<Scalars['ID']['input']>>;
 };
 
@@ -78431,35 +70360,6 @@ export type MutationUpdate_Cookie_Selection_Blocks_ItemsArgs = {
 };
 
 
-export type MutationUpdate_Customers_BatchArgs = {
-  data?: InputMaybe<Array<Update_Customers_Input>>;
-  filter?: InputMaybe<Customers_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Customers_ItemArgs = {
-  data: Update_Customers_Input;
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationUpdate_Customers_ItemsArgs = {
-  data: Update_Customers_Input;
-  filter?: InputMaybe<Customers_Filter>;
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
 export type MutationUpdate_Disclosure_Blocks_BatchArgs = {
   data?: InputMaybe<Array<Update_Disclosure_Blocks_Input>>;
   filter?: InputMaybe<Disclosure_Blocks_Filter>;
@@ -78799,35 +70699,6 @@ export type MutationUpdate_Image_Blocks_ItemArgs = {
 export type MutationUpdate_Image_Blocks_ItemsArgs = {
   data: Update_Image_Blocks_Input;
   filter?: InputMaybe<Image_Blocks_Filter>;
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Items_BatchArgs = {
-  data?: InputMaybe<Array<Update_Items_Input>>;
-  filter?: InputMaybe<Items_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Items_ItemArgs = {
-  data: Update_Items_Input;
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationUpdate_Items_ItemsArgs = {
-  data: Update_Items_Input;
-  filter?: InputMaybe<Items_Filter>;
   ids: Array<InputMaybe<Scalars['ID']['input']>>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
@@ -79282,9 +71153,9 @@ export type MutationUpdate_Partners_ItemsArgs = {
 };
 
 
-export type MutationUpdate_Printers_And_Copiers_BatchArgs = {
-  data?: InputMaybe<Array<Update_Printers_And_Copiers_Input>>;
-  filter?: InputMaybe<Printers_And_Copiers_Filter>;
+export type MutationUpdate_Redirects_BatchArgs = {
+  data?: InputMaybe<Array<Update_Redirects_Input>>;
+  filter?: InputMaybe<Redirects_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
@@ -79293,102 +71164,15 @@ export type MutationUpdate_Printers_And_Copiers_BatchArgs = {
 };
 
 
-export type MutationUpdate_Printers_And_Copiers_ItemArgs = {
-  data: Update_Printers_And_Copiers_Input;
+export type MutationUpdate_Redirects_ItemArgs = {
+  data: Update_Redirects_Input;
   id: Scalars['ID']['input'];
 };
 
 
-export type MutationUpdate_Printers_And_Copiers_ItemsArgs = {
-  data: Update_Printers_And_Copiers_Input;
-  filter?: InputMaybe<Printers_And_Copiers_Filter>;
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Printers_And_Copiers_Locations_BatchArgs = {
-  data?: InputMaybe<Array<Update_Printers_And_Copiers_Locations_Input>>;
-  filter?: InputMaybe<Printers_And_Copiers_Locations_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Printers_And_Copiers_Locations_ItemArgs = {
-  data: Update_Printers_And_Copiers_Locations_Input;
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationUpdate_Printers_And_Copiers_Locations_ItemsArgs = {
-  data: Update_Printers_And_Copiers_Locations_Input;
-  filter?: InputMaybe<Printers_And_Copiers_Locations_Filter>;
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Printers_And_Copiers_Models_BatchArgs = {
-  data?: InputMaybe<Array<Update_Printers_And_Copiers_Models_Input>>;
-  filter?: InputMaybe<Printers_And_Copiers_Models_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Printers_And_Copiers_Models_ItemArgs = {
-  data: Update_Printers_And_Copiers_Models_Input;
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationUpdate_Printers_And_Copiers_Models_ItemsArgs = {
-  data: Update_Printers_And_Copiers_Models_Input;
-  filter?: InputMaybe<Printers_And_Copiers_Models_Filter>;
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Purchase_Orders_BatchArgs = {
-  data?: InputMaybe<Array<Update_Purchase_Orders_Input>>;
-  filter?: InputMaybe<Purchase_Orders_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Purchase_Orders_ItemArgs = {
-  data: Update_Purchase_Orders_Input;
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationUpdate_Purchase_Orders_ItemsArgs = {
-  data: Update_Purchase_Orders_Input;
-  filter?: InputMaybe<Purchase_Orders_Filter>;
+export type MutationUpdate_Redirects_ItemsArgs = {
+  data: Update_Redirects_Input;
+  filter?: InputMaybe<Redirects_Filter>;
   ids: Array<InputMaybe<Scalars['ID']['input']>>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
@@ -79418,64 +71202,6 @@ export type MutationUpdate_Richtext_Blocks_ItemArgs = {
 export type MutationUpdate_Richtext_Blocks_ItemsArgs = {
   data: Update_Richtext_Blocks_Input;
   filter?: InputMaybe<Richtext_Blocks_Filter>;
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Sales_Invoices_BatchArgs = {
-  data?: InputMaybe<Array<Update_Sales_Invoices_Input>>;
-  filter?: InputMaybe<Sales_Invoices_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Sales_Invoices_ItemArgs = {
-  data: Update_Sales_Invoices_Input;
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationUpdate_Sales_Invoices_ItemsArgs = {
-  data: Update_Sales_Invoices_Input;
-  filter?: InputMaybe<Sales_Invoices_Filter>;
-  ids: Array<InputMaybe<Scalars['ID']['input']>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Sales_Orders_BatchArgs = {
-  data?: InputMaybe<Array<Update_Sales_Orders_Input>>;
-  filter?: InputMaybe<Sales_Orders_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type MutationUpdate_Sales_Orders_ItemArgs = {
-  data: Update_Sales_Orders_Input;
-  id: Scalars['ID']['input'];
-};
-
-
-export type MutationUpdate_Sales_Orders_ItemsArgs = {
-  data: Update_Sales_Orders_Input;
-  filter?: InputMaybe<Sales_Orders_Filter>;
   ids: Array<InputMaybe<Scalars['ID']['input']>>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
@@ -79890,10 +71616,6 @@ export type Query = {
   cookie_selection_blocks_aggregated: Array<Cookie_Selection_Blocks_Aggregated>;
   cookie_selection_blocks_by_id?: Maybe<Cookie_Selection_Blocks>;
   cookie_selection_blocks_by_version?: Maybe<Version_Cookie_Selection_Blocks>;
-  customers: Array<Customers>;
-  customers_aggregated: Array<Customers_Aggregated>;
-  customers_by_id?: Maybe<Customers>;
-  customers_by_version?: Maybe<Version_Customers>;
   disclosure_blocks: Array<Disclosure_Blocks>;
   disclosure_blocks_aggregated: Array<Disclosure_Blocks_Aggregated>;
   disclosure_blocks_by_id?: Maybe<Disclosure_Blocks>;
@@ -79942,10 +71664,6 @@ export type Query = {
   image_blocks_aggregated: Array<Image_Blocks_Aggregated>;
   image_blocks_by_id?: Maybe<Image_Blocks>;
   image_blocks_by_version?: Maybe<Version_Image_Blocks>;
-  items: Array<Items>;
-  items_aggregated: Array<Items_Aggregated>;
-  items_by_id?: Maybe<Items>;
-  items_by_version?: Maybe<Version_Items>;
   languages: Array<Languages>;
   languages_aggregated: Array<Languages_Aggregated>;
   languages_by_id?: Maybe<Languages>;
@@ -80010,34 +71728,14 @@ export type Query = {
   partners_blocks_partners_by_version?: Maybe<Version_Partners_Blocks_Partners>;
   partners_by_id?: Maybe<Partners>;
   partners_by_version?: Maybe<Version_Partners>;
-  printers_and_copiers: Array<Printers_And_Copiers>;
-  printers_and_copiers_aggregated: Array<Printers_And_Copiers_Aggregated>;
-  printers_and_copiers_by_id?: Maybe<Printers_And_Copiers>;
-  printers_and_copiers_by_version?: Maybe<Version_Printers_And_Copiers>;
-  printers_and_copiers_locations: Array<Printers_And_Copiers_Locations>;
-  printers_and_copiers_locations_aggregated: Array<Printers_And_Copiers_Locations_Aggregated>;
-  printers_and_copiers_locations_by_id?: Maybe<Printers_And_Copiers_Locations>;
-  printers_and_copiers_locations_by_version?: Maybe<Version_Printers_And_Copiers_Locations>;
-  printers_and_copiers_models: Array<Printers_And_Copiers_Models>;
-  printers_and_copiers_models_aggregated: Array<Printers_And_Copiers_Models_Aggregated>;
-  printers_and_copiers_models_by_id?: Maybe<Printers_And_Copiers_Models>;
-  printers_and_copiers_models_by_version?: Maybe<Version_Printers_And_Copiers_Models>;
-  purchase_orders: Array<Purchase_Orders>;
-  purchase_orders_aggregated: Array<Purchase_Orders_Aggregated>;
-  purchase_orders_by_id?: Maybe<Purchase_Orders>;
-  purchase_orders_by_version?: Maybe<Version_Purchase_Orders>;
+  redirects: Array<Redirects>;
+  redirects_aggregated: Array<Redirects_Aggregated>;
+  redirects_by_id?: Maybe<Redirects>;
+  redirects_by_version?: Maybe<Version_Redirects>;
   richtext_blocks: Array<Richtext_Blocks>;
   richtext_blocks_aggregated: Array<Richtext_Blocks_Aggregated>;
   richtext_blocks_by_id?: Maybe<Richtext_Blocks>;
   richtext_blocks_by_version?: Maybe<Version_Richtext_Blocks>;
-  sales_invoices: Array<Sales_Invoices>;
-  sales_invoices_aggregated: Array<Sales_Invoices_Aggregated>;
-  sales_invoices_by_id?: Maybe<Sales_Invoices>;
-  sales_invoices_by_version?: Maybe<Version_Sales_Invoices>;
-  sales_orders: Array<Sales_Orders>;
-  sales_orders_aggregated: Array<Sales_Orders_Aggregated>;
-  sales_orders_by_id?: Maybe<Sales_Orders>;
-  sales_orders_by_version?: Maybe<Version_Sales_Orders>;
   services_list_blocks: Array<Services_List_Blocks>;
   services_list_blocks_aggregated: Array<Services_List_Blocks_Aggregated>;
   services_list_blocks_by_id?: Maybe<Services_List_Blocks>;
@@ -80551,39 +72249,6 @@ export type QueryCookie_Selection_Blocks_By_VersionArgs = {
 };
 
 
-export type QueryCustomersArgs = {
-  filter?: InputMaybe<Customers_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryCustomers_AggregatedArgs = {
-  filter?: InputMaybe<Customers_Filter>;
-  groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryCustomers_By_IdArgs = {
-  id: Scalars['ID']['input'];
-  version?: InputMaybe<Scalars['String']['input']>;
-};
-
-
-export type QueryCustomers_By_VersionArgs = {
-  id: Scalars['ID']['input'];
-  version: Scalars['String']['input'];
-};
-
-
 export type QueryDisclosure_BlocksArgs = {
   filter?: InputMaybe<Disclosure_Blocks_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
@@ -80975,39 +72640,6 @@ export type QueryImage_Blocks_By_IdArgs = {
 
 
 export type QueryImage_Blocks_By_VersionArgs = {
-  id: Scalars['ID']['input'];
-  version: Scalars['String']['input'];
-};
-
-
-export type QueryItemsArgs = {
-  filter?: InputMaybe<Items_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryItems_AggregatedArgs = {
-  filter?: InputMaybe<Items_Filter>;
-  groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryItems_By_IdArgs = {
-  id: Scalars['ID']['input'];
-  version?: InputMaybe<Scalars['String']['input']>;
-};
-
-
-export type QueryItems_By_VersionArgs = {
   id: Scalars['ID']['input'];
   version: Scalars['String']['input'];
 };
@@ -81528,8 +73160,8 @@ export type QueryPartners_By_VersionArgs = {
 };
 
 
-export type QueryPrinters_And_CopiersArgs = {
-  filter?: InputMaybe<Printers_And_Copiers_Filter>;
+export type QueryRedirectsArgs = {
+  filter?: InputMaybe<Redirects_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
   page?: InputMaybe<Scalars['Int']['input']>;
@@ -81538,8 +73170,8 @@ export type QueryPrinters_And_CopiersArgs = {
 };
 
 
-export type QueryPrinters_And_Copiers_AggregatedArgs = {
-  filter?: InputMaybe<Printers_And_Copiers_Filter>;
+export type QueryRedirects_AggregatedArgs = {
+  filter?: InputMaybe<Redirects_Filter>;
   groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
@@ -81549,112 +73181,13 @@ export type QueryPrinters_And_Copiers_AggregatedArgs = {
 };
 
 
-export type QueryPrinters_And_Copiers_By_IdArgs = {
+export type QueryRedirects_By_IdArgs = {
   id: Scalars['ID']['input'];
   version?: InputMaybe<Scalars['String']['input']>;
 };
 
 
-export type QueryPrinters_And_Copiers_By_VersionArgs = {
-  id: Scalars['ID']['input'];
-  version: Scalars['String']['input'];
-};
-
-
-export type QueryPrinters_And_Copiers_LocationsArgs = {
-  filter?: InputMaybe<Printers_And_Copiers_Locations_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryPrinters_And_Copiers_Locations_AggregatedArgs = {
-  filter?: InputMaybe<Printers_And_Copiers_Locations_Filter>;
-  groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryPrinters_And_Copiers_Locations_By_IdArgs = {
-  id: Scalars['ID']['input'];
-  version?: InputMaybe<Scalars['String']['input']>;
-};
-
-
-export type QueryPrinters_And_Copiers_Locations_By_VersionArgs = {
-  id: Scalars['ID']['input'];
-  version: Scalars['String']['input'];
-};
-
-
-export type QueryPrinters_And_Copiers_ModelsArgs = {
-  filter?: InputMaybe<Printers_And_Copiers_Models_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryPrinters_And_Copiers_Models_AggregatedArgs = {
-  filter?: InputMaybe<Printers_And_Copiers_Models_Filter>;
-  groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryPrinters_And_Copiers_Models_By_IdArgs = {
-  id: Scalars['ID']['input'];
-  version?: InputMaybe<Scalars['String']['input']>;
-};
-
-
-export type QueryPrinters_And_Copiers_Models_By_VersionArgs = {
-  id: Scalars['ID']['input'];
-  version: Scalars['String']['input'];
-};
-
-
-export type QueryPurchase_OrdersArgs = {
-  filter?: InputMaybe<Purchase_Orders_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryPurchase_Orders_AggregatedArgs = {
-  filter?: InputMaybe<Purchase_Orders_Filter>;
-  groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QueryPurchase_Orders_By_IdArgs = {
-  id: Scalars['ID']['input'];
-  version?: InputMaybe<Scalars['String']['input']>;
-};
-
-
-export type QueryPurchase_Orders_By_VersionArgs = {
+export type QueryRedirects_By_VersionArgs = {
   id: Scalars['ID']['input'];
   version: Scalars['String']['input'];
 };
@@ -81688,72 +73221,6 @@ export type QueryRichtext_Blocks_By_IdArgs = {
 
 
 export type QueryRichtext_Blocks_By_VersionArgs = {
-  id: Scalars['ID']['input'];
-  version: Scalars['String']['input'];
-};
-
-
-export type QuerySales_InvoicesArgs = {
-  filter?: InputMaybe<Sales_Invoices_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QuerySales_Invoices_AggregatedArgs = {
-  filter?: InputMaybe<Sales_Invoices_Filter>;
-  groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QuerySales_Invoices_By_IdArgs = {
-  id: Scalars['ID']['input'];
-  version?: InputMaybe<Scalars['String']['input']>;
-};
-
-
-export type QuerySales_Invoices_By_VersionArgs = {
-  id: Scalars['ID']['input'];
-  version: Scalars['String']['input'];
-};
-
-
-export type QuerySales_OrdersArgs = {
-  filter?: InputMaybe<Sales_Orders_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QuerySales_Orders_AggregatedArgs = {
-  filter?: InputMaybe<Sales_Orders_Filter>;
-  groupBy?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type QuerySales_Orders_By_IdArgs = {
-  id: Scalars['ID']['input'];
-  version?: InputMaybe<Scalars['String']['input']>;
-};
-
-
-export type QuerySales_Orders_By_VersionArgs = {
   id: Scalars['ID']['input'];
   version: Scalars['String']['input'];
 };
@@ -82170,7 +73637,6 @@ export type Subscription = {
   contact_form_blocks_mutated?: Maybe<Contact_Form_Blocks_Mutated>;
   contact_forms_mutated?: Maybe<Contact_Forms_Mutated>;
   cookie_selection_blocks_mutated?: Maybe<Cookie_Selection_Blocks_Mutated>;
-  customers_mutated?: Maybe<Customers_Mutated>;
   directus_access_mutated?: Maybe<Directus_Access_Mutated>;
   directus_activity_mutated?: Maybe<Directus_Activity_Mutated>;
   directus_dashboards_mutated?: Maybe<Directus_Dashboards_Mutated>;
@@ -82203,7 +73669,6 @@ export type Subscription = {
   heights_mutated?: Maybe<Heights_Mutated>;
   heights_translations_mutated?: Maybe<Heights_Translations_Mutated>;
   image_blocks_mutated?: Maybe<Image_Blocks_Mutated>;
-  items_mutated?: Maybe<Items_Mutated>;
   languages_mutated?: Maybe<Languages_Mutated>;
   meilisearch_settings_mutated?: Maybe<Meilisearch_Settings_Mutated>;
   navigation_menu_calls_to_action_mutated?: Maybe<Navigation_Menu_Calls_To_Action_Mutated>;
@@ -82221,13 +73686,8 @@ export type Subscription = {
   partners_blocks_mutated?: Maybe<Partners_Blocks_Mutated>;
   partners_blocks_partners_mutated?: Maybe<Partners_Blocks_Partners_Mutated>;
   partners_mutated?: Maybe<Partners_Mutated>;
-  printers_and_copiers_locations_mutated?: Maybe<Printers_And_Copiers_Locations_Mutated>;
-  printers_and_copiers_models_mutated?: Maybe<Printers_And_Copiers_Models_Mutated>;
-  printers_and_copiers_mutated?: Maybe<Printers_And_Copiers_Mutated>;
-  purchase_orders_mutated?: Maybe<Purchase_Orders_Mutated>;
+  redirects_mutated?: Maybe<Redirects_Mutated>;
   richtext_blocks_mutated?: Maybe<Richtext_Blocks_Mutated>;
-  sales_invoices_mutated?: Maybe<Sales_Invoices_Mutated>;
-  sales_orders_mutated?: Maybe<Sales_Orders_Mutated>;
   services_list_blocks_links_mutated?: Maybe<Services_List_Blocks_Links_Mutated>;
   services_list_blocks_mutated?: Maybe<Services_List_Blocks_Mutated>;
   spacer_blocks_mutated?: Maybe<Spacer_Blocks_Mutated>;
@@ -82309,11 +73769,6 @@ export type SubscriptionContact_Forms_MutatedArgs = {
 
 
 export type SubscriptionCookie_Selection_Blocks_MutatedArgs = {
-  event?: InputMaybe<EventEnum>;
-};
-
-
-export type SubscriptionCustomers_MutatedArgs = {
   event?: InputMaybe<EventEnum>;
 };
 
@@ -82478,11 +73933,6 @@ export type SubscriptionImage_Blocks_MutatedArgs = {
 };
 
 
-export type SubscriptionItems_MutatedArgs = {
-  event?: InputMaybe<EventEnum>;
-};
-
-
 export type SubscriptionLanguages_MutatedArgs = {
   event?: InputMaybe<EventEnum>;
 };
@@ -82568,37 +74018,12 @@ export type SubscriptionPartners_MutatedArgs = {
 };
 
 
-export type SubscriptionPrinters_And_Copiers_Locations_MutatedArgs = {
-  event?: InputMaybe<EventEnum>;
-};
-
-
-export type SubscriptionPrinters_And_Copiers_Models_MutatedArgs = {
-  event?: InputMaybe<EventEnum>;
-};
-
-
-export type SubscriptionPrinters_And_Copiers_MutatedArgs = {
-  event?: InputMaybe<EventEnum>;
-};
-
-
-export type SubscriptionPurchase_Orders_MutatedArgs = {
+export type SubscriptionRedirects_MutatedArgs = {
   event?: InputMaybe<EventEnum>;
 };
 
 
 export type SubscriptionRichtext_Blocks_MutatedArgs = {
-  event?: InputMaybe<EventEnum>;
-};
-
-
-export type SubscriptionSales_Invoices_MutatedArgs = {
-  event?: InputMaybe<EventEnum>;
-};
-
-
-export type SubscriptionSales_Orders_MutatedArgs = {
   event?: InputMaybe<EventEnum>;
 };
 
@@ -84365,18 +75790,6 @@ export type Create_Cookie_Selection_Blocks_Input = {
   width?: InputMaybe<Create_Widths_Input>;
 };
 
-export type Create_Customers_Input = {
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  name?: InputMaybe<Scalars['String']['input']>;
-  number?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  status?: InputMaybe<Scalars['String']['input']>;
-  user_created?: InputMaybe<Create_Directus_Users_Input>;
-  user_updated?: InputMaybe<Create_Directus_Users_Input>;
-};
-
 export type Create_Directus_Access_Input = {
   id?: InputMaybe<Scalars['ID']['input']>;
   policy?: InputMaybe<Create_Directus_Policies_Input>;
@@ -84493,6 +75906,7 @@ export type Create_Disclosure_Blocks_Input = {
   content?: InputMaybe<Scalars['JSON']['input']>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  editorjs_content?: InputMaybe<Scalars['JSON']['input']>;
   has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
   has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
@@ -84626,21 +76040,6 @@ export type Create_Image_Blocks_Input = {
   image_fit?: InputMaybe<Scalars['String']['input']>;
   image_position?: InputMaybe<Scalars['String']['input']>;
   image_size?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  user_created?: InputMaybe<Create_Directus_Users_Input>;
-  user_updated?: InputMaybe<Create_Directus_Users_Input>;
-};
-
-export type Create_Items_Input = {
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  description?: InputMaybe<Scalars['String']['input']>;
-  description_2?: InputMaybe<Scalars['String']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  number?: InputMaybe<Scalars['String']['input']>;
-  number_2?: InputMaybe<Scalars['String']['input']>;
-  sales_price?: InputMaybe<Scalars['Float']['input']>;
-  search_description?: InputMaybe<Scalars['String']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   user_created?: InputMaybe<Create_Directus_Users_Input>;
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
@@ -84833,58 +76232,15 @@ export type Create_Partners_Input = {
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
 };
 
-export type Create_Printers_And_Copiers_Input = {
-  customer?: InputMaybe<Create_Customers_Input>;
+export type Create_Redirects_Input = {
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
-  location?: InputMaybe<Create_Printers_And_Copiers_Locations_Input>;
-  model?: InputMaybe<Create_Printers_And_Copiers_Models_Input>;
-  serial_number?: InputMaybe<Scalars['String']['input']>;
+  new_url?: InputMaybe<Scalars['String']['input']>;
+  old_url?: InputMaybe<Scalars['String']['input']>;
+  response_code?: InputMaybe<Scalars['String']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   status?: InputMaybe<Scalars['String']['input']>;
-  user_created?: InputMaybe<Create_Directus_Users_Input>;
-  user_updated?: InputMaybe<Create_Directus_Users_Input>;
-};
-
-export type Create_Printers_And_Copiers_Locations_Input = {
-  address?: InputMaybe<Scalars['String']['input']>;
-  city?: InputMaybe<Scalars['String']['input']>;
-  customer?: InputMaybe<Create_Customers_Input>;
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  name?: InputMaybe<Scalars['String']['input']>;
-  phone_number?: InputMaybe<Scalars['String']['input']>;
-  post_code?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  user_created?: InputMaybe<Create_Directus_Users_Input>;
-  user_updated?: InputMaybe<Create_Directus_Users_Input>;
-};
-
-export type Create_Printers_And_Copiers_Models_Input = {
-  comments?: InputMaybe<Scalars['String']['input']>;
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  drum_unit?: InputMaybe<Create_Items_Input>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  name?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  toner_black?: InputMaybe<Create_Items_Input>;
-  toner_cyan?: InputMaybe<Create_Items_Input>;
-  toner_magenta?: InputMaybe<Create_Items_Input>;
-  toner_yellow?: InputMaybe<Create_Items_Input>;
-  user_created?: InputMaybe<Create_Directus_Users_Input>;
-  user_updated?: InputMaybe<Create_Directus_Users_Input>;
-  wastebox?: InputMaybe<Create_Items_Input>;
-};
-
-export type Create_Purchase_Orders_Input = {
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  number?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
   user_created?: InputMaybe<Create_Directus_Users_Input>;
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
 };
@@ -84893,6 +76249,7 @@ export type Create_Richtext_Blocks_Input = {
   content?: InputMaybe<Scalars['JSON']['input']>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  editorjs_content?: InputMaybe<Scalars['JSON']['input']>;
   has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
   has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
@@ -84903,26 +76260,6 @@ export type Create_Richtext_Blocks_Input = {
   user_created?: InputMaybe<Create_Directus_Users_Input>;
   user_updated?: InputMaybe<Create_Directus_Users_Input>;
   width?: InputMaybe<Create_Widths_Input>;
-};
-
-export type Create_Sales_Invoices_Input = {
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  number?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  user_created?: InputMaybe<Create_Directus_Users_Input>;
-  user_updated?: InputMaybe<Create_Directus_Users_Input>;
-};
-
-export type Create_Sales_Orders_Input = {
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  number?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  user_created?: InputMaybe<Create_Directus_Users_Input>;
-  user_updated?: InputMaybe<Create_Directus_Users_Input>;
 };
 
 export type Create_Services_List_Blocks_Input = {
@@ -85021,6 +76358,7 @@ export type Create_Text_And_Image_Blocks_Input = {
   content?: InputMaybe<Scalars['JSON']['input']>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  editorjs_content?: InputMaybe<Scalars['JSON']['input']>;
   has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
   has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
@@ -85071,97 +76409,6 @@ export type Create_Widths_Translations_Input = {
   languages_code?: InputMaybe<Create_Languages_Input>;
   name?: InputMaybe<Scalars['String']['input']>;
   widths_id?: InputMaybe<Create_Widths_Input>;
-};
-
-export type Customers = {
-  __typename?: 'customers';
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_created_func?: Maybe<Datetime_Functions>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  date_updated_func?: Maybe<Datetime_Functions>;
-  id: Scalars['ID']['output'];
-  name?: Maybe<Scalars['String']['output']>;
-  number?: Maybe<Scalars['Int']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  status?: Maybe<Scalars['String']['output']>;
-  user_created?: Maybe<Directus_Users>;
-  user_updated?: Maybe<Directus_Users>;
-};
-
-
-export type CustomersUser_CreatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type CustomersUser_UpdatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-export type Customers_Aggregated = {
-  __typename?: 'customers_aggregated';
-  avg?: Maybe<Customers_Aggregated_Fields>;
-  avgDistinct?: Maybe<Customers_Aggregated_Fields>;
-  count?: Maybe<Customers_Aggregated_Count>;
-  countAll?: Maybe<Scalars['Int']['output']>;
-  countDistinct?: Maybe<Customers_Aggregated_Count>;
-  group?: Maybe<Scalars['JSON']['output']>;
-  max?: Maybe<Customers_Aggregated_Fields>;
-  min?: Maybe<Customers_Aggregated_Fields>;
-  sum?: Maybe<Customers_Aggregated_Fields>;
-  sumDistinct?: Maybe<Customers_Aggregated_Fields>;
-};
-
-export type Customers_Aggregated_Count = {
-  __typename?: 'customers_aggregated_count';
-  date_created?: Maybe<Scalars['Int']['output']>;
-  date_updated?: Maybe<Scalars['Int']['output']>;
-  id?: Maybe<Scalars['Int']['output']>;
-  name?: Maybe<Scalars['Int']['output']>;
-  number?: Maybe<Scalars['Int']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  status?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Scalars['Int']['output']>;
-  user_updated?: Maybe<Scalars['Int']['output']>;
-};
-
-export type Customers_Aggregated_Fields = {
-  __typename?: 'customers_aggregated_fields';
-  number?: Maybe<Scalars['Float']['output']>;
-  sort?: Maybe<Scalars['Float']['output']>;
-};
-
-export type Customers_Filter = {
-  _and?: InputMaybe<Array<InputMaybe<Customers_Filter>>>;
-  _or?: InputMaybe<Array<InputMaybe<Customers_Filter>>>;
-  date_created?: InputMaybe<Date_Filter_Operators>;
-  date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  date_updated?: InputMaybe<Date_Filter_Operators>;
-  date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  id?: InputMaybe<String_Filter_Operators>;
-  name?: InputMaybe<String_Filter_Operators>;
-  number?: InputMaybe<Number_Filter_Operators>;
-  sort?: InputMaybe<Number_Filter_Operators>;
-  status?: InputMaybe<String_Filter_Operators>;
-  user_created?: InputMaybe<Directus_Users_Filter>;
-  user_updated?: InputMaybe<Directus_Users_Filter>;
-};
-
-export type Customers_Mutated = {
-  __typename?: 'customers_mutated';
-  data?: Maybe<Customers>;
-  event?: Maybe<EventEnum>;
-  key: Scalars['ID']['output'];
 };
 
 export type Date_Filter_Operators = {
@@ -86522,6 +77769,8 @@ export type Disclosure_Blocks = {
   date_created_func?: Maybe<Datetime_Functions>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   date_updated_func?: Maybe<Datetime_Functions>;
+  editorjs_content?: Maybe<Scalars['JSON']['output']>;
+  editorjs_content_func?: Maybe<Count_Functions>;
   has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
   has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id: Scalars['ID']['output'];
@@ -86582,6 +77831,7 @@ export type Disclosure_Blocks_Aggregated_Count = {
   content?: Maybe<Scalars['Int']['output']>;
   date_created?: Maybe<Scalars['Int']['output']>;
   date_updated?: Maybe<Scalars['Int']['output']>;
+  editorjs_content?: Maybe<Scalars['Int']['output']>;
   has_horizontal_padding?: Maybe<Scalars['Int']['output']>;
   has_vertical_padding?: Maybe<Scalars['Int']['output']>;
   id?: Maybe<Scalars['Int']['output']>;
@@ -86607,6 +77857,8 @@ export type Disclosure_Blocks_Filter = {
   date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   date_updated?: InputMaybe<Date_Filter_Operators>;
   date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  editorjs_content?: InputMaybe<String_Filter_Operators>;
+  editorjs_content_func?: InputMaybe<Count_Function_Filter_Operators>;
   has_horizontal_padding?: InputMaybe<Boolean_Filter_Operators>;
   has_vertical_padding?: InputMaybe<Boolean_Filter_Operators>;
   id?: InputMaybe<String_Filter_Operators>;
@@ -87723,106 +78975,6 @@ export type Image_Blocks_Filter = {
 export type Image_Blocks_Mutated = {
   __typename?: 'image_blocks_mutated';
   data?: Maybe<Image_Blocks>;
-  event?: Maybe<EventEnum>;
-  key: Scalars['ID']['output'];
-};
-
-export type Items = {
-  __typename?: 'items';
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_created_func?: Maybe<Datetime_Functions>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  date_updated_func?: Maybe<Datetime_Functions>;
-  description?: Maybe<Scalars['String']['output']>;
-  description_2?: Maybe<Scalars['String']['output']>;
-  id: Scalars['ID']['output'];
-  number?: Maybe<Scalars['String']['output']>;
-  number_2?: Maybe<Scalars['String']['output']>;
-  sales_price?: Maybe<Scalars['Float']['output']>;
-  search_description?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Directus_Users>;
-  user_updated?: Maybe<Directus_Users>;
-};
-
-
-export type ItemsUser_CreatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type ItemsUser_UpdatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-export type Items_Aggregated = {
-  __typename?: 'items_aggregated';
-  avg?: Maybe<Items_Aggregated_Fields>;
-  avgDistinct?: Maybe<Items_Aggregated_Fields>;
-  count?: Maybe<Items_Aggregated_Count>;
-  countAll?: Maybe<Scalars['Int']['output']>;
-  countDistinct?: Maybe<Items_Aggregated_Count>;
-  group?: Maybe<Scalars['JSON']['output']>;
-  max?: Maybe<Items_Aggregated_Fields>;
-  min?: Maybe<Items_Aggregated_Fields>;
-  sum?: Maybe<Items_Aggregated_Fields>;
-  sumDistinct?: Maybe<Items_Aggregated_Fields>;
-};
-
-export type Items_Aggregated_Count = {
-  __typename?: 'items_aggregated_count';
-  date_created?: Maybe<Scalars['Int']['output']>;
-  date_updated?: Maybe<Scalars['Int']['output']>;
-  description?: Maybe<Scalars['Int']['output']>;
-  description_2?: Maybe<Scalars['Int']['output']>;
-  id?: Maybe<Scalars['Int']['output']>;
-  number?: Maybe<Scalars['Int']['output']>;
-  number_2?: Maybe<Scalars['Int']['output']>;
-  sales_price?: Maybe<Scalars['Int']['output']>;
-  search_description?: Maybe<Scalars['Int']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Scalars['Int']['output']>;
-  user_updated?: Maybe<Scalars['Int']['output']>;
-};
-
-export type Items_Aggregated_Fields = {
-  __typename?: 'items_aggregated_fields';
-  sales_price?: Maybe<Scalars['Float']['output']>;
-  sort?: Maybe<Scalars['Float']['output']>;
-};
-
-export type Items_Filter = {
-  _and?: InputMaybe<Array<InputMaybe<Items_Filter>>>;
-  _or?: InputMaybe<Array<InputMaybe<Items_Filter>>>;
-  date_created?: InputMaybe<Date_Filter_Operators>;
-  date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  date_updated?: InputMaybe<Date_Filter_Operators>;
-  date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  description?: InputMaybe<String_Filter_Operators>;
-  description_2?: InputMaybe<String_Filter_Operators>;
-  id?: InputMaybe<String_Filter_Operators>;
-  number?: InputMaybe<String_Filter_Operators>;
-  number_2?: InputMaybe<String_Filter_Operators>;
-  sales_price?: InputMaybe<Number_Filter_Operators>;
-  search_description?: InputMaybe<String_Filter_Operators>;
-  sort?: InputMaybe<Number_Filter_Operators>;
-  user_created?: InputMaybe<Directus_Users_Filter>;
-  user_updated?: InputMaybe<Directus_Users_Filter>;
-};
-
-export type Items_Mutated = {
-  __typename?: 'items_mutated';
-  data?: Maybe<Items>;
   event?: Maybe<EventEnum>;
   key: Scalars['ID']['output'];
 };
@@ -89442,17 +80594,16 @@ export type Partners_Mutated = {
   key: Scalars['ID']['output'];
 };
 
-export type Printers_And_Copiers = {
-  __typename?: 'printers_and_copiers';
-  customer?: Maybe<Customers>;
+export type Redirects = {
+  __typename?: 'redirects';
   date_created?: Maybe<Scalars['Date']['output']>;
   date_created_func?: Maybe<Datetime_Functions>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   date_updated_func?: Maybe<Datetime_Functions>;
   id: Scalars['ID']['output'];
-  location?: Maybe<Printers_And_Copiers_Locations>;
-  model?: Maybe<Printers_And_Copiers_Models>;
-  serial_number?: Maybe<Scalars['String']['output']>;
+  new_url?: Maybe<Scalars['String']['output']>;
+  old_url?: Maybe<Scalars['String']['output']>;
+  response_code?: Maybe<Scalars['String']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   status?: Maybe<Scalars['String']['output']>;
   user_created?: Maybe<Directus_Users>;
@@ -89460,37 +80611,7 @@ export type Printers_And_Copiers = {
 };
 
 
-export type Printers_And_CopiersCustomerArgs = {
-  filter?: InputMaybe<Customers_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Printers_And_CopiersLocationArgs = {
-  filter?: InputMaybe<Printers_And_Copiers_Locations_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Printers_And_CopiersModelArgs = {
-  filter?: InputMaybe<Printers_And_Copiers_Models_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Printers_And_CopiersUser_CreatedArgs = {
+export type RedirectsUser_CreatedArgs = {
   filter?: InputMaybe<Directus_Users_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
@@ -89500,7 +80621,7 @@ export type Printers_And_CopiersUser_CreatedArgs = {
 };
 
 
-export type Printers_And_CopiersUser_UpdatedArgs = {
+export type RedirectsUser_UpdatedArgs = {
   filter?: InputMaybe<Directus_Users_Filter>;
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
@@ -89509,420 +80630,59 @@ export type Printers_And_CopiersUser_UpdatedArgs = {
   sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
-export type Printers_And_Copiers_Aggregated = {
-  __typename?: 'printers_and_copiers_aggregated';
-  avg?: Maybe<Printers_And_Copiers_Aggregated_Fields>;
-  avgDistinct?: Maybe<Printers_And_Copiers_Aggregated_Fields>;
-  count?: Maybe<Printers_And_Copiers_Aggregated_Count>;
+export type Redirects_Aggregated = {
+  __typename?: 'redirects_aggregated';
+  avg?: Maybe<Redirects_Aggregated_Fields>;
+  avgDistinct?: Maybe<Redirects_Aggregated_Fields>;
+  count?: Maybe<Redirects_Aggregated_Count>;
   countAll?: Maybe<Scalars['Int']['output']>;
-  countDistinct?: Maybe<Printers_And_Copiers_Aggregated_Count>;
+  countDistinct?: Maybe<Redirects_Aggregated_Count>;
   group?: Maybe<Scalars['JSON']['output']>;
-  max?: Maybe<Printers_And_Copiers_Aggregated_Fields>;
-  min?: Maybe<Printers_And_Copiers_Aggregated_Fields>;
-  sum?: Maybe<Printers_And_Copiers_Aggregated_Fields>;
-  sumDistinct?: Maybe<Printers_And_Copiers_Aggregated_Fields>;
+  max?: Maybe<Redirects_Aggregated_Fields>;
+  min?: Maybe<Redirects_Aggregated_Fields>;
+  sum?: Maybe<Redirects_Aggregated_Fields>;
+  sumDistinct?: Maybe<Redirects_Aggregated_Fields>;
 };
 
-export type Printers_And_Copiers_Aggregated_Count = {
-  __typename?: 'printers_and_copiers_aggregated_count';
-  customer?: Maybe<Scalars['Int']['output']>;
+export type Redirects_Aggregated_Count = {
+  __typename?: 'redirects_aggregated_count';
   date_created?: Maybe<Scalars['Int']['output']>;
   date_updated?: Maybe<Scalars['Int']['output']>;
   id?: Maybe<Scalars['Int']['output']>;
-  location?: Maybe<Scalars['Int']['output']>;
-  model?: Maybe<Scalars['Int']['output']>;
-  serial_number?: Maybe<Scalars['Int']['output']>;
+  new_url?: Maybe<Scalars['Int']['output']>;
+  old_url?: Maybe<Scalars['Int']['output']>;
+  response_code?: Maybe<Scalars['Int']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   status?: Maybe<Scalars['Int']['output']>;
   user_created?: Maybe<Scalars['Int']['output']>;
   user_updated?: Maybe<Scalars['Int']['output']>;
 };
 
-export type Printers_And_Copiers_Aggregated_Fields = {
-  __typename?: 'printers_and_copiers_aggregated_fields';
+export type Redirects_Aggregated_Fields = {
+  __typename?: 'redirects_aggregated_fields';
   sort?: Maybe<Scalars['Float']['output']>;
 };
 
-export type Printers_And_Copiers_Filter = {
-  _and?: InputMaybe<Array<InputMaybe<Printers_And_Copiers_Filter>>>;
-  _or?: InputMaybe<Array<InputMaybe<Printers_And_Copiers_Filter>>>;
-  customer?: InputMaybe<Customers_Filter>;
+export type Redirects_Filter = {
+  _and?: InputMaybe<Array<InputMaybe<Redirects_Filter>>>;
+  _or?: InputMaybe<Array<InputMaybe<Redirects_Filter>>>;
   date_created?: InputMaybe<Date_Filter_Operators>;
   date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   date_updated?: InputMaybe<Date_Filter_Operators>;
   date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   id?: InputMaybe<String_Filter_Operators>;
-  location?: InputMaybe<Printers_And_Copiers_Locations_Filter>;
-  model?: InputMaybe<Printers_And_Copiers_Models_Filter>;
-  serial_number?: InputMaybe<String_Filter_Operators>;
+  new_url?: InputMaybe<String_Filter_Operators>;
+  old_url?: InputMaybe<String_Filter_Operators>;
+  response_code?: InputMaybe<String_Filter_Operators>;
   sort?: InputMaybe<Number_Filter_Operators>;
   status?: InputMaybe<String_Filter_Operators>;
   user_created?: InputMaybe<Directus_Users_Filter>;
   user_updated?: InputMaybe<Directus_Users_Filter>;
 };
 
-export type Printers_And_Copiers_Locations = {
-  __typename?: 'printers_and_copiers_locations';
-  address?: Maybe<Scalars['String']['output']>;
-  city?: Maybe<Scalars['String']['output']>;
-  customer?: Maybe<Customers>;
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_created_func?: Maybe<Datetime_Functions>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  date_updated_func?: Maybe<Datetime_Functions>;
-  id: Scalars['ID']['output'];
-  name?: Maybe<Scalars['String']['output']>;
-  phone_number?: Maybe<Scalars['String']['output']>;
-  post_code?: Maybe<Scalars['Int']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Directus_Users>;
-  user_updated?: Maybe<Directus_Users>;
-};
-
-
-export type Printers_And_Copiers_LocationsCustomerArgs = {
-  filter?: InputMaybe<Customers_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Printers_And_Copiers_LocationsUser_CreatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Printers_And_Copiers_LocationsUser_UpdatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-export type Printers_And_Copiers_Locations_Aggregated = {
-  __typename?: 'printers_and_copiers_locations_aggregated';
-  avg?: Maybe<Printers_And_Copiers_Locations_Aggregated_Fields>;
-  avgDistinct?: Maybe<Printers_And_Copiers_Locations_Aggregated_Fields>;
-  count?: Maybe<Printers_And_Copiers_Locations_Aggregated_Count>;
-  countAll?: Maybe<Scalars['Int']['output']>;
-  countDistinct?: Maybe<Printers_And_Copiers_Locations_Aggregated_Count>;
-  group?: Maybe<Scalars['JSON']['output']>;
-  max?: Maybe<Printers_And_Copiers_Locations_Aggregated_Fields>;
-  min?: Maybe<Printers_And_Copiers_Locations_Aggregated_Fields>;
-  sum?: Maybe<Printers_And_Copiers_Locations_Aggregated_Fields>;
-  sumDistinct?: Maybe<Printers_And_Copiers_Locations_Aggregated_Fields>;
-};
-
-export type Printers_And_Copiers_Locations_Aggregated_Count = {
-  __typename?: 'printers_and_copiers_locations_aggregated_count';
-  address?: Maybe<Scalars['Int']['output']>;
-  city?: Maybe<Scalars['Int']['output']>;
-  customer?: Maybe<Scalars['Int']['output']>;
-  date_created?: Maybe<Scalars['Int']['output']>;
-  date_updated?: Maybe<Scalars['Int']['output']>;
-  id?: Maybe<Scalars['Int']['output']>;
-  name?: Maybe<Scalars['Int']['output']>;
-  phone_number?: Maybe<Scalars['Int']['output']>;
-  post_code?: Maybe<Scalars['Int']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Scalars['Int']['output']>;
-  user_updated?: Maybe<Scalars['Int']['output']>;
-};
-
-export type Printers_And_Copiers_Locations_Aggregated_Fields = {
-  __typename?: 'printers_and_copiers_locations_aggregated_fields';
-  post_code?: Maybe<Scalars['Float']['output']>;
-  sort?: Maybe<Scalars['Float']['output']>;
-};
-
-export type Printers_And_Copiers_Locations_Filter = {
-  _and?: InputMaybe<Array<InputMaybe<Printers_And_Copiers_Locations_Filter>>>;
-  _or?: InputMaybe<Array<InputMaybe<Printers_And_Copiers_Locations_Filter>>>;
-  address?: InputMaybe<String_Filter_Operators>;
-  city?: InputMaybe<String_Filter_Operators>;
-  customer?: InputMaybe<Customers_Filter>;
-  date_created?: InputMaybe<Date_Filter_Operators>;
-  date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  date_updated?: InputMaybe<Date_Filter_Operators>;
-  date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  id?: InputMaybe<String_Filter_Operators>;
-  name?: InputMaybe<String_Filter_Operators>;
-  phone_number?: InputMaybe<String_Filter_Operators>;
-  post_code?: InputMaybe<Number_Filter_Operators>;
-  sort?: InputMaybe<Number_Filter_Operators>;
-  user_created?: InputMaybe<Directus_Users_Filter>;
-  user_updated?: InputMaybe<Directus_Users_Filter>;
-};
-
-export type Printers_And_Copiers_Locations_Mutated = {
-  __typename?: 'printers_and_copiers_locations_mutated';
-  data?: Maybe<Printers_And_Copiers_Locations>;
-  event?: Maybe<EventEnum>;
-  key: Scalars['ID']['output'];
-};
-
-export type Printers_And_Copiers_Models = {
-  __typename?: 'printers_and_copiers_models';
-  comments?: Maybe<Scalars['String']['output']>;
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_created_func?: Maybe<Datetime_Functions>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  date_updated_func?: Maybe<Datetime_Functions>;
-  drum_unit?: Maybe<Items>;
-  id: Scalars['ID']['output'];
-  name?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  toner_black?: Maybe<Items>;
-  toner_cyan?: Maybe<Items>;
-  toner_magenta?: Maybe<Items>;
-  toner_yellow?: Maybe<Items>;
-  user_created?: Maybe<Directus_Users>;
-  user_updated?: Maybe<Directus_Users>;
-  wastebox?: Maybe<Items>;
-};
-
-
-export type Printers_And_Copiers_ModelsDrum_UnitArgs = {
-  filter?: InputMaybe<Items_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Printers_And_Copiers_ModelsToner_BlackArgs = {
-  filter?: InputMaybe<Items_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Printers_And_Copiers_ModelsToner_CyanArgs = {
-  filter?: InputMaybe<Items_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Printers_And_Copiers_ModelsToner_MagentaArgs = {
-  filter?: InputMaybe<Items_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Printers_And_Copiers_ModelsToner_YellowArgs = {
-  filter?: InputMaybe<Items_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Printers_And_Copiers_ModelsUser_CreatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Printers_And_Copiers_ModelsUser_UpdatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Printers_And_Copiers_ModelsWasteboxArgs = {
-  filter?: InputMaybe<Items_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-export type Printers_And_Copiers_Models_Aggregated = {
-  __typename?: 'printers_and_copiers_models_aggregated';
-  avg?: Maybe<Printers_And_Copiers_Models_Aggregated_Fields>;
-  avgDistinct?: Maybe<Printers_And_Copiers_Models_Aggregated_Fields>;
-  count?: Maybe<Printers_And_Copiers_Models_Aggregated_Count>;
-  countAll?: Maybe<Scalars['Int']['output']>;
-  countDistinct?: Maybe<Printers_And_Copiers_Models_Aggregated_Count>;
-  group?: Maybe<Scalars['JSON']['output']>;
-  max?: Maybe<Printers_And_Copiers_Models_Aggregated_Fields>;
-  min?: Maybe<Printers_And_Copiers_Models_Aggregated_Fields>;
-  sum?: Maybe<Printers_And_Copiers_Models_Aggregated_Fields>;
-  sumDistinct?: Maybe<Printers_And_Copiers_Models_Aggregated_Fields>;
-};
-
-export type Printers_And_Copiers_Models_Aggregated_Count = {
-  __typename?: 'printers_and_copiers_models_aggregated_count';
-  comments?: Maybe<Scalars['Int']['output']>;
-  date_created?: Maybe<Scalars['Int']['output']>;
-  date_updated?: Maybe<Scalars['Int']['output']>;
-  drum_unit?: Maybe<Scalars['Int']['output']>;
-  id?: Maybe<Scalars['Int']['output']>;
-  name?: Maybe<Scalars['Int']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  toner_black?: Maybe<Scalars['Int']['output']>;
-  toner_cyan?: Maybe<Scalars['Int']['output']>;
-  toner_magenta?: Maybe<Scalars['Int']['output']>;
-  toner_yellow?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Scalars['Int']['output']>;
-  user_updated?: Maybe<Scalars['Int']['output']>;
-  wastebox?: Maybe<Scalars['Int']['output']>;
-};
-
-export type Printers_And_Copiers_Models_Aggregated_Fields = {
-  __typename?: 'printers_and_copiers_models_aggregated_fields';
-  sort?: Maybe<Scalars['Float']['output']>;
-};
-
-export type Printers_And_Copiers_Models_Filter = {
-  _and?: InputMaybe<Array<InputMaybe<Printers_And_Copiers_Models_Filter>>>;
-  _or?: InputMaybe<Array<InputMaybe<Printers_And_Copiers_Models_Filter>>>;
-  comments?: InputMaybe<String_Filter_Operators>;
-  date_created?: InputMaybe<Date_Filter_Operators>;
-  date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  date_updated?: InputMaybe<Date_Filter_Operators>;
-  date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  drum_unit?: InputMaybe<Items_Filter>;
-  id?: InputMaybe<String_Filter_Operators>;
-  name?: InputMaybe<String_Filter_Operators>;
-  sort?: InputMaybe<Number_Filter_Operators>;
-  toner_black?: InputMaybe<Items_Filter>;
-  toner_cyan?: InputMaybe<Items_Filter>;
-  toner_magenta?: InputMaybe<Items_Filter>;
-  toner_yellow?: InputMaybe<Items_Filter>;
-  user_created?: InputMaybe<Directus_Users_Filter>;
-  user_updated?: InputMaybe<Directus_Users_Filter>;
-  wastebox?: InputMaybe<Items_Filter>;
-};
-
-export type Printers_And_Copiers_Models_Mutated = {
-  __typename?: 'printers_and_copiers_models_mutated';
-  data?: Maybe<Printers_And_Copiers_Models>;
-  event?: Maybe<EventEnum>;
-  key: Scalars['ID']['output'];
-};
-
-export type Printers_And_Copiers_Mutated = {
-  __typename?: 'printers_and_copiers_mutated';
-  data?: Maybe<Printers_And_Copiers>;
-  event?: Maybe<EventEnum>;
-  key: Scalars['ID']['output'];
-};
-
-export type Purchase_Orders = {
-  __typename?: 'purchase_orders';
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_created_func?: Maybe<Datetime_Functions>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  date_updated_func?: Maybe<Datetime_Functions>;
-  id: Scalars['ID']['output'];
-  number?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Directus_Users>;
-  user_updated?: Maybe<Directus_Users>;
-};
-
-
-export type Purchase_OrdersUser_CreatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Purchase_OrdersUser_UpdatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-export type Purchase_Orders_Aggregated = {
-  __typename?: 'purchase_orders_aggregated';
-  avg?: Maybe<Purchase_Orders_Aggregated_Fields>;
-  avgDistinct?: Maybe<Purchase_Orders_Aggregated_Fields>;
-  count?: Maybe<Purchase_Orders_Aggregated_Count>;
-  countAll?: Maybe<Scalars['Int']['output']>;
-  countDistinct?: Maybe<Purchase_Orders_Aggregated_Count>;
-  group?: Maybe<Scalars['JSON']['output']>;
-  max?: Maybe<Purchase_Orders_Aggregated_Fields>;
-  min?: Maybe<Purchase_Orders_Aggregated_Fields>;
-  sum?: Maybe<Purchase_Orders_Aggregated_Fields>;
-  sumDistinct?: Maybe<Purchase_Orders_Aggregated_Fields>;
-};
-
-export type Purchase_Orders_Aggregated_Count = {
-  __typename?: 'purchase_orders_aggregated_count';
-  date_created?: Maybe<Scalars['Int']['output']>;
-  date_updated?: Maybe<Scalars['Int']['output']>;
-  id?: Maybe<Scalars['Int']['output']>;
-  number?: Maybe<Scalars['Int']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Scalars['Int']['output']>;
-  user_updated?: Maybe<Scalars['Int']['output']>;
-};
-
-export type Purchase_Orders_Aggregated_Fields = {
-  __typename?: 'purchase_orders_aggregated_fields';
-  sort?: Maybe<Scalars['Float']['output']>;
-};
-
-export type Purchase_Orders_Filter = {
-  _and?: InputMaybe<Array<InputMaybe<Purchase_Orders_Filter>>>;
-  _or?: InputMaybe<Array<InputMaybe<Purchase_Orders_Filter>>>;
-  date_created?: InputMaybe<Date_Filter_Operators>;
-  date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  date_updated?: InputMaybe<Date_Filter_Operators>;
-  date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  id?: InputMaybe<String_Filter_Operators>;
-  number?: InputMaybe<String_Filter_Operators>;
-  sort?: InputMaybe<Number_Filter_Operators>;
-  user_created?: InputMaybe<Directus_Users_Filter>;
-  user_updated?: InputMaybe<Directus_Users_Filter>;
-};
-
-export type Purchase_Orders_Mutated = {
-  __typename?: 'purchase_orders_mutated';
-  data?: Maybe<Purchase_Orders>;
+export type Redirects_Mutated = {
+  __typename?: 'redirects_mutated';
+  data?: Maybe<Redirects>;
   event?: Maybe<EventEnum>;
   key: Scalars['ID']['output'];
 };
@@ -89935,6 +80695,8 @@ export type Richtext_Blocks = {
   date_created_func?: Maybe<Datetime_Functions>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   date_updated_func?: Maybe<Datetime_Functions>;
+  editorjs_content?: Maybe<Scalars['JSON']['output']>;
+  editorjs_content_func?: Maybe<Count_Functions>;
   has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
   has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id: Scalars['ID']['output'];
@@ -89996,6 +80758,7 @@ export type Richtext_Blocks_Aggregated_Count = {
   content?: Maybe<Scalars['Int']['output']>;
   date_created?: Maybe<Scalars['Int']['output']>;
   date_updated?: Maybe<Scalars['Int']['output']>;
+  editorjs_content?: Maybe<Scalars['Int']['output']>;
   has_horizontal_padding?: Maybe<Scalars['Int']['output']>;
   has_vertical_padding?: Maybe<Scalars['Int']['output']>;
   id?: Maybe<Scalars['Int']['output']>;
@@ -90022,6 +80785,8 @@ export type Richtext_Blocks_Filter = {
   date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   date_updated?: InputMaybe<Date_Filter_Operators>;
   date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  editorjs_content?: InputMaybe<String_Filter_Operators>;
+  editorjs_content_func?: InputMaybe<Count_Function_Filter_Operators>;
   has_horizontal_padding?: InputMaybe<Boolean_Filter_Operators>;
   has_vertical_padding?: InputMaybe<Boolean_Filter_Operators>;
   id?: InputMaybe<String_Filter_Operators>;
@@ -90037,174 +80802,6 @@ export type Richtext_Blocks_Filter = {
 export type Richtext_Blocks_Mutated = {
   __typename?: 'richtext_blocks_mutated';
   data?: Maybe<Richtext_Blocks>;
-  event?: Maybe<EventEnum>;
-  key: Scalars['ID']['output'];
-};
-
-export type Sales_Invoices = {
-  __typename?: 'sales_invoices';
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_created_func?: Maybe<Datetime_Functions>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  date_updated_func?: Maybe<Datetime_Functions>;
-  id: Scalars['ID']['output'];
-  number?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Directus_Users>;
-  user_updated?: Maybe<Directus_Users>;
-};
-
-
-export type Sales_InvoicesUser_CreatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Sales_InvoicesUser_UpdatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-export type Sales_Invoices_Aggregated = {
-  __typename?: 'sales_invoices_aggregated';
-  avg?: Maybe<Sales_Invoices_Aggregated_Fields>;
-  avgDistinct?: Maybe<Sales_Invoices_Aggregated_Fields>;
-  count?: Maybe<Sales_Invoices_Aggregated_Count>;
-  countAll?: Maybe<Scalars['Int']['output']>;
-  countDistinct?: Maybe<Sales_Invoices_Aggregated_Count>;
-  group?: Maybe<Scalars['JSON']['output']>;
-  max?: Maybe<Sales_Invoices_Aggregated_Fields>;
-  min?: Maybe<Sales_Invoices_Aggregated_Fields>;
-  sum?: Maybe<Sales_Invoices_Aggregated_Fields>;
-  sumDistinct?: Maybe<Sales_Invoices_Aggregated_Fields>;
-};
-
-export type Sales_Invoices_Aggregated_Count = {
-  __typename?: 'sales_invoices_aggregated_count';
-  date_created?: Maybe<Scalars['Int']['output']>;
-  date_updated?: Maybe<Scalars['Int']['output']>;
-  id?: Maybe<Scalars['Int']['output']>;
-  number?: Maybe<Scalars['Int']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Scalars['Int']['output']>;
-  user_updated?: Maybe<Scalars['Int']['output']>;
-};
-
-export type Sales_Invoices_Aggregated_Fields = {
-  __typename?: 'sales_invoices_aggregated_fields';
-  sort?: Maybe<Scalars['Float']['output']>;
-};
-
-export type Sales_Invoices_Filter = {
-  _and?: InputMaybe<Array<InputMaybe<Sales_Invoices_Filter>>>;
-  _or?: InputMaybe<Array<InputMaybe<Sales_Invoices_Filter>>>;
-  date_created?: InputMaybe<Date_Filter_Operators>;
-  date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  date_updated?: InputMaybe<Date_Filter_Operators>;
-  date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  id?: InputMaybe<String_Filter_Operators>;
-  number?: InputMaybe<String_Filter_Operators>;
-  sort?: InputMaybe<Number_Filter_Operators>;
-  user_created?: InputMaybe<Directus_Users_Filter>;
-  user_updated?: InputMaybe<Directus_Users_Filter>;
-};
-
-export type Sales_Invoices_Mutated = {
-  __typename?: 'sales_invoices_mutated';
-  data?: Maybe<Sales_Invoices>;
-  event?: Maybe<EventEnum>;
-  key: Scalars['ID']['output'];
-};
-
-export type Sales_Orders = {
-  __typename?: 'sales_orders';
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_created_func?: Maybe<Datetime_Functions>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  date_updated_func?: Maybe<Datetime_Functions>;
-  id: Scalars['ID']['output'];
-  number?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Directus_Users>;
-  user_updated?: Maybe<Directus_Users>;
-};
-
-
-export type Sales_OrdersUser_CreatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-
-export type Sales_OrdersUser_UpdatedArgs = {
-  filter?: InputMaybe<Directus_Users_Filter>;
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  page?: InputMaybe<Scalars['Int']['input']>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-};
-
-export type Sales_Orders_Aggregated = {
-  __typename?: 'sales_orders_aggregated';
-  avg?: Maybe<Sales_Orders_Aggregated_Fields>;
-  avgDistinct?: Maybe<Sales_Orders_Aggregated_Fields>;
-  count?: Maybe<Sales_Orders_Aggregated_Count>;
-  countAll?: Maybe<Scalars['Int']['output']>;
-  countDistinct?: Maybe<Sales_Orders_Aggregated_Count>;
-  group?: Maybe<Scalars['JSON']['output']>;
-  max?: Maybe<Sales_Orders_Aggregated_Fields>;
-  min?: Maybe<Sales_Orders_Aggregated_Fields>;
-  sum?: Maybe<Sales_Orders_Aggregated_Fields>;
-  sumDistinct?: Maybe<Sales_Orders_Aggregated_Fields>;
-};
-
-export type Sales_Orders_Aggregated_Count = {
-  __typename?: 'sales_orders_aggregated_count';
-  date_created?: Maybe<Scalars['Int']['output']>;
-  date_updated?: Maybe<Scalars['Int']['output']>;
-  id?: Maybe<Scalars['Int']['output']>;
-  number?: Maybe<Scalars['Int']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Scalars['Int']['output']>;
-  user_updated?: Maybe<Scalars['Int']['output']>;
-};
-
-export type Sales_Orders_Aggregated_Fields = {
-  __typename?: 'sales_orders_aggregated_fields';
-  sort?: Maybe<Scalars['Float']['output']>;
-};
-
-export type Sales_Orders_Filter = {
-  _and?: InputMaybe<Array<InputMaybe<Sales_Orders_Filter>>>;
-  _or?: InputMaybe<Array<InputMaybe<Sales_Orders_Filter>>>;
-  date_created?: InputMaybe<Date_Filter_Operators>;
-  date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  date_updated?: InputMaybe<Date_Filter_Operators>;
-  date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
-  id?: InputMaybe<String_Filter_Operators>;
-  number?: InputMaybe<String_Filter_Operators>;
-  sort?: InputMaybe<Number_Filter_Operators>;
-  user_created?: InputMaybe<Directus_Users_Filter>;
-  user_updated?: InputMaybe<Directus_Users_Filter>;
-};
-
-export type Sales_Orders_Mutated = {
-  __typename?: 'sales_orders_mutated';
-  data?: Maybe<Sales_Orders>;
   event?: Maybe<EventEnum>;
   key: Scalars['ID']['output'];
 };
@@ -91038,6 +81635,8 @@ export type Text_And_Image_Blocks = {
   date_created_func?: Maybe<Datetime_Functions>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   date_updated_func?: Maybe<Datetime_Functions>;
+  editorjs_content?: Maybe<Scalars['JSON']['output']>;
+  editorjs_content_func?: Maybe<Count_Functions>;
   has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
   has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id: Scalars['ID']['output'];
@@ -91112,6 +81711,7 @@ export type Text_And_Image_Blocks_Aggregated_Count = {
   content?: Maybe<Scalars['Int']['output']>;
   date_created?: Maybe<Scalars['Int']['output']>;
   date_updated?: Maybe<Scalars['Int']['output']>;
+  editorjs_content?: Maybe<Scalars['Int']['output']>;
   has_horizontal_padding?: Maybe<Scalars['Int']['output']>;
   has_vertical_padding?: Maybe<Scalars['Int']['output']>;
   id?: Maybe<Scalars['Int']['output']>;
@@ -91141,6 +81741,8 @@ export type Text_And_Image_Blocks_Filter = {
   date_created_func?: InputMaybe<Datetime_Function_Filter_Operators>;
   date_updated?: InputMaybe<Date_Filter_Operators>;
   date_updated_func?: InputMaybe<Datetime_Function_Filter_Operators>;
+  editorjs_content?: InputMaybe<String_Filter_Operators>;
+  editorjs_content_func?: InputMaybe<Count_Function_Filter_Operators>;
   has_horizontal_padding?: InputMaybe<Boolean_Filter_Operators>;
   has_vertical_padding?: InputMaybe<Boolean_Filter_Operators>;
   id?: InputMaybe<String_Filter_Operators>;
@@ -91492,18 +82094,6 @@ export type Update_Cookie_Selection_Blocks_Input = {
   width?: InputMaybe<Update_Widths_Input>;
 };
 
-export type Update_Customers_Input = {
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  name?: InputMaybe<Scalars['String']['input']>;
-  number?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  status?: InputMaybe<Scalars['String']['input']>;
-  user_created?: InputMaybe<Update_Directus_Users_Input>;
-  user_updated?: InputMaybe<Update_Directus_Users_Input>;
-};
-
 export type Update_Directus_Access_Input = {
   id?: InputMaybe<Scalars['ID']['input']>;
   policy?: InputMaybe<Update_Directus_Policies_Input>;
@@ -91620,6 +82210,7 @@ export type Update_Disclosure_Blocks_Input = {
   content?: InputMaybe<Scalars['JSON']['input']>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  editorjs_content?: InputMaybe<Scalars['JSON']['input']>;
   has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
   has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
@@ -91753,21 +82344,6 @@ export type Update_Image_Blocks_Input = {
   image_fit?: InputMaybe<Scalars['String']['input']>;
   image_position?: InputMaybe<Scalars['String']['input']>;
   image_size?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  user_created?: InputMaybe<Update_Directus_Users_Input>;
-  user_updated?: InputMaybe<Update_Directus_Users_Input>;
-};
-
-export type Update_Items_Input = {
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  description?: InputMaybe<Scalars['String']['input']>;
-  description_2?: InputMaybe<Scalars['String']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  number?: InputMaybe<Scalars['String']['input']>;
-  number_2?: InputMaybe<Scalars['String']['input']>;
-  sales_price?: InputMaybe<Scalars['Float']['input']>;
-  search_description?: InputMaybe<Scalars['String']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   user_created?: InputMaybe<Update_Directus_Users_Input>;
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
@@ -91971,58 +82547,15 @@ export type Update_Partners_Input = {
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
 };
 
-export type Update_Printers_And_Copiers_Input = {
-  customer?: InputMaybe<Update_Customers_Input>;
+export type Update_Redirects_Input = {
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
-  location?: InputMaybe<Update_Printers_And_Copiers_Locations_Input>;
-  model?: InputMaybe<Update_Printers_And_Copiers_Models_Input>;
-  serial_number?: InputMaybe<Scalars['String']['input']>;
+  new_url?: InputMaybe<Scalars['String']['input']>;
+  old_url?: InputMaybe<Scalars['String']['input']>;
+  response_code?: InputMaybe<Scalars['String']['input']>;
   sort?: InputMaybe<Scalars['Int']['input']>;
   status?: InputMaybe<Scalars['String']['input']>;
-  user_created?: InputMaybe<Update_Directus_Users_Input>;
-  user_updated?: InputMaybe<Update_Directus_Users_Input>;
-};
-
-export type Update_Printers_And_Copiers_Locations_Input = {
-  address?: InputMaybe<Scalars['String']['input']>;
-  city?: InputMaybe<Scalars['String']['input']>;
-  customer?: InputMaybe<Update_Customers_Input>;
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  name?: InputMaybe<Scalars['String']['input']>;
-  phone_number?: InputMaybe<Scalars['String']['input']>;
-  post_code?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  user_created?: InputMaybe<Update_Directus_Users_Input>;
-  user_updated?: InputMaybe<Update_Directus_Users_Input>;
-};
-
-export type Update_Printers_And_Copiers_Models_Input = {
-  comments?: InputMaybe<Scalars['String']['input']>;
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  drum_unit?: InputMaybe<Update_Items_Input>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  name?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  toner_black?: InputMaybe<Update_Items_Input>;
-  toner_cyan?: InputMaybe<Update_Items_Input>;
-  toner_magenta?: InputMaybe<Update_Items_Input>;
-  toner_yellow?: InputMaybe<Update_Items_Input>;
-  user_created?: InputMaybe<Update_Directus_Users_Input>;
-  user_updated?: InputMaybe<Update_Directus_Users_Input>;
-  wastebox?: InputMaybe<Update_Items_Input>;
-};
-
-export type Update_Purchase_Orders_Input = {
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  number?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
   user_created?: InputMaybe<Update_Directus_Users_Input>;
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
 };
@@ -92031,6 +82564,7 @@ export type Update_Richtext_Blocks_Input = {
   content?: InputMaybe<Scalars['JSON']['input']>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  editorjs_content?: InputMaybe<Scalars['JSON']['input']>;
   has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
   has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
@@ -92041,26 +82575,6 @@ export type Update_Richtext_Blocks_Input = {
   user_created?: InputMaybe<Update_Directus_Users_Input>;
   user_updated?: InputMaybe<Update_Directus_Users_Input>;
   width?: InputMaybe<Update_Widths_Input>;
-};
-
-export type Update_Sales_Invoices_Input = {
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  number?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  user_created?: InputMaybe<Update_Directus_Users_Input>;
-  user_updated?: InputMaybe<Update_Directus_Users_Input>;
-};
-
-export type Update_Sales_Orders_Input = {
-  date_created?: InputMaybe<Scalars['Date']['input']>;
-  date_updated?: InputMaybe<Scalars['Date']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  number?: InputMaybe<Scalars['String']['input']>;
-  sort?: InputMaybe<Scalars['Int']['input']>;
-  user_created?: InputMaybe<Update_Directus_Users_Input>;
-  user_updated?: InputMaybe<Update_Directus_Users_Input>;
 };
 
 export type Update_Services_List_Blocks_Input = {
@@ -92159,6 +82673,7 @@ export type Update_Text_And_Image_Blocks_Input = {
   content?: InputMaybe<Scalars['JSON']['input']>;
   date_created?: InputMaybe<Scalars['Date']['input']>;
   date_updated?: InputMaybe<Scalars['Date']['input']>;
+  editorjs_content?: InputMaybe<Scalars['JSON']['input']>;
   has_horizontal_padding?: InputMaybe<Scalars['Boolean']['input']>;
   has_vertical_padding?: InputMaybe<Scalars['Boolean']['input']>;
   id?: InputMaybe<Scalars['ID']['input']>;
@@ -92406,24 +82921,12 @@ export type Version_Cookie_Selection_Blocks = {
   width?: Maybe<Scalars['JSON']['output']>;
 };
 
-export type Version_Customers = {
-  __typename?: 'version_customers';
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  id?: Maybe<Scalars['ID']['output']>;
-  name?: Maybe<Scalars['String']['output']>;
-  number?: Maybe<Scalars['Int']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  status?: Maybe<Scalars['String']['output']>;
-  user_created?: Maybe<Scalars['JSON']['output']>;
-  user_updated?: Maybe<Scalars['JSON']['output']>;
-};
-
 export type Version_Disclosure_Blocks = {
   __typename?: 'version_disclosure_blocks';
   content?: Maybe<Scalars['JSON']['output']>;
   date_created?: Maybe<Scalars['Date']['output']>;
   date_updated?: Maybe<Scalars['Date']['output']>;
+  editorjs_content?: Maybe<Scalars['JSON']['output']>;
   has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
   has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id?: Maybe<Scalars['ID']['output']>;
@@ -92568,22 +83071,6 @@ export type Version_Image_Blocks = {
   image_fit?: Maybe<Scalars['String']['output']>;
   image_position?: Maybe<Scalars['String']['output']>;
   image_size?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Scalars['JSON']['output']>;
-  user_updated?: Maybe<Scalars['JSON']['output']>;
-};
-
-export type Version_Items = {
-  __typename?: 'version_items';
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  description?: Maybe<Scalars['String']['output']>;
-  description_2?: Maybe<Scalars['String']['output']>;
-  id?: Maybe<Scalars['ID']['output']>;
-  number?: Maybe<Scalars['String']['output']>;
-  number_2?: Maybe<Scalars['String']['output']>;
-  sales_price?: Maybe<Scalars['Float']['output']>;
-  search_description?: Maybe<Scalars['String']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   user_created?: Maybe<Scalars['JSON']['output']>;
   user_updated?: Maybe<Scalars['JSON']['output']>;
@@ -92804,62 +83291,16 @@ export type Version_Partners_Blocks_Partners = {
   sort?: Maybe<Scalars['Int']['output']>;
 };
 
-export type Version_Printers_And_Copiers = {
-  __typename?: 'version_printers_and_copiers';
-  customer?: Maybe<Scalars['JSON']['output']>;
+export type Version_Redirects = {
+  __typename?: 'version_redirects';
   date_created?: Maybe<Scalars['Date']['output']>;
   date_updated?: Maybe<Scalars['Date']['output']>;
   id?: Maybe<Scalars['ID']['output']>;
-  location?: Maybe<Scalars['JSON']['output']>;
-  model?: Maybe<Scalars['JSON']['output']>;
-  serial_number?: Maybe<Scalars['String']['output']>;
+  new_url?: Maybe<Scalars['String']['output']>;
+  old_url?: Maybe<Scalars['String']['output']>;
+  response_code?: Maybe<Scalars['String']['output']>;
   sort?: Maybe<Scalars['Int']['output']>;
   status?: Maybe<Scalars['String']['output']>;
-  user_created?: Maybe<Scalars['JSON']['output']>;
-  user_updated?: Maybe<Scalars['JSON']['output']>;
-};
-
-export type Version_Printers_And_Copiers_Locations = {
-  __typename?: 'version_printers_and_copiers_locations';
-  address?: Maybe<Scalars['String']['output']>;
-  city?: Maybe<Scalars['String']['output']>;
-  customer?: Maybe<Scalars['JSON']['output']>;
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  id?: Maybe<Scalars['ID']['output']>;
-  name?: Maybe<Scalars['String']['output']>;
-  phone_number?: Maybe<Scalars['String']['output']>;
-  post_code?: Maybe<Scalars['Int']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Scalars['JSON']['output']>;
-  user_updated?: Maybe<Scalars['JSON']['output']>;
-};
-
-export type Version_Printers_And_Copiers_Models = {
-  __typename?: 'version_printers_and_copiers_models';
-  comments?: Maybe<Scalars['String']['output']>;
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  drum_unit?: Maybe<Scalars['JSON']['output']>;
-  id?: Maybe<Scalars['ID']['output']>;
-  name?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  toner_black?: Maybe<Scalars['JSON']['output']>;
-  toner_cyan?: Maybe<Scalars['JSON']['output']>;
-  toner_magenta?: Maybe<Scalars['JSON']['output']>;
-  toner_yellow?: Maybe<Scalars['JSON']['output']>;
-  user_created?: Maybe<Scalars['JSON']['output']>;
-  user_updated?: Maybe<Scalars['JSON']['output']>;
-  wastebox?: Maybe<Scalars['JSON']['output']>;
-};
-
-export type Version_Purchase_Orders = {
-  __typename?: 'version_purchase_orders';
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  id?: Maybe<Scalars['ID']['output']>;
-  number?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
   user_created?: Maybe<Scalars['JSON']['output']>;
   user_updated?: Maybe<Scalars['JSON']['output']>;
 };
@@ -92869,6 +83310,7 @@ export type Version_Richtext_Blocks = {
   content?: Maybe<Scalars['JSON']['output']>;
   date_created?: Maybe<Scalars['Date']['output']>;
   date_updated?: Maybe<Scalars['Date']['output']>;
+  editorjs_content?: Maybe<Scalars['JSON']['output']>;
   has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
   has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id?: Maybe<Scalars['ID']['output']>;
@@ -92879,28 +83321,6 @@ export type Version_Richtext_Blocks = {
   user_created?: Maybe<Scalars['JSON']['output']>;
   user_updated?: Maybe<Scalars['JSON']['output']>;
   width?: Maybe<Scalars['JSON']['output']>;
-};
-
-export type Version_Sales_Invoices = {
-  __typename?: 'version_sales_invoices';
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  id?: Maybe<Scalars['ID']['output']>;
-  number?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Scalars['JSON']['output']>;
-  user_updated?: Maybe<Scalars['JSON']['output']>;
-};
-
-export type Version_Sales_Orders = {
-  __typename?: 'version_sales_orders';
-  date_created?: Maybe<Scalars['Date']['output']>;
-  date_updated?: Maybe<Scalars['Date']['output']>;
-  id?: Maybe<Scalars['ID']['output']>;
-  number?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<Scalars['Int']['output']>;
-  user_created?: Maybe<Scalars['JSON']['output']>;
-  user_updated?: Maybe<Scalars['JSON']['output']>;
 };
 
 export type Version_Services_List_Blocks = {
@@ -93008,6 +83428,7 @@ export type Version_Text_And_Image_Blocks = {
   content?: Maybe<Scalars['JSON']['output']>;
   date_created?: Maybe<Scalars['Date']['output']>;
   date_updated?: Maybe<Scalars['Date']['output']>;
+  editorjs_content?: Maybe<Scalars['JSON']['output']>;
   has_horizontal_padding?: Maybe<Scalars['Boolean']['output']>;
   has_vertical_padding?: Maybe<Scalars['Boolean']['output']>;
   id?: Maybe<Scalars['ID']['output']>;
@@ -93254,21 +83675,21 @@ export type BannerHeroBlockFragment = { __typename?: 'banner_hero_blocks', id: s
 
 export type TextHeroBlockFragment = { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null };
 
-export type TextAndImageBlockFragment = { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null };
+export type TextAndImageBlockFragment = { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, editorjs_content?: any | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null };
 
 export type ImageBlockFragment = { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null };
 
-export type RichTextBlockFragment = { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null };
+export type RichTextBlockFragment = { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null };
 
-export type DisclosureGroupBlockFragment = { __typename?: 'disclosure_group_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null };
+export type DisclosureGroupBlockFragment = { __typename?: 'disclosure_group_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null };
 
-export type DisclosureGroupCategoryFragment = { __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null };
+export type DisclosureGroupCategoryFragment = { __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null };
 
-export type DisclosureBlockFragment = { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null };
+export type DisclosureBlockFragment = { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null };
 
-export type TabsBlockFragment = { __typename?: 'tabs_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, tabs?: Array<{ __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null> | null };
+export type TabsBlockFragment = { __typename?: 'tabs_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, tabs?: Array<{ __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, editorjs_content?: any | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null> | null };
 
-export type TabsBlockTabFragment = { __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
+export type TabsBlockTabFragment = { __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, editorjs_content?: any | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
 
 export type SpacerBlockFragment = { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null };
 
@@ -93282,7 +83703,7 @@ export type CardBlockFragment = { __typename?: 'card_blocks', id: string, show_l
 
 export type GalleryBlockFragment = { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null };
 
-export type ColumnsBlockFragment = { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null };
+export type ColumnsBlockFragment = { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null };
 
 export type BlogPostFragment = { __typename?: 'blog_posts', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, content?: any | null, cover_image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null, tags?: Array<{ __typename?: 'blog_posts_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null };
 
@@ -93303,7 +83724,7 @@ export type BlogPostsQueryVariables = Exact<{
 
 export type BlogPostsQuery = { __typename?: 'Query', blog_posts: Array<{ __typename?: 'blog_posts', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, content?: any | null, cover_image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null, tags?: Array<{ __typename?: 'blog_posts_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null }> };
 
-export type CaseFragment = { __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'card_blocks' } | { __typename?: 'columns_blocks' } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks' } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'spacer_blocks' } | { __typename?: 'tabs_blocks' } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
+export type CaseFragment = { __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'card_blocks' } | { __typename?: 'columns_blocks' } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks' } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'spacer_blocks' } | { __typename?: 'tabs_blocks' } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, editorjs_content?: any | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
 
 export type CasesCountQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -93320,7 +83741,7 @@ export type CasesQueryVariables = Exact<{
 }>;
 
 
-export type CasesQuery = { __typename?: 'Query', cases: Array<{ __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'card_blocks' } | { __typename?: 'columns_blocks' } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks' } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'spacer_blocks' } | { __typename?: 'tabs_blocks' } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
+export type CasesQuery = { __typename?: 'Query', cases: Array<{ __typename?: 'cases', id: string, status?: string | null, title?: string | null, slug?: string | null, summary?: string | null, blocks?: Array<{ __typename?: 'cases_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'card_blocks' } | { __typename?: 'columns_blocks' } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks' } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | { __typename?: 'spacer_blocks' } | { __typename?: 'tabs_blocks' } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, editorjs_content?: any | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
 
 export type ContactFormFragment = { __typename?: 'contact_forms', name?: string | null, company?: string | null, email?: string | null, phone?: string | null, message?: string | null };
 
@@ -93378,7 +83799,7 @@ export type NewsPostsQueryVariables = Exact<{
 
 export type NewsPostsQuery = { __typename?: 'Query', news_posts: Array<{ __typename?: 'news_posts', id: string, status?: string | null, date_published?: any | null, title?: string | null, slug?: string | null, summary?: string | null, content?: any | null, cover_image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null, tags?: Array<{ __typename?: 'news_posts_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null }> };
 
-export type PageFragment = { __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'cookie_selection_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', id: string, has_padding?: boolean | null, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'news_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, tags?: Array<{ __typename?: 'news_blocks_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'tabs_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, tabs?: Array<{ __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
+export type PageFragment = { __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'cookie_selection_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', id: string, has_padding?: boolean | null, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'news_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, tags?: Array<{ __typename?: 'news_blocks_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'tabs_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, tabs?: Array<{ __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, editorjs_content?: any | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, editorjs_content?: any | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null };
 
 export type PageCountQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -93395,7 +83816,7 @@ export type PagesQueryVariables = Exact<{
 }>;
 
 
-export type PagesQuery = { __typename?: 'Query', pages: Array<{ __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'cookie_selection_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', id: string, has_padding?: boolean | null, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'news_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, tags?: Array<{ __typename?: 'news_blocks_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'tabs_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, tabs?: Array<{ __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, editor_js_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
+export type PagesQuery = { __typename?: 'Query', pages: Array<{ __typename?: 'pages', id: string, status?: string | null, title?: string | null, slug?: string | null, seo_title?: string | null, seo_description?: string | null, blocks?: Array<{ __typename?: 'pages_blocks', item?: { __typename?: 'banner_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, autoplay?: boolean | null, interval?: number | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, banners?: Array<{ __typename?: 'banner_hero_blocks_banners', title?: string | null, description?: string | null, text?: string | null, overlay_color?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, width?: number | null, height?: number | null, description?: string | null, attribution?: string | null } | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | null> | null } | { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'contact_form_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, description?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'cookie_selection_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'disclosure_group_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, title_placement?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, disclosure_group_categories?: Array<{ __typename?: 'disclosure_group_categories', id: string, sort?: number | null, name?: string | null, disclosures?: Array<{ __typename?: 'disclosure_group_categories_disclosure_blocks', disclosure_blocks_id?: { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks', id: string, has_padding?: boolean | null, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'news_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, tags?: Array<{ __typename?: 'news_blocks_tags', tags_id?: { __typename?: 'tags', id: string, name?: string | null } | null } | null> | null } | { __typename?: 'partners_blocks', id: string, title?: string | null, show_title?: boolean | null, partners?: Array<{ __typename?: 'partners_blocks_partners', partners_id?: { __typename?: 'partners', id: string, status?: string | null, name?: string | null, logo?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, content?: string | null, links_placement?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, links?: Array<{ __typename?: 'services_list_blocks_links', item?: { __typename?: 'blog_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'cases', id: string, title?: string | null, slug?: string | null } | { __typename?: 'news_posts', id: string, title?: string | null, slug?: string | null } | { __typename?: 'pages', id: string, title?: string | null, slug?: string | null } | null } | null> | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'tabs_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, tabs?: Array<{ __typename?: 'tabs_blocks_tab', id: string, name?: string | null, blocks?: Array<{ __typename?: 'tabs_blocks_tab_blocks', item?: { __typename?: 'columns_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, extended_control?: boolean | null, custom_css?: string | null, vertical_alignment?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, blocks?: Array<{ __typename?: 'columns_blocks_blocks', item?: { __typename?: 'card_blocks', id: string, show_large_image?: boolean | null, title?: string | null, description?: string | null, text_alignment?: string | null, type?: string | null, link?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, background_color_active?: { __typename?: 'colors', id: string, class?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null, page?: { __typename?: 'pages', slug?: string | null } | null } | { __typename?: 'disclosure_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, is_expanded_by_default?: boolean | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'gallery_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, images?: Array<{ __typename?: 'gallery_blocks_files', directus_files_id?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null, video_thumbnail?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | null } | null> | null } | { __typename?: 'google_maps_blocks' } | { __typename?: 'image_blocks', id: string, image_position?: string | null, image_fit?: string | null, image_size?: string | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null, attribution?: string | null } | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'services_list_blocks' } | null } | null> | null } | { __typename?: 'richtext_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, show_title?: boolean | null, title_placement?: string | null, editorjs_content?: any | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null } | { __typename?: 'spacer_blocks', id: string, height?: { __typename?: 'heights', id: string, class?: string | null } | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, editorjs_content?: any | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null } | null> | null } | { __typename?: 'text_and_image_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, title?: string | null, editorjs_content?: any | null, image_placement?: string | null, image_position?: string | null, image_fit?: string | null, image_size?: string | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | { __typename?: 'text_hero_blocks', id: string, has_vertical_padding?: boolean | null, has_horizontal_padding?: boolean | null, illustration_type?: string | null, title?: string | null, content?: string | null, background_color?: { __typename?: 'colors', id: string, class?: string | null } | null, width?: { __typename?: 'widths', id: string, class?: string | null, name?: string | null } | null, icon?: { __typename?: 'directus_files', filename_download: string } | null, image?: { __typename?: 'directus_files', id: string, title?: string | null, description?: string | null, width?: number | null, height?: number | null } | null } | null } | null> | null }> };
 
 export type TagFragment = { __typename?: 'tags', id: string, name?: string | null };
 
@@ -93569,7 +83990,7 @@ export const TextAndImageBlockFragmentDoc = gql`
   has_vertical_padding
   has_horizontal_padding
   title
-  editor_js_content: content
+  editorjs_content
   image_placement
   image_position
   image_fit
@@ -93594,7 +84015,7 @@ export const RichTextBlockFragmentDoc = gql`
   title
   show_title
   title_placement
-  editor_js_content: content
+  editorjs_content
 }
     ${WidthFragmentDoc}`;
 export const DisclosureBlockFragmentDoc = gql`
@@ -93607,7 +84028,7 @@ export const DisclosureBlockFragmentDoc = gql`
   has_horizontal_padding
   title
   is_expanded_by_default
-  editor_js_content: content
+  editorjs_content
 }
     ${WidthFragmentDoc}`;
 export const ContactFormBlockFragmentDoc = gql`

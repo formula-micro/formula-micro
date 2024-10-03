@@ -4,13 +4,22 @@
     // Fields.
     const { $preview } = useNuxtApp(); 
     const { slug } = useRoute().params;
+    let pageData = ref<any|undefined>();
 
     // Get page.
     if ($preview) {
-        const { data: pageData } = await usePagesQuery({ variables: { filter: { slug: { _eq: slug }, status: { _eq: "published" } }, limit: 1 } });
+        if (import.meta.client)
+        {
+            window.addEventListener("message", (event) =>
+            {
+                const { type, values } = event.data;
+                if (type === "directus-live-preview")
+                    pageData.value = values;
+            }, false);
+        }
     }
-    const { data: pageData } = await usePagesQuery({ variables: { filter: { slug: { _eq: slug }, status: { _eq: "published" } }, limit: 1 } });
-    const page = computed(() => pageData.value?.pages[0] ?? undefined);
+    const { data: pagesData } = await usePagesQuery({ variables: { filter: { slug: { _eq: slug }, status: { _eq: "published" } }, limit: 1 } });
+    const page = computed(() => $preview && pageData.value ? pageData.value : pagesData.value?.pages[0] ?? undefined);
 
     // When unable to find the page, throw a 404 error.
     if (!page.value) throw createError({ statusCode: 404, statusMessage: "Siden blev ikke fundet" });
@@ -43,7 +52,7 @@
 <template>
     <div class="flex flex-col items-center w-full mt-5 xl:mt-12">
         <div class="flex flex-col justify-center items-center w-full">
-            <template v-for="block in blocks">
+            <template v-for="block in blocks" :key="block.id">
                 <LazyBlocksBannerHero v-if="block.__typename === 'banner_hero_blocks'" :data="block" />
 
                 <LazyBlocksTextHero v-if="block.__typename === 'text_hero_blocks'" :data="block" />
